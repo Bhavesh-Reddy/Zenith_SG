@@ -1,0 +1,7865 @@
+[
+  {
+    "finding_id": "F-0001",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0002",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "xml-parser",
+    "version": "3.9.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "xml-parser"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1007",
+          "cvss_score": 6.9,
+          "has_patch": false,
+          "affected_versions": [
+            "3.9.14"
+          ]
+        }
+      ],
+      "max_cvss": 6.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0003",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "http-agent",
+    "version": "4.4.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "http-agent"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1008",
+          "cvss_score": 9.1,
+          "has_patch": true,
+          "affected_versions": [
+            "4.4.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0004",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "db-driver",
+    "version": "4.12.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "db-driver"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1014",
+          "cvss_score": 7.0,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.5"
+          ]
+        }
+      ],
+      "max_cvss": 7.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0005",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "urllib3",
+    "version": "2.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "urllib3"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1002",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0006",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "vlib-08",
+    "version": "2.12.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "vlib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1022",
+          "cvss_score": 5.1,
+          "has_patch": true,
+          "affected_versions": [
+            "2.12.9"
+          ]
+        }
+      ],
+      "max_cvss": 5.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0007",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "zip-utils",
+    "version": "0.10.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "zip-utils"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1009",
+          "cvss_score": 4.4,
+          "has_patch": true,
+          "affected_versions": [
+            "0.10.3"
+          ]
+        }
+      ],
+      "max_cvss": 4.4,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0008",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "vlib-14",
+    "version": "4.9.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "vlib-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1028",
+          "cvss_score": 6.7,
+          "has_patch": true,
+          "affected_versions": [
+            "4.9.13"
+          ]
+        }
+      ],
+      "max_cvss": 6.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0009",
+    "app_id": "APP-001",
+    "type": "vulnerability",
+    "library_name": "vlib-13",
+    "version": "4.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "vlib-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1027",
+          "cvss_score": 9.1,
+          "has_patch": true,
+          "affected_versions": [
+            "4.2.8"
+          ]
+        }
+      ],
+      "max_cvss": 9.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0010",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "gnu-tables",
+    "version": "3.12.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gnu-tables"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0011",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0012",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-03",
+    "version": "1.2.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gpl-lib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0013",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "gnu-plotter",
+    "version": "1.3.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gnu-plotter"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0014",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "copyleft-orm",
+    "version": "4.7.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "copyleft-orm"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0015",
+    "app_id": "APP-001",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-05",
+    "version": "3.0.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gpl-lib-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0016",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-02",
+    "version": "4.1.7",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-12-21",
+      "days_since_update": 1298,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0017",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-07",
+    "version": "4.8.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-01-10",
+      "days_since_update": 1278,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0018",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-17",
+    "version": "2.4.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-17"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-07-15",
+      "days_since_update": 1092,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0019",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "flash-bridge",
+    "version": "3.8.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "flash-bridge"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-02-06",
+      "days_since_update": 886,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0020",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-01",
+    "version": "0.2.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-03-27",
+      "days_since_update": 836,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0021",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "ancient-xmlrpc",
+    "version": "0.11.10",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-001",
+        "gpl-lib-09",
+        "ancient-xmlrpc"
+      ],
+      [
+        "APP-001",
+        "vlib-13",
+        "ancient-xmlrpc"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2023-11-19",
+      "days_since_update": 965,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0022",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-08",
+    "version": "2.3.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-10-07",
+      "days_since_update": 1008,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0023",
+    "app_id": "APP-001",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-08-25",
+      "days_since_update": 1051,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0024",
+    "app_id": "APP-001",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-03",
+    "version": "3.3.17",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-001",
+        "flask",
+        "tlib-03"
+      ],
+      [
+        "APP-001",
+        "lib-39",
+        "tlib-03"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1040",
+          "cvss_score": 9.4,
+          "has_patch": true,
+          "affected_versions": [
+            "3.3.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.4,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0025",
+    "app_id": "APP-001",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-07",
+    "version": "1.1.3",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "stale-02",
+        "tlib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1044",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.3"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0026",
+    "app_id": "APP-001",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "gpl-lib-05",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0027",
+    "app_id": "APP-001",
+    "type": "transitive_vulnerability",
+    "library_name": "deep-base64",
+    "version": "2.6.20",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-001",
+        "xml-parser",
+        "deep-base64"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1030",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.6.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0028",
+    "app_id": "APP-001",
+    "type": "transitive_vulnerability",
+    "library_name": "regex-engine",
+    "version": "1.1.10",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-001",
+        "gnu-plotter",
+        "regex-engine"
+      ],
+      [
+        "APP-001",
+        "lib-29",
+        "regex-engine"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1033",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.10"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0029",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0030",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "serde-json",
+    "version": "4.12.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "serde-json"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1010",
+          "cvss_score": 6.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.8"
+          ]
+        }
+      ],
+      "max_cvss": 6.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0031",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "log4shell-core",
+    "version": "2.11.18",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "log4shell-core"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1000",
+          "cvss_score": 8.9,
+          "has_patch": false,
+          "affected_versions": [
+            "2.11.18"
+          ]
+        }
+      ],
+      "max_cvss": 8.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0032",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "net-sock",
+    "version": "0.11.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "net-sock"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1013",
+          "cvss_score": 8.2,
+          "has_patch": false,
+          "affected_versions": [
+            "0.11.8"
+          ]
+        }
+      ],
+      "max_cvss": 8.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0033",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "vlib-01",
+    "version": "4.1.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "vlib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1015",
+          "cvss_score": 5.5,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0034",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "pyyaml",
+    "version": "4.7.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "pyyaml"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1003",
+          "cvss_score": 5.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.7.2"
+          ]
+        }
+      ],
+      "max_cvss": 5.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0035",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "vlib-12",
+    "version": "1.2.15",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "vlib-12"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1026",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.2.15"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0036",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "auth-token",
+    "version": "2.1.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "auth-token"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1011",
+          "cvss_score": 7.8,
+          "has_patch": false,
+          "affected_versions": [
+            "2.1.9"
+          ]
+        }
+      ],
+      "max_cvss": 7.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0037",
+    "app_id": "APP-002",
+    "type": "vulnerability",
+    "library_name": "vlib-15",
+    "version": "1.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "vlib-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1029",
+          "cvss_score": 8.8,
+          "has_patch": false,
+          "affected_versions": [
+            "1.8.6"
+          ]
+        }
+      ],
+      "max_cvss": 8.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0038",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0039",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-08",
+    "version": "2.6.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0040",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-02",
+    "version": "4.0.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0041",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-06",
+    "version": "3.0.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0042",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "copyleft-orm",
+    "version": "4.7.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "copyleft-orm"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0043",
+    "app_id": "APP-002",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0044",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "deprecated-auth",
+    "version": "1.0.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "deprecated-auth"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-09-14",
+      "days_since_update": 1396,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0045",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-18",
+    "version": "3.8.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-18"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-06-30",
+      "days_since_update": 1107,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0046",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-11",
+    "version": "2.7.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-11"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-06-15",
+      "days_since_update": 1122,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0047",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-15",
+    "version": "4.4.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-10-12",
+      "days_since_update": 637,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0048",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-03",
+    "version": "3.1.18",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-03-17",
+      "days_since_update": 846,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0049",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-02-23",
+      "days_since_update": 869,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0050",
+    "app_id": "APP-002",
+    "type": "unmaintained",
+    "library_name": "stale-12",
+    "version": "0.0.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "stale-12"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-03-14",
+      "days_since_update": 1215,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0051",
+    "app_id": "APP-002",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-08",
+    "version": "3.5.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "vlib-12",
+        "tlib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1045",
+          "cvss_score": 7.8,
+          "has_patch": true,
+          "affected_versions": [
+            "3.5.13"
+          ]
+        }
+      ],
+      "max_cvss": 7.8,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0052",
+    "app_id": "APP-002",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-07",
+    "version": "1.1.3",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-002",
+        "lib-02",
+        "tlib-07"
+      ],
+      [
+        "APP-002",
+        "vlib-01",
+        "tlib-07"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1044",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.3"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0053",
+    "app_id": "APP-002",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-002",
+        "stale-11",
+        "tlib-06"
+      ],
+      [
+        "APP-002",
+        "vlib-06",
+        "fastapi",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0054",
+    "app_id": "APP-002",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-10",
+    "version": "0.0.12",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "gpl-lib-06",
+        "tlib-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1047",
+          "cvss_score": 7.1,
+          "has_patch": true,
+          "affected_versions": [
+            "0.0.12"
+          ]
+        }
+      ],
+      "max_cvss": 7.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0055",
+    "app_id": "APP-002",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-04",
+    "version": "1.11.18",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-002",
+        "lib-17",
+        "tlib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1041",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.11.18"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0056",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "urllib3",
+    "version": "2.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "urllib3"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1002",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0057",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "vlib-04",
+    "version": "2.12.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "vlib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1018",
+          "cvss_score": 8.5,
+          "has_patch": false,
+          "affected_versions": [
+            "2.12.5"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0058",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0059",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "vlib-07",
+    "version": "3.0.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "vlib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1021",
+          "cvss_score": 6.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.0.3"
+          ]
+        }
+      ],
+      "max_cvss": 6.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0060",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "openssl-py",
+    "version": "3.9.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "openssl-py"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1001",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "3.9.12"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0061",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "pillow",
+    "version": "0.1.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "pillow"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1004",
+          "cvss_score": 5.2,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.4"
+          ]
+        }
+      ],
+      "max_cvss": 5.2,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0062",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "vlib-10",
+    "version": "4.1.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "vlib-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1024",
+          "cvss_score": 7.1,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "max_cvss": 7.1,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0063",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "vlib-14",
+    "version": "4.9.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "vlib-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1028",
+          "cvss_score": 6.7,
+          "has_patch": true,
+          "affected_versions": [
+            "4.9.13"
+          ]
+        }
+      ],
+      "max_cvss": 6.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0064",
+    "app_id": "APP-003",
+    "type": "vulnerability",
+    "library_name": "zip-utils",
+    "version": "0.10.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "zip-utils"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1009",
+          "cvss_score": 4.4,
+          "has_patch": true,
+          "affected_versions": [
+            "0.10.3"
+          ]
+        }
+      ],
+      "max_cvss": 4.4,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0065",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "gnu-plotter",
+    "version": "1.3.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "gnu-plotter"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0066",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "agpl-queue",
+    "version": "3.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "agpl-queue"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0067",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0068",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-03",
+    "version": "1.2.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "gpl-lib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0069",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0070",
+    "app_id": "APP-003",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-04",
+    "version": "3.7.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "gpl-lib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0071",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-08-17",
+      "days_since_update": 693,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0072",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-19",
+    "version": "4.12.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-19"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-12-20",
+      "days_since_update": 934,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0073",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-02",
+    "version": "4.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-003",
+        "stale-18",
+        "stale-02"
+      ],
+      [
+        "APP-003",
+        "vlib-14",
+        "stale-02"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2023-03-27",
+      "days_since_update": 1202,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0074",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-11",
+    "version": "2.7.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-11"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-08-07",
+      "days_since_update": 1069,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0075",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-07",
+    "version": "4.8.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-11-24",
+      "days_since_update": 1325,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0076",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-09",
+    "version": "1.4.12",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "openssl-py",
+        "stale-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-09-13",
+      "days_since_update": 1032,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0077",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-18",
+    "version": "3.8.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-18"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-06-05",
+      "days_since_update": 1132,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0078",
+    "app_id": "APP-003",
+    "type": "unmaintained",
+    "library_name": "stale-04",
+    "version": "1.9.19",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-08-08",
+      "days_since_update": 1068,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0079",
+    "app_id": "APP-003",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "stale-18",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0080",
+    "app_id": "APP-003",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-02",
+    "version": "4.3.8",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-003",
+        "click",
+        "tlib-02"
+      ],
+      [
+        "APP-003",
+        "stale-18",
+        "tlib-02"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1039",
+          "cvss_score": 7.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.8"
+          ]
+        }
+      ],
+      "max_cvss": 7.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0081",
+    "app_id": "APP-003",
+    "type": "transitive_vulnerability",
+    "library_name": "tls-shim",
+    "version": "2.7.16",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "openssl-py",
+        "tls-shim"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1031",
+          "cvss_score": 9.9,
+          "has_patch": false,
+          "affected_versions": [
+            "2.7.16"
+          ]
+        }
+      ],
+      "max_cvss": 9.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0082",
+    "app_id": "APP-003",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-09",
+    "version": "3.7.1",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "openssl-py",
+        "tlib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1046",
+          "cvss_score": 8.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.7.1"
+          ]
+        }
+      ],
+      "max_cvss": 8.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0083",
+    "app_id": "APP-003",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-04",
+    "version": "1.11.18",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-003",
+        "lib-19",
+        "tlib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1041",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.11.18"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0084",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "auth-token",
+    "version": "2.1.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "auth-token"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1011",
+          "cvss_score": 7.8,
+          "has_patch": false,
+          "affected_versions": [
+            "2.1.9"
+          ]
+        }
+      ],
+      "max_cvss": 7.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0085",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "vlib-05",
+    "version": "4.12.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "vlib-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1019",
+          "cvss_score": 8.6,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.16"
+          ]
+        }
+      ],
+      "max_cvss": 8.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0086",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "vlib-10",
+    "version": "4.1.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "vlib-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1024",
+          "cvss_score": 7.1,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "max_cvss": 7.1,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0087",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "vlib-01",
+    "version": "4.1.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "vlib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1015",
+          "cvss_score": 5.5,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0088",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0089",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "db-driver",
+    "version": "4.12.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "db-driver"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1014",
+          "cvss_score": 7.0,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.5"
+          ]
+        }
+      ],
+      "max_cvss": 7.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0090",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "openssl-py",
+    "version": "3.9.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "openssl-py"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1001",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "3.9.12"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0091",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "cryptolib",
+    "version": "4.1.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "cryptolib"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1006",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.1.12"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0092",
+    "app_id": "APP-004",
+    "type": "vulnerability",
+    "library_name": "http-agent",
+    "version": "4.4.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "http-agent"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1008",
+          "cvss_score": 9.1,
+          "has_patch": true,
+          "affected_versions": [
+            "4.4.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0093",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-03",
+    "version": "1.2.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "gpl-lib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0094",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "copyleft-orm",
+    "version": "4.7.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "copyleft-orm"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0095",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "gpl-crypto",
+    "version": "3.3.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "gpl-crypto"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0096",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-02",
+    "version": "4.0.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "gpl-lib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0097",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-06",
+    "version": "3.0.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "gpl-lib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0098",
+    "app_id": "APP-004",
+    "type": "license_conflict",
+    "library_name": "gnu-plotter",
+    "version": "1.3.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "gnu-plotter"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0099",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "legacy-soap",
+    "version": "2.3.1",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "legacy-soap"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-04-27",
+      "days_since_update": 1171,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0100",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "stale-15",
+    "version": "4.4.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "stale-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-11-24",
+      "days_since_update": 960,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0101",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-04-22",
+      "days_since_update": 1176,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0102",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "stale-02",
+    "version": "4.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-004",
+        "gnu-plotter",
+        "stale-02"
+      ],
+      [
+        "APP-004",
+        "lib-30",
+        "stale-02"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2023-12-05",
+      "days_since_update": 949,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0103",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "deprecated-auth",
+    "version": "1.0.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "deprecated-auth"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-11-15",
+      "days_since_update": 1334,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0104",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "stale-04",
+    "version": "1.9.19",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "stale-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-10-03",
+      "days_since_update": 1012,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0105",
+    "app_id": "APP-004",
+    "type": "unmaintained",
+    "library_name": "stale-12",
+    "version": "0.0.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "stale-12"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-09-05",
+      "days_since_update": 1040,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0106",
+    "app_id": "APP-004",
+    "type": "transitive_vulnerability",
+    "library_name": "deep-base64",
+    "version": "2.6.20",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-004",
+        "fastapi",
+        "deep-base64"
+      ],
+      [
+        "APP-004",
+        "httpx",
+        "deep-base64"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1030",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.6.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0107",
+    "app_id": "APP-004",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-004",
+        "openssl-py",
+        "tlib-06"
+      ],
+      [
+        "APP-004",
+        "stale-12",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0108",
+    "app_id": "APP-004",
+    "type": "transitive_vulnerability",
+    "library_name": "buffer-kit",
+    "version": "3.1.7",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-004",
+        "vlib-10",
+        "buffer-kit"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1032",
+          "cvss_score": 7.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.1.7"
+          ]
+        }
+      ],
+      "max_cvss": 7.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0109",
+    "app_id": "APP-004",
+    "type": "transitive_vulnerability",
+    "library_name": "regex-engine",
+    "version": "1.1.10",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-004",
+        "fastapi",
+        "attrs",
+        "lib-07",
+        "lib-29",
+        "regex-engine"
+      ],
+      [
+        "APP-004",
+        "lib-22",
+        "lib-07",
+        "lib-29",
+        "regex-engine"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1033",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.10"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0110",
+    "app_id": "APP-004",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-09",
+    "version": "3.7.1",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-004",
+        "gnu-plotter",
+        "tlib-09"
+      ],
+      [
+        "APP-004",
+        "lib-34",
+        "tlib-09"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1046",
+          "cvss_score": 8.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.7.1"
+          ]
+        }
+      ],
+      "max_cvss": 8.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0111",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "xml-parser",
+    "version": "3.9.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "xml-parser"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1007",
+          "cvss_score": 6.9,
+          "has_patch": false,
+          "affected_versions": [
+            "3.9.14"
+          ]
+        }
+      ],
+      "max_cvss": 6.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0112",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "vlib-02",
+    "version": "2.10.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1016",
+          "cvss_score": 7.9,
+          "has_patch": false,
+          "affected_versions": [
+            "2.10.16"
+          ]
+        }
+      ],
+      "max_cvss": 7.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0113",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "net-sock",
+    "version": "0.11.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "net-sock"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1013",
+          "cvss_score": 8.2,
+          "has_patch": false,
+          "affected_versions": [
+            "0.11.8"
+          ]
+        }
+      ],
+      "max_cvss": 8.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0114",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "vlib-04",
+    "version": "2.12.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1018",
+          "cvss_score": 8.5,
+          "has_patch": false,
+          "affected_versions": [
+            "2.12.5"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0115",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "vlib-07",
+    "version": "3.0.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1021",
+          "cvss_score": 6.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.0.3"
+          ]
+        }
+      ],
+      "max_cvss": 6.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0116",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "jinja2",
+    "version": "1.12.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "jinja2"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1005",
+          "cvss_score": 4.1,
+          "has_patch": true,
+          "affected_versions": [
+            "1.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 4.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0117",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "vlib-10",
+    "version": "4.1.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1024",
+          "cvss_score": 7.1,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "max_cvss": 7.1,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0118",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "vlib-09",
+    "version": "1.0.7",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1023",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.0.7"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0119",
+    "app_id": "APP-005",
+    "type": "vulnerability",
+    "library_name": "urllib3",
+    "version": "2.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "urllib3"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1002",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0120",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-04",
+    "version": "3.7.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0121",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-08",
+    "version": "2.6.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0122",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0123",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0124",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-05",
+    "version": "3.0.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0125",
+    "app_id": "APP-005",
+    "type": "license_conflict",
+    "library_name": "agpl-queue",
+    "version": "3.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "agpl-queue"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0126",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-10",
+    "version": "1.10.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "stale-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-02-02",
+      "days_since_update": 1255,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0127",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-02",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-09-17",
+      "days_since_update": 1393,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0128",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "flash-bridge",
+    "version": "3.8.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "flash-bridge"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-12-24",
+      "days_since_update": 1295,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0129",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-02",
+    "version": "4.1.7",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "stale-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-06-11",
+      "days_since_update": 760,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0130",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-09",
+    "version": "1.4.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "stale-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-01-26",
+      "days_since_update": 1262,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0131",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-03",
+    "version": "3.1.18",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "lib-05",
+        "stale-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-12-18",
+      "days_since_update": 936,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0132",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-15",
+    "version": "4.4.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "stale-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-09-25",
+      "days_since_update": 654,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0133",
+    "app_id": "APP-005",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-10-11",
+      "days_since_update": 1369,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0134",
+    "app_id": "APP-005",
+    "type": "transitive_vulnerability",
+    "library_name": "deep-base64",
+    "version": "2.6.20",
+    "is_direct": false,
+    "num_paths": 3,
+    "paths": [
+      [
+        "APP-005",
+        "lib-17",
+        "boto3",
+        "deep-base64"
+      ],
+      [
+        "APP-005",
+        "vlib-04",
+        "deep-base64"
+      ],
+      [
+        "APP-005",
+        "vlib-09",
+        "boto3",
+        "deep-base64"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1030",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.6.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0135",
+    "app_id": "APP-005",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-07",
+    "version": "1.1.3",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-05",
+        "tlib-07"
+      ],
+      [
+        "APP-005",
+        "vlib-02",
+        "tlib-07"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1044",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.3"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0136",
+    "app_id": "APP-005",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-02",
+    "version": "4.3.8",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-005",
+        "gpl-lib-04",
+        "tlib-02"
+      ],
+      [
+        "APP-005",
+        "stale-02",
+        "tlib-02"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1039",
+          "cvss_score": 7.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.8"
+          ]
+        }
+      ],
+      "max_cvss": 7.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0137",
+    "app_id": "APP-005",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-03",
+    "version": "3.3.17",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-005",
+        "celery",
+        "structlog",
+        "tlib-03"
+      ],
+      [
+        "APP-005",
+        "gpl-lib-09",
+        "structlog",
+        "tlib-03"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1040",
+          "cvss_score": 9.4,
+          "has_patch": true,
+          "affected_versions": [
+            "3.3.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.4,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0138",
+    "app_id": "APP-005",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-01",
+    "version": "0.5.2",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-005",
+        "vlib-07",
+        "tlib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1038",
+          "cvss_score": 9.0,
+          "has_patch": true,
+          "affected_versions": [
+            "0.5.2"
+          ]
+        }
+      ],
+      "max_cvss": 9.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0139",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "zip-utils",
+    "version": "0.10.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "zip-utils"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1009",
+          "cvss_score": 4.4,
+          "has_patch": true,
+          "affected_versions": [
+            "0.10.3"
+          ]
+        }
+      ],
+      "max_cvss": 4.4,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0140",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0141",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "net-sock",
+    "version": "0.11.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "net-sock"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1013",
+          "cvss_score": 8.2,
+          "has_patch": false,
+          "affected_versions": [
+            "0.11.8"
+          ]
+        }
+      ],
+      "max_cvss": 8.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0142",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "pyyaml",
+    "version": "4.7.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "pyyaml"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1003",
+          "cvss_score": 5.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.7.2"
+          ]
+        }
+      ],
+      "max_cvss": 5.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0143",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "pillow",
+    "version": "0.1.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "pillow"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1004",
+          "cvss_score": 5.2,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.4"
+          ]
+        }
+      ],
+      "max_cvss": 5.2,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0144",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "openssl-py",
+    "version": "3.9.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "openssl-py"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1001",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "3.9.12"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0145",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "vlib-10",
+    "version": "4.1.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1024",
+          "cvss_score": 7.1,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "max_cvss": 7.1,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0146",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "vlib-15",
+    "version": "1.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1029",
+          "cvss_score": 8.8,
+          "has_patch": false,
+          "affected_versions": [
+            "1.8.6"
+          ]
+        }
+      ],
+      "max_cvss": 8.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0147",
+    "app_id": "APP-006",
+    "type": "vulnerability",
+    "library_name": "vlib-01",
+    "version": "4.1.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1015",
+          "cvss_score": 5.5,
+          "has_patch": false,
+          "affected_versions": [
+            "4.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0148",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "gnu-plotter",
+    "version": "1.3.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "gnu-plotter"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0149",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0150",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "agpl-queue",
+    "version": "3.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "agpl-queue"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0151",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-03",
+    "version": "1.2.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "gpl-lib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0152",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "copyleft-orm",
+    "version": "4.7.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "copyleft-orm"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0153",
+    "app_id": "APP-006",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0154",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-09",
+    "version": "1.4.12",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "zip-utils",
+        "stale-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-05-31",
+      "days_since_update": 771,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0155",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-06",
+    "version": "3.10.18",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "stale-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-02-27",
+      "days_since_update": 1230,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0156",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-16",
+    "version": "2.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-006",
+        "pyyaml",
+        "lib-35",
+        "stale-16"
+      ],
+      [
+        "APP-006",
+        "vlib-15",
+        "lib-35",
+        "stale-16"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2024-06-03",
+      "days_since_update": 768,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0157",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-12",
+    "version": "0.0.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "stale-12"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-04-25",
+      "days_since_update": 1173,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0158",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-08",
+    "version": "2.3.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "stale-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-05-04",
+      "days_since_update": 798,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0159",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-10-03",
+      "days_since_update": 646,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0160",
+    "app_id": "APP-006",
+    "type": "unmaintained",
+    "library_name": "flash-bridge",
+    "version": "3.8.16",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-10",
+        "flash-bridge"
+      ],
+      [
+        "APP-006",
+        "zip-utils",
+        "flash-bridge"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2023-10-29",
+      "days_since_update": 986,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0161",
+    "app_id": "APP-006",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "fastapi",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0162",
+    "app_id": "APP-006",
+    "type": "transitive_vulnerability",
+    "library_name": "regex-engine",
+    "version": "1.1.10",
+    "is_direct": false,
+    "num_paths": 3,
+    "paths": [
+      [
+        "APP-006",
+        "vlib-01",
+        "regex-engine"
+      ],
+      [
+        "APP-006",
+        "vlib-10",
+        "flash-bridge",
+        "regex-engine"
+      ],
+      [
+        "APP-006",
+        "zip-utils",
+        "flash-bridge",
+        "regex-engine"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1033",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.10"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0163",
+    "app_id": "APP-006",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-08",
+    "version": "3.5.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "numpy",
+        "tlib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1045",
+          "cvss_score": 7.8,
+          "has_patch": true,
+          "affected_versions": [
+            "3.5.13"
+          ]
+        }
+      ],
+      "max_cvss": 7.8,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0164",
+    "app_id": "APP-006",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-02",
+    "version": "4.3.8",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "lib-15",
+        "tlib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1039",
+          "cvss_score": 7.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.8"
+          ]
+        }
+      ],
+      "max_cvss": 7.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0165",
+    "app_id": "APP-006",
+    "type": "transitive_vulnerability",
+    "library_name": "mem-alloc",
+    "version": "0.1.20",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-006",
+        "gnu-plotter",
+        "mem-alloc"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1036",
+          "cvss_score": 8.3,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0166",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "cryptolib",
+    "version": "4.1.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "cryptolib"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1006",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.1.12"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0167",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "net-sock",
+    "version": "0.11.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "net-sock"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1013",
+          "cvss_score": 8.2,
+          "has_patch": false,
+          "affected_versions": [
+            "0.11.8"
+          ]
+        }
+      ],
+      "max_cvss": 8.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0168",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "db-driver",
+    "version": "4.12.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "db-driver"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1014",
+          "cvss_score": 7.0,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.5"
+          ]
+        }
+      ],
+      "max_cvss": 7.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0169",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "xml-parser",
+    "version": "3.9.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "xml-parser"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1007",
+          "cvss_score": 6.9,
+          "has_patch": false,
+          "affected_versions": [
+            "3.9.14"
+          ]
+        }
+      ],
+      "max_cvss": 6.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0170",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "vlib-14",
+    "version": "4.9.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "vlib-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1028",
+          "cvss_score": 6.7,
+          "has_patch": true,
+          "affected_versions": [
+            "4.9.13"
+          ]
+        }
+      ],
+      "max_cvss": 6.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0171",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "serde-json",
+    "version": "4.12.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "serde-json"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1010",
+          "cvss_score": 6.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.8"
+          ]
+        }
+      ],
+      "max_cvss": 6.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0172",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "vlib-13",
+    "version": "4.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "vlib-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1027",
+          "cvss_score": 9.1,
+          "has_patch": true,
+          "affected_versions": [
+            "4.2.8"
+          ]
+        }
+      ],
+      "max_cvss": 9.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0173",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "img-magick",
+    "version": "3.2.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "img-magick"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1012",
+          "cvss_score": 5.2,
+          "has_patch": false,
+          "affected_versions": [
+            "3.2.14"
+          ]
+        }
+      ],
+      "max_cvss": 5.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0174",
+    "app_id": "APP-007",
+    "type": "vulnerability",
+    "library_name": "vlib-11",
+    "version": "3.1.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "vlib-11"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1025",
+          "cvss_score": 4.3,
+          "has_patch": false,
+          "affected_versions": [
+            "3.1.17"
+          ]
+        }
+      ],
+      "max_cvss": 4.3,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0175",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-06",
+    "version": "3.0.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gpl-lib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0176",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gnu-plotter",
+    "version": "1.3.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gnu-plotter"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0177",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gnu-tables",
+    "version": "3.12.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gnu-tables"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0178",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0179",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-07",
+    "version": "2.12.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gpl-lib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0180",
+    "app_id": "APP-007",
+    "type": "license_conflict",
+    "library_name": "gpl-crypto",
+    "version": "3.3.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "gpl-crypto"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0181",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-06",
+    "version": "3.10.18",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "stale-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-12-08",
+      "days_since_update": 1311,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0182",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "flash-bridge",
+    "version": "3.8.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "flash-bridge"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-10-03",
+      "days_since_update": 646,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0183",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-16",
+    "version": "2.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-007",
+        "gnu-tables",
+        "stale-16"
+      ],
+      [
+        "APP-007",
+        "stale-13",
+        "stale-16"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2022-12-26",
+      "days_since_update": 1293,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0184",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-10",
+    "version": "1.10.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "stale-10"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-01-30",
+      "days_since_update": 893,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0185",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "ancient-xmlrpc",
+    "version": "0.11.10",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "net-sock",
+        "ancient-xmlrpc"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-01-24",
+      "days_since_update": 899,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0186",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-15",
+    "version": "4.4.4",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "pytest",
+        "stale-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-12-18",
+      "days_since_update": 936,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0187",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-11-05",
+      "days_since_update": 979,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0188",
+    "app_id": "APP-007",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-06-05",
+      "days_since_update": 766,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0189",
+    "app_id": "APP-007",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "net-sock",
+        "ancient-xmlrpc",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0190",
+    "app_id": "APP-007",
+    "type": "transitive_vulnerability",
+    "library_name": "regex-engine",
+    "version": "1.1.10",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-007",
+        "lib-07",
+        "regex-engine"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1033",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.10"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0191",
+    "app_id": "APP-007",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-04",
+    "version": "1.11.18",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-007",
+        "lib-07",
+        "regex-engine",
+        "tlib-04"
+      ],
+      [
+        "APP-007",
+        "lib-19",
+        "tlib-04"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1041",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.11.18"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0192",
+    "app_id": "APP-007",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-05",
+    "version": "4.7.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-007",
+        "lib-37",
+        "tlib-05"
+      ],
+      [
+        "APP-007",
+        "stale-06",
+        "tlib-05"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1042",
+          "cvss_score": 6.8,
+          "has_patch": false,
+          "affected_versions": [
+            "4.7.7"
+          ]
+        }
+      ],
+      "max_cvss": 6.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0193",
+    "app_id": "APP-007",
+    "type": "transitive_vulnerability",
+    "library_name": "buffer-kit",
+    "version": "3.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-007",
+        "img-magick",
+        "buffer-kit"
+      ],
+      [
+        "APP-007",
+        "sqlalchemy",
+        "buffer-kit"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1032",
+          "cvss_score": 7.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.1.7"
+          ]
+        }
+      ],
+      "max_cvss": 7.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0194",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "img-magick",
+    "version": "3.2.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "img-magick"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1012",
+          "cvss_score": 5.2,
+          "has_patch": false,
+          "affected_versions": [
+            "3.2.14"
+          ]
+        }
+      ],
+      "max_cvss": 5.2,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0195",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "vlib-03",
+    "version": "4.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "vlib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1017",
+          "cvss_score": 4.0,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 4.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0196",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "vlib-08",
+    "version": "2.12.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "vlib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1022",
+          "cvss_score": 5.1,
+          "has_patch": true,
+          "affected_versions": [
+            "2.12.9"
+          ]
+        }
+      ],
+      "max_cvss": 5.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0197",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "xml-parser",
+    "version": "3.9.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "xml-parser"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1007",
+          "cvss_score": 6.9,
+          "has_patch": false,
+          "affected_versions": [
+            "3.9.14"
+          ]
+        }
+      ],
+      "max_cvss": 6.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0198",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "vlib-02",
+    "version": "2.10.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "vlib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1016",
+          "cvss_score": 7.9,
+          "has_patch": false,
+          "affected_versions": [
+            "2.10.16"
+          ]
+        }
+      ],
+      "max_cvss": 7.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0199",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "vlib-14",
+    "version": "4.9.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "vlib-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1028",
+          "cvss_score": 6.7,
+          "has_patch": true,
+          "affected_versions": [
+            "4.9.13"
+          ]
+        }
+      ],
+      "max_cvss": 6.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0200",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "vlib-07",
+    "version": "3.0.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "vlib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1021",
+          "cvss_score": 6.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.0.3"
+          ]
+        }
+      ],
+      "max_cvss": 6.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0201",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "auth-token",
+    "version": "2.1.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "auth-token"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1011",
+          "cvss_score": 7.8,
+          "has_patch": false,
+          "affected_versions": [
+            "2.1.9"
+          ]
+        }
+      ],
+      "max_cvss": 7.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0202",
+    "app_id": "APP-008",
+    "type": "vulnerability",
+    "library_name": "urllib3",
+    "version": "2.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "urllib3"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1002",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0203",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0204",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-08",
+    "version": "2.6.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0205",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-06",
+    "version": "3.0.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0206",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "readline-gnu",
+    "version": "2.12.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "readline-gnu"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0207",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0208",
+    "app_id": "APP-008",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-07",
+    "version": "2.12.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0209",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-09",
+    "version": "1.4.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-02-21",
+      "days_since_update": 1236,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0210",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "ancient-xmlrpc",
+    "version": "0.11.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "ancient-xmlrpc"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-09-13",
+      "days_since_update": 1397,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0211",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-05",
+    "version": "0.9.2",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "lib-06",
+        "stale-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-05-01",
+      "days_since_update": 801,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0212",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-01-25",
+      "days_since_update": 1263,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0213",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-08",
+    "version": "2.3.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-09-18",
+      "days_since_update": 1392,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0214",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-16",
+    "version": "2.1.7",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-16"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-03-16",
+      "days_since_update": 1213,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0215",
+    "app_id": "APP-008",
+    "type": "unmaintained",
+    "library_name": "stale-07",
+    "version": "4.8.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-03-31",
+      "days_since_update": 1198,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0216",
+    "app_id": "APP-008",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "lib-08",
+        "fastapi",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0217",
+    "app_id": "APP-008",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-02",
+    "version": "4.3.8",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "gpl-lib-06",
+        "lib-31",
+        "tlib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1039",
+          "cvss_score": 7.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.8"
+          ]
+        }
+      ],
+      "max_cvss": 7.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0218",
+    "app_id": "APP-008",
+    "type": "transitive_vulnerability",
+    "library_name": "regex-engine",
+    "version": "1.1.10",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "lib-01",
+        "regex-engine"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1033",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.1.10"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0219",
+    "app_id": "APP-008",
+    "type": "transitive_vulnerability",
+    "library_name": "mem-alloc",
+    "version": "0.1.20",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "stale-08",
+        "mem-alloc"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1036",
+          "cvss_score": 8.3,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0220",
+    "app_id": "APP-008",
+    "type": "transitive_vulnerability",
+    "library_name": "deep-base64",
+    "version": "2.6.20",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-008",
+        "uvicorn",
+        "deep-base64"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1030",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.6.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0221",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "openssl-py",
+    "version": "3.9.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "openssl-py"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1001",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "3.9.12"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0222",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "vlib-11",
+    "version": "3.1.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "vlib-11"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1025",
+          "cvss_score": 4.3,
+          "has_patch": false,
+          "affected_versions": [
+            "3.1.17"
+          ]
+        }
+      ],
+      "max_cvss": 4.3,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0223",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0224",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "vlib-13",
+    "version": "4.2.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "vlib-13"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1027",
+          "cvss_score": 9.1,
+          "has_patch": true,
+          "affected_versions": [
+            "4.2.8"
+          ]
+        }
+      ],
+      "max_cvss": 9.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0225",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "serde-json",
+    "version": "4.12.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "serde-json"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1010",
+          "cvss_score": 6.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.8"
+          ]
+        }
+      ],
+      "max_cvss": 6.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0226",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "urllib3",
+    "version": "2.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "urllib3"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1002",
+          "cvss_score": 8.0,
+          "has_patch": true,
+          "affected_versions": [
+            "2.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 8.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0227",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "vlib-14",
+    "version": "4.9.13",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "vlib-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1028",
+          "cvss_score": 6.7,
+          "has_patch": true,
+          "affected_versions": [
+            "4.9.13"
+          ]
+        }
+      ],
+      "max_cvss": 6.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0228",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "pyyaml",
+    "version": "4.7.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "pyyaml"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1003",
+          "cvss_score": 5.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.7.2"
+          ]
+        }
+      ],
+      "max_cvss": 5.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0229",
+    "app_id": "APP-009",
+    "type": "vulnerability",
+    "library_name": "vlib-03",
+    "version": "4.3.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "vlib-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1017",
+          "cvss_score": 4.0,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.4"
+          ]
+        }
+      ],
+      "max_cvss": 4.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0230",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-05",
+    "version": "3.0.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0231",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-01",
+    "version": "0.0.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0232",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-crypto",
+    "version": "3.3.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-crypto"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0233",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-07",
+    "version": "2.12.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0234",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-09",
+    "version": "3.2.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0235",
+    "app_id": "APP-009",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-04",
+    "version": "3.7.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0236",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "flash-bridge",
+    "version": "3.8.16",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "flash-bridge"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-10-10",
+      "days_since_update": 1005,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0237",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-05",
+    "version": "0.9.2",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "lib-31",
+        "stale-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-04-27",
+      "days_since_update": 805,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0238",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "ancient-xmlrpc",
+    "version": "0.11.10",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-009",
+        "flash-bridge",
+        "ancient-xmlrpc"
+      ],
+      [
+        "APP-009",
+        "gpl-lib-07",
+        "ancient-xmlrpc"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2023-01-29",
+      "days_since_update": 1259,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0239",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-13",
+    "version": "4.9.3",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-009",
+        "flash-bridge",
+        "stale-13"
+      ],
+      [
+        "APP-009",
+        "lib-08",
+        "stale-13"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2024-05-13",
+      "days_since_update": 789,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0240",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-19",
+    "version": "4.12.20",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "stale-19"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-09-15",
+      "days_since_update": 664,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0241",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-06",
+    "version": "3.10.18",
+    "is_direct": false,
+    "num_paths": 3,
+    "paths": [
+      [
+        "APP-009",
+        "lib-31",
+        "buffer-kit",
+        "stale-06"
+      ],
+      [
+        "APP-009",
+        "lib-38",
+        "buffer-kit",
+        "stale-06"
+      ],
+      [
+        "APP-009",
+        "stale-04",
+        "stale-06"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2022-12-07",
+      "days_since_update": 1312,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0242",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-04",
+    "version": "1.9.19",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "stale-04"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-08-02",
+      "days_since_update": 1074,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0243",
+    "app_id": "APP-009",
+    "type": "unmaintained",
+    "library_name": "stale-07",
+    "version": "4.8.10",
+    "is_direct": false,
+    "num_paths": 3,
+    "paths": [
+      [
+        "APP-009",
+        "pydantic",
+        "flask",
+        "stale-07"
+      ],
+      [
+        "APP-009",
+        "stale-19",
+        "stale-07"
+      ],
+      [
+        "APP-009",
+        "vlib-13",
+        "flask",
+        "stale-07"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "last_updated": "2022-09-20",
+      "days_since_update": 1390,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0244",
+    "app_id": "APP-009",
+    "type": "transitive_vulnerability",
+    "library_name": "yaml-loader",
+    "version": "0.9.17",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-04",
+        "yaml-loader"
+      ],
+      [
+        "APP-009",
+        "vlib-13",
+        "yaml-loader"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1034",
+          "cvss_score": 9.3,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0245",
+    "app_id": "APP-009",
+    "type": "transitive_vulnerability",
+    "library_name": "buffer-kit",
+    "version": "3.1.7",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-009",
+        "lib-31",
+        "buffer-kit"
+      ],
+      [
+        "APP-009",
+        "lib-38",
+        "buffer-kit"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1032",
+          "cvss_score": 7.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.1.7"
+          ]
+        }
+      ],
+      "max_cvss": 7.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0246",
+    "app_id": "APP-009",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-02",
+    "version": "4.3.8",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-05",
+        "tlib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1039",
+          "cvss_score": 7.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.3.8"
+          ]
+        }
+      ],
+      "max_cvss": 7.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0247",
+    "app_id": "APP-009",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-01",
+    "version": "0.5.2",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-009",
+        "lib-35",
+        "tlib-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1038",
+          "cvss_score": 9.0,
+          "has_patch": true,
+          "affected_versions": [
+            "0.5.2"
+          ]
+        }
+      ],
+      "max_cvss": 9.0,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0248",
+    "app_id": "APP-009",
+    "type": "transitive_vulnerability",
+    "library_name": "mem-alloc",
+    "version": "0.1.20",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-009",
+        "gpl-lib-09",
+        "mem-alloc"
+      ],
+      [
+        "APP-009",
+        "stale-19",
+        "mem-alloc"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1036",
+          "cvss_score": 8.3,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.20"
+          ]
+        }
+      ],
+      "max_cvss": 8.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0249",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "serde-json",
+    "version": "4.12.8",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "serde-json"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1010",
+          "cvss_score": 6.5,
+          "has_patch": true,
+          "affected_versions": [
+            "4.12.8"
+          ]
+        }
+      ],
+      "max_cvss": 6.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0250",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "pyyaml",
+    "version": "4.7.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "pyyaml"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1003",
+          "cvss_score": 5.3,
+          "has_patch": true,
+          "affected_versions": [
+            "4.7.2"
+          ]
+        }
+      ],
+      "max_cvss": 5.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0251",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "vlib-12",
+    "version": "1.2.15",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-12"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1026",
+          "cvss_score": 5.5,
+          "has_patch": true,
+          "affected_versions": [
+            "1.2.15"
+          ]
+        }
+      ],
+      "max_cvss": 5.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0252",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "vlib-08",
+    "version": "2.12.9",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1022",
+          "cvss_score": 5.1,
+          "has_patch": true,
+          "affected_versions": [
+            "2.12.9"
+          ]
+        }
+      ],
+      "max_cvss": 5.1,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0253",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "vlib-06",
+    "version": "0.9.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1020",
+          "cvss_score": 4.6,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.10"
+          ]
+        }
+      ],
+      "max_cvss": 4.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0254",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "vlib-15",
+    "version": "1.8.6",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-15"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1029",
+          "cvss_score": 8.8,
+          "has_patch": false,
+          "affected_versions": [
+            "1.8.6"
+          ]
+        }
+      ],
+      "max_cvss": 8.8,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0255",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "pillow",
+    "version": "0.1.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "pillow"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1004",
+          "cvss_score": 5.2,
+          "has_patch": true,
+          "affected_versions": [
+            "0.1.4"
+          ]
+        }
+      ],
+      "max_cvss": 5.2,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0256",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "vlib-09",
+    "version": "1.0.7",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1023",
+          "cvss_score": 9.7,
+          "has_patch": true,
+          "affected_versions": [
+            "1.0.7"
+          ]
+        }
+      ],
+      "max_cvss": 9.7,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0257",
+    "app_id": "APP-010",
+    "type": "vulnerability",
+    "library_name": "openssl-py",
+    "version": "3.9.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "openssl-py"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1001",
+          "cvss_score": 8.5,
+          "has_patch": true,
+          "affected_versions": [
+            "3.9.12"
+          ]
+        }
+      ],
+      "max_cvss": 8.5,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0258",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "gpl-crypto",
+    "version": "3.3.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "gpl-crypto"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0259",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-08",
+    "version": "2.6.17",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "gpl-lib-08"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0260",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-02",
+    "version": "4.0.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "gpl-lib-02"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-3.0",
+      "rule": {
+        "license_type": "GPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0261",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-06",
+    "version": "3.0.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "gpl-lib-06"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0262",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "copyleft-orm",
+    "version": "4.7.4",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "copyleft-orm"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "GPL-2.0",
+      "rule": {
+        "license_type": "GPL-2.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "GPL-2.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0263",
+    "app_id": "APP-010",
+    "type": "license_conflict",
+    "library_name": "gpl-lib-07",
+    "version": "2.12.14",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "gpl-lib-07"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "license_type": "AGPL-3.0",
+      "rule": {
+        "license_type": "AGPL-3.0",
+        "compatible_with": [
+          "GPL-3.0",
+          "AGPL-3.0"
+        ],
+        "risk_level": "high"
+      },
+      "scope_known": false,
+      "note": "AGPL-3.0 not compatible with Proprietary per license_rules (risk_level=high); distribution scope unknown \u2014 no scope field in data"
+    }
+  },
+  {
+    "finding_id": "F-0264",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "stale-09",
+    "version": "1.4.12",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "stale-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-05-29",
+      "days_since_update": 1139,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0265",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "stale-14",
+    "version": "0.8.6",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "vlib-15",
+        "stale-14"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-09-26",
+      "days_since_update": 1019,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0266",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "legacy-soap",
+    "version": "2.3.1",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "legacy-soap"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-09-15",
+      "days_since_update": 664,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0267",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "ancient-xmlrpc",
+    "version": "0.11.10",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "ancient-xmlrpc"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2023-10-13",
+      "days_since_update": 1002,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0268",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "stale-17",
+    "version": "2.4.5",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "stale-17"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-10-13",
+      "days_since_update": 636,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0269",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "stale-03",
+    "version": "3.1.18",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "stale-03"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2024-08-21",
+      "days_since_update": 689,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0270",
+    "app_id": "APP-010",
+    "type": "unmaintained",
+    "library_name": "stale-01",
+    "version": "0.2.2",
+    "is_direct": true,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "stale-01"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "last_updated": "2022-10-10",
+      "days_since_update": 1370,
+      "threshold_days": 548,
+      "note": "flagged for maintenance risk independently of CVE presence"
+    }
+  },
+  {
+    "finding_id": "F-0271",
+    "app_id": "APP-010",
+    "type": "transitive_vulnerability",
+    "library_name": "yaml-loader",
+    "version": "0.9.17",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-010",
+        "lib-10",
+        "yaml-loader"
+      ],
+      [
+        "APP-010",
+        "stale-03",
+        "structlog",
+        "yaml-loader"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1034",
+          "cvss_score": 9.3,
+          "has_patch": true,
+          "affected_versions": [
+            "0.9.17"
+          ]
+        }
+      ],
+      "max_cvss": 9.3,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0272",
+    "app_id": "APP-010",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-09",
+    "version": "3.7.1",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "lib-20",
+        "tlib-09"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1046",
+          "cvss_score": 8.6,
+          "has_patch": false,
+          "affected_versions": [
+            "3.7.1"
+          ]
+        }
+      ],
+      "max_cvss": 8.6,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0273",
+    "app_id": "APP-010",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-06",
+    "version": "3.12.13",
+    "is_direct": false,
+    "num_paths": 2,
+    "paths": [
+      [
+        "APP-010",
+        "lib-20",
+        "tlib-06"
+      ],
+      [
+        "APP-010",
+        "vlib-12",
+        "tlib-06"
+      ]
+    ],
+    "compound_exposure": true,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1043",
+          "cvss_score": 5.6,
+          "has_patch": true,
+          "affected_versions": [
+            "3.12.13"
+          ]
+        }
+      ],
+      "max_cvss": 5.6,
+      "any_unpatched": false
+    }
+  },
+  {
+    "finding_id": "F-0274",
+    "app_id": "APP-010",
+    "type": "transitive_vulnerability",
+    "library_name": "tls-shim",
+    "version": "2.7.16",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "stale-09",
+        "tls-shim"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1031",
+          "cvss_score": 9.9,
+          "has_patch": false,
+          "affected_versions": [
+            "2.7.16"
+          ]
+        }
+      ],
+      "max_cvss": 9.9,
+      "any_unpatched": true
+    }
+  },
+  {
+    "finding_id": "F-0275",
+    "app_id": "APP-010",
+    "type": "transitive_vulnerability",
+    "library_name": "tlib-05",
+    "version": "4.7.7",
+    "is_direct": false,
+    "num_paths": 1,
+    "paths": [
+      [
+        "APP-010",
+        "lib-40",
+        "lib-21",
+        "tlib-05"
+      ]
+    ],
+    "compound_exposure": false,
+    "evidence": {
+      "cves": [
+        {
+          "cve_id": "CVE-2025-1042",
+          "cvss_score": 6.8,
+          "has_patch": false,
+          "affected_versions": [
+            "4.7.7"
+          ]
+        }
+      ],
+      "max_cvss": 6.8,
+      "any_unpatched": true
+    }
+  }
+]

@@ -1,0 +1,501 @@
+app_id,library_name,is_risky,risk_type,severity,explanation
+APP-001,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-001,xml-parser,True,vulnerable,medium,xml-parser@3.9.14 matches a CVE in vulnerability_db
+APP-001,http-agent,True,vulnerable,critical,http-agent@4.4.17 matches a CVE in vulnerability_db
+APP-001,db-driver,True,vulnerable,high,db-driver@4.12.5 matches a CVE in vulnerability_db
+APP-001,urllib3,True,vulnerable,high,urllib3@2.3.4 matches a CVE in vulnerability_db
+APP-001,vlib-08,True,vulnerable,medium,vlib-08@2.12.9 matches a CVE in vulnerability_db
+APP-001,zip-utils,True,vulnerable,medium,zip-utils@0.10.3 matches a CVE in vulnerability_db
+APP-001,vlib-14,True,vulnerable,medium,vlib-14@4.9.13 matches a CVE in vulnerability_db
+APP-001,vlib-13,True,vulnerable,critical,vlib-13@4.2.8 matches a CVE in vulnerability_db
+APP-001,gnu-tables,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-001,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-001,gpl-lib-03,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-001,gnu-plotter,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-001,copyleft-orm,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-001,gpl-lib-05,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-001,stale-02,True,unmaintained,medium,no update since 2022-12-21 (>18 months)
+APP-001,stale-07,True,unmaintained,medium,no update since 2023-01-10 (>18 months)
+APP-001,stale-17,True,unmaintained,medium,no update since 2023-07-15 (>18 months)
+APP-001,flash-bridge,True,unmaintained,medium,no update since 2024-02-06 (>18 months)
+APP-001,stale-01,True,unmaintained,medium,no update since 2024-03-27 (>18 months)
+APP-001,ancient-xmlrpc,True,unmaintained,medium,no update since 2023-11-19 (>18 months)
+APP-001,stale-08,True,unmaintained,medium,no update since 2023-10-07 (>18 months)
+APP-001,stale-13,True,unmaintained,medium,no update since 2023-08-25 (>18 months)
+APP-001,tlib-03,True,transitive_vulnerability,critical,tlib-03@3.3.17 matches a CVE in vulnerability_db via a transitive path
+APP-001,tlib-07,True,transitive_vulnerability,medium,tlib-07@1.1.3 matches a CVE in vulnerability_db via a transitive path
+APP-001,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-001,deep-base64,True,transitive_vulnerability,high,deep-base64@2.6.20 matches a CVE in vulnerability_db via a transitive path
+APP-001,regex-engine,True,transitive_vulnerability,critical,regex-engine@1.1.10 matches a CVE in vulnerability_db via a transitive path
+APP-001,lib-34,False,clean,none,no known risk
+APP-001,lib-07,False,clean,none,no known risk
+APP-001,lib-05,False,clean,none,no known risk
+APP-001,lib-30,False,clean,none,no known risk
+APP-001,lib-18,False,clean,none,no known risk
+APP-001,lib-25,False,clean,none,no known risk
+APP-001,flask,False,clean,none,no known risk
+APP-001,lib-29,False,clean,none,no known risk
+APP-001,lib-17,False,clean,none,no known risk
+APP-001,lib-38,False,clean,none,no known risk
+APP-001,lib-11,False,clean,none,no known risk
+APP-001,requests,False,clean,none,no known risk
+APP-001,lib-03,False,clean,none,no known risk
+APP-001,structlog,False,clean,none,no known risk
+APP-001,lib-31,False,clean,none,no known risk
+APP-001,lib-39,False,clean,none,no known risk
+APP-001,lib-15,False,clean,none,no known risk
+APP-001,lib-24,False,clean,none,no known risk
+APP-001,lib-19,False,clean,none,no known risk
+APP-001,uvicorn,False,clean,none,no known risk
+APP-001,lib-12,False,clean,none,no known risk
+APP-001,lib-21,False,clean,none,no known risk
+APP-002,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-002,serde-json,True,vulnerable,medium,serde-json@4.12.8 matches a CVE in vulnerability_db
+APP-002,log4shell-core,True,vulnerable,high,log4shell-core@2.11.18 matches a CVE in vulnerability_db
+APP-002,net-sock,True,vulnerable,high,net-sock@0.11.8 matches a CVE in vulnerability_db
+APP-002,vlib-01,True,vulnerable,medium,vlib-01@4.1.20 matches a CVE in vulnerability_db
+APP-002,pyyaml,True,vulnerable,medium,pyyaml@4.7.2 matches a CVE in vulnerability_db
+APP-002,vlib-12,True,vulnerable,medium,vlib-12@1.2.15 matches a CVE in vulnerability_db
+APP-002,auth-token,True,vulnerable,high,auth-token@2.1.9 matches a CVE in vulnerability_db
+APP-002,vlib-15,True,vulnerable,high,vlib-15@1.8.6 matches a CVE in vulnerability_db
+APP-002,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-002,gpl-lib-08,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-002,gpl-lib-02,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-002,gpl-lib-06,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-002,copyleft-orm,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-002,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-002,deprecated-auth,True,unmaintained,medium,no update since 2022-09-14 (>18 months)
+APP-002,stale-18,True,unmaintained,medium,no update since 2023-06-30 (>18 months)
+APP-002,stale-11,True,unmaintained,medium,no update since 2023-06-15 (>18 months)
+APP-002,stale-15,True,unmaintained,medium,no update since 2024-10-12 (>18 months)
+APP-002,stale-03,True,unmaintained,medium,no update since 2024-03-17 (>18 months)
+APP-002,stale-14,True,unmaintained,medium,no update since 2024-02-23 (>18 months)
+APP-002,stale-12,True,unmaintained,medium,no update since 2023-03-14 (>18 months)
+APP-002,tlib-08,True,transitive_vulnerability,high,tlib-08@3.5.13 matches a CVE in vulnerability_db via a transitive path
+APP-002,tlib-07,True,transitive_vulnerability,medium,tlib-07@1.1.3 matches a CVE in vulnerability_db via a transitive path
+APP-002,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-002,tlib-10,True,transitive_vulnerability,high,tlib-10@0.0.12 matches a CVE in vulnerability_db via a transitive path
+APP-002,tlib-04,True,transitive_vulnerability,high,tlib-04@1.11.18 matches a CVE in vulnerability_db via a transitive path
+APP-002,lib-18,False,clean,none,no known risk
+APP-002,attrs,False,clean,none,no known risk
+APP-002,lib-01,False,clean,none,no known risk
+APP-002,lib-35,False,clean,none,no known risk
+APP-002,fastapi,False,clean,none,no known risk
+APP-002,lib-34,False,clean,none,no known risk
+APP-002,rich,False,clean,none,no known risk
+APP-002,lib-39,False,clean,none,no known risk
+APP-002,lib-09,False,clean,none,no known risk
+APP-002,lib-36,False,clean,none,no known risk
+APP-002,lib-29,False,clean,none,no known risk
+APP-002,lib-10,False,clean,none,no known risk
+APP-002,lib-17,False,clean,none,no known risk
+APP-002,lib-20,False,clean,none,no known risk
+APP-002,lib-23,False,clean,none,no known risk
+APP-002,lib-05,False,clean,none,no known risk
+APP-002,lib-02,False,clean,none,no known risk
+APP-002,flask,False,clean,none,no known risk
+APP-002,lib-12,False,clean,none,no known risk
+APP-002,lib-38,False,clean,none,no known risk
+APP-002,redis-py,False,clean,none,no known risk
+APP-002,lib-22,False,clean,none,no known risk
+APP-002,gunicorn,False,clean,none,no known risk
+APP-003,urllib3,True,vulnerable,high,urllib3@2.3.4 matches a CVE in vulnerability_db
+APP-003,vlib-04,True,vulnerable,high,vlib-04@2.12.5 matches a CVE in vulnerability_db
+APP-003,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-003,vlib-07,True,vulnerable,medium,vlib-07@3.0.3 matches a CVE in vulnerability_db
+APP-003,openssl-py,True,vulnerable,high,openssl-py@3.9.12 matches a CVE in vulnerability_db
+APP-003,pillow,True,vulnerable,medium,pillow@0.1.4 matches a CVE in vulnerability_db
+APP-003,vlib-10,True,vulnerable,high,vlib-10@4.1.2 matches a CVE in vulnerability_db
+APP-003,vlib-14,True,vulnerable,medium,vlib-14@4.9.13 matches a CVE in vulnerability_db
+APP-003,zip-utils,True,vulnerable,medium,zip-utils@0.10.3 matches a CVE in vulnerability_db
+APP-003,gnu-plotter,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-003,agpl-queue,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-003,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-003,gpl-lib-03,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-003,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-003,gpl-lib-04,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-003,stale-14,True,unmaintained,medium,no update since 2024-08-17 (>18 months)
+APP-003,stale-19,True,unmaintained,medium,no update since 2023-12-20 (>18 months)
+APP-003,stale-02,True,unmaintained,medium,no update since 2023-03-27 (>18 months)
+APP-003,stale-11,True,unmaintained,medium,no update since 2023-08-07 (>18 months)
+APP-003,stale-07,True,unmaintained,medium,no update since 2022-11-24 (>18 months)
+APP-003,stale-09,True,unmaintained,medium,no update since 2023-09-13 (>18 months)
+APP-003,stale-18,True,unmaintained,medium,no update since 2023-06-05 (>18 months)
+APP-003,stale-04,True,unmaintained,medium,no update since 2023-08-08 (>18 months)
+APP-003,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-003,tlib-02,True,transitive_vulnerability,high,tlib-02@4.3.8 matches a CVE in vulnerability_db via a transitive path
+APP-003,tls-shim,True,transitive_vulnerability,critical,tls-shim@2.7.16 matches a CVE in vulnerability_db via a transitive path
+APP-003,tlib-09,True,transitive_vulnerability,high,tlib-09@3.7.1 matches a CVE in vulnerability_db via a transitive path
+APP-003,tlib-04,True,transitive_vulnerability,high,tlib-04@1.11.18 matches a CVE in vulnerability_db via a transitive path
+APP-003,pytest,False,clean,none,no known risk
+APP-003,lib-29,False,clean,none,no known risk
+APP-003,gunicorn,False,clean,none,no known risk
+APP-003,lib-21,False,clean,none,no known risk
+APP-003,lib-38,False,clean,none,no known risk
+APP-003,typer,False,clean,none,no known risk
+APP-003,lib-23,False,clean,none,no known risk
+APP-003,rich,False,clean,none,no known risk
+APP-003,boto3,False,clean,none,no known risk
+APP-003,fastapi,False,clean,none,no known risk
+APP-003,redis-py,False,clean,none,no known risk
+APP-003,lib-16,False,clean,none,no known risk
+APP-003,click,False,clean,none,no known risk
+APP-003,lib-32,False,clean,none,no known risk
+APP-003,requests,False,clean,none,no known risk
+APP-003,lib-07,False,clean,none,no known risk
+APP-003,lib-09,False,clean,none,no known risk
+APP-003,lib-19,False,clean,none,no known risk
+APP-003,lib-11,False,clean,none,no known risk
+APP-003,orjson,False,clean,none,no known risk
+APP-003,numpy,False,clean,none,no known risk
+APP-003,uvicorn,False,clean,none,no known risk
+APP-004,auth-token,True,vulnerable,high,auth-token@2.1.9 matches a CVE in vulnerability_db
+APP-004,vlib-05,True,vulnerable,high,vlib-05@4.12.16 matches a CVE in vulnerability_db
+APP-004,vlib-10,True,vulnerable,high,vlib-10@4.1.2 matches a CVE in vulnerability_db
+APP-004,vlib-01,True,vulnerable,medium,vlib-01@4.1.20 matches a CVE in vulnerability_db
+APP-004,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-004,db-driver,True,vulnerable,high,db-driver@4.12.5 matches a CVE in vulnerability_db
+APP-004,openssl-py,True,vulnerable,high,openssl-py@3.9.12 matches a CVE in vulnerability_db
+APP-004,cryptolib,True,vulnerable,medium,cryptolib@4.1.12 matches a CVE in vulnerability_db
+APP-004,http-agent,True,vulnerable,critical,http-agent@4.4.17 matches a CVE in vulnerability_db
+APP-004,gpl-lib-03,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-004,copyleft-orm,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-004,gpl-crypto,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-004,gpl-lib-02,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-004,gpl-lib-06,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-004,gnu-plotter,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-004,legacy-soap,True,unmaintained,medium,no update since 2023-04-27 (>18 months)
+APP-004,stale-15,True,unmaintained,medium,no update since 2023-11-24 (>18 months)
+APP-004,stale-14,True,unmaintained,medium,no update since 2023-04-22 (>18 months)
+APP-004,stale-02,True,unmaintained,medium,no update since 2023-12-05 (>18 months)
+APP-004,deprecated-auth,True,unmaintained,medium,no update since 2022-11-15 (>18 months)
+APP-004,stale-04,True,unmaintained,medium,no update since 2023-10-03 (>18 months)
+APP-004,stale-12,True,unmaintained,medium,no update since 2023-09-05 (>18 months)
+APP-004,deep-base64,True,transitive_vulnerability,high,deep-base64@2.6.20 matches a CVE in vulnerability_db via a transitive path
+APP-004,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-004,buffer-kit,True,transitive_vulnerability,high,buffer-kit@3.1.7 matches a CVE in vulnerability_db via a transitive path
+APP-004,regex-engine,True,transitive_vulnerability,critical,regex-engine@1.1.10 matches a CVE in vulnerability_db via a transitive path
+APP-004,tlib-09,True,transitive_vulnerability,high,tlib-09@3.7.1 matches a CVE in vulnerability_db via a transitive path
+APP-004,lib-39,False,clean,none,no known risk
+APP-004,sqlalchemy,False,clean,none,no known risk
+APP-004,lib-10,False,clean,none,no known risk
+APP-004,lib-40,False,clean,none,no known risk
+APP-004,lib-22,False,clean,none,no known risk
+APP-004,lib-34,False,clean,none,no known risk
+APP-004,httpx,False,clean,none,no known risk
+APP-004,lib-12,False,clean,none,no known risk
+APP-004,lib-26,False,clean,none,no known risk
+APP-004,orjson,False,clean,none,no known risk
+APP-004,lib-13,False,clean,none,no known risk
+APP-004,lib-32,False,clean,none,no known risk
+APP-004,attrs,False,clean,none,no known risk
+APP-004,lib-07,False,clean,none,no known risk
+APP-004,lib-11,False,clean,none,no known risk
+APP-004,lib-29,False,clean,none,no known risk
+APP-004,fastapi,False,clean,none,no known risk
+APP-004,lib-38,False,clean,none,no known risk
+APP-004,lib-16,False,clean,none,no known risk
+APP-004,lib-35,False,clean,none,no known risk
+APP-004,lib-05,False,clean,none,no known risk
+APP-004,celery,False,clean,none,no known risk
+APP-004,lib-30,False,clean,none,no known risk
+APP-005,xml-parser,True,vulnerable,medium,xml-parser@3.9.14 matches a CVE in vulnerability_db
+APP-005,vlib-02,True,vulnerable,high,vlib-02@2.10.16 matches a CVE in vulnerability_db
+APP-005,net-sock,True,vulnerable,high,net-sock@0.11.8 matches a CVE in vulnerability_db
+APP-005,vlib-04,True,vulnerable,high,vlib-04@2.12.5 matches a CVE in vulnerability_db
+APP-005,vlib-07,True,vulnerable,medium,vlib-07@3.0.3 matches a CVE in vulnerability_db
+APP-005,jinja2,True,vulnerable,medium,jinja2@1.12.13 matches a CVE in vulnerability_db
+APP-005,vlib-10,True,vulnerable,high,vlib-10@4.1.2 matches a CVE in vulnerability_db
+APP-005,vlib-09,True,vulnerable,critical,vlib-09@1.0.7 matches a CVE in vulnerability_db
+APP-005,urllib3,True,vulnerable,high,urllib3@2.3.4 matches a CVE in vulnerability_db
+APP-005,gpl-lib-04,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-005,gpl-lib-08,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-005,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-005,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-005,gpl-lib-05,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-005,agpl-queue,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-005,stale-10,True,unmaintained,medium,no update since 2023-02-02 (>18 months)
+APP-005,stale-13,True,unmaintained,medium,no update since 2022-09-17 (>18 months)
+APP-005,flash-bridge,True,unmaintained,medium,no update since 2022-12-24 (>18 months)
+APP-005,stale-02,True,unmaintained,medium,no update since 2024-06-11 (>18 months)
+APP-005,stale-09,True,unmaintained,medium,no update since 2023-01-26 (>18 months)
+APP-005,stale-03,True,unmaintained,medium,no update since 2023-12-18 (>18 months)
+APP-005,stale-15,True,unmaintained,medium,no update since 2024-09-25 (>18 months)
+APP-005,stale-14,True,unmaintained,medium,no update since 2022-10-11 (>18 months)
+APP-005,deep-base64,True,transitive_vulnerability,high,deep-base64@2.6.20 matches a CVE in vulnerability_db via a transitive path
+APP-005,tlib-07,True,transitive_vulnerability,medium,tlib-07@1.1.3 matches a CVE in vulnerability_db via a transitive path
+APP-005,tlib-02,True,transitive_vulnerability,high,tlib-02@4.3.8 matches a CVE in vulnerability_db via a transitive path
+APP-005,tlib-03,True,transitive_vulnerability,critical,tlib-03@3.3.17 matches a CVE in vulnerability_db via a transitive path
+APP-005,tlib-01,True,transitive_vulnerability,critical,tlib-01@0.5.2 matches a CVE in vulnerability_db via a transitive path
+APP-005,boto3,False,clean,none,no known risk
+APP-005,click,False,clean,none,no known risk
+APP-005,lib-09,False,clean,none,no known risk
+APP-005,lib-03,False,clean,none,no known risk
+APP-005,lib-18,False,clean,none,no known risk
+APP-005,structlog,False,clean,none,no known risk
+APP-005,lib-21,False,clean,none,no known risk
+APP-005,lib-08,False,clean,none,no known risk
+APP-005,lib-25,False,clean,none,no known risk
+APP-005,typer,False,clean,none,no known risk
+APP-005,lib-10,False,clean,none,no known risk
+APP-005,lib-35,False,clean,none,no known risk
+APP-005,celery,False,clean,none,no known risk
+APP-005,lib-05,False,clean,none,no known risk
+APP-005,lib-11,False,clean,none,no known risk
+APP-005,pytest,False,clean,none,no known risk
+APP-005,fastapi,False,clean,none,no known risk
+APP-005,lib-27,False,clean,none,no known risk
+APP-005,lib-17,False,clean,none,no known risk
+APP-005,lib-37,False,clean,none,no known risk
+APP-005,lib-22,False,clean,none,no known risk
+APP-005,orjson,False,clean,none,no known risk
+APP-006,zip-utils,True,vulnerable,medium,zip-utils@0.10.3 matches a CVE in vulnerability_db
+APP-006,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-006,net-sock,True,vulnerable,high,net-sock@0.11.8 matches a CVE in vulnerability_db
+APP-006,pyyaml,True,vulnerable,medium,pyyaml@4.7.2 matches a CVE in vulnerability_db
+APP-006,pillow,True,vulnerable,medium,pillow@0.1.4 matches a CVE in vulnerability_db
+APP-006,openssl-py,True,vulnerable,high,openssl-py@3.9.12 matches a CVE in vulnerability_db
+APP-006,vlib-10,True,vulnerable,high,vlib-10@4.1.2 matches a CVE in vulnerability_db
+APP-006,vlib-15,True,vulnerable,high,vlib-15@1.8.6 matches a CVE in vulnerability_db
+APP-006,vlib-01,True,vulnerable,medium,vlib-01@4.1.20 matches a CVE in vulnerability_db
+APP-006,gnu-plotter,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-006,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-006,agpl-queue,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-006,gpl-lib-03,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-006,copyleft-orm,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-006,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-006,stale-09,True,unmaintained,medium,no update since 2024-05-31 (>18 months)
+APP-006,stale-06,True,unmaintained,medium,no update since 2023-02-27 (>18 months)
+APP-006,stale-16,True,unmaintained,medium,no update since 2024-06-03 (>18 months)
+APP-006,stale-12,True,unmaintained,medium,no update since 2023-04-25 (>18 months)
+APP-006,stale-08,True,unmaintained,medium,no update since 2024-05-04 (>18 months)
+APP-006,stale-13,True,unmaintained,medium,no update since 2024-10-03 (>18 months)
+APP-006,flash-bridge,True,unmaintained,medium,no update since 2023-10-29 (>18 months)
+APP-006,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-006,regex-engine,True,transitive_vulnerability,critical,regex-engine@1.1.10 matches a CVE in vulnerability_db via a transitive path
+APP-006,tlib-08,True,transitive_vulnerability,high,tlib-08@3.5.13 matches a CVE in vulnerability_db via a transitive path
+APP-006,tlib-02,True,transitive_vulnerability,high,tlib-02@4.3.8 matches a CVE in vulnerability_db via a transitive path
+APP-006,mem-alloc,True,transitive_vulnerability,high,mem-alloc@0.1.20 matches a CVE in vulnerability_db via a transitive path
+APP-006,attrs,False,clean,none,no known risk
+APP-006,numpy,False,clean,none,no known risk
+APP-006,lib-25,False,clean,none,no known risk
+APP-006,lib-04,False,clean,none,no known risk
+APP-006,gunicorn,False,clean,none,no known risk
+APP-006,lib-09,False,clean,none,no known risk
+APP-006,lib-35,False,clean,none,no known risk
+APP-006,fastapi,False,clean,none,no known risk
+APP-006,lib-37,False,clean,none,no known risk
+APP-006,pytest,False,clean,none,no known risk
+APP-006,lib-24,False,clean,none,no known risk
+APP-006,lib-32,False,clean,none,no known risk
+APP-006,lib-15,False,clean,none,no known risk
+APP-006,lib-22,False,clean,none,no known risk
+APP-006,lib-03,False,clean,none,no known risk
+APP-006,pandas,False,clean,none,no known risk
+APP-006,lib-06,False,clean,none,no known risk
+APP-006,lib-40,False,clean,none,no known risk
+APP-006,celery,False,clean,none,no known risk
+APP-006,sqlalchemy,False,clean,none,no known risk
+APP-006,lib-10,False,clean,none,no known risk
+APP-006,rich,False,clean,none,no known risk
+APP-006,lib-36,False,clean,none,no known risk
+APP-007,cryptolib,True,vulnerable,medium,cryptolib@4.1.12 matches a CVE in vulnerability_db
+APP-007,net-sock,True,vulnerable,high,net-sock@0.11.8 matches a CVE in vulnerability_db
+APP-007,db-driver,True,vulnerable,high,db-driver@4.12.5 matches a CVE in vulnerability_db
+APP-007,xml-parser,True,vulnerable,medium,xml-parser@3.9.14 matches a CVE in vulnerability_db
+APP-007,vlib-14,True,vulnerable,medium,vlib-14@4.9.13 matches a CVE in vulnerability_db
+APP-007,serde-json,True,vulnerable,medium,serde-json@4.12.8 matches a CVE in vulnerability_db
+APP-007,vlib-13,True,vulnerable,critical,vlib-13@4.2.8 matches a CVE in vulnerability_db
+APP-007,img-magick,True,vulnerable,medium,img-magick@3.2.14 matches a CVE in vulnerability_db
+APP-007,vlib-11,True,vulnerable,medium,vlib-11@3.1.17 matches a CVE in vulnerability_db
+APP-007,gpl-lib-06,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-007,gnu-plotter,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-007,gnu-tables,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-007,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-007,gpl-lib-07,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-007,gpl-crypto,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-007,stale-06,True,unmaintained,medium,no update since 2022-12-08 (>18 months)
+APP-007,flash-bridge,True,unmaintained,medium,no update since 2024-10-03 (>18 months)
+APP-007,stale-16,True,unmaintained,medium,no update since 2022-12-26 (>18 months)
+APP-007,stale-10,True,unmaintained,medium,no update since 2024-01-30 (>18 months)
+APP-007,ancient-xmlrpc,True,unmaintained,medium,no update since 2024-01-24 (>18 months)
+APP-007,stale-15,True,unmaintained,medium,no update since 2023-12-18 (>18 months)
+APP-007,stale-14,True,unmaintained,medium,no update since 2023-11-05 (>18 months)
+APP-007,stale-13,True,unmaintained,medium,no update since 2024-06-05 (>18 months)
+APP-007,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-007,regex-engine,True,transitive_vulnerability,critical,regex-engine@1.1.10 matches a CVE in vulnerability_db via a transitive path
+APP-007,tlib-04,True,transitive_vulnerability,high,tlib-04@1.11.18 matches a CVE in vulnerability_db via a transitive path
+APP-007,tlib-05,True,transitive_vulnerability,medium,tlib-05@4.7.7 matches a CVE in vulnerability_db via a transitive path
+APP-007,buffer-kit,True,transitive_vulnerability,high,buffer-kit@3.1.7 matches a CVE in vulnerability_db via a transitive path
+APP-007,lib-16,False,clean,none,no known risk
+APP-007,pandas,False,clean,none,no known risk
+APP-007,lib-18,False,clean,none,no known risk
+APP-007,lib-40,False,clean,none,no known risk
+APP-007,lib-37,False,clean,none,no known risk
+APP-007,lib-02,False,clean,none,no known risk
+APP-007,lib-23,False,clean,none,no known risk
+APP-007,sqlalchemy,False,clean,none,no known risk
+APP-007,lib-07,False,clean,none,no known risk
+APP-007,lib-03,False,clean,none,no known risk
+APP-007,lib-34,False,clean,none,no known risk
+APP-007,lib-29,False,clean,none,no known risk
+APP-007,lib-08,False,clean,none,no known risk
+APP-007,lib-27,False,clean,none,no known risk
+APP-007,lib-39,False,clean,none,no known risk
+APP-007,orjson,False,clean,none,no known risk
+APP-007,lib-19,False,clean,none,no known risk
+APP-007,structlog,False,clean,none,no known risk
+APP-007,lib-31,False,clean,none,no known risk
+APP-007,pytest,False,clean,none,no known risk
+APP-007,lib-17,False,clean,none,no known risk
+APP-007,lib-13,False,clean,none,no known risk
+APP-008,img-magick,True,vulnerable,medium,img-magick@3.2.14 matches a CVE in vulnerability_db
+APP-008,vlib-03,True,vulnerable,medium,vlib-03@4.3.4 matches a CVE in vulnerability_db
+APP-008,vlib-08,True,vulnerable,medium,vlib-08@2.12.9 matches a CVE in vulnerability_db
+APP-008,xml-parser,True,vulnerable,medium,xml-parser@3.9.14 matches a CVE in vulnerability_db
+APP-008,vlib-02,True,vulnerable,high,vlib-02@2.10.16 matches a CVE in vulnerability_db
+APP-008,vlib-14,True,vulnerable,medium,vlib-14@4.9.13 matches a CVE in vulnerability_db
+APP-008,vlib-07,True,vulnerable,medium,vlib-07@3.0.3 matches a CVE in vulnerability_db
+APP-008,auth-token,True,vulnerable,high,auth-token@2.1.9 matches a CVE in vulnerability_db
+APP-008,urllib3,True,vulnerable,high,urllib3@2.3.4 matches a CVE in vulnerability_db
+APP-008,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-008,gpl-lib-08,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-008,gpl-lib-06,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-008,readline-gnu,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-008,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-008,gpl-lib-07,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-008,stale-09,True,unmaintained,medium,no update since 2023-02-21 (>18 months)
+APP-008,ancient-xmlrpc,True,unmaintained,medium,no update since 2022-09-13 (>18 months)
+APP-008,stale-05,True,unmaintained,medium,no update since 2024-05-01 (>18 months)
+APP-008,stale-13,True,unmaintained,medium,no update since 2023-01-25 (>18 months)
+APP-008,stale-08,True,unmaintained,medium,no update since 2022-09-18 (>18 months)
+APP-008,stale-16,True,unmaintained,medium,no update since 2023-03-16 (>18 months)
+APP-008,stale-07,True,unmaintained,medium,no update since 2023-03-31 (>18 months)
+APP-008,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-008,tlib-02,True,transitive_vulnerability,high,tlib-02@4.3.8 matches a CVE in vulnerability_db via a transitive path
+APP-008,regex-engine,True,transitive_vulnerability,critical,regex-engine@1.1.10 matches a CVE in vulnerability_db via a transitive path
+APP-008,mem-alloc,True,transitive_vulnerability,high,mem-alloc@0.1.20 matches a CVE in vulnerability_db via a transitive path
+APP-008,deep-base64,True,transitive_vulnerability,high,deep-base64@2.6.20 matches a CVE in vulnerability_db via a transitive path
+APP-008,lib-01,False,clean,none,no known risk
+APP-008,boto3,False,clean,none,no known risk
+APP-008,lib-32,False,clean,none,no known risk
+APP-008,lib-20,False,clean,none,no known risk
+APP-008,lib-10,False,clean,none,no known risk
+APP-008,lib-34,False,clean,none,no known risk
+APP-008,lib-25,False,clean,none,no known risk
+APP-008,lib-04,False,clean,none,no known risk
+APP-008,rich,False,clean,none,no known risk
+APP-008,lib-08,False,clean,none,no known risk
+APP-008,pytest,False,clean,none,no known risk
+APP-008,fastapi,False,clean,none,no known risk
+APP-008,lib-31,False,clean,none,no known risk
+APP-008,lib-18,False,clean,none,no known risk
+APP-008,lib-06,False,clean,none,no known risk
+APP-008,lib-14,False,clean,none,no known risk
+APP-008,lib-38,False,clean,none,no known risk
+APP-008,lib-26,False,clean,none,no known risk
+APP-008,structlog,False,clean,none,no known risk
+APP-008,lib-02,False,clean,none,no known risk
+APP-008,uvicorn,False,clean,none,no known risk
+APP-008,lib-21,False,clean,none,no known risk
+APP-008,lib-39,False,clean,none,no known risk
+APP-009,openssl-py,True,vulnerable,high,openssl-py@3.9.12 matches a CVE in vulnerability_db
+APP-009,vlib-11,True,vulnerable,medium,vlib-11@3.1.17 matches a CVE in vulnerability_db
+APP-009,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-009,vlib-13,True,vulnerable,critical,vlib-13@4.2.8 matches a CVE in vulnerability_db
+APP-009,serde-json,True,vulnerable,medium,serde-json@4.12.8 matches a CVE in vulnerability_db
+APP-009,urllib3,True,vulnerable,high,urllib3@2.3.4 matches a CVE in vulnerability_db
+APP-009,vlib-14,True,vulnerable,medium,vlib-14@4.9.13 matches a CVE in vulnerability_db
+APP-009,pyyaml,True,vulnerable,medium,pyyaml@4.7.2 matches a CVE in vulnerability_db
+APP-009,vlib-03,True,vulnerable,medium,vlib-03@4.3.4 matches a CVE in vulnerability_db
+APP-009,gpl-lib-05,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-009,gpl-lib-01,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-009,gpl-crypto,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-009,gpl-lib-07,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-009,gpl-lib-09,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-009,gpl-lib-04,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-009,flash-bridge,True,unmaintained,medium,no update since 2023-10-10 (>18 months)
+APP-009,stale-05,True,unmaintained,medium,no update since 2024-04-27 (>18 months)
+APP-009,ancient-xmlrpc,True,unmaintained,medium,no update since 2023-01-29 (>18 months)
+APP-009,stale-13,True,unmaintained,medium,no update since 2024-05-13 (>18 months)
+APP-009,stale-19,True,unmaintained,medium,no update since 2024-09-15 (>18 months)
+APP-009,stale-06,True,unmaintained,medium,no update since 2022-12-07 (>18 months)
+APP-009,stale-04,True,unmaintained,medium,no update since 2023-08-02 (>18 months)
+APP-009,stale-07,True,unmaintained,medium,no update since 2022-09-20 (>18 months)
+APP-009,yaml-loader,True,transitive_vulnerability,critical,yaml-loader@0.9.17 matches a CVE in vulnerability_db via a transitive path
+APP-009,buffer-kit,True,transitive_vulnerability,high,buffer-kit@3.1.7 matches a CVE in vulnerability_db via a transitive path
+APP-009,tlib-02,True,transitive_vulnerability,high,tlib-02@4.3.8 matches a CVE in vulnerability_db via a transitive path
+APP-009,tlib-01,True,transitive_vulnerability,critical,tlib-01@0.5.2 matches a CVE in vulnerability_db via a transitive path
+APP-009,mem-alloc,True,transitive_vulnerability,high,mem-alloc@0.1.20 matches a CVE in vulnerability_db via a transitive path
+APP-009,lib-22,False,clean,none,no known risk
+APP-009,lib-31,False,clean,none,no known risk
+APP-009,lib-02,False,clean,none,no known risk
+APP-009,lib-33,False,clean,none,no known risk
+APP-009,pydantic,False,clean,none,no known risk
+APP-009,lib-23,False,clean,none,no known risk
+APP-009,lib-25,False,clean,none,no known risk
+APP-009,lib-28,False,clean,none,no known risk
+APP-009,lib-24,False,clean,none,no known risk
+APP-009,lib-14,False,clean,none,no known risk
+APP-009,rich,False,clean,none,no known risk
+APP-009,lib-40,False,clean,none,no known risk
+APP-009,lib-35,False,clean,none,no known risk
+APP-009,lib-08,False,clean,none,no known risk
+APP-009,lib-13,False,clean,none,no known risk
+APP-009,lib-04,False,clean,none,no known risk
+APP-009,flask,False,clean,none,no known risk
+APP-009,lib-34,False,clean,none,no known risk
+APP-009,structlog,False,clean,none,no known risk
+APP-009,redis-py,False,clean,none,no known risk
+APP-009,gunicorn,False,clean,none,no known risk
+APP-009,lib-38,False,clean,none,no known risk
+APP-010,serde-json,True,vulnerable,medium,serde-json@4.12.8 matches a CVE in vulnerability_db
+APP-010,pyyaml,True,vulnerable,medium,pyyaml@4.7.2 matches a CVE in vulnerability_db
+APP-010,vlib-12,True,vulnerable,medium,vlib-12@1.2.15 matches a CVE in vulnerability_db
+APP-010,vlib-08,True,vulnerable,medium,vlib-08@2.12.9 matches a CVE in vulnerability_db
+APP-010,vlib-06,True,vulnerable,medium,vlib-06@0.9.10 matches a CVE in vulnerability_db
+APP-010,vlib-15,True,vulnerable,high,vlib-15@1.8.6 matches a CVE in vulnerability_db
+APP-010,pillow,True,vulnerable,medium,pillow@0.1.4 matches a CVE in vulnerability_db
+APP-010,vlib-09,True,vulnerable,critical,vlib-09@1.0.7 matches a CVE in vulnerability_db
+APP-010,openssl-py,True,vulnerable,high,openssl-py@3.9.12 matches a CVE in vulnerability_db
+APP-010,gpl-crypto,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-010,gpl-lib-08,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-010,gpl-lib-02,True,license_conflict,high,GPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-010,gpl-lib-06,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-010,copyleft-orm,True,license_conflict,high,GPL-2.0 is incompatible with proprietary distribution per license_rules
+APP-010,gpl-lib-07,True,license_conflict,high,AGPL-3.0 is incompatible with proprietary distribution per license_rules
+APP-010,stale-09,True,unmaintained,medium,no update since 2023-05-29 (>18 months)
+APP-010,stale-14,True,unmaintained,medium,no update since 2023-09-26 (>18 months)
+APP-010,legacy-soap,True,unmaintained,medium,no update since 2024-09-15 (>18 months)
+APP-010,ancient-xmlrpc,True,unmaintained,medium,no update since 2023-10-13 (>18 months)
+APP-010,stale-17,True,unmaintained,medium,no update since 2024-10-13 (>18 months)
+APP-010,stale-03,True,unmaintained,medium,no update since 2024-08-21 (>18 months)
+APP-010,stale-01,True,unmaintained,medium,no update since 2022-10-10 (>18 months)
+APP-010,yaml-loader,True,transitive_vulnerability,critical,yaml-loader@0.9.17 matches a CVE in vulnerability_db via a transitive path
+APP-010,tlib-09,True,transitive_vulnerability,high,tlib-09@3.7.1 matches a CVE in vulnerability_db via a transitive path
+APP-010,tlib-06,True,transitive_vulnerability,medium,tlib-06@3.12.13 matches a CVE in vulnerability_db via a transitive path
+APP-010,tls-shim,True,transitive_vulnerability,critical,tls-shim@2.7.16 matches a CVE in vulnerability_db via a transitive path
+APP-010,tlib-05,True,transitive_vulnerability,medium,tlib-05@4.7.7 matches a CVE in vulnerability_db via a transitive path
+APP-010,orjson,False,clean,none,no known risk
+APP-010,fastapi,False,clean,none,no known risk
+APP-010,structlog,False,clean,none,no known risk
+APP-010,sqlalchemy,False,clean,none,no known risk
+APP-010,pandas,False,clean,none,no known risk
+APP-010,lib-39,False,clean,none,no known risk
+APP-010,lib-07,False,clean,none,no known risk
+APP-010,lib-21,False,clean,none,no known risk
+APP-010,lib-31,False,clean,none,no known risk
+APP-010,lib-20,False,clean,none,no known risk
+APP-010,lib-10,False,clean,none,no known risk
+APP-010,click,False,clean,none,no known risk
+APP-010,lib-37,False,clean,none,no known risk
+APP-010,lib-12,False,clean,none,no known risk
+APP-010,lib-19,False,clean,none,no known risk
+APP-010,lib-15,False,clean,none,no known risk
+APP-010,flask,False,clean,none,no known risk
+APP-010,lib-33,False,clean,none,no known risk
+APP-010,lib-13,False,clean,none,no known risk
+APP-010,lib-17,False,clean,none,no known risk
+APP-010,lib-35,False,clean,none,no known risk
+APP-010,httpx,False,clean,none,no known risk
+APP-010,lib-40,False,clean,none,no known risk

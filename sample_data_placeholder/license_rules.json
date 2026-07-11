@@ -1,0 +1,165 @@
+[
+  {
+    "license_type": "MIT",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "Apache-2.0",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "BSD-3-Clause",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "BSD-2-Clause",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "ISC",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "Unlicense",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "Zlib",
+    "compatible_with": [
+      "Proprietary",
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "low"
+  },
+  {
+    "license_type": "LGPL-2.1",
+    "compatible_with": [
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "medium"
+  },
+  {
+    "license_type": "LGPL-3.0",
+    "compatible_with": [
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "medium"
+  },
+  {
+    "license_type": "MPL-2.0",
+    "compatible_with": [
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "medium"
+  },
+  {
+    "license_type": "EPL-2.0",
+    "compatible_with": [
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "medium"
+  },
+  {
+    "license_type": "CDDL-1.0",
+    "compatible_with": [
+      "MIT",
+      "Apache-2.0",
+      "GPL-3.0",
+      "LGPL-3.0",
+      "MPL-2.0"
+    ],
+    "risk_level": "medium"
+  },
+  {
+    "license_type": "GPL-2.0",
+    "compatible_with": [
+      "GPL-3.0",
+      "AGPL-3.0"
+    ],
+    "risk_level": "high"
+  },
+  {
+    "license_type": "GPL-3.0",
+    "compatible_with": [
+      "GPL-3.0",
+      "AGPL-3.0"
+    ],
+    "risk_level": "high"
+  },
+  {
+    "license_type": "AGPL-3.0",
+    "compatible_with": [
+      "GPL-3.0",
+      "AGPL-3.0"
+    ],
+    "risk_level": "high"
+  }
+]

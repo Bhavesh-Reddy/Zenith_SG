@@ -66,9 +66,10 @@ def test_diamond_not_deduplicated_and_version_matching():
                 "affected_versions": ["1.0.0", "<0.9.0"],
                 "cvss_score": 9.1, "has_patch": False}]
     idx = build_vuln_index(vuln_db)
-    assert len(cves_for(idx, "libV", "1.0.0")) == 1     # exact match
-    assert len(cves_for(idx, "libV", "0.8.2")) == 1     # comparator match
-    assert cves_for(idx, "libV", "1.0.1") == []          # near-miss: no match
+    assert cves_for(idx, "libV", "1.0.0") == [(vuln_db[0], True)]   # exact
+    assert cves_for(idx, "libV", "0.8.2") == [(vuln_db[0], True)]   # comparator
+    # near-miss version: still name-matched (policy) but NOT version-confirmed
+    assert cves_for(idx, "libV", "1.0.1") == [(vuln_db[0], False)]
     assert cves_for(idx, "libD", "1.0.0") == []          # clean lib: no match
     assert len(paths_to_library(g, a, "libV")) == 2      # compound, not deduped
 

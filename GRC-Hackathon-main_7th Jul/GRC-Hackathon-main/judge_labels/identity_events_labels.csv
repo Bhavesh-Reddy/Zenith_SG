@@ -1,0 +1,901 @@
+record_id,user_id,username,is_anomaly,anomaly_type,severity,explanation
+0,USR00173,christopher.meyer,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-04-20 13:02:00
+1,USR00046,deepika.li,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-04-22 05:48:00
+2,USR00200,joseph.guo,False,NORMAL,NONE,Normal access event within expected pattern
+3,USR00021,rohan.harris,False,NORMAL,NONE,Normal access event within expected pattern
+4,USR00164,anjali.sun,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-04-24 16:05:00
+5,USR00096,edward.thomas,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-04-25 10:45:00
+6,USR00059,thomas.lewis,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-04-28 00:44:00
+7,USR00299,leila.lee,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-04-28 01:31:00
+8,USR00028,paul.singh,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-04-29 22:34:00
+9,USR00210,charles.lopez,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-04-30 02:52:00
+10,USR00179,xiulan.sharma,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-04-30 10:13:00
+11,USR00121,joseph.perez,False,NORMAL,NONE,Normal access event within expected pattern
+12,USR00150,daniel.wagner,False,NORMAL,NONE,Normal access event within expected pattern
+13,USR00036,nicholas.harris,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-05-05 16:15:00
+14,USR00061,sophia.hernandez,False,NORMAL,NONE,Normal access event within expected pattern
+15,USR00010,jacob.patel,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-05-07 06:00:00
+16,USR00085,varun.rao,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-05-08 16:48:00
+17,USR00002,kenneth.moore,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-05-08 19:40:00
+18,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+19,USR00151,priya.white,False,NORMAL,NONE,Normal access event within expected pattern
+20,USR00004,diya.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+21,USR00032,pooja.martin,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-05-12 07:58:00
+22,USR00211,rajesh.gupta,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-05-14 13:52:00
+23,USR00270,robert.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+24,USR00222,jason.rizzo,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-05-15 13:58:00
+25,USR00122,nisha.li,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-05-18 04:24:00
+26,USR00124,david.russo,False,NORMAL,NONE,Normal access event within expected pattern
+27,USR00270,robert.ramirez,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-05-19 20:19:00
+28,USR00111,james.sharma,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-05-19 23:19:00
+29,USR00049,thomas.kang,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-05-20 09:52:00
+30,USR00252,nadia.singh,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-05-21 14:25:00
+31,USR00200,joseph.guo,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-05-22 10:46:00
+32,USR00183,kenneth.johnson,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-05-24 18:49:00
+33,USR00197,kevin.white,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-05-26 17:27:00
+34,USR00242,deepika.garcia,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-05-27 07:15:00
+35,USR00188,meera.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+36,USR00213,riya.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+37,USR00200,joseph.guo,False,NORMAL,NONE,Normal access event within expected pattern
+38,USR00221,rajesh.smith,False,NORMAL,NONE,Normal access event within expected pattern
+39,USR00166,amara.smith,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-06-03 06:40:00
+40,USR00231,rajesh.pillai,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-06-03 09:48:00
+41,USR00294,kenneth.colombo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-06-04 12:02:00
+42,USR00104,jeffrey.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+43,USR00078,christopher.menon,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-06-05 17:43:00
+44,USR00166,amara.smith,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-06-05 20:54:00
+45,USR00060,vikram.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+46,USR00004,diya.anderson,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-06-08 04:12:00
+47,USR00173,christopher.meyer,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-06-09 10:45:00
+48,USR00105,gary.murphy,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-06-09 23:49:00
+49,USR00297,sofia.schmidt,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-06-10 11:37:00
+50,USR00241,amitabh.harris,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-06-10 15:32:00
+51,USR00281,nikhil.verma,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-06-11 07:32:00
+52,USR00120,david.sullivan,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-06-12 12:56:00
+53,USR00008,thomas.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+54,USR00037,ronald.wilson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-06-15 06:24:00
+55,USR00076,stephen.guo,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-06-15 15:08:00
+56,USR00108,xiulan.romano,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-06-16 21:48:00
+57,USR00045,stephen.kumar,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-06-17 06:53:00
+58,USR00176,nisha.sharma,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-06-17 23:05:00
+59,USR00002,kenneth.moore,False,NORMAL,NONE,Normal access event within expected pattern
+60,USR00214,ryan.sanchez,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-06-19 21:23:00
+61,USR00176,nisha.sharma,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-06-20 00:50:00
+62,USR00289,rajesh.jang,False,NORMAL,NONE,Normal access event within expected pattern
+63,USR00106,sanjana.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+64,USR00269,priya.lim,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-06-26 07:43:00
+65,USR00210,charles.lopez,False,NORMAL,NONE,Normal access event within expected pattern
+66,USR00088,william.jang,False,NORMAL,NONE,Normal access event within expected pattern
+67,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+68,USR00092,charles.sullivan,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-06-29 14:32:00
+69,USR00135,pooja.murphy,False,NORMAL,NONE,Normal access event within expected pattern
+70,USR00148,mark.hwang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-07-03 17:38:00
+71,USR00091,steven.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+72,USR00299,leila.lee,False,NORMAL,NONE,Normal access event within expected pattern
+73,USR00273,rohan.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+74,USR00295,james.sun,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-07-06 02:37:00
+75,USR00117,richard.kelly,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-07-06 08:32:00
+76,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+77,USR00267,jeffrey.ramirez,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-07-08 04:38:00
+78,USR00249,james.muller,False,NORMAL,NONE,Normal access event within expected pattern
+79,USR00047,george.clark,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-07-08 14:52:00
+80,USR00083,ryan.thomas,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-07-09 22:35:00
+81,USR00261,nikhil.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+82,USR00266,robert.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+83,USR00181,george.smith,False,NORMAL,NONE,Normal access event within expected pattern
+84,USR00221,rajesh.smith,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-07-14 19:41:00
+85,USR00044,pooja.mishra,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-07-15 17:05:00
+86,USR00294,kenneth.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+87,USR00206,fatima.gupta,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-07-19 00:53:00
+88,USR00013,jonathan.jackson,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-07-19 05:55:00
+89,USR00260,sofia.lewis,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-07-19 07:15:00
+90,USR00181,george.smith,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-07-19 09:38:00
+91,USR00189,meera.rizzo,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-07-19 10:58:00
+92,USR00046,deepika.li,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-07-20 05:04:00
+93,USR00274,joseph.reilly,False,NORMAL,NONE,Normal access event within expected pattern
+94,USR00233,ronald.reddy,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-07-23 22:28:00
+95,USR00051,meera.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+96,USR00249,james.muller,False,NORMAL,NONE,Normal access event within expected pattern
+97,USR00058,anthony.taylor,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-07-24 13:57:00
+98,USR00278,sofia.martin,False,NORMAL,NONE,Normal access event within expected pattern
+99,USR00167,michael.kelly,False,NORMAL,NONE,Normal access event within expected pattern
+100,USR00011,maria.o'brien,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-07-29 00:55:00
+101,USR00078,christopher.menon,False,NORMAL,NONE,Normal access event within expected pattern
+102,USR00037,ronald.wilson,False,NORMAL,NONE,Normal access event within expected pattern
+103,USR00133,fatima.patel,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-08-01 23:48:00
+104,USR00057,zainab.jo,False,NORMAL,NONE,Normal access event within expected pattern
+105,USR00174,pooja.romano,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-08-03 15:46:00
+106,USR00286,ronald.lee,False,NORMAL,NONE,Normal access event within expected pattern
+107,USR00147,anthony.davis,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-08-03 21:10:00
+108,USR00017,diya.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+109,USR00059,thomas.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+110,USR00194,varun.taylor,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-08-06 17:02:00
+111,USR00252,nadia.singh,False,NORMAL,NONE,Normal access event within expected pattern
+112,USR00080,david.rodriguez,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-08-08 10:58:00
+113,USR00130,jeffrey.garcia,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-08-09 08:06:00
+114,USR00004,diya.anderson,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-08-09 08:42:00
+115,USR00066,ronald.martin,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-08-09 16:28:00
+116,USR00009,aditya.burke,False,NORMAL,NONE,Normal access event within expected pattern
+117,USR00142,harsh.bernard,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-08-12 03:42:00
+118,USR00046,deepika.li,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-08-13 09:42:00
+119,USR00254,james.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+120,USR00042,kenneth.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+121,USR00134,richard.li,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-08-16 19:55:00
+122,USR00164,anjali.sun,False,NORMAL,NONE,Normal access event within expected pattern
+123,USR00157,shruti.rossi,False,NORMAL,NONE,Normal access event within expected pattern
+124,USR00201,daniel.jackson,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-08-21 08:12:00
+125,USR00001,daniel.singh,False,NORMAL,NONE,Normal access event within expected pattern
+126,USR00264,elena.johnson,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-08-21 16:18:00
+127,USR00259,anthony.verma,False,NORMAL,NONE,Normal access event within expected pattern
+128,USR00148,mark.hwang,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-08-22 13:28:00
+129,USR00176,nisha.sharma,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-08-23 06:06:00
+130,USR00288,arjun.dubois,False,NORMAL,NONE,Normal access event within expected pattern
+131,USR00236,harsh.connor,False,NORMAL,NONE,Normal access event within expected pattern
+132,USR00143,maria.gonzalez,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-08-25 05:47:00
+133,USR00019,joshua.white,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-08-25 15:06:00
+134,USR00158,arjun.sanchez,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-08-25 20:59:00
+135,USR00277,nicholas.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+136,USR00101,paul.hoffmann,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-08-27 22:12:00
+137,USR00159,fatima.lee,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-08-28 06:36:00
+138,USR00027,pooja.sullivan,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-08-28 15:51:00
+139,USR00088,william.jang,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-08-29 11:35:00
+140,USR00222,jason.rizzo,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-08-30 06:07:00
+141,USR00091,steven.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+142,USR00024,nicholas.jackson,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-02 09:47:00
+143,USR00002,kenneth.moore,False,NORMAL,NONE,Normal access event within expected pattern
+144,USR00218,zainab.garcia,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-05 08:11:00
+145,USR00279,nadia.reilly,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-09-05 16:35:00
+146,USR00177,timothy.mishra,False,NORMAL,NONE,Normal access event within expected pattern
+147,USR00218,zainab.garcia,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-07 13:32:00
+148,USR00283,thomas.meyer,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-09-08 19:34:00
+149,USR00207,joseph.young,False,NORMAL,NONE,Normal access event within expected pattern
+150,USR00160,kevin.rao,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-09 05:16:00
+151,USR00209,nikhil.martinez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-10 00:42:00
+152,USR00209,nikhil.martinez,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-09-11 05:14:00
+153,USR00239,kevin.xu,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-09-11 12:26:00
+154,USR00216,gary.lee,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-09-12 22:41:00
+155,USR00061,sophia.hernandez,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-09-14 02:48:00
+156,USR00278,sofia.martin,False,NORMAL,NONE,Normal access event within expected pattern
+157,USR00203,zainab.moore,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-09-14 22:07:00
+158,USR00068,robert.patel,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-09-15 07:11:00
+159,USR00059,thomas.lewis,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-16 11:30:00
+160,USR00134,richard.li,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-09-17 09:18:00
+161,USR00197,kevin.white,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-09-17 13:47:00
+162,USR00092,charles.sullivan,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-09-18 08:27:00
+163,USR00172,anjali.jo,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-19 11:28:00
+164,USR00158,arjun.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+165,USR00112,ryan.rao,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-09-19 15:03:00
+166,USR00151,priya.white,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-09-19 21:43:00
+167,USR00024,nicholas.jackson,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-20 08:04:00
+168,USR00127,amitabh.davis,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-09-21 11:02:00
+169,USR00196,anjali.jackson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-09-22 07:30:00
+170,USR00126,mark.patel,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-23 19:17:00
+171,USR00151,priya.white,False,NORMAL,NONE,Normal access event within expected pattern
+172,USR00261,nikhil.thomas,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-24 01:23:00
+173,USR00166,amara.smith,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-24 15:49:00
+174,USR00005,george.lim,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-09-25 03:53:00
+175,USR00153,edward.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+176,USR00051,meera.quinn,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-09-26 06:42:00
+177,USR00104,jeffrey.ghosh,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-29 20:34:00
+178,USR00188,meera.schmidt,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-09-29 21:16:00
+179,USR00092,charles.sullivan,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-09-30 13:06:00
+180,USR00051,meera.quinn,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-10-02 12:28:00
+181,USR00183,kenneth.johnson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-10-05 00:11:00
+182,USR00233,ronald.reddy,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-10-05 09:02:00
+183,USR00047,george.clark,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-10-05 13:11:00
+184,USR00110,joshua.bhat,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-10-05 13:57:00
+185,USR00045,stephen.kumar,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-10-06 21:00:00
+186,USR00007,robert.smith,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-10-07 05:23:00
+187,USR00140,riya.lim,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-10-07 13:26:00
+188,USR00214,ryan.sanchez,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-10-08 21:50:00
+189,USR00294,kenneth.colombo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-10-09 04:34:00
+190,USR00032,pooja.martin,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-10-09 20:45:00
+191,USR00226,ronald.esposito,False,NORMAL,NONE,Normal access event within expected pattern
+192,USR00189,meera.rizzo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-10-14 08:23:00
+193,USR00260,sofia.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+194,USR00159,fatima.lee,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-10-15 02:55:00
+195,USR00056,william.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+196,USR00060,vikram.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+197,USR00082,arjun.hwang,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-10-19 00:48:00
+198,USR00101,paul.hoffmann,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-10-19 08:42:00
+199,USR00170,sophia.smith,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-10-19 19:06:00
+200,USR00037,ronald.wilson,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-10-20 16:11:00
+201,USR00084,aditya.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+202,USR00159,fatima.lee,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-10-22 18:52:00
+203,USR00122,nisha.li,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-10-23 22:56:00
+204,USR00007,robert.smith,False,NORMAL,NONE,Normal access event within expected pattern
+205,USR00244,stephen.iyer,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-10-24 15:30:00
+206,USR00185,anthony.thompson,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-10-24 17:59:00
+207,USR00212,david.liu,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-10-25 10:09:00
+208,USR00124,david.russo,False,NORMAL,NONE,Normal access event within expected pattern
+209,USR00288,arjun.dubois,False,NORMAL,NONE,Normal access event within expected pattern
+210,USR00236,harsh.connor,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-10-30 10:40:00
+211,USR00152,diya.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+212,USR00171,xiulan.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+213,USR00207,joseph.young,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-11-02 03:14:00
+214,USR00035,nikhil.rao,False,NORMAL,NONE,Normal access event within expected pattern
+215,USR00013,jonathan.jackson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-11-05 18:17:00
+216,USR00292,edward.esposito,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-11-08 02:16:00
+217,USR00036,nicholas.harris,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-11-09 00:15:00
+218,USR00221,rajesh.smith,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-11-09 02:26:00
+219,USR00148,mark.hwang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-11-09 03:36:00
+220,USR00251,jonathan.robinson,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-09 20:40:00
+221,USR00062,nisha.jones,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-11 05:55:00
+222,USR00024,nicholas.jackson,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-11-11 11:44:00
+223,USR00011,maria.o'brien,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-11-12 08:16:00
+224,USR00296,joseph.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+225,USR00258,meera.reddy,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-15 11:11:00
+226,USR00026,stephen.bhat,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2025-11-17 10:56:00
+227,USR00259,anthony.verma,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-11-17 17:53:00
+228,USR00239,kevin.xu,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-19 10:19:00
+229,USR00156,amitabh.white,False,NORMAL,NONE,Normal access event within expected pattern
+230,USR00208,sanjana.moore,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-11-21 07:30:00
+231,USR00157,shruti.rossi,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-11-22 09:15:00
+232,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+233,USR00060,vikram.gonzalez,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-11-23 10:53:00
+234,USR00257,ryan.verma,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-11-24 04:36:00
+235,USR00055,neha.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+236,USR00187,joshua.miller,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-26 17:12:00
+237,USR00229,deepika.park,False,NORMAL,NONE,Normal access event within expected pattern
+238,USR00135,pooja.murphy,False,NORMAL,NONE,Normal access event within expected pattern
+239,USR00284,william.patel,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-11-27 19:51:00
+240,USR00184,vikram.williams,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-03 22:04:00
+241,USR00187,joshua.miller,False,NORMAL,NONE,Normal access event within expected pattern
+242,USR00219,eric.iyer,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-12-04 14:47:00
+243,USR00018,meera.burke,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-12-06 12:30:00
+244,USR00278,sofia.martin,False,NORMAL,NONE,Normal access event within expected pattern
+245,USR00183,kenneth.johnson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-12-07 20:11:00
+246,USR00163,sofia.rao,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-12-08 00:04:00
+247,USR00040,nicholas.romano,False,NORMAL,NONE,Normal access event within expected pattern
+248,USR00075,timothy.huang,False,NORMAL,NONE,Normal access event within expected pattern
+249,USR00009,aditya.burke,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-10 01:24:00
+250,USR00006,kevin.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+251,USR00115,steven.becker,False,NORMAL,NONE,Normal access event within expected pattern
+252,USR00027,pooja.sullivan,False,NORMAL,NONE,Normal access event within expected pattern
+253,USR00099,maria.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+254,USR00026,stephen.bhat,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-12-12 14:10:00
+255,USR00259,anthony.verma,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-12-12 15:42:00
+256,USR00036,nicholas.harris,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-12 21:49:00
+257,USR00092,charles.sullivan,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-14 03:28:00
+258,USR00068,robert.patel,False,NORMAL,NONE,Normal access event within expected pattern
+259,USR00289,rajesh.jang,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-14 16:25:00
+260,USR00039,stephen.bhat,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-12-15 04:00:00
+261,USR00150,daniel.wagner,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-12-15 14:13:00
+262,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+263,USR00223,nadia.quinn,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-16 03:02:00
+264,USR00083,ryan.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+265,USR00186,deepika.jang,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-12-19 00:53:00
+266,USR00148,mark.hwang,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-19 06:07:00
+267,USR00281,nikhil.verma,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-12-20 12:54:00
+268,USR00142,harsh.bernard,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2025-12-22 09:47:00
+269,USR00223,nadia.quinn,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-12-22 15:26:00
+270,USR00263,paul.ramirez,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2025-12-23 16:39:00
+271,USR00010,jacob.patel,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2025-12-24 00:52:00
+272,USR00148,mark.hwang,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-12-25 21:59:00
+273,USR00014,david.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+274,USR00015,sophia.white,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2025-12-28 15:11:00
+275,USR00117,richard.kelly,False,NORMAL,NONE,Normal access event within expected pattern
+276,USR00237,ryan.davis,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2025-12-31 01:37:00
+277,USR00286,ronald.lee,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2025-12-31 07:21:00
+278,USR00130,jeffrey.garcia,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-02 11:38:00
+279,USR00192,timothy.taylor,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-03 23:10:00
+280,USR00276,william.perez,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-01-04 05:20:00
+281,USR00126,mark.patel,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-04 12:05:00
+282,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+283,USR00219,eric.iyer,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-04 17:16:00
+284,USR00027,pooja.sullivan,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-05 13:25:00
+285,USR00106,sanjana.quinn,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-07 07:12:00
+286,USR00286,ronald.lee,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-07 18:59:00
+287,USR00006,kevin.ramirez,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-01-08 10:53:00
+288,USR00228,anthony.clark,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-10 13:25:00
+289,USR00171,xiulan.schulz,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-11 23:59:00
+290,USR00008,thomas.iyer,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-01-12 01:44:00
+291,USR00288,arjun.dubois,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-14 03:37:00
+292,USR00223,nadia.quinn,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-14 15:29:00
+293,USR00289,rajesh.jang,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-14 18:54:00
+294,USR00230,nicholas.romano,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-15 15:25:00
+295,USR00142,harsh.bernard,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-01-16 08:50:00
+296,USR00020,karan.white,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-01-17 10:02:00
+297,USR00064,zainab.pillai,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-17 13:32:00
+298,USR00234,maria.perez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-18 00:25:00
+299,USR00172,anjali.jo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-01-18 19:13:00
+300,USR00067,donald.wang,False,NORMAL,NONE,Normal access event within expected pattern
+301,USR00081,isha.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+302,USR00036,nicholas.harris,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-21 10:54:05
+303,USR00061,sophia.hernandez,False,NORMAL,NONE,Normal access event within expected pattern
+304,USR00122,nisha.li,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-01-21 10:54:05
+305,USR00010,jacob.patel,False,NORMAL,NONE,Normal access event within expected pattern
+306,USR00284,william.patel,False,NORMAL,NONE,Normal access event within expected pattern
+307,USR00115,steven.becker,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-01-22 10:54:05
+308,USR00214,ryan.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+309,USR00143,maria.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+310,USR00239,kevin.xu,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-22 10:54:05
+311,USR00188,meera.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+312,USR00121,joseph.perez,False,NORMAL,NONE,Normal access event within expected pattern
+313,USR00108,xiulan.romano,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-22 10:54:05
+314,USR00089,isha.chen,False,NORMAL,NONE,Normal access event within expected pattern
+315,USR00234,maria.perez,False,NORMAL,NONE,Normal access event within expected pattern
+316,USR00146,pooja.clark,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-01-23 10:54:05
+317,USR00211,rajesh.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+318,USR00093,nadia.muller,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-23 10:54:05
+319,USR00271,donald.reddy,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-23 10:54:05
+320,USR00263,paul.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+321,USR00299,leila.lee,False,NORMAL,NONE,Normal access event within expected pattern
+322,USR00054,edward.smith,False,NORMAL,NONE,Normal access event within expected pattern
+323,USR00200,joseph.guo,False,NORMAL,NONE,Normal access event within expected pattern
+324,USR00239,kevin.xu,False,NORMAL,NONE,Normal access event within expected pattern
+325,USR00259,anthony.verma,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-25 10:54:05
+326,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+327,USR00215,nikhil.choi,False,NORMAL,NONE,Normal access event within expected pattern
+328,USR00278,sofia.martin,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-25 10:54:05
+329,USR00025,diya.romano,False,NORMAL,NONE,Normal access event within expected pattern
+330,USR00218,zainab.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+331,USR00045,stephen.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+332,USR00291,daniel.romano,False,NORMAL,NONE,Normal access event within expected pattern
+333,USR00188,meera.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+334,USR00194,varun.taylor,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-01-28 10:54:05
+335,USR00160,kevin.rao,False,NORMAL,NONE,Normal access event within expected pattern
+336,USR00237,ryan.davis,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-01-28 10:54:05
+337,USR00131,david.yang,False,NORMAL,NONE,Normal access event within expected pattern
+338,USR00221,rajesh.smith,False,NORMAL,NONE,Normal access event within expected pattern
+339,USR00026,stephen.bhat,False,NORMAL,NONE,Normal access event within expected pattern
+340,USR00205,paul.choi,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-29 10:54:05
+341,USR00240,jacob.park,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-01-29 10:54:05
+342,USR00073,joshua.becker,False,NORMAL,NONE,Normal access event within expected pattern
+343,USR00001,daniel.singh,False,NORMAL,NONE,Normal access event within expected pattern
+344,USR00287,nisha.ferrari,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-01-29 10:54:05
+345,USR00197,kevin.white,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-01-29 10:54:05
+346,USR00011,maria.o'brien,False,NORMAL,NONE,Normal access event within expected pattern
+347,USR00193,christopher.kang,False,NORMAL,NONE,Normal access event within expected pattern
+348,USR00200,joseph.guo,False,NORMAL,NONE,Normal access event within expected pattern
+349,USR00087,aditya.taylor,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-01-29 10:54:05
+350,USR00054,edward.smith,False,NORMAL,NONE,Normal access event within expected pattern
+351,USR00052,leila.sun,False,NORMAL,NONE,Normal access event within expected pattern
+352,USR00060,vikram.gonzalez,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-01-30 10:54:05
+353,USR00028,paul.singh,False,NORMAL,NONE,Normal access event within expected pattern
+354,USR00083,ryan.thomas,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-01-30 10:54:05
+355,USR00295,james.sun,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-01-30 10:54:05
+356,USR00072,amitabh.park,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-01-30 10:54:05
+357,USR00071,richard.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+358,USR00127,amitabh.davis,False,NORMAL,NONE,Normal access event within expected pattern
+359,USR00218,zainab.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+360,USR00192,timothy.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+361,USR00139,akshay.choi,False,NORMAL,NONE,Normal access event within expected pattern
+362,USR00049,thomas.kang,False,NORMAL,NONE,Normal access event within expected pattern
+363,USR00059,thomas.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+364,USR00114,anjali.romano,False,NORMAL,NONE,Normal access event within expected pattern
+365,USR00086,ryan.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+366,USR00187,joshua.miller,False,NORMAL,NONE,Normal access event within expected pattern
+367,USR00250,akshay.rao,False,NORMAL,NONE,Normal access event within expected pattern
+368,USR00204,christopher.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+369,USR00021,rohan.harris,False,NORMAL,NONE,Normal access event within expected pattern
+370,USR00118,michael.quinn,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-01 10:54:05
+371,USR00226,ronald.esposito,False,NORMAL,NONE,Normal access event within expected pattern
+372,USR00230,nicholas.romano,False,NORMAL,NONE,Normal access event within expected pattern
+373,USR00102,william.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+374,USR00196,anjali.jackson,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-01 10:54:05
+375,USR00143,maria.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+376,USR00052,leila.sun,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-02-02 10:54:05
+377,USR00063,daniel.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+378,USR00294,kenneth.colombo,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-02-02 10:54:05
+379,USR00167,michael.kelly,False,NORMAL,NONE,Normal access event within expected pattern
+380,USR00009,aditya.burke,False,NORMAL,NONE,Normal access event within expected pattern
+381,USR00151,priya.white,False,NORMAL,NONE,Normal access event within expected pattern
+382,USR00069,nikhil.jang,False,NORMAL,NONE,Normal access event within expected pattern
+383,USR00083,ryan.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+384,USR00164,anjali.sun,False,NORMAL,NONE,Normal access event within expected pattern
+385,USR00298,joseph.miller,False,NORMAL,NONE,Normal access event within expected pattern
+386,USR00158,arjun.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+387,USR00278,sofia.martin,False,NORMAL,NONE,Normal access event within expected pattern
+388,USR00207,joseph.young,False,NORMAL,NONE,Normal access event within expected pattern
+389,USR00066,ronald.martin,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-05 10:54:05
+390,USR00218,zainab.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+391,USR00118,michael.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+392,USR00060,vikram.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+393,USR00162,thomas.russo,False,NORMAL,NONE,Normal access event within expected pattern
+394,USR00035,nikhil.rao,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-06 10:54:05
+395,USR00156,amitabh.white,False,NORMAL,NONE,Normal access event within expected pattern
+396,USR00015,sophia.white,False,NORMAL,NONE,Normal access event within expected pattern
+397,USR00091,steven.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+398,USR00015,sophia.white,False,NORMAL,NONE,Normal access event within expected pattern
+399,USR00157,shruti.rossi,False,NORMAL,NONE,Normal access event within expected pattern
+400,USR00102,william.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+401,USR00199,anjali.williams,False,NORMAL,NONE,Normal access event within expected pattern
+402,USR00199,anjali.williams,False,NORMAL,NONE,Normal access event within expected pattern
+403,USR00094,donald.schulz,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-08 10:54:05
+404,USR00201,daniel.jackson,False,NORMAL,NONE,Normal access event within expected pattern
+405,USR00259,anthony.verma,False,NORMAL,NONE,Normal access event within expected pattern
+406,USR00262,aditya.mishra,False,NORMAL,NONE,Normal access event within expected pattern
+407,USR00234,maria.perez,False,NORMAL,NONE,Normal access event within expected pattern
+408,USR00070,jeffrey.chen,False,NORMAL,NONE,Normal access event within expected pattern
+409,USR00164,anjali.sun,False,NORMAL,NONE,Normal access event within expected pattern
+410,USR00079,varun.weber,False,NORMAL,NONE,Normal access event within expected pattern
+411,USR00228,anthony.clark,False,NORMAL,NONE,Normal access event within expected pattern
+412,USR00021,rohan.harris,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-02-10 10:54:05
+413,USR00273,rohan.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+414,USR00214,ryan.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+415,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+416,USR00189,meera.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+417,USR00010,jacob.patel,False,NORMAL,NONE,Normal access event within expected pattern
+418,USR00164,anjali.sun,False,NORMAL,NONE,Normal access event within expected pattern
+419,USR00158,arjun.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+420,USR00041,matthew.huang,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-02-11 10:54:05
+421,USR00173,christopher.meyer,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-02-11 10:54:05
+422,USR00187,joshua.miller,False,NORMAL,NONE,Normal access event within expected pattern
+423,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+424,USR00204,christopher.rodriguez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-12 10:54:05
+425,USR00110,joshua.bhat,False,NORMAL,NONE,Normal access event within expected pattern
+426,USR00044,pooja.mishra,False,NORMAL,NONE,Normal access event within expected pattern
+427,USR00183,kenneth.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+428,USR00264,elena.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+429,USR00151,priya.white,False,NORMAL,NONE,Normal access event within expected pattern
+430,USR00186,deepika.jang,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-13 10:54:05
+431,USR00061,sophia.hernandez,False,NORMAL,NONE,Normal access event within expected pattern
+432,USR00153,edward.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+433,USR00024,nicholas.jackson,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-13 10:54:05
+434,USR00130,jeffrey.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+435,USR00002,kenneth.moore,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-02-13 10:54:05
+436,USR00154,varun.petit,False,NORMAL,NONE,Normal access event within expected pattern
+437,USR00040,nicholas.romano,False,NORMAL,NONE,Normal access event within expected pattern
+438,USR00053,timothy.jo,False,NORMAL,NONE,Normal access event within expected pattern
+439,USR00275,meera.martinez,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-02-14 10:54:05
+440,USR00187,joshua.miller,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-14 10:54:05
+441,USR00176,nisha.sharma,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-14 10:54:05
+442,USR00141,richard.yang,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-14 10:54:05
+443,USR00096,edward.thomas,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-15 10:54:05
+444,USR00249,james.muller,False,NORMAL,NONE,Normal access event within expected pattern
+445,USR00090,neha.o'brien,False,NORMAL,NONE,Normal access event within expected pattern
+446,USR00121,joseph.perez,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-15 10:54:05
+447,USR00126,mark.patel,False,NORMAL,NONE,Normal access event within expected pattern
+448,USR00045,stephen.kumar,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-15 10:54:05
+449,USR00219,eric.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+450,USR00259,anthony.verma,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-16 10:54:05
+451,USR00118,michael.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+452,USR00085,varun.rao,False,NORMAL,NONE,Normal access event within expected pattern
+453,USR00195,mark.becker,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-16 10:54:05
+454,USR00125,kenneth.verma,False,NORMAL,NONE,Normal access event within expected pattern
+455,USR00258,meera.reddy,False,NORMAL,NONE,Normal access event within expected pattern
+456,USR00295,james.sun,False,NORMAL,NONE,Normal access event within expected pattern
+457,USR00150,daniel.wagner,False,NORMAL,NONE,Normal access event within expected pattern
+458,USR00202,jason.white,False,NORMAL,NONE,Normal access event within expected pattern
+459,USR00079,varun.weber,False,NORMAL,NONE,Normal access event within expected pattern
+460,USR00063,daniel.colombo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-18 10:54:05
+461,USR00257,ryan.verma,False,NORMAL,NONE,Normal access event within expected pattern
+462,USR00068,robert.patel,False,NORMAL,NONE,Normal access event within expected pattern
+463,USR00038,aisha.kim,False,NORMAL,NONE,Normal access event within expected pattern
+464,USR00062,nisha.jones,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-02-19 10:54:05
+465,USR00181,george.smith,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-02-19 10:54:05
+466,USR00061,sophia.hernandez,False,NORMAL,NONE,Normal access event within expected pattern
+467,USR00220,arjun.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+468,USR00058,anthony.taylor,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-02-19 10:54:05
+469,USR00106,sanjana.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+470,USR00274,joseph.reilly,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-20 10:54:05
+471,USR00134,richard.li,False,NORMAL,NONE,Normal access event within expected pattern
+472,USR00220,arjun.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+473,USR00078,christopher.menon,False,NORMAL,NONE,Normal access event within expected pattern
+474,USR00035,nikhil.rao,False,NORMAL,NONE,Normal access event within expected pattern
+475,USR00245,nicholas.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+476,USR00283,thomas.meyer,False,NORMAL,NONE,Normal access event within expected pattern
+477,USR00132,xiulan.lim,False,NORMAL,NONE,Normal access event within expected pattern
+478,USR00253,christopher.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+479,USR00013,jonathan.jackson,False,NORMAL,NONE,Normal access event within expected pattern
+480,USR00001,daniel.singh,False,NORMAL,NONE,Normal access event within expected pattern
+481,USR00209,nikhil.martinez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-22 10:54:05
+482,USR00275,meera.martinez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-22 10:54:05
+483,USR00250,akshay.rao,False,NORMAL,NONE,Normal access event within expected pattern
+484,USR00033,michael.sharma,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-22 10:54:05
+485,USR00274,joseph.reilly,False,NORMAL,NONE,Normal access event within expected pattern
+486,USR00126,mark.patel,False,NORMAL,NONE,Normal access event within expected pattern
+487,USR00270,robert.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+488,USR00079,varun.weber,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-23 10:54:05
+489,USR00203,zainab.moore,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-23 10:54:05
+490,USR00088,william.jang,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-23 10:54:05
+491,USR00142,harsh.bernard,False,NORMAL,NONE,Normal access event within expected pattern
+492,USR00193,christopher.kang,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-23 10:54:05
+493,USR00137,jason.dubois,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-23 10:54:05
+494,USR00091,steven.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+495,USR00281,nikhil.verma,False,NORMAL,NONE,Normal access event within expected pattern
+496,USR00180,nikhil.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+497,USR00167,michael.kelly,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-24 10:54:05
+498,USR00140,riya.lim,False,NORMAL,NONE,Normal access event within expected pattern
+499,USR00102,william.garcia,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-24 10:54:05
+500,USR00221,rajesh.smith,False,NORMAL,NONE,Normal access event within expected pattern
+501,USR00146,pooja.clark,False,NORMAL,NONE,Normal access event within expected pattern
+502,USR00250,akshay.rao,False,NORMAL,NONE,Normal access event within expected pattern
+503,USR00176,nisha.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+504,USR00139,akshay.choi,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-02-25 10:54:05
+505,USR00157,shruti.rossi,False,NORMAL,NONE,Normal access event within expected pattern
+506,USR00189,meera.rizzo,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-25 10:54:05
+507,USR00165,paul.o'brien,False,NORMAL,NONE,Normal access event within expected pattern
+508,USR00237,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+509,USR00229,deepika.park,False,NORMAL,NONE,Normal access event within expected pattern
+510,USR00094,donald.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+511,USR00171,xiulan.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+512,USR00298,joseph.miller,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-02-25 10:54:05
+513,USR00203,zainab.moore,False,NORMAL,NONE,Normal access event within expected pattern
+514,USR00017,diya.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+515,USR00006,kevin.ramirez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-02-26 10:54:05
+516,USR00241,amitabh.harris,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-02-26 10:54:05
+517,USR00160,kevin.rao,False,NORMAL,NONE,Normal access event within expected pattern
+518,USR00251,jonathan.robinson,False,NORMAL,NONE,Normal access event within expected pattern
+519,USR00037,ronald.wilson,False,NORMAL,NONE,Normal access event within expected pattern
+520,USR00094,donald.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+521,USR00290,thomas.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+522,USR00043,matthew.bernard,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-02-27 10:54:05
+523,USR00226,ronald.esposito,False,NORMAL,NONE,Normal access event within expected pattern
+524,USR00276,william.perez,False,NORMAL,NONE,Normal access event within expected pattern
+525,USR00186,deepika.jang,False,NORMAL,NONE,Normal access event within expected pattern
+526,USR00210,charles.lopez,False,NORMAL,NONE,Normal access event within expected pattern
+527,USR00126,mark.patel,False,NORMAL,NONE,Normal access event within expected pattern
+528,USR00005,george.lim,False,NORMAL,NONE,Normal access event within expected pattern
+529,USR00117,richard.kelly,False,NORMAL,NONE,Normal access event within expected pattern
+530,USR00284,william.patel,False,NORMAL,NONE,Normal access event within expected pattern
+531,USR00150,daniel.wagner,False,NORMAL,NONE,Normal access event within expected pattern
+532,USR00105,gary.murphy,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-02-28 10:54:05
+533,USR00247,joshua.bernard,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-03-01 10:54:05
+534,USR00057,zainab.jo,False,NORMAL,NONE,Normal access event within expected pattern
+535,USR00046,deepika.li,False,NORMAL,NONE,Normal access event within expected pattern
+536,USR00077,neha.taylor,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-01 10:54:05
+537,USR00019,joshua.white,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-01 10:54:05
+538,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+539,USR00163,sofia.rao,False,NORMAL,NONE,Normal access event within expected pattern
+540,USR00122,nisha.li,False,NORMAL,NONE,Normal access event within expected pattern
+541,USR00053,timothy.jo,False,NORMAL,NONE,Normal access event within expected pattern
+542,USR00143,maria.gonzalez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-01 10:54:05
+543,USR00174,pooja.romano,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-01 10:54:05
+544,USR00190,donald.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+545,USR00205,paul.choi,False,NORMAL,NONE,Normal access event within expected pattern
+546,USR00298,joseph.miller,False,NORMAL,NONE,Normal access event within expected pattern
+547,USR00261,nikhil.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+548,USR00288,arjun.dubois,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-02 10:54:05
+549,USR00124,david.russo,False,NORMAL,NONE,Normal access event within expected pattern
+550,USR00049,thomas.kang,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-03-03 10:54:05
+551,USR00284,william.patel,False,NORMAL,NONE,Normal access event within expected pattern
+552,USR00152,diya.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+553,USR00111,james.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+554,USR00026,stephen.bhat,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-03 10:54:05
+555,USR00176,nisha.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+556,USR00204,christopher.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+557,USR00080,david.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+558,USR00188,meera.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+559,USR00083,ryan.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+560,USR00071,richard.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+561,USR00056,william.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+562,USR00261,nikhil.thomas,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-04 10:54:05
+563,USR00105,gary.murphy,False,NORMAL,NONE,Normal access event within expected pattern
+564,USR00082,arjun.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+565,USR00204,christopher.rodriguez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-04 10:54:05
+566,USR00050,nisha.martinez,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-05 10:54:05
+567,USR00028,paul.singh,False,NORMAL,NONE,Normal access event within expected pattern
+568,USR00083,ryan.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+569,USR00086,ryan.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+570,USR00027,pooja.sullivan,False,NORMAL,NONE,Normal access event within expected pattern
+571,USR00258,meera.reddy,False,NORMAL,NONE,Normal access event within expected pattern
+572,USR00063,daniel.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+573,USR00197,kevin.white,False,NORMAL,NONE,Normal access event within expected pattern
+574,USR00211,rajesh.gupta,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-06 10:54:05
+575,USR00102,william.garcia,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-06 10:54:05
+576,USR00242,deepika.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+577,USR00020,karan.white,False,NORMAL,NONE,Normal access event within expected pattern
+578,USR00035,nikhil.rao,False,NORMAL,NONE,Normal access event within expected pattern
+579,USR00089,isha.chen,False,NORMAL,NONE,Normal access event within expected pattern
+580,USR00103,priya.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+581,USR00276,william.perez,False,NORMAL,NONE,Normal access event within expected pattern
+582,USR00057,zainab.jo,False,NORMAL,NONE,Normal access event within expected pattern
+583,USR00174,pooja.romano,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-08 10:54:05
+584,USR00190,donald.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+585,USR00088,william.jang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-08 10:54:05
+586,USR00142,harsh.bernard,False,NORMAL,NONE,Normal access event within expected pattern
+587,USR00266,robert.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+588,USR00143,maria.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+589,USR00160,kevin.rao,False,NORMAL,NONE,Normal access event within expected pattern
+590,USR00062,nisha.jones,False,NORMAL,NONE,Normal access event within expected pattern
+591,USR00067,donald.wang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-09 10:54:05
+592,USR00085,varun.rao,False,NORMAL,NONE,Normal access event within expected pattern
+593,USR00206,fatima.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+594,USR00007,robert.smith,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-03-09 10:54:05
+595,USR00004,diya.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+596,USR00219,eric.iyer,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-10 10:54:05
+597,USR00004,diya.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+598,USR00069,nikhil.jang,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-10 10:54:05
+599,USR00083,ryan.thomas,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-10 10:54:05
+600,USR00220,arjun.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+601,USR00252,nadia.singh,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-10 10:54:05
+602,USR00041,matthew.huang,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-03-10 10:54:05
+603,USR00267,jeffrey.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+604,USR00158,arjun.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+605,USR00145,daniel.davis,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-11 10:54:05
+606,USR00051,meera.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+607,USR00284,william.patel,False,NORMAL,NONE,Normal access event within expected pattern
+608,USR00177,timothy.mishra,False,NORMAL,NONE,Normal access event within expected pattern
+609,USR00141,richard.yang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-12 10:54:05
+610,USR00206,fatima.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+611,USR00222,jason.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+612,USR00239,kevin.xu,False,NORMAL,NONE,Normal access event within expected pattern
+613,USR00210,charles.lopez,False,NORMAL,NONE,Normal access event within expected pattern
+614,USR00077,neha.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+615,USR00091,steven.thompson,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-13 10:54:05
+616,USR00018,meera.burke,False,NORMAL,NONE,Normal access event within expected pattern
+617,USR00133,fatima.patel,False,NORMAL,NONE,Normal access event within expected pattern
+618,USR00288,arjun.dubois,False,NORMAL,NONE,Normal access event within expected pattern
+619,USR00166,amara.smith,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-14 10:54:05
+620,USR00038,aisha.kim,False,NORMAL,NONE,Normal access event within expected pattern
+621,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+622,USR00224,larry.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+623,USR00010,jacob.patel,False,NORMAL,NONE,Normal access event within expected pattern
+624,USR00105,gary.murphy,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-15 10:54:05
+625,USR00196,anjali.jackson,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-15 10:54:05
+626,USR00170,sophia.smith,False,NORMAL,NONE,Normal access event within expected pattern
+627,USR00211,rajesh.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+628,USR00204,christopher.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+629,USR00135,pooja.murphy,False,NORMAL,NONE,Normal access event within expected pattern
+630,USR00084,aditya.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+631,USR00200,joseph.guo,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-15 10:54:05
+632,USR00221,rajesh.smith,False,NORMAL,NONE,Normal access event within expected pattern
+633,USR00086,ryan.colombo,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-15 10:54:05
+634,USR00106,sanjana.quinn,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-16 10:54:05
+635,USR00145,daniel.davis,False,NORMAL,NONE,Normal access event within expected pattern
+636,USR00033,michael.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+637,USR00047,george.clark,False,NORMAL,NONE,Normal access event within expected pattern
+638,USR00167,michael.kelly,False,NORMAL,NONE,Normal access event within expected pattern
+639,USR00296,joseph.taylor,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-16 10:54:05
+640,USR00293,gary.kang,False,NORMAL,NONE,Normal access event within expected pattern
+641,USR00137,jason.dubois,False,NORMAL,NONE,Normal access event within expected pattern
+642,USR00159,fatima.lee,False,NORMAL,NONE,Normal access event within expected pattern
+643,USR00260,sofia.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+644,USR00163,sofia.rao,False,NORMAL,NONE,Normal access event within expected pattern
+645,USR00093,nadia.muller,False,NORMAL,NONE,Normal access event within expected pattern
+646,USR00184,vikram.williams,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-17 10:54:05
+647,USR00157,shruti.rossi,False,NORMAL,NONE,Normal access event within expected pattern
+648,USR00256,timothy.fischer,False,NORMAL,NONE,Normal access event within expected pattern
+649,USR00180,nikhil.rodriguez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-17 10:54:05
+650,USR00032,pooja.martin,False,NORMAL,NONE,Normal access event within expected pattern
+651,USR00141,richard.yang,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-17 10:54:05
+652,USR00175,aditya.chen,False,NORMAL,NONE,Normal access event within expected pattern
+653,USR00190,donald.hoffmann,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-18 10:54:05
+654,USR00125,kenneth.verma,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-18 10:54:05
+655,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+656,USR00129,sanjana.burke,False,NORMAL,NONE,Normal access event within expected pattern
+657,USR00182,ronald.bhat,False,NORMAL,NONE,Normal access event within expected pattern
+658,USR00175,aditya.chen,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-19 10:54:05
+659,USR00060,vikram.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+660,USR00195,mark.becker,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-20 10:54:05
+661,USR00100,aisha.hernandez,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-20 10:54:05
+662,USR00210,charles.lopez,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-03-20 10:54:05
+663,USR00041,matthew.huang,False,NORMAL,NONE,Normal access event within expected pattern
+664,USR00190,donald.hoffmann,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-21 10:54:05
+665,USR00008,thomas.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+666,USR00099,maria.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+667,USR00163,sofia.rao,False,NORMAL,NONE,Normal access event within expected pattern
+668,USR00299,leila.lee,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-21 10:54:05
+669,USR00141,richard.yang,False,NORMAL,NONE,Normal access event within expected pattern
+670,USR00174,pooja.romano,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-03-22 10:54:05
+671,USR00081,isha.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+672,USR00093,nadia.muller,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-22 10:54:05
+673,USR00055,neha.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+674,USR00272,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+675,USR00213,riya.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+676,USR00147,anthony.davis,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-22 10:54:05
+677,USR00191,robert.nair,False,NORMAL,NONE,Normal access event within expected pattern
+678,USR00173,christopher.meyer,False,NORMAL,NONE,Normal access event within expected pattern
+679,USR00290,thomas.sharma,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-23 10:54:05
+680,USR00076,stephen.guo,False,NORMAL,NONE,Normal access event within expected pattern
+681,USR00188,meera.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+682,USR00129,sanjana.burke,False,NORMAL,NONE,Normal access event within expected pattern
+683,USR00156,amitabh.white,False,NORMAL,NONE,Normal access event within expected pattern
+684,USR00089,isha.chen,False,NORMAL,NONE,Normal access event within expected pattern
+685,USR00138,pooja.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+686,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+687,USR00183,kenneth.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+688,USR00004,diya.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+689,USR00257,ryan.verma,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-03-24 10:54:05
+690,USR00241,amitabh.harris,False,NORMAL,NONE,Normal access event within expected pattern
+691,USR00196,anjali.jackson,False,NORMAL,NONE,Normal access event within expected pattern
+692,USR00030,yuki.meyer,False,NORMAL,NONE,Normal access event within expected pattern
+693,USR00007,robert.smith,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-26 10:54:05
+694,USR00064,zainab.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+695,USR00083,ryan.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+696,USR00092,charles.sullivan,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-26 10:54:05
+697,USR00172,anjali.jo,False,NORMAL,NONE,Normal access event within expected pattern
+698,USR00146,pooja.clark,False,NORMAL,NONE,Normal access event within expected pattern
+699,USR00231,rajesh.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+700,USR00223,nadia.quinn,False,NORMAL,NONE,Normal access event within expected pattern
+701,USR00265,jacob.lee,False,NORMAL,NONE,Normal access event within expected pattern
+702,USR00155,varun.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+703,USR00133,fatima.patel,False,NORMAL,NONE,Normal access event within expected pattern
+704,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+705,USR00284,william.patel,False,NORMAL,NONE,Normal access event within expected pattern
+706,USR00044,pooja.mishra,False,NORMAL,NONE,Normal access event within expected pattern
+707,USR00279,nadia.reilly,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-28 10:54:05
+708,USR00125,kenneth.verma,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-28 10:54:05
+709,USR00254,james.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+710,USR00007,robert.smith,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-03-29 10:54:05
+711,USR00066,ronald.martin,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-29 10:54:05
+712,USR00239,kevin.xu,False,NORMAL,NONE,Normal access event within expected pattern
+713,USR00215,nikhil.choi,False,NORMAL,NONE,Normal access event within expected pattern
+714,USR00221,rajesh.smith,False,NORMAL,NONE,Normal access event within expected pattern
+715,USR00206,fatima.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+716,USR00236,harsh.connor,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-03-29 10:54:05
+717,USR00165,paul.o'brien,False,NORMAL,NONE,Normal access event within expected pattern
+718,USR00242,deepika.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+719,USR00204,christopher.rodriguez,False,NORMAL,NONE,Normal access event within expected pattern
+720,USR00231,rajesh.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+721,USR00283,thomas.meyer,False,NORMAL,NONE,Normal access event within expected pattern
+722,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+723,USR00131,david.yang,False,NORMAL,NONE,Normal access event within expected pattern
+724,USR00228,anthony.clark,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-03-30 10:54:05
+725,USR00100,aisha.hernandez,False,NORMAL,NONE,Normal access event within expected pattern
+726,USR00238,robert.martinez,False,NORMAL,NONE,Normal access event within expected pattern
+727,USR00172,anjali.jo,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-03-30 10:54:05
+728,USR00252,nadia.singh,False,NORMAL,NONE,Normal access event within expected pattern
+729,USR00141,richard.yang,False,NORMAL,NONE,Normal access event within expected pattern
+730,USR00290,thomas.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+731,USR00254,james.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+732,USR00104,jeffrey.ghosh,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-03-30 10:54:05
+733,USR00211,rajesh.gupta,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-03-30 10:54:05
+734,USR00231,rajesh.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+735,USR00020,karan.white,False,NORMAL,NONE,Normal access event within expected pattern
+736,USR00071,richard.johnson,False,NORMAL,NONE,Normal access event within expected pattern
+737,USR00143,maria.gonzalez,False,NORMAL,NONE,Normal access event within expected pattern
+738,USR00171,xiulan.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+739,USR00242,deepika.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+740,USR00242,deepika.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+741,USR00209,nikhil.martinez,False,NORMAL,NONE,Normal access event within expected pattern
+742,USR00075,timothy.huang,False,NORMAL,NONE,Normal access event within expected pattern
+743,USR00208,sanjana.moore,False,NORMAL,NONE,Normal access event within expected pattern
+744,USR00077,neha.taylor,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-04-01 10:54:05
+745,USR00069,nikhil.jang,False,NORMAL,NONE,Normal access event within expected pattern
+746,USR00100,aisha.hernandez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-01 10:54:05
+747,USR00087,aditya.taylor,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-01 10:54:05
+748,USR00260,sofia.lewis,False,NORMAL,NONE,Normal access event within expected pattern
+749,USR00066,ronald.martin,False,NORMAL,NONE,Normal access event within expected pattern
+750,USR00077,neha.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+751,USR00295,james.sun,False,NORMAL,NONE,Normal access event within expected pattern
+752,USR00243,mark.sanchez,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-04-01 10:54:05
+753,USR00295,james.sun,False,NORMAL,NONE,Normal access event within expected pattern
+754,USR00152,diya.ghosh,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-02 10:54:05
+755,USR00014,david.thomas,False,NORMAL,NONE,Normal access event within expected pattern
+756,USR00091,steven.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+757,USR00270,robert.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+758,USR00276,william.perez,False,NORMAL,NONE,Normal access event within expected pattern
+759,USR00150,daniel.wagner,False,NORMAL,NONE,Normal access event within expected pattern
+760,USR00044,pooja.mishra,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-02 10:54:05
+761,USR00099,maria.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+762,USR00264,elena.johnson,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-04-02 10:54:05
+763,USR00053,timothy.jo,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-04-03 10:54:05
+764,USR00162,thomas.russo,False,NORMAL,NONE,Normal access event within expected pattern
+765,USR00219,eric.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+766,USR00175,aditya.chen,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-03 10:54:05
+767,USR00251,jonathan.robinson,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-04 10:54:05
+768,USR00035,nikhil.rao,False,NORMAL,NONE,Normal access event within expected pattern
+769,USR00002,kenneth.moore,False,NORMAL,NONE,Normal access event within expected pattern
+770,USR00170,sophia.smith,False,NORMAL,NONE,Normal access event within expected pattern
+771,USR00287,nisha.ferrari,False,NORMAL,NONE,Normal access event within expected pattern
+772,USR00041,matthew.huang,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-04-04 10:54:05
+773,USR00063,daniel.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+774,USR00282,raja.romano,False,NORMAL,NONE,Normal access event within expected pattern
+775,USR00077,neha.taylor,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-04-04 10:54:05
+776,USR00027,pooja.sullivan,False,NORMAL,NONE,Normal access event within expected pattern
+777,USR00255,jason.lim,False,NORMAL,NONE,Normal access event within expected pattern
+778,USR00193,christopher.kang,False,NORMAL,NONE,Normal access event within expected pattern
+779,USR00185,anthony.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+780,USR00013,jonathan.jackson,False,NORMAL,NONE,Normal access event within expected pattern
+781,USR00197,kevin.white,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-05 10:54:05
+782,USR00009,aditya.burke,False,NORMAL,NONE,Normal access event within expected pattern
+783,USR00042,kenneth.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+784,USR00289,rajesh.jang,False,NORMAL,NONE,Normal access event within expected pattern
+785,USR00231,rajesh.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+786,USR00042,kenneth.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+787,USR00021,rohan.harris,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-06 10:54:05
+788,USR00036,nicholas.harris,False,NORMAL,NONE,Normal access event within expected pattern
+789,USR00297,sofia.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+790,USR00297,sofia.schmidt,False,NORMAL,NONE,Normal access event within expected pattern
+791,USR00086,ryan.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+792,USR00063,daniel.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+793,USR00112,ryan.rao,False,NORMAL,NONE,Normal access event within expected pattern
+794,USR00228,anthony.clark,False,NORMAL,NONE,Normal access event within expected pattern
+795,USR00226,ronald.esposito,False,NORMAL,NONE,Normal access event within expected pattern
+796,USR00239,kevin.xu,False,NORMAL,NONE,Normal access event within expected pattern
+797,USR00279,nadia.reilly,False,NORMAL,NONE,Normal access event within expected pattern
+798,USR00125,kenneth.verma,False,NORMAL,NONE,Normal access event within expected pattern
+799,USR00298,joseph.miller,False,NORMAL,NONE,Normal access event within expected pattern
+800,USR00101,paul.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+801,USR00210,charles.lopez,False,NORMAL,NONE,Normal access event within expected pattern
+802,USR00244,stephen.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+803,USR00277,nicholas.schulz,False,NORMAL,NONE,Normal access event within expected pattern
+804,USR00105,gary.murphy,False,NORMAL,NONE,Normal access event within expected pattern
+805,USR00273,rohan.bianchi,False,NORMAL,NONE,Normal access event within expected pattern
+806,USR00293,gary.kang,False,NORMAL,NONE,Normal access event within expected pattern
+807,USR00295,james.sun,False,NORMAL,NONE,Normal access event within expected pattern
+808,USR00246,isha.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+809,USR00181,george.smith,False,NORMAL,NONE,Normal access event within expected pattern
+810,USR00068,robert.patel,False,NORMAL,NONE,Normal access event within expected pattern
+811,USR00211,rajesh.gupta,False,NORMAL,NONE,Normal access event within expected pattern
+812,USR00033,michael.sharma,False,NORMAL,NONE,Normal access event within expected pattern
+813,USR00216,gary.lee,False,NORMAL,NONE,Normal access event within expected pattern
+814,USR00201,daniel.jackson,False,NORMAL,NONE,Normal access event within expected pattern
+815,USR00126,mark.patel,False,NORMAL,NONE,Normal access event within expected pattern
+816,USR00225,raja.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+817,USR00040,nicholas.romano,False,NORMAL,NONE,Normal access event within expected pattern
+818,USR00069,nikhil.jang,False,NORMAL,NONE,Normal access event within expected pattern
+819,USR00007,robert.smith,False,NORMAL,NONE,Normal access event within expected pattern
+820,USR00142,harsh.bernard,False,NORMAL,NONE,Normal access event within expected pattern
+821,USR00125,kenneth.verma,False,NORMAL,NONE,Normal access event within expected pattern
+822,USR00039,stephen.bhat,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-10 10:54:05
+823,USR00209,nikhil.martinez,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-10 10:54:05
+824,USR00274,joseph.reilly,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-04-10 10:54:05
+825,USR00212,david.liu,False,NORMAL,NONE,Normal access event within expected pattern
+826,USR00027,pooja.sullivan,False,NORMAL,NONE,Normal access event within expected pattern
+827,USR00287,nisha.ferrari,False,NORMAL,NONE,Normal access event within expected pattern
+828,USR00008,thomas.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+829,USR00148,mark.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+830,USR00267,jeffrey.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+831,USR00040,nicholas.romano,True,OFF_HOURS_ADMIN_OPERATION,HIGH,Event flagged: Off Hours Admin Operation detected at 2026-04-11 10:54:05
+832,USR00088,william.jang,False,NORMAL,NONE,Normal access event within expected pattern
+833,USR00160,kevin.rao,False,NORMAL,NONE,Normal access event within expected pattern
+834,USR00093,nadia.muller,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-11 10:54:05
+835,USR00008,thomas.iyer,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-12 10:54:05
+836,USR00169,nadia.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+837,USR00086,ryan.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+838,USR00151,priya.white,False,NORMAL,NONE,Normal access event within expected pattern
+839,USR00184,vikram.williams,False,NORMAL,NONE,Normal access event within expected pattern
+840,USR00181,george.smith,False,NORMAL,NONE,Normal access event within expected pattern
+841,USR00063,daniel.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+842,USR00216,gary.lee,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-13 10:54:05
+843,USR00090,neha.o'brien,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-13 10:54:05
+844,USR00202,jason.white,False,NORMAL,NONE,Normal access event within expected pattern
+845,USR00202,jason.white,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-13 10:54:05
+846,USR00048,xiulan.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+847,USR00035,nikhil.rao,False,NORMAL,NONE,Normal access event within expected pattern
+848,USR00254,james.kumar,False,NORMAL,NONE,Normal access event within expected pattern
+849,USR00273,rohan.bianchi,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-14 10:54:05
+850,USR00231,rajesh.pillai,False,NORMAL,NONE,Normal access event within expected pattern
+851,USR00089,isha.chen,False,NORMAL,NONE,Normal access event within expected pattern
+852,USR00028,paul.singh,False,NORMAL,NONE,Normal access event within expected pattern
+853,USR00259,anthony.verma,False,NORMAL,NONE,Normal access event within expected pattern
+854,USR00244,stephen.iyer,False,NORMAL,NONE,Normal access event within expected pattern
+855,USR00155,varun.colombo,False,NORMAL,NONE,Normal access event within expected pattern
+856,USR00002,kenneth.moore,False,NORMAL,NONE,Normal access event within expected pattern
+857,USR00102,william.garcia,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-14 10:54:05
+858,USR00179,xiulan.sharma,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-14 10:54:05
+859,USR00018,meera.burke,False,NORMAL,NONE,Normal access event within expected pattern
+860,USR00292,edward.esposito,False,NORMAL,NONE,Normal access event within expected pattern
+861,USR00169,nadia.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+862,USR00225,raja.rizzo,False,NORMAL,NONE,Normal access event within expected pattern
+863,USR00087,aditya.taylor,False,NORMAL,NONE,Normal access event within expected pattern
+864,USR00218,zainab.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+865,USR00279,nadia.reilly,False,NORMAL,NONE,Normal access event within expected pattern
+866,USR00237,ryan.davis,False,NORMAL,NONE,Normal access event within expected pattern
+867,USR00101,paul.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+868,USR00246,isha.ramirez,False,NORMAL,NONE,Normal access event within expected pattern
+869,USR00215,nikhil.choi,False,NORMAL,NONE,Normal access event within expected pattern
+870,USR00120,david.sullivan,False,NORMAL,NONE,Normal access event within expected pattern
+871,USR00163,sofia.rao,False,NORMAL,NONE,Normal access event within expected pattern
+872,USR00053,timothy.jo,False,NORMAL,NONE,Normal access event within expected pattern
+873,USR00258,meera.reddy,False,NORMAL,NONE,Normal access event within expected pattern
+874,USR00250,akshay.rao,False,NORMAL,NONE,Normal access event within expected pattern
+875,USR00269,priya.lim,False,NORMAL,NONE,Normal access event within expected pattern
+876,USR00130,jeffrey.garcia,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-04-17 10:54:05
+877,USR00158,arjun.sanchez,False,NORMAL,NONE,Normal access event within expected pattern
+878,USR00203,zainab.moore,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-17 10:54:05
+879,USR00233,ronald.reddy,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-17 10:54:05
+880,USR00110,joshua.bhat,True,CROSS_DEPARTMENT_ACCESS,MEDIUM,Event flagged: Cross Department Access detected at 2026-04-17 10:54:05
+881,USR00038,aisha.kim,False,NORMAL,NONE,Normal access event within expected pattern
+882,USR00104,jeffrey.ghosh,False,NORMAL,NONE,Normal access event within expected pattern
+883,USR00213,riya.colombo,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-18 10:54:05
+884,USR00289,rajesh.jang,True,REPEATED_FAILED_AUTH,HIGH,Event flagged: Repeated Failed Auth detected at 2026-04-18 10:54:05
+885,USR00242,deepika.garcia,False,NORMAL,NONE,Normal access event within expected pattern
+886,USR00158,arjun.sanchez,True,UNUSUAL_RESOURCE_ACCESS,MEDIUM,Event flagged: Unusual Resource Access detected at 2026-04-19 10:54:05
+887,USR00193,christopher.kang,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-04-19 10:54:05
+888,USR00245,nicholas.hoffmann,False,NORMAL,NONE,Normal access event within expected pattern
+889,USR00137,jason.dubois,False,NORMAL,NONE,Normal access event within expected pattern
+890,USR00094,donald.schulz,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-19 10:54:05
+891,USR00269,priya.lim,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-19 10:54:05
+892,USR00220,arjun.hwang,False,NORMAL,NONE,Normal access event within expected pattern
+893,USR00066,ronald.martin,True,AFTER_HOURS_ACCESS,MEDIUM,Event flagged: After Hours Access detected at 2026-04-19 10:54:05
+894,USR00028,paul.singh,True,BULK_DATA_EXPORT,CRITICAL,Event flagged: Bulk Data Export detected at 2026-04-19 10:54:05
+895,USR00286,ronald.lee,False,NORMAL,NONE,Normal access event within expected pattern
+896,USR00107,daniel.anderson,False,NORMAL,NONE,Normal access event within expected pattern
+897,USR00185,anthony.thompson,False,NORMAL,NONE,Normal access event within expected pattern
+898,USR00057,zainab.jo,True,STALE_ACCOUNT_ACCESS,HIGH,Event flagged: Stale Account Access detected at 2026-04-20 10:54:05
+899,USR00078,christopher.menon,False,NORMAL,NONE,Normal access event within expected pattern

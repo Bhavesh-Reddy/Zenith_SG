@@ -1,0 +1,501 @@
+record_id,requirement_id,framework,is_anomaly,anomaly_type,severity,explanation
+EVD00000,REQ959,HIPAA,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00001,REQ404,ISO27001,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.57) may not pass audit
+EVD00002,REQ218,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 153 days old and not yet approved
+EVD00003,REQ891,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 106 days old and not yet approved
+EVD00004,REQ313,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00005,REQ685,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00006,REQ524,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00007,REQ902,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00008,REQ894,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00009,REQ468,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 122 days old and not yet approved
+EVD00010,REQ180,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 127 days old and not yet approved
+EVD00011,REQ552,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00012,REQ325,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 134 days old and not yet approved
+EVD00013,REQ728,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00014,REQ925,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00015,REQ176,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 99 days old and not yet approved
+EVD00016,REQ197,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00017,REQ403,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00018,REQ299,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00019,REQ126,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00020,REQ561,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 166 days old and not yet approved
+EVD00021,REQ573,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 179 days old and not yet approved
+EVD00022,REQ770,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 179 days old and not yet approved
+EVD00023,REQ610,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 107 days old and not yet approved
+EVD00024,REQ871,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00025,REQ891,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00026,REQ672,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00027,REQ883,SOX,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00028,REQ266,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00029,REQ859,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00030,REQ272,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 113 days old and not yet approved
+EVD00031,REQ854,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 162 days old and not yet approved
+EVD00032,REQ520,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00033,REQ128,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00034,REQ474,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00035,REQ223,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00036,REQ918,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00037,REQ580,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00038,REQ494,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00039,REQ196,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00040,REQ356,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00041,REQ480,ISO27001,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00042,REQ590,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 168 days old and not yet approved
+EVD00043,REQ854,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00044,REQ422,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00045,REQ305,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00046,REQ160,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00047,REQ565,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 101 days old and not yet approved
+EVD00048,REQ936,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00049,REQ703,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00050,REQ408,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00051,REQ705,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 124 days old and not yet approved
+EVD00052,REQ495,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00053,REQ786,GDPR,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00054,REQ887,GDPR,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00055,REQ693,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00056,REQ886,HIPAA,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00057,REQ902,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00058,REQ100,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 111 days old and not yet approved
+EVD00059,REQ861,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 121 days old and not yet approved
+EVD00060,REQ367,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00061,REQ599,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00062,REQ670,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00063,REQ501,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 171 days old and not yet approved
+EVD00064,REQ195,ISO27001,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00065,REQ202,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00066,REQ786,NIST,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00067,REQ119,GDPR,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00068,REQ111,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00069,REQ138,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00070,REQ368,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 146 days old and not yet approved
+EVD00071,REQ601,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 125 days old and not yet approved
+EVD00072,REQ286,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00073,REQ907,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00074,REQ639,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 159 days old and not yet approved
+EVD00075,REQ165,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 149 days old and not yet approved
+EVD00076,REQ755,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00077,REQ360,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 173 days old and not yet approved
+EVD00078,REQ203,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00079,REQ589,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00080,REQ625,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00081,REQ202,ISO27001,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.61) may not pass audit
+EVD00082,REQ855,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00083,REQ286,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00084,REQ380,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00085,REQ537,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00086,REQ422,GDPR,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.62) may not pass audit
+EVD00087,REQ591,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00088,REQ692,PCI-DSS,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00089,REQ717,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00090,REQ443,GDPR,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00091,REQ518,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00092,REQ754,ISO27001,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.57) may not pass audit
+EVD00093,REQ279,SOX,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00094,REQ465,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 157 days old and not yet approved
+EVD00095,REQ735,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00096,REQ365,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00097,REQ524,NIST,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00098,REQ666,SOX,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00099,REQ419,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 153 days old and not yet approved
+EVD00100,REQ209,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 144 days old and not yet approved
+EVD00101,REQ364,GDPR,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.58) may not pass audit
+EVD00102,REQ797,NIST,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.57) may not pass audit
+EVD00103,REQ269,HIPAA,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00104,REQ228,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00105,REQ462,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00106,REQ310,HIPAA,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00107,REQ903,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00108,REQ675,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00109,REQ463,ISO27001,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00110,REQ577,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00111,REQ518,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00112,REQ299,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00113,REQ549,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00114,REQ268,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00115,REQ629,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 150 days old and not yet approved
+EVD00116,REQ338,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00117,REQ542,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00118,REQ789,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 130 days old and not yet approved
+EVD00119,REQ707,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00120,REQ986,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 104 days old and not yet approved
+EVD00121,REQ928,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00122,REQ492,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 99 days old and not yet approved
+EVD00123,REQ510,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00124,REQ714,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00125,REQ577,NIST,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00126,REQ623,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00127,REQ542,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00128,REQ581,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00129,REQ529,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 151 days old and not yet approved
+EVD00130,REQ330,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 142 days old and not yet approved
+EVD00131,REQ474,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00132,REQ901,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 96 days old and not yet approved
+EVD00133,REQ599,HIPAA,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00134,REQ338,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00135,REQ939,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 107 days old and not yet approved
+EVD00136,REQ545,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 177 days old and not yet approved
+EVD00137,REQ695,SOX,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.57) may not pass audit
+EVD00138,REQ341,PCI-DSS,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00139,REQ854,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00140,REQ310,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 104 days old and not yet approved
+EVD00141,REQ383,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 125 days old and not yet approved
+EVD00142,REQ900,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00143,REQ277,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 108 days old and not yet approved
+EVD00144,REQ934,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00145,REQ129,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00146,REQ300,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00147,REQ126,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00148,REQ398,HIPAA,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00149,REQ494,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00150,REQ277,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00151,REQ186,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00152,REQ956,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00153,REQ465,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00154,REQ769,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00155,REQ569,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00156,REQ705,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00157,REQ475,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00158,REQ220,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00159,REQ667,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00160,REQ738,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00161,REQ207,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00162,REQ752,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 97 days old and not yet approved
+EVD00163,REQ486,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00164,REQ784,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00165,REQ538,SOX,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00166,REQ123,GDPR,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.54) may not pass audit
+EVD00167,REQ133,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 161 days old and not yet approved
+EVD00168,REQ552,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00169,REQ893,SOX,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00170,REQ390,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00171,REQ275,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 146 days old and not yet approved
+EVD00172,REQ551,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00173,REQ610,NIST,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.62) may not pass audit
+EVD00174,REQ534,PCI-DSS,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.57) may not pass audit
+EVD00175,REQ164,PCI-DSS,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00176,REQ110,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 99 days old and not yet approved
+EVD00177,REQ238,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 93 days old and not yet approved
+EVD00178,REQ614,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 178 days old and not yet approved
+EVD00179,REQ521,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 115 days old and not yet approved
+EVD00180,REQ722,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 154 days old and not yet approved
+EVD00181,REQ966,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00182,REQ149,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00183,REQ349,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 102 days old and not yet approved
+EVD00184,REQ376,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00185,REQ943,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00186,REQ187,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 174 days old and not yet approved
+EVD00187,REQ230,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00188,REQ904,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00189,REQ736,HIPAA,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00190,REQ472,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 168 days old and not yet approved
+EVD00191,REQ585,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 138 days old and not yet approved
+EVD00192,REQ514,ISO27001,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00193,REQ969,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 143 days old and not yet approved
+EVD00194,REQ314,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00195,REQ630,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00196,REQ635,NIST,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00197,REQ170,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00198,REQ705,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00199,REQ199,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00200,REQ278,NIST,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00201,REQ638,NIST,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.56) may not pass audit
+EVD00202,REQ264,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00203,REQ325,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 158 days old and not yet approved
+EVD00204,REQ480,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 144 days old and not yet approved
+EVD00205,REQ471,PCI-DSS,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00206,REQ158,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00207,REQ818,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00208,REQ219,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 130 days old and not yet approved
+EVD00209,REQ417,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00210,REQ455,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 127 days old and not yet approved
+EVD00211,REQ156,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 154 days old and not yet approved
+EVD00212,REQ384,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00213,REQ828,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00214,REQ949,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 92 days old and not yet approved
+EVD00215,REQ398,PCI-DSS,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00216,REQ477,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 129 days old and not yet approved
+EVD00217,REQ891,ISO27001,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.61) may not pass audit
+EVD00218,REQ810,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00219,REQ139,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 108 days old and not yet approved
+EVD00220,REQ343,GDPR,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00221,REQ686,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 152 days old and not yet approved
+EVD00222,REQ114,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 104 days old and not yet approved
+EVD00223,REQ425,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00224,REQ633,PCI-DSS,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00225,REQ400,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00226,REQ920,PCI-DSS,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00227,REQ839,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 128 days old and not yet approved
+EVD00228,REQ581,PCI-DSS,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00229,REQ353,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 123 days old and not yet approved
+EVD00230,REQ446,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 166 days old and not yet approved
+EVD00231,REQ107,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00232,REQ855,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 179 days old and not yet approved
+EVD00233,REQ474,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 105 days old and not yet approved
+EVD00234,REQ432,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00235,REQ207,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00236,REQ274,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00237,REQ213,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 151 days old and not yet approved
+EVD00238,REQ833,PCI-DSS,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.59) may not pass audit
+EVD00239,REQ338,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00240,REQ612,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 127 days old and not yet approved
+EVD00241,REQ413,ISO27001,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00242,REQ283,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00243,REQ928,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00244,REQ894,ISO27001,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00245,REQ238,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00246,REQ632,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 109 days old and not yet approved
+EVD00247,REQ857,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00248,REQ384,HIPAA,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00249,REQ964,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00250,REQ108,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00251,REQ351,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00252,REQ771,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00253,REQ278,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00254,REQ619,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00255,REQ403,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00256,REQ878,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00257,REQ909,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00258,REQ450,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00259,REQ981,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 91 days old and not yet approved
+EVD00260,REQ358,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 123 days old and not yet approved
+EVD00261,REQ649,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00262,REQ647,GDPR,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.63) may not pass audit
+EVD00263,REQ506,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00264,REQ616,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 119 days old and not yet approved
+EVD00265,REQ459,SOX,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00266,REQ475,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00267,REQ510,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00268,REQ436,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 100 days old and not yet approved
+EVD00269,REQ328,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 103 days old and not yet approved
+EVD00270,REQ443,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00271,REQ355,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00272,REQ289,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 170 days old and not yet approved
+EVD00273,REQ594,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 155 days old and not yet approved
+EVD00274,REQ548,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00275,REQ750,SOX,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00276,REQ864,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 168 days old and not yet approved
+EVD00277,REQ178,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 96 days old and not yet approved
+EVD00278,REQ544,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00279,REQ686,NIST,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00280,REQ355,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00281,REQ773,SOX,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00282,REQ901,NIST,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00283,REQ313,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00284,REQ404,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00285,REQ840,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00286,REQ424,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00287,REQ640,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00288,REQ565,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00289,REQ121,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00290,REQ894,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00291,REQ106,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 100 days old and not yet approved
+EVD00292,REQ357,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00293,REQ329,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00294,REQ460,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 101 days old and not yet approved
+EVD00295,REQ959,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00296,REQ498,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 116 days old and not yet approved
+EVD00297,REQ143,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00298,REQ215,PCI-DSS,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00299,REQ377,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 125 days old and not yet approved
+EVD00300,REQ227,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00301,REQ438,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00302,REQ193,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 164 days old and not yet approved
+EVD00303,REQ370,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 163 days old and not yet approved
+EVD00304,REQ957,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00305,REQ517,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 144 days old and not yet approved
+EVD00306,REQ807,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00307,REQ257,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00308,REQ812,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00309,REQ802,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00310,REQ316,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 175 days old and not yet approved
+EVD00311,REQ236,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00312,REQ697,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00313,REQ393,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00314,REQ404,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00315,REQ345,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00316,REQ305,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00317,REQ834,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00318,REQ354,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 159 days old and not yet approved
+EVD00319,REQ604,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 105 days old and not yet approved
+EVD00320,REQ921,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00321,REQ169,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00322,REQ507,PCI-DSS,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00323,REQ427,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00324,REQ286,SOX,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00325,REQ559,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 159 days old and not yet approved
+EVD00326,REQ777,PCI-DSS,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00327,REQ429,NIST,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00328,REQ986,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00329,REQ769,HIPAA,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00330,REQ180,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 153 days old and not yet approved
+EVD00331,REQ634,ISO27001,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00332,REQ550,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00333,REQ966,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 174 days old and not yet approved
+EVD00334,REQ276,HIPAA,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00335,REQ533,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00336,REQ923,ISO27001,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00337,REQ292,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00338,REQ409,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00339,REQ368,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00340,REQ723,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00341,REQ270,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00342,REQ178,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00343,REQ988,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00344,REQ798,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00345,REQ683,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 134 days old and not yet approved
+EVD00346,REQ292,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00347,REQ531,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00348,REQ161,NIST,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00349,REQ263,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 171 days old and not yet approved
+EVD00350,REQ545,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00351,REQ833,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00352,REQ742,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00353,REQ258,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00354,REQ525,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00355,REQ158,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 160 days old and not yet approved
+EVD00356,REQ802,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 109 days old and not yet approved
+EVD00357,REQ991,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00358,REQ228,SOX,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00359,REQ341,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00360,REQ702,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00361,REQ652,PCI-DSS,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.54) may not pass audit
+EVD00362,REQ622,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00363,REQ769,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00364,REQ419,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00365,REQ416,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00366,REQ654,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00367,REQ461,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00368,REQ875,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 177 days old and not yet approved
+EVD00369,REQ879,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00370,REQ974,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 165 days old and not yet approved
+EVD00371,REQ683,NIST,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.61) may not pass audit
+EVD00372,REQ592,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 123 days old and not yet approved
+EVD00373,REQ665,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00374,REQ582,ISO27001,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00375,REQ652,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00376,REQ466,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00377,REQ721,PCI-DSS,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00378,REQ702,NIST,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00379,REQ699,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00380,REQ680,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00381,REQ858,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00382,REQ166,ISO27001,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.54) may not pass audit
+EVD00383,REQ641,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00384,REQ180,SOX,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.52) may not pass audit
+EVD00385,REQ848,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00386,REQ945,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00387,REQ819,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 134 days old and not yet approved
+EVD00388,REQ601,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00389,REQ974,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00390,REQ111,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00391,REQ460,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 97 days old and not yet approved
+EVD00392,REQ249,GDPR,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00393,REQ249,GDPR,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00394,REQ242,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00395,REQ986,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00396,REQ425,PCI-DSS,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00397,REQ414,PCI-DSS,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00398,REQ208,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00399,REQ207,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00400,REQ131,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00401,REQ544,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00402,REQ882,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 135 days old and not yet approved
+EVD00403,REQ571,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00404,REQ183,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00405,REQ587,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00406,REQ554,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 177 days old and not yet approved
+EVD00407,REQ687,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00408,REQ456,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 173 days old and not yet approved
+EVD00409,REQ724,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00410,REQ827,PCI-DSS,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00411,REQ480,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00412,REQ375,NIST,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00413,REQ902,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 174 days old and not yet approved
+EVD00414,REQ949,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00415,REQ726,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 97 days old and not yet approved
+EVD00416,REQ218,NIST,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00417,REQ856,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 113 days old and not yet approved
+EVD00418,REQ580,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00419,REQ338,PCI-DSS,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00420,REQ317,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00421,REQ777,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00422,REQ415,ISO27001,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00423,REQ116,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 178 days old and not yet approved
+EVD00424,REQ148,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00425,REQ494,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00426,REQ785,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00427,REQ587,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00428,REQ503,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00429,REQ953,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00430,REQ349,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 131 days old and not yet approved
+EVD00431,REQ994,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 139 days old and not yet approved
+EVD00432,REQ791,PCI-DSS,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00433,REQ163,SOX,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00434,REQ807,HIPAA,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00435,REQ180,GDPR,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.50) may not pass audit
+EVD00436,REQ382,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00437,REQ693,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00438,REQ932,NIST,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00439,REQ666,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00440,REQ637,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00441,REQ257,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 132 days old and not yet approved
+EVD00442,REQ215,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00443,REQ861,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00444,REQ190,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00445,REQ313,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 109 days old and not yet approved
+EVD00446,REQ929,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00447,REQ117,SOX,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00448,REQ912,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00449,REQ473,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 130 days old and not yet approved
+EVD00450,REQ319,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 150 days old and not yet approved
+EVD00451,REQ718,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00452,REQ897,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 105 days old and not yet approved
+EVD00453,REQ508,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 136 days old and not yet approved
+EVD00454,REQ417,NIST,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00455,REQ108,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 155 days old and not yet approved
+EVD00456,REQ481,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00457,REQ223,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00458,REQ533,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00459,REQ286,SOX,True,STALE_EVIDENCE,HIGH,Evidence is 97 days old and not yet approved
+EVD00460,REQ239,SOX,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00461,REQ740,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 114 days old and not yet approved
+EVD00462,REQ979,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00463,REQ233,SOX,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.64) may not pass audit
+EVD00464,REQ455,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00465,REQ267,NIST,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00466,REQ971,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00467,REQ642,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 98 days old and not yet approved
+EVD00468,REQ530,GDPR,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00469,REQ583,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 175 days old and not yet approved
+EVD00470,REQ645,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 116 days old and not yet approved
+EVD00471,REQ928,ISO27001,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00472,REQ430,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00473,REQ577,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00474,REQ193,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00475,REQ213,GDPR,True,STALE_EVIDENCE,HIGH,Evidence too old; may not satisfy auditor freshness requirements
+EVD00476,REQ258,PCI-DSS,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00477,REQ946,SOX,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00478,REQ232,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00479,REQ905,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 148 days old and not yet approved
+EVD00480,REQ244,ISO27001,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00481,REQ742,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00482,REQ855,SOX,True,UNREVIEWED_EVIDENCE,MEDIUM,Evidence collected but never reviewed/approved
+EVD00483,REQ214,GDPR,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00484,REQ507,NIST,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00485,REQ338,ISO27001,True,STALE_EVIDENCE,HIGH,Evidence is 109 days old and not yet approved
+EVD00486,REQ603,ISO27001,True,MISSING_DOCUMENTATION,HIGH,Required documentation missing from evidence record
+EVD00487,REQ671,HIPAA,True,STALE_EVIDENCE,HIGH,Evidence is 133 days old and not yet approved
+EVD00488,REQ974,GDPR,True,STALE_EVIDENCE,HIGH,Evidence is 165 days old and not yet approved
+EVD00489,REQ120,NIST,True,STALE_EVIDENCE,HIGH,Evidence is 138 days old and not yet approved
+EVD00490,REQ571,HIPAA,True,LOW_CONFIDENCE_EVIDENCE,MEDIUM,Low confidence score (0.63) may not pass audit
+EVD00491,REQ399,GDPR,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00492,REQ951,ISO27001,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00493,REQ882,GDPR,True,INCOMPLETE_CONTROL_MAPPING,MEDIUM,Evidence does not fully map to control requirements
+EVD00494,REQ855,HIPAA,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00495,REQ153,HIPAA,True,REJECTED_EVIDENCE,HIGH,Evidence was reviewed and rejected by approver
+EVD00496,REQ323,PCI-DSS,True,STALE_EVIDENCE,HIGH,Evidence is 152 days old and not yet approved
+EVD00497,REQ713,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements
+EVD00498,REQ135,HIPAA,True,COMPLIANCE_GAP,CRITICAL,Direct compliance gap identified - no evidence for requirement
+EVD00499,REQ177,HIPAA,False,COMPLIANT,NONE,Evidence meets freshness and review requirements

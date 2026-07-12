@@ -1,0 +1,1201 @@
+record_id,user_id,username,is_anomaly,anomaly_type,severity,explanation
+0,USR00057,zainab.jo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1,USR00079,varun.weber,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+2,USR00085,varun.rao,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+3,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+4,USR00048,xiulan.colombo,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+5,USR00032,pooja.martin,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+6,USR00015,sophia.white,False,NORMAL,NONE,Access within expected behavioral baseline
+7,USR00017,diya.schulz,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+8,USR00036,nicholas.harris,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+9,USR00010,jacob.patel,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+10,USR00075,timothy.huang,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+11,USR00068,robert.patel,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+12,USR00070,jeffrey.chen,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+13,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+14,USR00011,maria.o'brien,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+15,USR00022,harsh.patel,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+16,USR00057,zainab.jo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+17,USR00022,harsh.patel,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+18,USR00006,kevin.ramirez,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+19,USR00005,george.lim,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+20,USR00010,jacob.patel,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+21,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+22,USR00036,nicholas.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+23,USR00048,xiulan.colombo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+24,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+25,USR00022,harsh.patel,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+26,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+27,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+28,USR00030,yuki.meyer,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+29,USR00061,sophia.hernandez,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+30,USR00018,meera.burke,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+31,USR00015,sophia.white,False,NORMAL,NONE,Access within expected behavioral baseline
+32,USR00059,thomas.lewis,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+33,USR00044,pooja.mishra,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+34,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+35,USR00034,harsh.jones,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+36,USR00040,nicholas.romano,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+37,USR00053,timothy.jo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+38,USR00044,pooja.mishra,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+39,USR00015,sophia.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+40,USR00088,william.jang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+41,USR00043,matthew.bernard,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+42,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+43,USR00099,maria.bianchi,False,NORMAL,NONE,Access within expected behavioral baseline
+44,USR00048,xiulan.colombo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+45,USR00056,william.kumar,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+46,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+47,USR00001,daniel.singh,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+48,USR00049,thomas.kang,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+49,USR00002,kenneth.moore,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+50,USR00010,jacob.patel,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+51,USR00016,elena.dubois,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+52,USR00077,neha.taylor,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+53,USR00078,christopher.menon,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+54,USR00019,joshua.white,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+55,USR00008,thomas.iyer,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+56,USR00041,matthew.huang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+57,USR00019,joshua.white,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+58,USR00074,mark.he,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+59,USR00086,ryan.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+60,USR00015,sophia.white,False,NORMAL,NONE,Access within expected behavioral baseline
+61,USR00088,william.jang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+62,USR00087,aditya.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+63,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+64,USR00037,ronald.wilson,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+65,USR00087,aditya.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+66,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+67,USR00068,robert.patel,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+68,USR00046,deepika.li,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+69,USR00040,nicholas.romano,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+70,USR00060,vikram.gonzalez,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+71,USR00052,leila.sun,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+72,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+73,USR00062,nisha.jones,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+74,USR00057,zainab.jo,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+75,USR00043,matthew.bernard,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+76,USR00078,christopher.menon,False,NORMAL,NONE,Access within expected behavioral baseline
+77,USR00077,neha.taylor,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+78,USR00062,nisha.jones,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+79,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+80,USR00054,edward.smith,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+81,USR00091,steven.thompson,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+82,USR00096,edward.thomas,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+83,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+84,USR00015,sophia.white,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+85,USR00006,kevin.ramirez,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+86,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+87,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+88,USR00005,george.lim,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+89,USR00000,pooja.murphy,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+90,USR00063,daniel.colombo,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+91,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+92,USR00037,ronald.wilson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+93,USR00065,timothy.xu,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+94,USR00004,diya.anderson,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+95,USR00035,nikhil.rao,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+96,USR00039,stephen.bhat,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+97,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+98,USR00012,vikram.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+99,USR00039,stephen.bhat,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+100,USR00011,maria.o'brien,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+101,USR00031,amitabh.taylor,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+102,USR00044,pooja.mishra,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+103,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+104,USR00044,pooja.mishra,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+105,USR00073,joshua.becker,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+106,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+107,USR00000,pooja.murphy,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+108,USR00062,nisha.jones,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+109,USR00067,donald.wang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+110,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+111,USR00084,aditya.gupta,False,NORMAL,NONE,Access within expected behavioral baseline
+112,USR00003,sanjana.li,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+113,USR00049,thomas.kang,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+114,USR00044,pooja.mishra,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+115,USR00010,jacob.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+116,USR00019,joshua.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+117,USR00033,michael.sharma,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+118,USR00082,arjun.hwang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+119,USR00009,aditya.burke,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+120,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+121,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+122,USR00028,paul.singh,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+123,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+124,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+125,USR00020,karan.white,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+126,USR00094,donald.schulz,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+127,USR00069,nikhil.jang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+128,USR00008,thomas.iyer,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+129,USR00002,kenneth.moore,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+130,USR00083,ryan.thomas,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+131,USR00016,elena.dubois,False,NORMAL,NONE,Access within expected behavioral baseline
+132,USR00007,robert.smith,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+133,USR00004,diya.anderson,False,NORMAL,NONE,Access within expected behavioral baseline
+134,USR00032,pooja.martin,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+135,USR00024,nicholas.jackson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+136,USR00042,kenneth.sanchez,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+137,USR00048,xiulan.colombo,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+138,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+139,USR00051,meera.quinn,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+140,USR00032,pooja.martin,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+141,USR00033,michael.sharma,False,NORMAL,NONE,Access within expected behavioral baseline
+142,USR00019,joshua.white,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+143,USR00048,xiulan.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+144,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+145,USR00000,pooja.murphy,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+146,USR00031,amitabh.taylor,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+147,USR00005,george.lim,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+148,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+149,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+150,USR00002,kenneth.moore,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+151,USR00001,daniel.singh,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+152,USR00001,daniel.singh,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+153,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+154,USR00063,daniel.colombo,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+155,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+156,USR00077,neha.taylor,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+157,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+158,USR00040,nicholas.romano,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+159,USR00000,pooja.murphy,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+160,USR00048,xiulan.colombo,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+161,USR00027,pooja.sullivan,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+162,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+163,USR00074,mark.he,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+164,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+165,USR00098,jason.white,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+166,USR00076,stephen.guo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+167,USR00054,edward.smith,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+168,USR00003,sanjana.li,False,NORMAL,NONE,Access within expected behavioral baseline
+169,USR00003,sanjana.li,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+170,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+171,USR00034,harsh.jones,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+172,USR00057,zainab.jo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+173,USR00075,timothy.huang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+174,USR00092,charles.sullivan,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+175,USR00040,nicholas.romano,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+176,USR00080,david.rodriguez,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+177,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+178,USR00005,george.lim,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+179,USR00024,nicholas.jackson,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+180,USR00076,stephen.guo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+181,USR00098,jason.white,False,NORMAL,NONE,Access within expected behavioral baseline
+182,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+183,USR00065,timothy.xu,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+184,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+185,USR00095,priya.petit,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+186,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+187,USR00061,sophia.hernandez,False,NORMAL,NONE,Access within expected behavioral baseline
+188,USR00092,charles.sullivan,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+189,USR00016,elena.dubois,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+190,USR00078,christopher.menon,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+191,USR00000,pooja.murphy,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+192,USR00051,meera.quinn,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+193,USR00085,varun.rao,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+194,USR00040,nicholas.romano,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+195,USR00073,joshua.becker,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+196,USR00098,jason.white,False,NORMAL,NONE,Access within expected behavioral baseline
+197,USR00035,nikhil.rao,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+198,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+199,USR00031,amitabh.taylor,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+200,USR00042,kenneth.sanchez,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+201,USR00028,paul.singh,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+202,USR00016,elena.dubois,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+203,USR00077,neha.taylor,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+204,USR00072,amitabh.park,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+205,USR00068,robert.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+206,USR00078,christopher.menon,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+207,USR00069,nikhil.jang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+208,USR00034,harsh.jones,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+209,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+210,USR00035,nikhil.rao,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+211,USR00077,neha.taylor,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+212,USR00009,aditya.burke,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+213,USR00091,steven.thompson,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+214,USR00061,sophia.hernandez,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+215,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+216,USR00024,nicholas.jackson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+217,USR00086,ryan.colombo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+218,USR00012,vikram.white,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+219,USR00033,michael.sharma,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+220,USR00049,thomas.kang,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+221,USR00080,david.rodriguez,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+222,USR00049,thomas.kang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+223,USR00069,nikhil.jang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+224,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+225,USR00020,karan.white,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+226,USR00047,george.clark,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+227,USR00096,edward.thomas,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+228,USR00058,anthony.taylor,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+229,USR00065,timothy.xu,False,NORMAL,NONE,Access within expected behavioral baseline
+230,USR00098,jason.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+231,USR00043,matthew.bernard,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+232,USR00002,kenneth.moore,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+233,USR00017,diya.schulz,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+234,USR00025,diya.romano,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+235,USR00060,vikram.gonzalez,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+236,USR00023,isha.jones,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+237,USR00020,karan.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+238,USR00030,yuki.meyer,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+239,USR00030,yuki.meyer,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+240,USR00055,neha.johnson,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+241,USR00062,nisha.jones,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+242,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+243,USR00006,kevin.ramirez,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+244,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+245,USR00071,richard.johnson,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+246,USR00062,nisha.jones,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+247,USR00005,george.lim,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+248,USR00049,thomas.kang,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+249,USR00078,christopher.menon,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+250,USR00074,mark.he,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+251,USR00083,ryan.thomas,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+252,USR00079,varun.weber,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+253,USR00089,isha.chen,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+254,USR00057,zainab.jo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+255,USR00043,matthew.bernard,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+256,USR00048,xiulan.colombo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+257,USR00049,thomas.kang,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+258,USR00054,edward.smith,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+259,USR00028,paul.singh,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+260,USR00009,aditya.burke,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+261,USR00012,vikram.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+262,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+263,USR00027,pooja.sullivan,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+264,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+265,USR00067,donald.wang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+266,USR00071,richard.johnson,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+267,USR00030,yuki.meyer,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+268,USR00059,thomas.lewis,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+269,USR00036,nicholas.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+270,USR00061,sophia.hernandez,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+271,USR00078,christopher.menon,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+272,USR00022,harsh.patel,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+273,USR00011,maria.o'brien,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+274,USR00006,kevin.ramirez,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+275,USR00031,amitabh.taylor,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+276,USR00088,william.jang,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+277,USR00034,harsh.jones,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+278,USR00012,vikram.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+279,USR00042,kenneth.sanchez,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+280,USR00056,william.kumar,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+281,USR00034,harsh.jones,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+282,USR00079,varun.weber,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+283,USR00049,thomas.kang,False,NORMAL,NONE,Access within expected behavioral baseline
+284,USR00091,steven.thompson,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+285,USR00069,nikhil.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+286,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+287,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+288,USR00012,vikram.white,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+289,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+290,USR00014,david.thomas,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+291,USR00097,leila.lopez,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+292,USR00008,thomas.iyer,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+293,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+294,USR00041,matthew.huang,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+295,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+296,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+297,USR00001,daniel.singh,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+298,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+299,USR00050,nisha.martinez,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+300,USR00073,joshua.becker,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+301,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+302,USR00098,jason.white,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+303,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+304,USR00008,thomas.iyer,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+305,USR00022,harsh.patel,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+306,USR00083,ryan.thomas,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+307,USR00033,michael.sharma,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+308,USR00028,paul.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+309,USR00090,neha.o'brien,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+310,USR00075,timothy.huang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+311,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+312,USR00005,george.lim,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+313,USR00026,stephen.bhat,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+314,USR00028,paul.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+315,USR00024,nicholas.jackson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+316,USR00070,jeffrey.chen,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+317,USR00051,meera.quinn,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+318,USR00047,george.clark,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+319,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+320,USR00015,sophia.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+321,USR00048,xiulan.colombo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+322,USR00085,varun.rao,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+323,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+324,USR00023,isha.jones,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+325,USR00071,richard.johnson,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+326,USR00064,zainab.pillai,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+327,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+328,USR00040,nicholas.romano,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+329,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+330,USR00078,christopher.menon,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+331,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+332,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+333,USR00082,arjun.hwang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+334,USR00010,jacob.patel,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+335,USR00049,thomas.kang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+336,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+337,USR00012,vikram.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+338,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+339,USR00052,leila.sun,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+340,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+341,USR00012,vikram.white,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+342,USR00076,stephen.guo,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+343,USR00067,donald.wang,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+344,USR00034,harsh.jones,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+345,USR00067,donald.wang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+346,USR00059,thomas.lewis,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+347,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+348,USR00065,timothy.xu,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+349,USR00071,richard.johnson,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+350,USR00059,thomas.lewis,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+351,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+352,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+353,USR00093,nadia.muller,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+354,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+355,USR00073,joshua.becker,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+356,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+357,USR00041,matthew.huang,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+358,USR00048,xiulan.colombo,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+359,USR00081,isha.ghosh,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+360,USR00002,kenneth.moore,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+361,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+362,USR00096,edward.thomas,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+363,USR00041,matthew.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+364,USR00047,george.clark,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+365,USR00036,nicholas.harris,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+366,USR00010,jacob.patel,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+367,USR00086,ryan.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+368,USR00082,arjun.hwang,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+369,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+370,USR00053,timothy.jo,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+371,USR00005,george.lim,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+372,USR00020,karan.white,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+373,USR00041,matthew.huang,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+374,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+375,USR00001,daniel.singh,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+376,USR00053,timothy.jo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+377,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+378,USR00024,nicholas.jackson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+379,USR00054,edward.smith,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+380,USR00056,william.kumar,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+381,USR00074,mark.he,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+382,USR00076,stephen.guo,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+383,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+384,USR00096,edward.thomas,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+385,USR00045,stephen.kumar,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+386,USR00062,nisha.jones,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+387,USR00071,richard.johnson,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+388,USR00068,robert.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+389,USR00001,daniel.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+390,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+391,USR00014,david.thomas,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+392,USR00033,michael.sharma,False,NORMAL,NONE,Access within expected behavioral baseline
+393,USR00022,harsh.patel,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+394,USR00045,stephen.kumar,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+395,USR00056,william.kumar,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+396,USR00093,nadia.muller,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+397,USR00012,vikram.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+398,USR00060,vikram.gonzalez,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+399,USR00000,pooja.murphy,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+400,USR00025,diya.romano,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+401,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+402,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+403,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+404,USR00057,zainab.jo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+405,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+406,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+407,USR00031,amitabh.taylor,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+408,USR00075,timothy.huang,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+409,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+410,USR00025,diya.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+411,USR00025,diya.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+412,USR00027,pooja.sullivan,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+413,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+414,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+415,USR00041,matthew.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+416,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+417,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+418,USR00008,thomas.iyer,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+419,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+420,USR00086,ryan.colombo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+421,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+422,USR00071,richard.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+423,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+424,USR00032,pooja.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+425,USR00018,meera.burke,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+426,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+427,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+428,USR00069,nikhil.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+429,USR00065,timothy.xu,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+430,USR00032,pooja.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+431,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+432,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+433,USR00052,leila.sun,False,NORMAL,NONE,Access within expected behavioral baseline
+434,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+435,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+436,USR00089,isha.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+437,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+438,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+439,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+440,USR00032,pooja.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+441,USR00056,william.kumar,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+442,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+443,USR00061,sophia.hernandez,False,NORMAL,NONE,Access within expected behavioral baseline
+444,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+445,USR00055,neha.johnson,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+446,USR00006,kevin.ramirez,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+447,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+448,USR00061,sophia.hernandez,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+449,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+450,USR00090,neha.o'brien,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+451,USR00061,sophia.hernandez,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+452,USR00099,maria.bianchi,False,NORMAL,NONE,Access within expected behavioral baseline
+453,USR00054,edward.smith,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+454,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+455,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+456,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+457,USR00034,harsh.jones,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+458,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+459,USR00038,aisha.kim,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+460,USR00081,isha.ghosh,False,NORMAL,NONE,Access within expected behavioral baseline
+461,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+462,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+463,USR00039,stephen.bhat,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+464,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+465,USR00091,steven.thompson,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+466,USR00031,amitabh.taylor,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+467,USR00010,jacob.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+468,USR00032,pooja.martin,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+469,USR00029,zainab.wagner,False,NORMAL,NONE,Access within expected behavioral baseline
+470,USR00047,george.clark,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+471,USR00033,michael.sharma,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+472,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+473,USR00016,elena.dubois,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+474,USR00063,daniel.colombo,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+475,USR00015,sophia.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+476,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+477,USR00015,sophia.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+478,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+479,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+480,USR00015,sophia.white,False,NORMAL,NONE,Access within expected behavioral baseline
+481,USR00011,maria.o'brien,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+482,USR00049,thomas.kang,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+483,USR00080,david.rodriguez,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+484,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+485,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+486,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+487,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+488,USR00010,jacob.patel,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+489,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+490,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+491,USR00053,timothy.jo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+492,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+493,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+494,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+495,USR00077,neha.taylor,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+496,USR00092,charles.sullivan,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+497,USR00043,matthew.bernard,False,NORMAL,NONE,Access within expected behavioral baseline
+498,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+499,USR00011,maria.o'brien,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+500,USR00036,nicholas.harris,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+501,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+502,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+503,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+504,USR00021,rohan.harris,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+505,USR00049,thomas.kang,False,NORMAL,NONE,Access within expected behavioral baseline
+506,USR00034,harsh.jones,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+507,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+508,USR00072,amitabh.park,False,NORMAL,NONE,Access within expected behavioral baseline
+509,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+510,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+511,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+512,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+513,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+514,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+515,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+516,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+517,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+518,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+519,USR00080,david.rodriguez,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+520,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+521,USR00038,aisha.kim,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+522,USR00039,stephen.bhat,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+523,USR00060,vikram.gonzalez,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+524,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+525,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+526,USR00018,meera.burke,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+527,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+528,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+529,USR00055,neha.johnson,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+530,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+531,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+532,USR00088,william.jang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+533,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+534,USR00010,jacob.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+535,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+536,USR00056,william.kumar,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+537,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+538,USR00071,richard.johnson,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+539,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+540,USR00093,nadia.muller,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+541,USR00017,diya.schulz,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+542,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+543,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+544,USR00084,aditya.gupta,False,NORMAL,NONE,Access within expected behavioral baseline
+545,USR00093,nadia.muller,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+546,USR00070,jeffrey.chen,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+547,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+548,USR00071,richard.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+549,USR00003,sanjana.li,False,NORMAL,NONE,Access within expected behavioral baseline
+550,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+551,USR00078,christopher.menon,False,NORMAL,NONE,Access within expected behavioral baseline
+552,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+553,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+554,USR00012,vikram.white,False,NORMAL,NONE,Access within expected behavioral baseline
+555,USR00099,maria.bianchi,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+556,USR00018,meera.burke,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+557,USR00088,william.jang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+558,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+559,USR00027,pooja.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+560,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+561,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+562,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+563,USR00036,nicholas.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+564,USR00033,michael.sharma,False,NORMAL,NONE,Access within expected behavioral baseline
+565,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+566,USR00019,joshua.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+567,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+568,USR00099,maria.bianchi,False,NORMAL,NONE,Access within expected behavioral baseline
+569,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+570,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+571,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+572,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+573,USR00003,sanjana.li,False,NORMAL,NONE,Access within expected behavioral baseline
+574,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+575,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+576,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+577,USR00026,stephen.bhat,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+578,USR00094,donald.schulz,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+579,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+580,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+581,USR00088,william.jang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+582,USR00012,vikram.white,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+583,USR00061,sophia.hernandez,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+584,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+585,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+586,USR00074,mark.he,False,NORMAL,NONE,Access within expected behavioral baseline
+587,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+588,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+589,USR00021,rohan.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+590,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+591,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+592,USR00003,sanjana.li,False,NORMAL,NONE,Access within expected behavioral baseline
+593,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+594,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+595,USR00089,isha.chen,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+596,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+597,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+598,USR00029,zainab.wagner,False,NORMAL,NONE,Access within expected behavioral baseline
+599,USR00072,amitabh.park,False,NORMAL,NONE,Access within expected behavioral baseline
+600,USR00023,isha.jones,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+601,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+602,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+603,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+604,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+605,USR00092,charles.sullivan,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+606,USR00035,nikhil.rao,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+607,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+608,USR00011,maria.o'brien,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+609,USR00025,diya.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+610,USR00046,deepika.li,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+611,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+612,USR00051,meera.quinn,False,NORMAL,NONE,Access within expected behavioral baseline
+613,USR00031,amitabh.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+614,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+615,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+616,USR00036,nicholas.harris,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+617,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+618,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+619,USR00073,joshua.becker,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+620,USR00029,zainab.wagner,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+621,USR00001,daniel.singh,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+622,USR00004,diya.anderson,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+623,USR00098,jason.white,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+624,USR00058,anthony.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+625,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+626,USR00069,nikhil.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+627,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+628,USR00074,mark.he,False,NORMAL,NONE,Access within expected behavioral baseline
+629,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+630,USR00054,edward.smith,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+631,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+632,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+633,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+634,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+635,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+636,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+637,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+638,USR00059,thomas.lewis,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+639,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+640,USR00029,zainab.wagner,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+641,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+642,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+643,USR00001,daniel.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+644,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+645,USR00018,meera.burke,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+646,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+647,USR00031,amitabh.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+648,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+649,USR00071,richard.johnson,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+650,USR00098,jason.white,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+651,USR00085,varun.rao,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+652,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+653,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+654,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+655,USR00094,donald.schulz,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+656,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+657,USR00007,robert.smith,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+658,USR00068,robert.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+659,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+660,USR00071,richard.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+661,USR00074,mark.he,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+662,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+663,USR00041,matthew.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+664,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+665,USR00010,jacob.patel,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+666,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+667,USR00024,nicholas.jackson,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+668,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+669,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+670,USR00026,stephen.bhat,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+671,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+672,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+673,USR00042,kenneth.sanchez,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+674,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+675,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+676,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+677,USR00000,pooja.murphy,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+678,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+679,USR00091,steven.thompson,False,NORMAL,NONE,Access within expected behavioral baseline
+680,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+681,USR00053,timothy.jo,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+682,USR00065,timothy.xu,False,NORMAL,NONE,Access within expected behavioral baseline
+683,USR00058,anthony.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+684,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+685,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+686,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+687,USR00048,xiulan.colombo,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+688,USR00058,anthony.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+689,USR00032,pooja.martin,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+690,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+691,USR00025,diya.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+692,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+693,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+694,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+695,USR00064,zainab.pillai,False,NORMAL,NONE,Access within expected behavioral baseline
+696,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+697,USR00095,priya.petit,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+698,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+699,USR00061,sophia.hernandez,False,NORMAL,NONE,Access within expected behavioral baseline
+700,USR00041,matthew.huang,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+701,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+702,USR00030,yuki.meyer,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+703,USR00078,christopher.menon,False,NORMAL,NONE,Access within expected behavioral baseline
+704,USR00007,robert.smith,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+705,USR00014,david.thomas,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+706,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+707,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+708,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+709,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+710,USR00066,ronald.martin,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+711,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+712,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+713,USR00084,aditya.gupta,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+714,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+715,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+716,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+717,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+718,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+719,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+720,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+721,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+722,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+723,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+724,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+725,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+726,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+727,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+728,USR00050,nisha.martinez,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+729,USR00029,zainab.wagner,False,NORMAL,NONE,Access within expected behavioral baseline
+730,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+731,USR00027,pooja.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+732,USR00040,nicholas.romano,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+733,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+734,USR00025,diya.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+735,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+736,USR00081,isha.ghosh,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+737,USR00025,diya.romano,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+738,USR00003,sanjana.li,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+739,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+740,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+741,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+742,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+743,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+744,USR00077,neha.taylor,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+745,USR00099,maria.bianchi,False,NORMAL,NONE,Access within expected behavioral baseline
+746,USR00073,joshua.becker,False,NORMAL,NONE,Access within expected behavioral baseline
+747,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+748,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+749,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+750,USR00080,david.rodriguez,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+751,USR00004,diya.anderson,False,NORMAL,NONE,Access within expected behavioral baseline
+752,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+753,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+754,USR00017,diya.schulz,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+755,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+756,USR00035,nikhil.rao,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+757,USR00023,isha.jones,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+758,USR00039,stephen.bhat,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+759,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+760,USR00036,nicholas.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+761,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+762,USR00097,leila.lopez,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+763,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+764,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+765,USR00004,diya.anderson,False,NORMAL,NONE,Access within expected behavioral baseline
+766,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+767,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+768,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+769,USR00077,neha.taylor,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+770,USR00017,diya.schulz,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+771,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+772,USR00019,joshua.white,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+773,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+774,USR00053,timothy.jo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+775,USR00091,steven.thompson,False,NORMAL,NONE,Access within expected behavioral baseline
+776,USR00071,richard.johnson,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+777,USR00021,rohan.harris,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+778,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+779,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+780,USR00061,sophia.hernandez,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+781,USR00055,neha.johnson,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+782,USR00008,thomas.iyer,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+783,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+784,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+785,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+786,USR00098,jason.white,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+787,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+788,USR00084,aditya.gupta,False,NORMAL,NONE,Access within expected behavioral baseline
+789,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+790,USR00078,christopher.menon,False,NORMAL,NONE,Access within expected behavioral baseline
+791,USR00090,neha.o'brien,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+792,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+793,USR00054,edward.smith,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+794,USR00089,isha.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+795,USR00022,harsh.patel,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+796,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+797,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+798,USR00097,leila.lopez,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+799,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+800,USR00032,pooja.martin,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+801,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+802,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+803,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+804,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+805,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+806,USR00081,isha.ghosh,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+807,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+808,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+809,USR00084,aditya.gupta,False,NORMAL,NONE,Access within expected behavioral baseline
+810,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+811,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+812,USR00087,aditya.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+813,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+814,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+815,USR00023,isha.jones,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+816,USR00078,christopher.menon,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+817,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+818,USR00016,elena.dubois,False,NORMAL,NONE,Access within expected behavioral baseline
+819,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+820,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+821,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+822,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+823,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+824,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+825,USR00052,leila.sun,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+826,USR00007,robert.smith,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+827,USR00069,nikhil.jang,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+828,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+829,USR00016,elena.dubois,False,NORMAL,NONE,Access within expected behavioral baseline
+830,USR00016,elena.dubois,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+831,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+832,USR00049,thomas.kang,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+833,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+834,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+835,USR00081,isha.ghosh,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+836,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+837,USR00046,deepika.li,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+838,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+839,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+840,USR00010,jacob.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+841,USR00021,rohan.harris,False,NORMAL,NONE,Access within expected behavioral baseline
+842,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+843,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+844,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+845,USR00032,pooja.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+846,USR00062,nisha.jones,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+847,USR00066,ronald.martin,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+848,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+849,USR00084,aditya.gupta,False,NORMAL,NONE,Access within expected behavioral baseline
+850,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+851,USR00002,kenneth.moore,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+852,USR00098,jason.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+853,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+854,USR00054,edward.smith,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+855,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+856,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+857,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+858,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+859,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+860,USR00033,michael.sharma,False,NORMAL,NONE,Access within expected behavioral baseline
+861,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+862,USR00038,aisha.kim,False,NORMAL,NONE,Access within expected behavioral baseline
+863,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+864,USR00032,pooja.martin,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+865,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+866,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+867,USR00085,varun.rao,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+868,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+869,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+870,USR00082,arjun.hwang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+871,USR00047,george.clark,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+872,USR00023,isha.jones,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+873,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+874,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+875,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+876,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+877,USR00002,kenneth.moore,False,NORMAL,NONE,Access within expected behavioral baseline
+878,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+879,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+880,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+881,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+882,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+883,USR00031,amitabh.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+884,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+885,USR00018,meera.burke,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+886,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+887,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+888,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+889,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+890,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+891,USR00032,pooja.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+892,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+893,USR00002,kenneth.moore,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+894,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+895,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+896,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+897,USR00028,paul.singh,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+898,USR00018,meera.burke,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+899,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+900,USR00002,kenneth.moore,False,NORMAL,NONE,Access within expected behavioral baseline
+901,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+902,USR00062,nisha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+903,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+904,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+905,USR00003,sanjana.li,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+906,USR00093,nadia.muller,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+907,USR00053,timothy.jo,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+908,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+909,USR00085,varun.rao,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+910,USR00033,michael.sharma,False,NORMAL,NONE,Access within expected behavioral baseline
+911,USR00008,thomas.iyer,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+912,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+913,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+914,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+915,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+916,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+917,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+918,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+919,USR00057,zainab.jo,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+920,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+921,USR00051,meera.quinn,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+922,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+923,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+924,USR00041,matthew.huang,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+925,USR00001,daniel.singh,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+926,USR00005,george.lim,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+927,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+928,USR00037,ronald.wilson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+929,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+930,USR00028,paul.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+931,USR00093,nadia.muller,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+932,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+933,USR00057,zainab.jo,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+934,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+935,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+936,USR00099,maria.bianchi,False,NORMAL,NONE,Access within expected behavioral baseline
+937,USR00063,daniel.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+938,USR00054,edward.smith,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+939,USR00064,zainab.pillai,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+940,USR00091,steven.thompson,False,NORMAL,NONE,Access within expected behavioral baseline
+941,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+942,USR00036,nicholas.harris,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+943,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+944,USR00069,nikhil.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+945,USR00031,amitabh.taylor,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+946,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+947,USR00027,pooja.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+948,USR00010,jacob.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+949,USR00067,donald.wang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from low sensitivity resource
+950,USR00001,daniel.singh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+951,USR00049,thomas.kang,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+952,USR00017,diya.schulz,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+953,USR00052,leila.sun,False,NORMAL,NONE,Access within expected behavioral baseline
+954,USR00013,jonathan.jackson,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+955,USR00081,isha.ghosh,False,NORMAL,NONE,Access within expected behavioral baseline
+956,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+957,USR00013,jonathan.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+958,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+959,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+960,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+961,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+962,USR00002,kenneth.moore,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+963,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+964,USR00039,stephen.bhat,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+965,USR00094,donald.schulz,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+966,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+967,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+968,USR00020,karan.white,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+969,USR00093,nadia.muller,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+970,USR00085,varun.rao,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+971,USR00084,aditya.gupta,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+972,USR00000,pooja.murphy,False,NORMAL,NONE,Access within expected behavioral baseline
+973,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+974,USR00050,nisha.martinez,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+975,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+976,USR00056,william.kumar,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+977,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+978,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+979,USR00003,sanjana.li,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+980,USR00074,mark.he,False,NORMAL,NONE,Access within expected behavioral baseline
+981,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+982,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+983,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+984,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+985,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+986,USR00063,daniel.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+987,USR00016,elena.dubois,False,NORMAL,NONE,Access within expected behavioral baseline
+988,USR00081,isha.ghosh,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+989,USR00005,george.lim,False,NORMAL,NONE,Access within expected behavioral baseline
+990,USR00023,isha.jones,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+991,USR00065,timothy.xu,False,NORMAL,NONE,Access within expected behavioral baseline
+992,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+993,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+994,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+995,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+996,USR00064,zainab.pillai,False,NORMAL,NONE,Access within expected behavioral baseline
+997,USR00038,aisha.kim,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+998,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+999,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1000,USR00046,deepika.li,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1001,USR00095,priya.petit,False,NORMAL,NONE,Access within expected behavioral baseline
+1002,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+1003,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+1004,USR00008,thomas.iyer,False,NORMAL,NONE,Access within expected behavioral baseline
+1005,USR00069,nikhil.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+1006,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+1007,USR00032,pooja.martin,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1008,USR00046,deepika.li,False,NORMAL,NONE,Access within expected behavioral baseline
+1009,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+1010,USR00097,leila.lopez,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1011,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+1012,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+1013,USR00088,william.jang,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1014,USR00014,david.thomas,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+1015,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+1016,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+1017,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+1018,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+1019,USR00089,isha.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+1020,USR00057,zainab.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+1021,USR00095,priya.petit,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1022,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+1023,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1024,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+1025,USR00098,jason.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1026,USR00094,donald.schulz,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1027,USR00050,nisha.martinez,False,NORMAL,NONE,Access within expected behavioral baseline
+1028,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1029,USR00092,charles.sullivan,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from high sensitivity resource
+1030,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+1031,USR00096,edward.thomas,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+1032,USR00074,mark.he,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+1033,USR00027,pooja.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+1034,USR00044,pooja.mishra,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1035,USR00051,meera.quinn,False,NORMAL,NONE,Access within expected behavioral baseline
+1036,USR00090,neha.o'brien,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1037,USR00087,aditya.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1038,USR00054,edward.smith,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+1039,USR00022,harsh.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+1040,USR00052,leila.sun,False,NORMAL,NONE,Access within expected behavioral baseline
+1041,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+1042,USR00061,sophia.hernandez,False,NORMAL,NONE,Access within expected behavioral baseline
+1043,USR00079,varun.weber,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1044,USR00045,stephen.kumar,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1045,USR00061,sophia.hernandez,False,NORMAL,NONE,Access within expected behavioral baseline
+1046,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1047,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+1048,USR00001,daniel.singh,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1049,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+1050,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+1051,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+1052,USR00066,ronald.martin,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1053,USR00065,timothy.xu,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1054,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+1055,USR00011,maria.o'brien,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1056,USR00081,isha.ghosh,False,NORMAL,NONE,Access within expected behavioral baseline
+1057,USR00081,isha.ghosh,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1058,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+1059,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+1060,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+1061,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+1062,USR00053,timothy.jo,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1063,USR00035,nikhil.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+1064,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+1065,USR00048,xiulan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+1066,USR00030,yuki.meyer,False,NORMAL,NONE,Access within expected behavioral baseline
+1067,USR00072,amitabh.park,False,NORMAL,NONE,Access within expected behavioral baseline
+1068,USR00071,richard.johnson,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+1069,USR00042,kenneth.sanchez,False,NORMAL,NONE,Access within expected behavioral baseline
+1070,USR00056,william.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+1071,USR00044,pooja.mishra,False,NORMAL,NONE,Access within expected behavioral baseline
+1072,USR00016,elena.dubois,False,NORMAL,NONE,Access within expected behavioral baseline
+1073,USR00098,jason.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1074,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+1075,USR00091,steven.thompson,False,NORMAL,NONE,Access within expected behavioral baseline
+1076,USR00023,isha.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+1077,USR00093,nadia.muller,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1078,USR00068,robert.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+1079,USR00004,diya.anderson,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+1080,USR00015,sophia.white,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1081,USR00092,charles.sullivan,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1082,USR00086,ryan.colombo,False,NORMAL,NONE,Access within expected behavioral baseline
+1083,USR00049,thomas.kang,False,NORMAL,NONE,Access within expected behavioral baseline
+1084,USR00080,david.rodriguez,False,NORMAL,NONE,Access within expected behavioral baseline
+1085,USR00068,robert.patel,False,NORMAL,NONE,Access within expected behavioral baseline
+1086,USR00007,robert.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+1087,USR00053,timothy.jo,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1088,USR00011,maria.o'brien,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+1089,USR00044,pooja.mishra,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+1090,USR00021,rohan.harris,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1091,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+1092,USR00054,edward.smith,False,NORMAL,NONE,Access within expected behavioral baseline
+1093,USR00011,maria.o'brien,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1094,USR00019,joshua.white,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1095,USR00098,jason.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1096,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+1097,USR00017,diya.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+1098,USR00009,aditya.burke,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1099,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+1100,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+1101,USR00092,charles.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+1102,USR00019,joshua.white,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1103,USR00041,matthew.huang,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1104,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1105,USR00041,matthew.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+1106,USR00031,amitabh.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1107,USR00047,george.clark,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1108,USR00020,karan.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1109,USR00090,neha.o'brien,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+1110,USR00026,stephen.bhat,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1111,USR00090,neha.o'brien,True,AFTER_HOURS,MEDIUM,Unusual access pattern: AFTER HOURS
+1112,USR00070,jeffrey.chen,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+1113,USR00073,joshua.becker,False,NORMAL,NONE,Access within expected behavioral baseline
+1114,USR00002,kenneth.moore,False,NORMAL,NONE,Access within expected behavioral baseline
+1115,USR00093,nadia.muller,False,NORMAL,NONE,Access within expected behavioral baseline
+1116,USR00099,maria.bianchi,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1117,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+1118,USR00091,steven.thompson,False,NORMAL,NONE,Access within expected behavioral baseline
+1119,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+1120,USR00001,daniel.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+1121,USR00014,david.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1122,USR00079,varun.weber,False,NORMAL,NONE,Access within expected behavioral baseline
+1123,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+1124,USR00018,meera.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+1125,USR00034,harsh.jones,False,NORMAL,NONE,Access within expected behavioral baseline
+1126,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+1127,USR00063,daniel.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1128,USR00059,thomas.lewis,False,NORMAL,NONE,Access within expected behavioral baseline
+1129,USR00085,varun.rao,False,NORMAL,NONE,Access within expected behavioral baseline
+1130,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+1131,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+1132,USR00055,neha.johnson,False,NORMAL,NONE,Access within expected behavioral baseline
+1133,USR00089,isha.chen,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1134,USR00041,matthew.huang,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+1135,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+1136,USR00082,arjun.hwang,False,NORMAL,NONE,Access within expected behavioral baseline
+1137,USR00066,ronald.martin,False,NORMAL,NONE,Access within expected behavioral baseline
+1138,USR00097,leila.lopez,False,NORMAL,NONE,Access within expected behavioral baseline
+1139,USR00016,elena.dubois,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+1140,USR00063,daniel.colombo,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1141,USR00092,charles.sullivan,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1142,USR00028,paul.singh,False,NORMAL,NONE,Access within expected behavioral baseline
+1143,USR00024,nicholas.jackson,False,NORMAL,NONE,Access within expected behavioral baseline
+1144,USR00052,leila.sun,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1145,USR00099,maria.bianchi,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1146,USR00058,anthony.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1147,USR00083,ryan.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1148,USR00067,donald.wang,False,NORMAL,NONE,Access within expected behavioral baseline
+1149,USR00051,meera.quinn,False,NORMAL,NONE,Access within expected behavioral baseline
+1150,USR00037,ronald.wilson,False,NORMAL,NONE,Access within expected behavioral baseline
+1151,USR00035,nikhil.rao,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1152,USR00019,joshua.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1153,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+1154,USR00075,timothy.huang,False,NORMAL,NONE,Access within expected behavioral baseline
+1155,USR00040,nicholas.romano,False,NORMAL,NONE,Access within expected behavioral baseline
+1156,USR00049,thomas.kang,False,NORMAL,NONE,Access within expected behavioral baseline
+1157,USR00094,donald.schulz,False,NORMAL,NONE,Access within expected behavioral baseline
+1158,USR00049,thomas.kang,False,NORMAL,NONE,Access within expected behavioral baseline
+1159,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+1160,USR00055,neha.johnson,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1161,USR00036,nicholas.harris,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1162,USR00089,isha.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+1163,USR00051,meera.quinn,False,NORMAL,NONE,Access within expected behavioral baseline
+1164,USR00013,jonathan.jackson,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1165,USR00072,amitabh.park,False,NORMAL,NONE,Access within expected behavioral baseline
+1166,USR00060,vikram.gonzalez,False,NORMAL,NONE,Access within expected behavioral baseline
+1167,USR00006,kevin.ramirez,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during night
+1168,USR00046,deepika.li,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1169,USR00051,meera.quinn,False,NORMAL,NONE,Access within expected behavioral baseline
+1170,USR00053,timothy.jo,False,NORMAL,NONE,Access within expected behavioral baseline
+1171,USR00045,stephen.kumar,False,NORMAL,NONE,Access within expected behavioral baseline
+1172,USR00050,nisha.martinez,True,FAILED_ATTEMPTS,HIGH,High-risk access pattern: FAILED ATTEMPTS
+1173,USR00040,nicholas.romano,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1174,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+1175,USR00046,deepika.li,True,SENSITIVE_OFF_HOURS_ACCESS,MEDIUM,Access to high-sensitivity resource during weekend
+1176,USR00015,sophia.white,False,NORMAL,NONE,Access within expected behavioral baseline
+1177,USR00096,edward.thomas,False,NORMAL,NONE,Access within expected behavioral baseline
+1178,USR00006,kevin.ramirez,False,NORMAL,NONE,Access within expected behavioral baseline
+1179,USR00056,william.kumar,True,BULK_DATA_EXFILTRATION,CRITICAL,Bulk data export from medium sensitivity resource
+1180,USR00027,pooja.sullivan,False,NORMAL,NONE,Access within expected behavioral baseline
+1181,USR00077,neha.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1182,USR00011,maria.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+1183,USR00098,jason.white,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1184,USR00040,nicholas.romano,True,UNUSUAL_RESOURCE,MEDIUM,Unusual access pattern: UNUSUAL RESOURCE
+1185,USR00004,diya.anderson,False,NORMAL,NONE,Access within expected behavioral baseline
+1186,USR00013,jonathan.jackson,True,STALE_ACCESS,HIGH,High-risk access pattern: STALE ACCESS
+1187,USR00047,george.clark,False,NORMAL,NONE,Access within expected behavioral baseline
+1188,USR00076,stephen.guo,False,NORMAL,NONE,Access within expected behavioral baseline
+1189,USR00088,william.jang,False,NORMAL,NONE,Access within expected behavioral baseline
+1190,USR00026,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+1191,USR00028,paul.singh,True,OFF_HOURS_ADMIN,HIGH,High-risk access pattern: OFF HOURS ADMIN
+1192,USR00090,neha.o'brien,False,NORMAL,NONE,Access within expected behavioral baseline
+1193,USR00070,jeffrey.chen,False,NORMAL,NONE,Access within expected behavioral baseline
+1194,USR00009,aditya.burke,False,NORMAL,NONE,Access within expected behavioral baseline
+1195,USR00031,amitabh.taylor,False,NORMAL,NONE,Access within expected behavioral baseline
+1196,USR00039,stephen.bhat,False,NORMAL,NONE,Access within expected behavioral baseline
+1197,USR00081,isha.ghosh,False,NORMAL,NONE,Access within expected behavioral baseline
+1198,USR00049,thomas.kang,True,CROSS_DEPT,MEDIUM,Unusual access pattern: CROSS DEPT
+1199,USR00029,zainab.wagner,False,NORMAL,NONE,Access within expected behavioral baseline

@@ -1,24 +1,25 @@
-"""Build the per-application dependency graph from sbom_dependencies rows.
+"""Build the per-application dependency graph from canonical SBOM rows.
 
 Node scheme (keeps every application's subgraph isolated, so a shared
 library never leaks paths between apps):
     ("app", app_id)            — application root
     ("lib", app_id, lib_name)  — a library as used by that app
 
-KNOWN DATA LIMITATION (documented, not guessed): the brief's
-sbom_dependencies.csv has only an `is_direct` boolean — no parent-library
-column — so the file cannot express which dependency a transitive library
-hangs off. We therefore attach transitive libraries with a DETERMINISTIC,
-seed-free rule (md5 of app_id+lib, stable across runs and machines):
+Edge sources, in order of preference:
 
-  * default parent: one of the app's direct libraries
-  * ~1 in 5 transitive libs attach under an earlier transitive lib instead,
-    producing genuine 3+ hop chains
-  * ~1 in 3 transitive libs get a SECOND parent, producing genuine diamond
-    dependencies (two paths converging on one library)
+1. REAL edges from transitive_dependencies.json (parent_library ->
+   child_library per application). NOTE, verified 2026-07-12: the
+   parent/child *version* fields in that file are inconsistent with
+   sbom_dependencies.csv (all 372 edges mismatch), so edges are wired by
+   library NAME within each app and versions are always taken from the
+   SBOM row — the same convention the ground-truth labels use.
+   Transitive SBOM rows with no incoming edge (10 exist in the real data)
+   are attached directly under the app root so no dependency is ever
+   pathless; these carry orphan=True.
 
-If the real dataset ships with a parent column, replace `_assign_parents`
-with a direct edge read — everything downstream is unchanged.
+2. If no edges file exists (placeholder data), fall back to a
+   DETERMINISTIC md5-based parent assignment (documented limitation of
+   the placeholder schema, which lacks parent info).
 """
 
 import hashlib
@@ -39,7 +40,7 @@ def lib_node(app_id, lib_name):
 
 
 def _assign_parents(app_id, direct, transitive):
-    """Deterministically map each transitive lib -> list of parent lib names."""
+    """Placeholder-data fallback: deterministic transitive->parents map."""
     parents = {}
     for i, t in enumerate(transitive):          # sorted order = stable
         h = _h(f"{app_id}:{t}")
@@ -56,33 +57,52 @@ def _assign_parents(app_id, direct, transitive):
     return parents
 
 
-def build_graph(sbom_rows, applications):
-    """Return a DiGraph over all apps. Library nodes carry version, license,
-    last_updated, is_direct as attributes."""
+def build_graph(sbom_rows, applications, transitive_edges=None):
+    """DiGraph over all apps. Library nodes carry the SBOM row attributes."""
     g = nx.DiGraph()
     for app in applications:
-        g.add_node(app_node(app["id"]), kind="app", **app)
+        g.add_node(app_node(app["app_id"]), kind="app", **app)
 
     by_app = {}
     for r in sbom_rows:
-        by_app.setdefault(r["app_id"], []).append(r)
+        by_app.setdefault(r["application_id"], []).append(r)
+
+    edges_by_app = {}
+    for e in transitive_edges or []:
+        edges_by_app.setdefault(e["application_id"], []).append(
+            (e["parent_library"], e["child_library"]))
 
     for app_id, rows in by_app.items():
+        known = set()
         for r in rows:
-            g.add_node(lib_node(app_id, r["library_name"]), kind="lib",
-                       library_name=r["library_name"], version=r["version"],
-                       license_type=r["license_type"], is_direct=r["is_direct"],
-                       last_updated=r["last_updated"])
-        direct = sorted(r["library_name"] for r in rows if r["is_direct"])
-        transitive = sorted(r["library_name"] for r in rows if not r["is_direct"])
+            known.add(r["library"])
+            g.add_node(lib_node(app_id, r["library"]), kind="lib",
+                       library=r["library"], version=r["version"],
+                       license=r["license"],
+                       dependency_type=r["dependency_type"],
+                       last_updated=r["last_updated"], dep_id=r["dep_id"])
+        direct = sorted(r["library"] for r in rows
+                        if r["dependency_type"] == "direct")
+        transitive = sorted(r["library"] for r in rows
+                            if r["dependency_type"] == "transitive")
         for d in direct:
             g.add_edge(app_node(app_id), lib_node(app_id, d))
-        if not direct and transitive:
-            # degenerate SBOM (no direct deps): attach transitives to the app
+
+        if transitive_edges:
+            wired = set()
+            for parent, child in edges_by_app.get(app_id, []):
+                if parent in known and child in known:
+                    g.add_edge(lib_node(app_id, parent), lib_node(app_id, child))
+                    wired.add(child)
+            for t in transitive:                # orphans: keep them reachable
+                if t not in wired:
+                    g.nodes[lib_node(app_id, t)]["orphan"] = True
+                    g.add_edge(app_node(app_id), lib_node(app_id, t))
+        elif direct:
+            for t, plist in _assign_parents(app_id, direct, transitive).items():
+                for p in plist:
+                    g.add_edge(lib_node(app_id, p), lib_node(app_id, t))
+        else:
             for t in transitive:
                 g.add_edge(app_node(app_id), lib_node(app_id, t))
-            continue
-        for t, plist in _assign_parents(app_id, direct, transitive).items():
-            for p in plist:
-                g.add_edge(lib_node(app_id, p), lib_node(app_id, t))
     return g

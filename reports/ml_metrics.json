@@ -1,0 +1,49 @@
+{
+  "holdout": {
+    "baseline": {
+      "precision": 0.7344,
+      "recall": 1.0,
+      "f1": 0.8468,
+      "fpr": 0.3208,
+      "tp": 47,
+      "fp": 17,
+      "fn": 0,
+      "n": 100
+    },
+    "gbdt": {
+      "precision": 0.8333,
+      "recall": 0.7447,
+      "f1": 0.7865,
+      "fpr": 0.1321,
+      "tp": 35,
+      "fp": 7,
+      "fn": 12,
+      "n": 100
+    }
+  },
+  "full_set_self_eval": {
+    "baseline": {
+      "precision": 0.6903,
+      "recall": 1.0,
+      "f1": 0.8168,
+      "fpr": 0.3947,
+      "tp": 234,
+      "fp": 105,
+      "fn": 0,
+      "n": 500
+    },
+    "gbdt": {
+      "precision": 0.9322,
+      "recall": 0.9402,
+      "f1": 0.9362,
+      "fpr": 0.0602,
+      "tp": 220,
+      "fp": 16,
+      "fn": 14,
+      "n": 500
+    }
+  },
+  "note": "holdout = honest 20% stratified split never seen by the model; full_set = the brief's own methodology (GBDT number is optimistic there because 80% of those rows were its training data)",
+  "selected": "baseline",
+  "selection_reason": "holdout F1 baseline=0.8468 vs gbdt=0.7865; no clear GBDT win -> ship the simpler, transparent rule-based formula (per project policy)"
+}

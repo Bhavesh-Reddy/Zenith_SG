@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SBOM Supply Chain Risk — PB-10</title>
+<style>
+  :root {
+    --page: #f9f9f7; --surface: #fcfcfb;
+    --ink: #0b0b0b; --ink-2: #52514e; --ink-muted: #898781;
+    --grid: #e1e0d9; --border: rgba(11,11,11,0.10);
+    --seq: #2a78d6; --seq-deep: #256abf;
+    --critical: #d03b3b; --serious: #ec835a; --warning: #fab219; --good: #0ca30c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--page); color: var(--ink);
+         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+         padding: 24px; }
+  h1 { font-size: 20px; } h2 { font-size: 15px; margin: 26px 0 10px; }
+  .sub { color: var(--ink-2); margin-top: 4px; font-size: 13px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+           gap: 12px; margin-top: 18px; }
+  .tile { background: var(--surface); border: 1px solid var(--border);
+          border-radius: 8px; padding: 12px 14px; }
+  .tile .v { font-size: 26px; font-weight: 650; }
+  .tile .l { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+           gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+          border-radius: 8px; padding: 12px 14px; display: block;
+          color: inherit; text-decoration: none; }
+  .card:hover { outline: 2px solid var(--seq); outline-offset: -1px; }
+  .card.active { outline: 2px solid var(--seq-deep); outline-offset: -1px; }
+  .card .name { font-weight: 650; }
+  .card .meta { color: var(--ink-muted); font-size: 12px; margin: 2px 0 8px; }
+  .scorebar { height: 8px; background: var(--grid); border-radius: 4px; }
+  .scorebar > i { display: block; height: 8px; border-radius: 4px;
+                  background: var(--seq); min-width: 2px; }
+  .score-n { font-variant-numeric: tabular-nums; font-weight: 650; }
+  .filters { margin: 18px 0 8px; }
+  select { font: inherit; padding: 5px 8px; border: 1px solid var(--grid);
+           border-radius: 6px; background: var(--surface); color: inherit; }
+  a.btn, button.btn { font: inherit; padding: 6px 10px; border-radius: 6px;
+        border: 1px solid var(--grid); background: var(--surface);
+        color: inherit; text-decoration: none; cursor: pointer; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface);
+          border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  th { text-align: left; font-size: 12px; color: var(--ink-2);
+       border-bottom: 1px solid var(--grid); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--grid);
+       vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f4f6fa; }
+  .badge { display: inline-flex; align-items: center; gap: 5px;
+           font-size: 12px; font-weight: 600; }
+  .dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+  .b-CRITICAL .dot { background: var(--critical); } .b-CRITICAL { color: var(--critical); }
+  .b-HIGH .dot { background: var(--serious); } .b-HIGH { color: #b4552f; }
+  .b-MEDIUM .dot { background: var(--warning); } .b-MEDIUM { color: #8a6206; }
+  .b-LOW .dot { background: var(--good); } .b-LOW { color: #006300; }
+  .b-NONE .dot { background: var(--grid); } .b-NONE { color: var(--ink-muted); }
+  .path { color: var(--ink-2); font-size: 12px; }
+  .path b { color: var(--ink); }
+  .lib { font-weight: 650; }
+  .type { font-size: 12px; color: var(--ink-2); }
+  .diamond { color: var(--seq-deep); font-weight: 650; font-size: 12px; }
+  .ev { font-size: 12px; color: var(--ink-2); max-width: 340px; }
+  .narr { font-size: 12px; color: var(--ink); background: #f2f7ff;
+          border-left: 3px solid var(--seq); padding: 6px 8px; margin-top: 6px;
+          border-radius: 0 4px 4px 0; }
+  .minibar { display: inline-block; width: 64px; height: 6px; background: var(--grid);
+             border-radius: 3px; vertical-align: 2px; margin-left: 6px; }
+  .minibar > i { display: block; height: 6px; border-radius: 3px; background: var(--seq); }
+  .chain-btn { font: inherit; font-size: 11px; color: var(--seq-deep);
+               background: none; border: 1px solid var(--grid); border-radius: 5px;
+               padding: 1px 6px; cursor: pointer; margin-top: 4px; }
+  .chain-btn:hover { background: #eef4fd; border-color: var(--seq); }
+  /* Phase 6 graph viewer (self-contained SVG, no external assets) */
+  #gv-overlay { position: fixed; inset: 0; background: rgba(11,11,11,0.45);
+                display: none; align-items: center; justify-content: center;
+                z-index: 50; }
+  #gv-overlay.open { display: flex; }
+  #gv-panel { background: var(--surface); border: 1px solid var(--border);
+              border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+              max-width: 92vw; max-height: 88vh; overflow: auto; padding: 16px 18px; }
+  #gv-panel h3 { font-size: 15px; margin-bottom: 2px; }
+  #gv-panel .gv-sub { color: var(--ink-2); font-size: 12px; margin-bottom: 10px; }
+  #gv-close { float: right; font: inherit; cursor: pointer; border: 1px solid var(--grid);
+              background: var(--surface); border-radius: 6px; padding: 3px 9px; }
+  #gv-svg text { font: 12px system-ui, "Segoe UI", sans-serif; }
+  .gv-legend { display: flex; gap: 16px; font-size: 12px; color: var(--ink-2);
+               margin-top: 10px; flex-wrap: wrap; }
+  .gv-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .gv-sw { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  @media print {
+    body { padding: 0; background: #fff; }
+    .filters, .noprint, .chain-btn { display: none !important; }
+    #gv-overlay { display: none !important; }
+    tr:hover td { background: transparent; }
+  }
+</style>
+</head>
+<body>
+
+<div class="row" style="justify-content: space-between;">
+  <div>
+    <h1>Software Supply Chain Risk — SBOM Analyzer</h1>
+    <div class="sub">PB-10 · generated {{ report.generated_at }} ·
+      scorer: {{ report.score_source }} · reference date {{ report.reference_date }}</div>
+  </div>
+  {% if not export %}
+  <div class="row noprint">
+    <a class="btn" href="/export/html">Export HTML</a>
+    <button class="btn" onclick="window.print()">Print / PDF</button>
+  </div>
+  {% endif %}
+</div>
+
+<div class="tiles">
+  <div class="tile"><div class="v">{{ report.totals.applications }}</div><div class="l">Applications</div></div>
+  <div class="tile"><div class="v">{{ report.totals.dependencies }}</div><div class="l">Dependencies scanned</div></div>
+  <div class="tile"><div class="v">{{ report.totals.findings }}</div><div class="l">Findings (evidence-backed)</div></div>
+  <div class="tile"><div class="v">{{ report.totals.compound_exposure_findings }}</div><div class="l">Compound / multi-path exposures</div></div>
+</div>
+
+<h2>Application risk scorecards <span class="sub" style="display:inline">— ranked, click to drill down</span></h2>
+<div class="cards">
+  {% for a in report.applications %}
+  <a class="card {{ 'active' if app_filter == a.app_id }}"
+     href="{{ '/' if app_filter == a.app_id else '/?app=' + a.app_id }}{{ ('&type=' + type_filter) if type_filter }}">
+    <div class="row" style="justify-content: space-between;">
+      <span class="name">{{ a.name }}</span>
+      <span class="score-n">{{ a.app_risk_score }}</span>
+    </div>
+    <div class="meta">{{ a.app_id }} · {{ a.criticality }} · {{ a.license_model }}
+      · {{ a.num_findings }} findings{% if a.num_compound %} · {{ a.num_compound }} compound{% endif %}</div>
+    <div class="scorebar"><i style="width: {{ a.app_risk_score }}%"></i></div>
+  </a>
+  {% endfor %}
+</div>
+
+{% if not export %}
+<form class="filters row noprint" method="get" action="/">
+  <label>Application
+    <select name="app" onchange="this.form.submit()">
+      <option value="">All</option>
+      {% for a in report.applications %}
+      <option value="{{ a.app_id }}" {{ 'selected' if app_filter == a.app_id }}>{{ a.app_id }} — {{ a.name }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <label>Finding type
+    <select name="type" onchange="this.form.submit()">
+      <option value="">All</option>
+      {% for t in all_types %}
+      <option value="{{ t }}" {{ 'selected' if type_filter == t }}>{{ t }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  {% if app_filter or type_filter %}<a class="btn" href="/">Clear</a>{% endif %}
+</form>
+{% endif %}
+
+<h2>Ranked findings ({{ findings|length }})</h2>
+<table>
+  <thead><tr>
+    <th>#</th><th>Risk score</th><th>Severity</th><th>App</th><th>Type</th>
+    <th>Library</th><th>Dependency path (full chain)</th><th>Evidence</th>
+  </tr></thead>
+  <tbody>
+  {% for f in findings %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td><span class="score-n">{{ f.risk_score if f.risk_score is not none else '—' }}</span>
+          {% if f.risk_score is not none %}<span class="minibar"><i style="width: {{ f.risk_score }}%"></i></span>{% endif %}
+          {% if f.compound_uplift_pct %}<div class="type">+{{ f.compound_uplift_pct }}% compound</div>{% endif %}</td>
+      <td><span class="badge b-{{ f.severity }}"><span class="dot"></span>{{ f.severity }}</span></td>
+      <td>{{ f.app_id }}</td>
+      <td class="type">{{ f.type }}{% if f.advisory_only %}<br>(advisory){% endif %}</td>
+      <td><span class="lib">{{ f.library }}</span><span class="type">@{{ f.version }}</span>
+          {% if f.num_paths > 1 %}<div class="diamond">◆ {{ f.num_paths }} paths — compound exposure</div>{% endif %}
+          {% if not export and f.num_paths > 0 %}<button class="chain-btn noprint" type="button"
+            onclick="showChain('{{ f.finding_id }}')">⬦ view chain</button>{% endif %}</td>
+      <td class="path">
+        {% for p in f.paths %}<div>{% for n in p %}{% if not loop.first %} → {% endif %}{% if loop.last %}<b>{{ n }}</b>{% else %}{{ n }}{% endif %}{% endfor %}</div>{% endfor %}
+      </td>
+      <td class="ev">
+        {% if f.evidence.cves %}
+          {% for c in f.evidence.cves %}
+            <div><b>{{ c.cve_id }}</b> CVSS {{ c.cvss_score }} ({{ c.severity }})
+              {{ '· patch: ' + c.fixed_version if c.patch_available and c.fixed_version else '· no patch' }}
+              {{ '· version-in-range' if c.version_in_range else '· name-match' }}</div>
+          {% endfor %}
+        {% elif f.evidence.license %}
+          <div><b>{{ f.evidence.license }}</b> — {{ f.evidence.note }}</div>
+        {% elif f.evidence.last_updated %}
+          <div>last updated <b>{{ f.evidence.last_updated }}</b> (cutoff {{ f.evidence.cutoff }})</div>
+        {% endif %}
+        {% if narratives.get(f.finding_id) %}
+          <div class="narr">{{ narratives[f.finding_id].narrative if narratives[f.finding_id].narrative is defined else narratives[f.finding_id] }}</div>
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<p class="sub" style="margin-top: 14px;">
+  Diamond / multi-path exposures are reported per path and never deduplicated (compound-risk policy).
+  License findings in internal-only apps appear as advisories (distribution scope).
+  CVE "name-match" tier reflects a documented inconsistency between the vulnerability DB's
+  version ranges and the ground-truth labels.
+</p>
+
+{% if not export %}
+<div id="gv-overlay" onclick="if(event.target===this)closeChain()">
+  <div id="gv-panel">
+    <button id="gv-close" onclick="closeChain()">Close ✕</button>
+    <h3 id="gv-title">Dependency chain</h3>
+    <div class="gv-sub" id="gv-subtitle"></div>
+    <svg id="gv-svg" width="100" height="100" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="gv-legend">
+      <span><i class="gv-sw" style="background:var(--seq)"></i> application</span>
+      <span><i class="gv-sw" style="background:#c9d4e3"></i> intermediate dependency</span>
+      <span><i class="gv-sw" style="background:var(--critical)"></i> flagged library (leaf)</span>
+      <span>Every distinct path is drawn — diamond/multi-path exposure is never collapsed.</span>
+    </div>
+  </div>
+</div>
+<script>
+  var GRAPHDATA = {{ graph_data|tojson }};
+
+  function showChain(fid) {
+    var d = GRAPHDATA[fid];
+    if (!d) return;
+    document.getElementById("gv-title").textContent =
+      d.library + "@" + d.version + "  ·  " + d.type;
+    document.getElementById("gv-subtitle").textContent =
+      d.app_id + "  ·  severity " + d.severity + "  ·  " +
+      d.num_paths + (d.num_paths > 1 ? " distinct paths (compound exposure)" : " path");
+    drawGraph(d);
+    document.getElementById("gv-overlay").classList.add("open");
+  }
+  function closeChain() {
+    document.getElementById("gv-overlay").classList.remove("open");
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeChain();
+  });
+
+  // Layered left-to-right layout: column = depth in the chain, one box per
+  // (depth, node-name). Nodes shared across paths are drawn once (that is how
+  // a diamond's two branches visibly converge on the same leaf).
+  function drawGraph(d) {
+    var COLW = 168, ROWH = 62, BW = 132, BH = 34, PADX = 24, PADY = 24;
+    var nodes = {}, order = [], edges = [], maxCol = 0;
+    function key(col, name) { return col + "" + name; }
+    function ensure(col, name) {
+      var k = key(col, name);
+      if (!(k in nodes)) {
+        nodes[k] = { col: col, name: name, row: 0 };
+        order.push(k);
+        if (col > maxCol) maxCol = col;
+      }
+      return k;
+    }
+    d.paths.forEach(function (path) {
+      for (var i = 0; i < path.length; i++) {
+        var k = ensure(i, path[i]);
+        if (i > 0) edges.push([key(i - 1, path[i - 1]), k]);
+      }
+    });
+    // assign row indices per column
+    var perCol = {};
+    order.forEach(function (k) {
+      var c = nodes[k].col;
+      perCol[c] = perCol[c] || [];
+      nodes[k].row = perCol[c].length;
+      perCol[c].push(k);
+    });
+    var maxRows = 0;
+    Object.keys(perCol).forEach(function (c) {
+      if (perCol[c].length > maxRows) maxRows = perCol[c].length;
+    });
+    var W = PADX * 2 + maxCol * COLW + BW;
+    var H = PADY * 2 + Math.max(1, maxRows) * ROWH;
+    function cx(n) { return PADX + n.col * COLW; }
+    function cy(n) {
+      var count = perCol[n.col].length;
+      var offset = (maxRows - count) * ROWH / 2;  // vertically center each column
+      return PADY + offset + n.row * ROWH;
+    }
+    var uniqEdges = {}, eSvg = "";
+    edges.forEach(function (e) {
+      var id = e[0] + ">" + e[1];
+      if (uniqEdges[id]) return;
+      uniqEdges[id] = 1;
+      var a = nodes[e[0]], b = nodes[e[1]];
+      var x1 = cx(a) + BW, y1 = cy(a) + BH / 2;
+      var x2 = cx(b), y2 = cy(b) + BH / 2;
+      var mx = (x1 + x2) / 2;
+      eSvg += '<path d="M' + x1 + ' ' + y1 + ' C' + mx + ' ' + y1 + ' ' +
+        mx + ' ' + y2 + ' ' + x2 + ' ' + y2 +
+        '" fill="none" stroke="#b9c3cf" stroke-width="1.6"/>';
+    });
+    var nSvg = "";
+    order.forEach(function (k) {
+      var n = nodes[k], x = cx(n), y = cy(n);
+      var isApp = n.col === 0, isLeaf = n.col === maxCol;
+      var fill = isApp ? "#2a78d6" : isLeaf ? "#d03b3b" : "#e8edf3";
+      var stroke = isApp ? "#256abf" : isLeaf ? "#b02f2f" : "#c9d4e3";
+      var tcol = (isApp || isLeaf) ? "#ffffff" : "#0b0b0b";
+      var label = n.name.length > 18 ? n.name.slice(0, 17) + "…" : n.name;
+      nSvg += '<g>' +
+        '<rect x="' + x + '" y="' + y + '" width="' + BW + '" height="' + BH +
+        '" rx="7" fill="' + fill + '" stroke="' + stroke + '" stroke-width="1.4"/>' +
+        '<text x="' + (x + BW / 2) + '" y="' + (y + BH / 2 + 4) +
+        '" text-anchor="middle" fill="' + tcol + '">' +
+        escapeXml(label) + '</text>' +
+        '<title>' + escapeXml(n.name) + '</title></g>';
+    });
+    var svg = document.getElementById("gv-svg");
+    svg.setAttribute("width", W);
+    svg.setAttribute("height", H);
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    svg.innerHTML = eSvg + nSvg;
+  }
+  function escapeXml(s) {
+    return String(s).replace(/[<>&]/g, function (c) {
+      return c === "<" ? "&lt;" : c === ">" ? "&gt;" : "&amp;";
+    });
+  }
+</script>
+{% endif %}
+</body>
+</html>

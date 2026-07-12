@@ -2,8 +2,7 @@
 
 DATA_DIR resolution order:
   1. SBOM_DATA_DIR environment variable, if set (explicit override)
-  2. <repo>/sample_data/        — the official dataset, once it arrives
-  3. <repo>/sample_data_placeholder/ — schema-matching dev/self-test data
+  2. <repo>/sample_data/ — the official PB-10 dataset
 """
 
 import os
@@ -12,14 +11,12 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 _env = os.environ.get("SBOM_DATA_DIR")
-if _env:
-    DATA_DIR = Path(_env)
-elif (REPO_ROOT / "sample_data").is_dir():
-    DATA_DIR = REPO_ROOT / "sample_data"
-else:
-    DATA_DIR = REPO_ROOT / "sample_data_placeholder"
+DATA_DIR = Path(_env) if _env else REPO_ROOT / "sample_data"
 
-USING_PLACEHOLDER = DATA_DIR.name == "sample_data_placeholder"
+if not DATA_DIR.is_dir():
+    raise FileNotFoundError(
+        f"DATA_DIR not found: {DATA_DIR} — place the official dataset in "
+        f"sample_data/ or set SBOM_DATA_DIR")
 
 FILES = {
     "applications": DATA_DIR / "applications.json",
@@ -27,4 +24,5 @@ FILES = {
     "vulnerability_db": DATA_DIR / "vulnerability_db.json",
     "license_rules": DATA_DIR / "license_rules.json",
     "dependency_labels": DATA_DIR / "dependency_labels.csv",
+    "transitive_dependencies": DATA_DIR / "transitive_dependencies.json",
 }

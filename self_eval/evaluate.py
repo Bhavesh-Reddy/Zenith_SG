@@ -18,6 +18,7 @@ from collections import Counter
 from src.findings import generate_findings
 from src.graph.traversal import paths_to_library
 from src.ingestion import load_dataset
+from src.report.composite import SEVERITY_SCORE, build_report
 
 VULN_TYPES = {"VULNERABLE_DEPENDENCY", "TRANSITIVE_VULNERABILITY"}
 LIC_TYPES = {"LICENSE_CONFLICT", "TRANSITIVE_LICENSE_CONFLICT"}
@@ -55,6 +56,15 @@ def evaluate(ds=None, verbose=True):
     tv_hit, tv_all = type_recall({"TRANSITIVE_VULNERABILITY"},
                                  {"TRANSITIVE_VULNERABILITY"})
 
+    # Risk Score Accuracy (±10): severity classes map to a 0-100 scale
+    # (NONE 0 / LOW 25 / MEDIUM 50 / HIGH 75 / CRITICAL 100); a prediction is
+    # accurate when |predicted - truth| <= 10 points.
+    severities = build_report(ds)["dep_severities"]
+    in_band = sum(
+        1 for d, r in truth.items()
+        if abs(SEVERITY_SCORE.get(severities[d], 0)
+               - SEVERITY_SCORE.get(str(r["severity"]).upper(), 0)) <= 10)
+
     exact = sum(1 for d, r in truth.items() if pred[d] == r["risk_type"])
     mismatches = [(d, truth[d]["risk_type"], pred[d])
                   for d in truth if pred[d] != truth[d]["risk_type"]]
@@ -67,6 +77,7 @@ def evaluate(ds=None, verbose=True):
         "license_detection": (l_hit, l_all),
         "unmaintained_recall": (u_hit, u_all),
         "license_unknown_recall": (lu_hit, lu_all),
+        "risk_score_accuracy": (in_band, len(truth)),
         "exact_type_accuracy": (exact, len(truth)),
         "mismatches": mismatches,
     }
@@ -81,7 +92,7 @@ def evaluate(ds=None, verbose=True):
               f"transitive-vuln recall {pc(tv_hit, tv_all)}")
         print(f"[{ok(l_hit / l_all > .90 if l_all else False)}] License Conflict Detect (>90%): {pc(l_hit, l_all)}")
         print(f"[{ok(fpr < .20)}] False Positive Rate     (<20%): {fp}/{n_clean} = {fpr:.1%}")
-        print(f"[PENDING] Risk Score Accuracy (±10%): requires Phase 2 scores — not estimated")
+        print(f"[{ok(in_band / len(truth) > .90)}] Risk Score Accuracy    (±10, >90% of deps): {pc(in_band, len(truth))}")
         print(f"extra    unmaintained recall {pc(u_hit, u_all)}   "
               f"license-unknown recall {pc(lu_hit, lu_all)}")
         print(f"exact risk-type accuracy: {pc(exact, len(truth))}")

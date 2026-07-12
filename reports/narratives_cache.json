@@ -1,0 +1,62 @@
+{
+  "F-0352": {
+    "narrative": "moment@4.10.3 carries the AGPL-3.0 license inside APP-009, reachable via APP-009 -> yaml-go -> moment, which conflicts with proprietary distribution. It is reachable via 3 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: replace it with a permissively-licensed alternative or obtain legal clearance before the next release.",
+    "source": "template-fallback",
+    "library": "moment",
+    "app_id": "APP-009"
+  },
+  "F-0199": {
+    "narrative": "APP-005 is exposed to CVE-2025-1043 (CVSS 9.9) through testify@2.9.8 via APP-005 -> cheerio -> testify. It is reachable via 7 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 2.11.0 and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "testify",
+    "app_id": "APP-005"
+  },
+  "F-0035": {
+    "narrative": "APP-001 is exposed to CVE-2022-1021 (CVSS 6.5) through jackson-core@4.9.1 via APP-001 -> lombok -> jackson-core. It is reachable via 2 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: no patched version is published yet, so isolate or replace the library and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "jackson-core",
+    "app_id": "APP-001"
+  },
+  "F-0036": {
+    "narrative": "jackson-core@4.9.1 carries the AGPL-3.0 license inside APP-001, reachable via APP-001 -> lombok -> jackson-core, which conflicts with proprietary distribution. It is reachable via 2 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: replace it with a permissively-licensed alternative or obtain legal clearance before the next release.",
+    "source": "template-fallback",
+    "library": "jackson-core",
+    "app_id": "APP-001"
+  },
+  "F-0119": {
+    "narrative": "APP-003 is exposed to CVE-2024-1128 (CVSS 8.4) through go-redis@4.11.2 via APP-003 -> junit-jupiter -> go-redis. It is reachable via 4 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: no patched version is published yet, so isolate or replace the library and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "go-redis",
+    "app_id": "APP-003"
+  },
+  "F-0275": {
+    "narrative": "APP-007 is exposed to CVE-2022-1064 (CVSS 8.3) through aiohttp@2.2.8 via APP-007 -> logback-classic -> aiohttp. It is reachable via 4 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 5.11.0 and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "aiohttp",
+    "app_id": "APP-007"
+  },
+  "F-0153": {
+    "narrative": "APP-004 is exposed to CVE-2023-1124 (CVSS 4.9) through requests@3.6.0 via APP-004 -> pyjwt -> requests. It is reachable via 5 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: no patched version is published yet, so isolate or replace the library and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "requests",
+    "app_id": "APP-004"
+  },
+  "F-0071": {
+    "narrative": "APP-002 is exposed to CVE-2024-1174 (CVSS 7.4) through disruptor@2.3.4 via APP-002 -> logback-core -> disruptor. It is reachable via 4 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 2.0.0 and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "disruptor",
+    "app_id": "APP-002"
+  },
+  "F-0320": {
+    "narrative": "APP-008 is exposed to CVE-2024-1174 (CVSS 7.4) through disruptor@2.11.2 via APP-008 -> grpc-core -> disruptor. It is reachable via 5 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 2.0.0 and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "disruptor",
+    "app_id": "APP-008"
+  },
+  "F-0197": {
+    "narrative": "APP-005 is exposed to CVE-2026-1078 (CVSS 9.4) through express@3.4.3 via APP-005 -> mocha -> express. It is reachable via 3 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 2.5.0 and re-scan to confirm the chain is closed.",
+    "source": "template-fallback",
+    "library": "express",
+    "app_id": "APP-005"
+  }
+}

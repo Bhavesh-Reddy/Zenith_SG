@@ -1136,12 +1136,12 @@
     "paths": [
       [
         "APP-001",
-        "kafka-clients",
+        "pyyaml",
         "fabric"
       ],
       [
         "APP-001",
-        "pyyaml",
+        "kafka-clients",
         "fabric"
       ]
     ],
@@ -1186,12 +1186,12 @@
     "paths": [
       [
         "APP-001",
-        "junit-jupiter",
+        "pyyaml",
         "commons-io"
       ],
       [
         "APP-001",
-        "pyyaml",
+        "junit-jupiter",
         "commons-io"
       ]
     ],
@@ -1441,12 +1441,12 @@
     "paths": [
       [
         "APP-001",
-        "jetty-server",
+        "json-iterator",
         "disruptor"
       ],
       [
         "APP-001",
-        "json-iterator",
+        "jetty-server",
         "disruptor"
       ]
     ],
@@ -1511,17 +1511,12 @@
     "paths": [
       [
         "APP-001",
-        "kafka-clients",
-        "eslint"
-      ],
-      [
-        "APP-001",
         "log4j-api",
         "eslint"
       ],
       [
         "APP-001",
-        "log4j-core",
+        "snakeyaml",
         "eslint"
       ],
       [
@@ -1531,7 +1526,12 @@
       ],
       [
         "APP-001",
-        "snakeyaml",
+        "log4j-core",
+        "eslint"
+      ],
+      [
+        "APP-001",
+        "kafka-clients",
         "eslint"
       ]
     ],
@@ -1567,12 +1567,12 @@
     "paths": [
       [
         "APP-001",
-        "sarama",
+        "snakeyaml",
         "aws-sdk-s3"
       ],
       [
         "APP-001",
-        "snakeyaml",
+        "sarama",
         "aws-sdk-s3"
       ]
     ],
@@ -1608,7 +1608,7 @@
     "paths": [
       [
         "APP-001",
-        "mockito-core",
+        "slf4j-api",
         "httpcore"
       ],
       [
@@ -1618,7 +1618,7 @@
       ],
       [
         "APP-001",
-        "slf4j-api",
+        "mockito-core",
         "httpcore"
       ]
     ],
@@ -1672,12 +1672,12 @@
     "paths": [
       [
         "APP-001",
-        "guava",
+        "jetty-server",
         "netty-handler"
       ],
       [
         "APP-001",
-        "jetty-server",
+        "guava",
         "netty-handler"
       ],
       [
@@ -2817,7 +2817,7 @@
     "paths": [
       [
         "APP-002",
-        "bouncycastle-bcprov",
+        "logback-core",
         "disruptor"
       ],
       [
@@ -2827,12 +2827,12 @@
       ],
       [
         "APP-002",
-        "logback-core",
+        "tomcat-embed-core",
         "disruptor"
       ],
       [
         "APP-002",
-        "tomcat-embed-core",
+        "bouncycastle-bcprov",
         "disruptor"
       ]
     ],
@@ -2868,12 +2868,12 @@
     "paths": [
       [
         "APP-002",
-        "logback-core",
+        "vue",
         "commons-lang3"
       ],
       [
         "APP-002",
-        "vue",
+        "logback-core",
         "commons-lang3"
       ]
     ],
@@ -2909,12 +2909,12 @@
     "paths": [
       [
         "APP-002",
-        "logback-core",
+        "vue",
         "commons-lang3"
       ],
       [
         "APP-002",
-        "vue",
+        "logback-core",
         "commons-lang3"
       ]
     ],
@@ -2988,12 +2988,12 @@
     "paths": [
       [
         "APP-002",
-        "commons-collections4",
+        "jackson-core",
         "aiohttp"
       ],
       [
         "APP-002",
-        "jackson-core",
+        "commons-collections4",
         "aiohttp"
       ]
     ],
@@ -4300,12 +4300,12 @@
     "paths": [
       [
         "APP-003",
-        "aws-sdk-s3",
+        "numpy",
         "click"
       ],
       [
         "APP-003",
-        "numpy",
+        "aws-sdk-s3",
         "click"
       ],
       [
@@ -4422,12 +4422,12 @@
     "paths": [
       [
         "APP-003",
-        "coverage",
+        "pandas",
         "idna"
       ],
       [
         "APP-003",
-        "pandas",
+        "coverage",
         "idna"
       ],
       [
@@ -4468,12 +4468,12 @@
     "paths": [
       [
         "APP-003",
-        "coverage",
+        "pandas",
         "idna"
       ],
       [
         "APP-003",
-        "pandas",
+        "coverage",
         "idna"
       ],
       [
@@ -4502,12 +4502,12 @@
     "paths": [
       [
         "APP-003",
-        "jinja2",
+        "pydantic",
         "boto3"
       ],
       [
         "APP-003",
-        "pydantic",
+        "jinja2",
         "boto3"
       ]
     ],
@@ -4557,17 +4557,17 @@
       ],
       [
         "APP-003",
-        "python-dateutil",
-        "django"
-      ],
-      [
-        "APP-003",
         "setuptools",
         "django"
       ],
       [
         "APP-003",
         "sqlalchemy",
+        "django"
+      ],
+      [
+        "APP-003",
+        "python-dateutil",
         "django"
       ]
     ],
@@ -4603,17 +4603,7 @@
     "paths": [
       [
         "APP-003",
-        "cryptography",
-        "werkzeug"
-      ],
-      [
-        "APP-003",
-        "httpx",
-        "werkzeug"
-      ],
-      [
-        "APP-003",
-        "node-fetch",
+        "pydantic",
         "werkzeug"
       ],
       [
@@ -4623,7 +4613,17 @@
       ],
       [
         "APP-003",
-        "pydantic",
+        "cryptography",
+        "werkzeug"
+      ],
+      [
+        "APP-003",
+        "node-fetch",
+        "werkzeug"
+      ],
+      [
+        "APP-003",
+        "httpx",
         "werkzeug"
       ]
     ],
@@ -4659,7 +4659,7 @@
     "paths": [
       [
         "APP-003",
-        "flask",
+        "setuptools",
         "urllib3"
       ],
       [
@@ -4669,7 +4669,7 @@
       ],
       [
         "APP-003",
-        "setuptools",
+        "flask",
         "urllib3"
       ]
     ],
@@ -4705,7 +4705,7 @@
     "paths": [
       [
         "APP-003",
-        "flask",
+        "setuptools",
         "urllib3"
       ],
       [
@@ -4715,7 +4715,7 @@
       ],
       [
         "APP-003",
-        "setuptools",
+        "flask",
         "urllib3"
       ]
     ],
@@ -4739,12 +4739,12 @@
     "paths": [
       [
         "APP-003",
-        "pandas",
+        "pip",
         "scikit-learn"
       ],
       [
         "APP-003",
-        "pip",
+        "pandas",
         "scikit-learn"
       ]
     ],
@@ -4858,12 +4858,12 @@
       ],
       [
         "APP-003",
-        "wheel",
+        "zap",
         "go-redis"
       ],
       [
         "APP-003",
-        "zap",
+        "wheel",
         "go-redis"
       ]
     ],
@@ -6132,12 +6132,12 @@
     "paths": [
       [
         "APP-004",
-        "django",
+        "morgan",
         "pillow"
       ],
       [
         "APP-004",
-        "morgan",
+        "django",
         "pillow"
       ]
     ],
@@ -6182,12 +6182,12 @@
     "paths": [
       [
         "APP-004",
-        "hibernate-validator",
+        "pandas",
         "rich"
       ],
       [
         "APP-004",
-        "pandas",
+        "hibernate-validator",
         "rich"
       ]
     ],
@@ -6211,22 +6211,22 @@
     "paths": [
       [
         "APP-004",
-        "ansible-core",
-        "charset-normalizer"
-      ],
-      [
-        "APP-004",
-        "botocore",
-        "charset-normalizer"
-      ],
-      [
-        "APP-004",
         "coverage",
         "charset-normalizer"
       ],
       [
         "APP-004",
         "pytest",
+        "charset-normalizer"
+      ],
+      [
+        "APP-004",
+        "ansible-core",
+        "charset-normalizer"
+      ],
+      [
+        "APP-004",
+        "botocore",
         "charset-normalizer"
       ]
     ],
@@ -6262,22 +6262,22 @@
     "paths": [
       [
         "APP-004",
-        "aiohttp",
-        "requests"
-      ],
-      [
-        "APP-004",
-        "hibernate-validator",
-        "requests"
-      ],
-      [
-        "APP-004",
         "pyjwt",
         "requests"
       ],
       [
         "APP-004",
         "pyyaml",
+        "requests"
+      ],
+      [
+        "APP-004",
+        "aiohttp",
+        "requests"
+      ],
+      [
+        "APP-004",
+        "hibernate-validator",
         "requests"
       ],
       [
@@ -6377,12 +6377,12 @@
     "paths": [
       [
         "APP-004",
-        "ansible-core",
+        "cors",
         "click"
       ],
       [
         "APP-004",
-        "cors",
+        "ansible-core",
         "click"
       ],
       [
@@ -6432,17 +6432,17 @@
     "paths": [
       [
         "APP-004",
-        "bandit",
-        "hibernate-core"
-      ],
-      [
-        "APP-004",
         "httpx",
         "hibernate-core"
       ],
       [
         "APP-004",
         "pyjwt",
+        "hibernate-core"
+      ],
+      [
+        "APP-004",
+        "bandit",
         "hibernate-core"
       ]
     ],
@@ -6478,17 +6478,17 @@
     "paths": [
       [
         "APP-004",
-        "bandit",
-        "hibernate-core"
-      ],
-      [
-        "APP-004",
         "httpx",
         "hibernate-core"
       ],
       [
         "APP-004",
         "pyjwt",
+        "hibernate-core"
+      ],
+      [
+        "APP-004",
+        "bandit",
         "hibernate-core"
       ]
     ],
@@ -6517,17 +6517,17 @@
       ],
       [
         "APP-004",
+        "urllib3",
+        "celery"
+      ],
+      [
+        "APP-004",
         "pandas",
         "celery"
       ],
       [
         "APP-004",
         "safety",
-        "celery"
-      ],
-      [
-        "APP-004",
-        "urllib3",
         "celery"
       ]
     ],
@@ -6563,12 +6563,12 @@
     "paths": [
       [
         "APP-004",
-        "hibernate-validator",
+        "moment",
         "six"
       ],
       [
         "APP-004",
-        "moment",
+        "hibernate-validator",
         "six"
       ]
     ],
@@ -6604,12 +6604,7 @@
     "paths": [
       [
         "APP-004",
-        "ansible-core",
-        "scikit-learn"
-      ],
-      [
-        "APP-004",
-        "pandas",
+        "twisted",
         "scikit-learn"
       ],
       [
@@ -6619,7 +6614,12 @@
       ],
       [
         "APP-004",
-        "twisted",
+        "ansible-core",
+        "scikit-learn"
+      ],
+      [
+        "APP-004",
+        "pandas",
         "scikit-learn"
       ]
     ],
@@ -6673,7 +6673,7 @@
     "paths": [
       [
         "APP-004",
-        "httpx",
+        "python-dateutil",
         "setuptools"
       ],
       [
@@ -6683,7 +6683,7 @@
       ],
       [
         "APP-004",
-        "python-dateutil",
+        "httpx",
         "setuptools"
       ],
       [
@@ -7707,17 +7707,17 @@
     "paths": [
       [
         "APP-005",
-        "angular-core",
-        "postgresql-jdbc"
-      ],
-      [
-        "APP-005",
         "formidable",
         "postgresql-jdbc"
       ],
       [
         "APP-005",
         "nanoid",
+        "postgresql-jdbc"
+      ],
+      [
+        "APP-005",
+        "sequelize",
         "postgresql-jdbc"
       ],
       [
@@ -7732,7 +7732,7 @@
       ],
       [
         "APP-005",
-        "sequelize",
+        "angular-core",
         "postgresql-jdbc"
       ]
     ],
@@ -7773,12 +7773,12 @@
       ],
       [
         "APP-005",
-        "next",
+        "node-fetch",
         "micrometer-core"
       ],
       [
         "APP-005",
-        "node-fetch",
+        "next",
         "micrometer-core"
       ]
     ],
@@ -7819,12 +7819,12 @@
       ],
       [
         "APP-005",
-        "next",
+        "node-fetch",
         "micrometer-core"
       ],
       [
         "APP-005",
-        "node-fetch",
+        "next",
         "micrometer-core"
       ]
     ],
@@ -7887,7 +7887,7 @@
       ],
       [
         "APP-005",
-        "react-dom",
+        "winston",
         "axios"
       ],
       [
@@ -7897,7 +7897,7 @@
       ],
       [
         "APP-005",
-        "winston",
+        "react-dom",
         "axios"
       ]
     ],
@@ -7938,7 +7938,7 @@
       ],
       [
         "APP-005",
-        "react-dom",
+        "winston",
         "axios"
       ],
       [
@@ -7948,7 +7948,7 @@
       ],
       [
         "APP-005",
-        "winston",
+        "react-dom",
         "axios"
       ]
     ],
@@ -7972,12 +7972,12 @@
     "paths": [
       [
         "APP-005",
-        "puppeteer",
+        "react",
         "graphql"
       ],
       [
         "APP-005",
-        "react",
+        "puppeteer",
         "graphql"
       ]
     ],
@@ -8103,17 +8103,17 @@
     "paths": [
       [
         "APP-005",
-        "angular-core",
-        "express"
-      ],
-      [
-        "APP-005",
         "mocha",
         "express"
       ],
       [
         "APP-005",
         "react",
+        "express"
+      ],
+      [
+        "APP-005",
+        "angular-core",
         "express"
       ]
     ],
@@ -8167,17 +8167,17 @@
     "paths": [
       [
         "APP-005",
-        "angular-core",
-        "express"
-      ],
-      [
-        "APP-005",
         "mocha",
         "express"
       ],
       [
         "APP-005",
         "react",
+        "express"
+      ],
+      [
+        "APP-005",
+        "angular-core",
         "express"
       ]
     ],
@@ -8201,17 +8201,17 @@
     "paths": [
       [
         "APP-005",
+        "cheerio",
+        "testify"
+      ],
+      [
+        "APP-005",
         "babel-core",
         "testify"
       ],
       [
         "APP-005",
-        "chalk",
-        "testify"
-      ],
-      [
-        "APP-005",
-        "cheerio",
+        "morgan",
         "testify"
       ],
       [
@@ -8226,7 +8226,7 @@
       ],
       [
         "APP-005",
-        "morgan",
+        "chalk",
         "testify"
       ],
       [
@@ -8428,11 +8428,11 @@
     "paths": [
       [
         "APP-006",
-        "chi",
         "pyjwt"
       ],
       [
         "APP-006",
+        "chi",
         "pyjwt"
       ]
     ],
@@ -9354,11 +9354,11 @@
     "paths": [
       [
         "APP-006",
+        "pgx",
         "nats"
       ],
       [
         "APP-006",
-        "pgx",
         "nats"
       ]
     ],
@@ -9429,12 +9429,12 @@
     "paths": [
       [
         "APP-006",
-        "chi",
         "pyjwt",
         "react-dom"
       ],
       [
         "APP-006",
+        "chi",
         "pyjwt",
         "react-dom"
       ],
@@ -9573,12 +9573,12 @@
     "paths": [
       [
         "APP-006",
-        "gin",
+        "moment",
         "cors"
       ],
       [
         "APP-006",
-        "moment",
+        "gin",
         "cors"
       ]
     ],
@@ -9602,11 +9602,11 @@
     "paths": [
       [
         "APP-006",
+        "pgx",
         "nats"
       ],
       [
         "APP-006",
-        "pgx",
         "nats"
       ]
     ],
@@ -9642,18 +9642,7 @@
     "paths": [
       [
         "APP-006",
-        "chi",
-        "commons-lang3"
-      ],
-      [
-        "APP-006",
-        "chi",
         "pyjwt",
-        "commons-lang3"
-      ],
-      [
-        "APP-006",
-        "json-iterator",
         "commons-lang3"
       ],
       [
@@ -9663,12 +9652,23 @@
       ],
       [
         "APP-006",
-        "pyjwt",
+        "python-dateutil",
         "commons-lang3"
       ],
       [
         "APP-006",
-        "python-dateutil",
+        "json-iterator",
+        "commons-lang3"
+      ],
+      [
+        "APP-006",
+        "chi",
+        "commons-lang3"
+      ],
+      [
+        "APP-006",
+        "chi",
+        "pyjwt",
         "commons-lang3"
       ],
       [
@@ -9709,18 +9709,7 @@
     "paths": [
       [
         "APP-006",
-        "chi",
-        "commons-lang3"
-      ],
-      [
-        "APP-006",
-        "chi",
         "pyjwt",
-        "commons-lang3"
-      ],
-      [
-        "APP-006",
-        "json-iterator",
         "commons-lang3"
       ],
       [
@@ -9730,12 +9719,23 @@
       ],
       [
         "APP-006",
-        "pyjwt",
+        "python-dateutil",
         "commons-lang3"
       ],
       [
         "APP-006",
-        "python-dateutil",
+        "json-iterator",
+        "commons-lang3"
+      ],
+      [
+        "APP-006",
+        "chi",
+        "commons-lang3"
+      ],
+      [
+        "APP-006",
+        "chi",
+        "pyjwt",
         "commons-lang3"
       ],
       [
@@ -9764,12 +9764,12 @@
     "paths": [
       [
         "APP-006",
-        "aiohttp",
+        "gson",
         "jedis"
       ],
       [
         "APP-006",
-        "gson",
+        "aiohttp",
         "jedis"
       ]
     ],
@@ -9858,7 +9858,7 @@
     "paths": [
       [
         "APP-006",
-        "aiohttp",
+        "zap",
         "inquirer"
       ],
       [
@@ -9868,7 +9868,7 @@
       ],
       [
         "APP-006",
-        "zap",
+        "aiohttp",
         "inquirer"
       ]
     ],
@@ -9904,7 +9904,7 @@
     "paths": [
       [
         "APP-006",
-        "aiohttp",
+        "zap",
         "inquirer"
       ],
       [
@@ -9914,7 +9914,7 @@
       ],
       [
         "APP-006",
-        "zap",
+        "aiohttp",
         "inquirer"
       ]
     ],
@@ -9938,12 +9938,12 @@
     "paths": [
       [
         "APP-006",
-        "colly",
+        "logrus",
         "bouncycastle-bcprov"
       ],
       [
         "APP-006",
-        "logrus",
+        "colly",
         "bouncycastle-bcprov"
       ]
     ],
@@ -9997,11 +9997,11 @@
     "paths": [
       [
         "APP-006",
-        "chi",
         "pyjwt"
       ],
       [
         "APP-006",
+        "chi",
         "pyjwt"
       ]
     ],
@@ -10046,12 +10046,7 @@
     "paths": [
       [
         "APP-006",
-        "fiber",
-        "uuid"
-      ],
-      [
-        "APP-006",
-        "gson",
+        "testify",
         "uuid"
       ],
       [
@@ -10061,7 +10056,12 @@
       ],
       [
         "APP-006",
-        "testify",
+        "gson",
+        "uuid"
+      ],
+      [
+        "APP-006",
+        "fiber",
         "uuid"
       ]
     ],
@@ -11009,12 +11009,12 @@
     "paths": [
       [
         "APP-007",
-        "pandas",
+        "scikit-learn",
         "charset-normalizer"
       ],
       [
         "APP-007",
-        "scikit-learn",
+        "pandas",
         "charset-normalizer"
       ]
     ],
@@ -11050,11 +11050,6 @@
     "paths": [
       [
         "APP-007",
-        "coverage",
-        "numpy"
-      ],
-      [
-        "APP-007",
         "paramiko",
         "numpy"
       ],
@@ -11066,6 +11061,11 @@
       [
         "APP-007",
         "setuptools",
+        "numpy"
+      ],
+      [
+        "APP-007",
+        "coverage",
         "numpy"
       ]
     ],
@@ -11119,22 +11119,22 @@
     "paths": [
       [
         "APP-007",
-        "bandit",
-        "scipy"
-      ],
-      [
-        "APP-007",
         "markupsafe",
         "scipy"
       ],
       [
         "APP-007",
-        "matplotlib",
+        "scikit-learn",
         "scipy"
       ],
       [
         "APP-007",
-        "scikit-learn",
+        "bandit",
+        "scipy"
+      ],
+      [
+        "APP-007",
+        "matplotlib",
         "scipy"
       ]
     ],
@@ -11329,7 +11329,7 @@
       ],
       [
         "APP-007",
-        "redis",
+        "wheel",
         "aiohttp"
       ],
       [
@@ -11339,7 +11339,7 @@
       ],
       [
         "APP-007",
-        "wheel",
+        "redis",
         "aiohttp"
       ]
     ],
@@ -11470,7 +11470,7 @@
     "paths": [
       [
         "APP-007",
-        "cryptography",
+        "python-dateutil",
         "click"
       ],
       [
@@ -11485,7 +11485,7 @@
       ],
       [
         "APP-007",
-        "python-dateutil",
+        "cryptography",
         "click"
       ],
       [
@@ -11540,7 +11540,7 @@
     "paths": [
       [
         "APP-007",
-        "certifi",
+        "viper",
         "pydantic"
       ],
       [
@@ -11550,7 +11550,7 @@
       ],
       [
         "APP-007",
-        "viper",
+        "certifi",
         "pydantic"
       ]
     ],
@@ -12758,22 +12758,7 @@
     "paths": [
       [
         "APP-008",
-        "commons-io",
-        "axios"
-      ],
-      [
-        "APP-008",
-        "jackson-annotations",
-        "axios"
-      ],
-      [
-        "APP-008",
         "jedis",
-        "axios"
-      ],
-      [
-        "APP-008",
-        "junit-jupiter",
         "axios"
       ],
       [
@@ -12784,6 +12769,21 @@
       [
         "APP-008",
         "netty-handler",
+        "axios"
+      ],
+      [
+        "APP-008",
+        "junit-jupiter",
+        "axios"
+      ],
+      [
+        "APP-008",
+        "commons-io",
+        "axios"
+      ],
+      [
+        "APP-008",
+        "jackson-annotations",
         "axios"
       ]
     ],
@@ -13120,12 +13120,12 @@
     "paths": [
       [
         "APP-008",
-        "pgx",
+        "tomcat-embed-core",
         "aws-sdk-sqs"
       ],
       [
         "APP-008",
-        "tomcat-embed-core",
+        "pgx",
         "aws-sdk-sqs"
       ]
     ],
@@ -13188,17 +13188,12 @@
     "paths": [
       [
         "APP-008",
-        "commons-io",
-        "disruptor"
-      ],
-      [
-        "APP-008",
         "grpc-core",
         "disruptor"
       ],
       [
         "APP-008",
-        "jackson-annotations",
+        "commons-io",
         "disruptor"
       ],
       [
@@ -13209,6 +13204,11 @@
       [
         "APP-008",
         "micrometer-core",
+        "disruptor"
+      ],
+      [
+        "APP-008",
+        "jackson-annotations",
         "disruptor"
       ]
     ],
@@ -13244,22 +13244,22 @@
     "paths": [
       [
         "APP-008",
-        "grpc-core",
-        "netty-all"
-      ],
-      [
-        "APP-008",
         "guava",
         "netty-all"
       ],
       [
         "APP-008",
-        "logback-core",
+        "mysql-connector-java",
         "netty-all"
       ],
       [
         "APP-008",
-        "mysql-connector-java",
+        "grpc-core",
+        "netty-all"
+      ],
+      [
+        "APP-008",
+        "logback-core",
         "netty-all"
       ]
     ],
@@ -14368,12 +14368,12 @@
     "paths": [
       [
         "APP-009",
-        "multer",
+        "sharp",
         "node-fetch"
       ],
       [
         "APP-009",
-        "sharp",
+        "multer",
         "node-fetch"
       ]
     ],
@@ -14418,7 +14418,7 @@
     "paths": [
       [
         "APP-009",
-        "helmet",
+        "yaml-go",
         "moment"
       ],
       [
@@ -14428,7 +14428,7 @@
       ],
       [
         "APP-009",
-        "yaml-go",
+        "helmet",
         "moment"
       ]
     ],
@@ -14460,17 +14460,17 @@
     "paths": [
       [
         "APP-009",
-        "commander",
-        "react"
-      ],
-      [
-        "APP-009",
         "jest",
         "react"
       ],
       [
         "APP-009",
         "winston",
+        "react"
+      ],
+      [
+        "APP-009",
+        "commander",
         "react"
       ]
     ],
@@ -14515,17 +14515,17 @@
     "paths": [
       [
         "APP-009",
+        "nanoid",
+        "prettier"
+      ],
+      [
+        "APP-009",
         "dayjs",
         "prettier"
       ],
       [
         "APP-009",
         "graphql",
-        "prettier"
-      ],
-      [
-        "APP-009",
-        "nanoid",
         "prettier"
       ]
     ],
@@ -14561,17 +14561,17 @@
     "paths": [
       [
         "APP-009",
+        "nanoid",
+        "prettier"
+      ],
+      [
+        "APP-009",
         "dayjs",
         "prettier"
       ],
       [
         "APP-009",
         "graphql",
-        "prettier"
-      ],
-      [
-        "APP-009",
-        "nanoid",
         "prettier"
       ]
     ],
@@ -14599,12 +14599,12 @@
       ],
       [
         "APP-009",
-        "webpack",
+        "winston",
         "dotenv"
       ],
       [
         "APP-009",
-        "winston",
+        "webpack",
         "dotenv"
       ]
     ],
@@ -14663,12 +14663,12 @@
       ],
       [
         "APP-009",
-        "webpack",
+        "winston",
         "dotenv"
       ],
       [
         "APP-009",
-        "winston",
+        "webpack",
         "dotenv"
       ]
     ],
@@ -14774,12 +14774,17 @@
     "paths": [
       [
         "APP-009",
-        "axios",
+        "jest",
         "bcrypt"
       ],
       [
         "APP-009",
-        "helmet",
+        "redis",
+        "bcrypt"
+      ],
+      [
+        "APP-009",
+        "axios",
         "bcrypt"
       ],
       [
@@ -14789,12 +14794,7 @@
       ],
       [
         "APP-009",
-        "jest",
-        "bcrypt"
-      ],
-      [
-        "APP-009",
-        "redis",
+        "helmet",
         "bcrypt"
       ]
     ],
@@ -14993,11 +14993,6 @@
     "paths": [
       [
         "APP-010",
-        "bcrypt-go",
-        "chi"
-      ],
-      [
-        "APP-010",
         "chi"
       ],
       [
@@ -15008,6 +15003,11 @@
       [
         "APP-010",
         "yaml-go",
+        "chi"
+      ],
+      [
+        "APP-010",
+        "bcrypt-go",
         "chi"
       ]
     ],
@@ -16062,16 +16062,16 @@
     "paths": [
       [
         "APP-010",
+        "resty",
+        "mux"
+      ],
+      [
+        "APP-010",
         "gomock",
         "mux"
       ],
       [
         "APP-010",
-        "mux"
-      ],
-      [
-        "APP-010",
-        "resty",
         "mux"
       ]
     ],
@@ -16169,7 +16169,8 @@
     "paths": [
       [
         "APP-010",
-        "gin",
+        "resty",
+        "mux",
         "chalk"
       ],
       [
@@ -16180,12 +16181,11 @@
       ],
       [
         "APP-010",
-        "mux",
+        "gin",
         "chalk"
       ],
       [
         "APP-010",
-        "resty",
         "mux",
         "chalk"
       ]
@@ -16381,18 +16381,12 @@
     "paths": [
       [
         "APP-010",
-        "gomock",
-        "mux",
-        "bcrypt"
-      ],
-      [
-        "APP-010",
-        "mux",
-        "bcrypt"
-      ],
-      [
-        "APP-010",
         "protobuf-go",
+        "bcrypt"
+      ],
+      [
+        "APP-010",
+        "setuptools",
         "bcrypt"
       ],
       [
@@ -16403,7 +16397,13 @@
       ],
       [
         "APP-010",
-        "setuptools",
+        "gomock",
+        "mux",
+        "bcrypt"
+      ],
+      [
+        "APP-010",
+        "mux",
         "bcrypt"
       ]
     ],
@@ -16457,16 +16457,16 @@
     "paths": [
       [
         "APP-010",
+        "resty",
+        "mux"
+      ],
+      [
+        "APP-010",
         "gomock",
         "mux"
       ],
       [
         "APP-010",
-        "mux"
-      ],
-      [
-        "APP-010",
-        "resty",
         "mux"
       ]
     ],
@@ -16529,28 +16529,7 @@
     "paths": [
       [
         "APP-010",
-        "go-jwt",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "go-redis",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "gomock",
-        "mux",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "gomock",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "mux",
+        "rich",
         "bouncycastle-bcprov"
       ],
       [
@@ -16561,7 +16540,28 @@
       ],
       [
         "APP-010",
-        "rich",
+        "gomock",
+        "mux",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "gomock",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "go-redis",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "go-jwt",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "mux",
         "bouncycastle-bcprov"
       ]
     ],
@@ -16615,28 +16615,7 @@
     "paths": [
       [
         "APP-010",
-        "go-jwt",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "go-redis",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "gomock",
-        "mux",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "gomock",
-        "bouncycastle-bcprov"
-      ],
-      [
-        "APP-010",
-        "mux",
+        "rich",
         "bouncycastle-bcprov"
       ],
       [
@@ -16647,7 +16626,28 @@
       ],
       [
         "APP-010",
-        "rich",
+        "gomock",
+        "mux",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "gomock",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "go-redis",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "go-jwt",
+        "bouncycastle-bcprov"
+      ],
+      [
+        "APP-010",
+        "mux",
         "bouncycastle-bcprov"
       ]
     ],
@@ -16670,12 +16670,12 @@
     "paths": [
       [
         "APP-010",
-        "go-redis",
+        "golangci-lint",
         "chai"
       ],
       [
         "APP-010",
-        "golangci-lint",
+        "go-redis",
         "chai"
       ]
     ],
@@ -16756,17 +16756,17 @@
     "paths": [
       [
         "APP-010",
+        "logrus",
+        "nodemon"
+      ],
+      [
+        "APP-010",
         "aws-sdk-go",
         "nodemon"
       ],
       [
         "APP-010",
         "cobra",
-        "nodemon"
-      ],
-      [
-        "APP-010",
-        "logrus",
         "nodemon"
       ]
     ],
@@ -16802,17 +16802,17 @@
     "paths": [
       [
         "APP-010",
+        "logrus",
+        "nodemon"
+      ],
+      [
+        "APP-010",
         "aws-sdk-go",
         "nodemon"
       ],
       [
         "APP-010",
         "cobra",
-        "nodemon"
-      ],
-      [
-        "APP-010",
-        "logrus",
         "nodemon"
       ]
     ],

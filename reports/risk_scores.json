@@ -1,0 +1,2002 @@
+{
+  "DEP-0001": {
+    "risk_score": 62.2,
+    "source": "baseline"
+  },
+  "DEP-0002": {
+    "risk_score": 57.6,
+    "source": "baseline"
+  },
+  "DEP-0003": {
+    "risk_score": 58.2,
+    "source": "baseline"
+  },
+  "DEP-0004": {
+    "risk_score": 57.8,
+    "source": "baseline"
+  },
+  "DEP-0005": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0006": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0007": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0008": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0009": {
+    "risk_score": 62.9,
+    "source": "baseline"
+  },
+  "DEP-0010": {
+    "risk_score": 61.4,
+    "source": "baseline"
+  },
+  "DEP-0011": {
+    "risk_score": 65.0,
+    "source": "baseline"
+  },
+  "DEP-0012": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0013": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0014": {
+    "risk_score": 58.1,
+    "source": "baseline"
+  },
+  "DEP-0015": {
+    "risk_score": 52.9,
+    "source": "baseline"
+  },
+  "DEP-0016": {
+    "risk_score": 60.6,
+    "source": "baseline"
+  },
+  "DEP-0017": {
+    "risk_score": 60.3,
+    "source": "baseline"
+  },
+  "DEP-0018": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0019": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0020": {
+    "risk_score": 58.4,
+    "source": "baseline"
+  },
+  "DEP-0021": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0022": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0023": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0024": {
+    "risk_score": 54.7,
+    "source": "baseline"
+  },
+  "DEP-0025": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0026": {
+    "risk_score": 57.6,
+    "source": "baseline"
+  },
+  "DEP-0027": {
+    "risk_score": 61.1,
+    "source": "baseline"
+  },
+  "DEP-0028": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0029": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0030": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0031": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0032": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0033": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0034": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0035": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0036": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0037": {
+    "risk_score": 64.6,
+    "source": "baseline"
+  },
+  "DEP-0038": {
+    "risk_score": 65.9,
+    "source": "baseline"
+  },
+  "DEP-0039": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0040": {
+    "risk_score": 65.5,
+    "source": "baseline"
+  },
+  "DEP-0041": {
+    "risk_score": 78.0,
+    "source": "baseline"
+  },
+  "DEP-0042": {
+    "risk_score": 54.5,
+    "source": "baseline"
+  },
+  "DEP-0043": {
+    "risk_score": 69.1,
+    "source": "baseline"
+  },
+  "DEP-0044": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0045": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0046": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0047": {
+    "risk_score": 59.2,
+    "source": "baseline"
+  },
+  "DEP-0048": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0049": {
+    "risk_score": 63.2,
+    "source": "baseline"
+  },
+  "DEP-0050": {
+    "risk_score": 66.3,
+    "source": "baseline"
+  },
+  "DEP-0051": {
+    "risk_score": 61.3,
+    "source": "baseline"
+  },
+  "DEP-0052": {
+    "risk_score": 54.1,
+    "source": "baseline"
+  },
+  "DEP-0053": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0054": {
+    "risk_score": 60.6,
+    "source": "baseline"
+  },
+  "DEP-0055": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0056": {
+    "risk_score": 58.2,
+    "source": "baseline"
+  },
+  "DEP-0057": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0058": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0059": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0060": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0061": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0062": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0063": {
+    "risk_score": 54.7,
+    "source": "baseline"
+  },
+  "DEP-0064": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0065": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0066": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0067": {
+    "risk_score": 55.5,
+    "source": "baseline"
+  },
+  "DEP-0068": {
+    "risk_score": 57.8,
+    "source": "baseline"
+  },
+  "DEP-0069": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0070": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0071": {
+    "risk_score": 48.9,
+    "source": "baseline"
+  },
+  "DEP-0072": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0073": {
+    "risk_score": 62.2,
+    "source": "baseline"
+  },
+  "DEP-0074": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0075": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0076": {
+    "risk_score": 49.5,
+    "source": "baseline"
+  },
+  "DEP-0077": {
+    "risk_score": 58.4,
+    "source": "baseline"
+  },
+  "DEP-0078": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0079": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0080": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0081": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0082": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0083": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0084": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0085": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0086": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0087": {
+    "risk_score": 70.0,
+    "source": "baseline"
+  },
+  "DEP-0088": {
+    "risk_score": 67.9,
+    "source": "baseline"
+  },
+  "DEP-0089": {
+    "risk_score": 59.9,
+    "source": "baseline"
+  },
+  "DEP-0090": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0091": {
+    "risk_score": 69.1,
+    "source": "baseline"
+  },
+  "DEP-0092": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0093": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0094": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0095": {
+    "risk_score": 72.9,
+    "source": "baseline"
+  },
+  "DEP-0096": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0097": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0098": {
+    "risk_score": 70.5,
+    "source": "baseline"
+  },
+  "DEP-0099": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0100": {
+    "risk_score": 65.8,
+    "source": "baseline"
+  },
+  "DEP-0101": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0102": {
+    "risk_score": 60.9,
+    "source": "baseline"
+  },
+  "DEP-0103": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0104": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0105": {
+    "risk_score": 59.1,
+    "source": "baseline"
+  },
+  "DEP-0106": {
+    "risk_score": 54.1,
+    "source": "baseline"
+  },
+  "DEP-0107": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0108": {
+    "risk_score": 57.1,
+    "source": "baseline"
+  },
+  "DEP-0109": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0110": {
+    "risk_score": 64.0,
+    "source": "baseline"
+  },
+  "DEP-0111": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0112": {
+    "risk_score": 60.5,
+    "source": "baseline"
+  },
+  "DEP-0113": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0114": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0115": {
+    "risk_score": 65.8,
+    "source": "baseline"
+  },
+  "DEP-0116": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0117": {
+    "risk_score": 57.6,
+    "source": "baseline"
+  },
+  "DEP-0118": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0119": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0120": {
+    "risk_score": 61.2,
+    "source": "baseline"
+  },
+  "DEP-0121": {
+    "risk_score": 67.6,
+    "source": "baseline"
+  },
+  "DEP-0122": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0123": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0124": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0125": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0126": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0127": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0128": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0129": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0130": {
+    "risk_score": 50.1,
+    "source": "baseline"
+  },
+  "DEP-0131": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0132": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0133": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0134": {
+    "risk_score": 59.0,
+    "source": "baseline"
+  },
+  "DEP-0135": {
+    "risk_score": 54.6,
+    "source": "baseline"
+  },
+  "DEP-0136": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0137": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0138": {
+    "risk_score": 58.1,
+    "source": "baseline"
+  },
+  "DEP-0139": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0140": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0141": {
+    "risk_score": 61.3,
+    "source": "baseline"
+  },
+  "DEP-0142": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0143": {
+    "risk_score": 60.8,
+    "source": "baseline"
+  },
+  "DEP-0144": {
+    "risk_score": 66.4,
+    "source": "baseline"
+  },
+  "DEP-0145": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0146": {
+    "risk_score": 60.7,
+    "source": "baseline"
+  },
+  "DEP-0147": {
+    "risk_score": 65.8,
+    "source": "baseline"
+  },
+  "DEP-0148": {
+    "risk_score": 70.6,
+    "source": "baseline"
+  },
+  "DEP-0149": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0150": {
+    "risk_score": 58.2,
+    "source": "baseline"
+  },
+  "DEP-0151": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0152": {
+    "risk_score": 59.9,
+    "source": "baseline"
+  },
+  "DEP-0153": {
+    "risk_score": 57.6,
+    "source": "baseline"
+  },
+  "DEP-0154": {
+    "risk_score": 60.5,
+    "source": "baseline"
+  },
+  "DEP-0155": {
+    "risk_score": 60.8,
+    "source": "baseline"
+  },
+  "DEP-0156": {
+    "risk_score": 59.1,
+    "source": "baseline"
+  },
+  "DEP-0157": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0158": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0159": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0160": {
+    "risk_score": 55.8,
+    "source": "baseline"
+  },
+  "DEP-0161": {
+    "risk_score": 55.0,
+    "source": "baseline"
+  },
+  "DEP-0162": {
+    "risk_score": 57.3,
+    "source": "baseline"
+  },
+  "DEP-0163": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0164": {
+    "risk_score": 55.0,
+    "source": "baseline"
+  },
+  "DEP-0165": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0166": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0167": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0168": {
+    "risk_score": 59.0,
+    "source": "baseline"
+  },
+  "DEP-0169": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0170": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0171": {
+    "risk_score": 62.0,
+    "source": "baseline"
+  },
+  "DEP-0172": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0173": {
+    "risk_score": 65.8,
+    "source": "baseline"
+  },
+  "DEP-0174": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0175": {
+    "risk_score": 57.0,
+    "source": "baseline"
+  },
+  "DEP-0176": {
+    "risk_score": 65.5,
+    "source": "baseline"
+  },
+  "DEP-0177": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0178": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0179": {
+    "risk_score": 64.0,
+    "source": "baseline"
+  },
+  "DEP-0180": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0181": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0182": {
+    "risk_score": 56.0,
+    "source": "baseline"
+  },
+  "DEP-0183": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0184": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0185": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0186": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0187": {
+    "risk_score": 63.2,
+    "source": "baseline"
+  },
+  "DEP-0188": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0189": {
+    "risk_score": 64.9,
+    "source": "baseline"
+  },
+  "DEP-0190": {
+    "risk_score": 70.4,
+    "source": "baseline"
+  },
+  "DEP-0191": {
+    "risk_score": 67.1,
+    "source": "baseline"
+  },
+  "DEP-0192": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0193": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0194": {
+    "risk_score": 63.1,
+    "source": "baseline"
+  },
+  "DEP-0195": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0196": {
+    "risk_score": 62.0,
+    "source": "baseline"
+  },
+  "DEP-0197": {
+    "risk_score": 60.7,
+    "source": "baseline"
+  },
+  "DEP-0198": {
+    "risk_score": 67.5,
+    "source": "baseline"
+  },
+  "DEP-0199": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0200": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0201": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0202": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0203": {
+    "risk_score": 50.0,
+    "source": "baseline"
+  },
+  "DEP-0204": {
+    "risk_score": 62.1,
+    "source": "baseline"
+  },
+  "DEP-0205": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0206": {
+    "risk_score": 54.1,
+    "source": "baseline"
+  },
+  "DEP-0207": {
+    "risk_score": 53.4,
+    "source": "baseline"
+  },
+  "DEP-0208": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0209": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0210": {
+    "risk_score": 58.6,
+    "source": "baseline"
+  },
+  "DEP-0211": {
+    "risk_score": 57.5,
+    "source": "baseline"
+  },
+  "DEP-0212": {
+    "risk_score": 62.7,
+    "source": "baseline"
+  },
+  "DEP-0213": {
+    "risk_score": 61.2,
+    "source": "baseline"
+  },
+  "DEP-0214": {
+    "risk_score": 59.9,
+    "source": "baseline"
+  },
+  "DEP-0215": {
+    "risk_score": 54.6,
+    "source": "baseline"
+  },
+  "DEP-0216": {
+    "risk_score": 0.0,
+    "source": "baseline"
+  },
+  "DEP-0217": {
+    "risk_score": 63.7,
+    "source": "baseline"
+  },
+  "DEP-0218": {
+    "risk_score": 57.3,
+    "source": "baseline"
+  },
+  "DEP-0219": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0220": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0221": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0222": {
+    "risk_score": 49.8,
+    "source": "baseline"
+  },
+  "DEP-0223": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0224": {
+    "risk_score": 53.6,
+    "source": "baseline"
+  },
+  "DEP-0225": {
+    "risk_score": 56.0,
+    "source": "baseline"
+  },
+  "DEP-0226": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0227": {
+    "risk_score": 49.5,
+    "source": "baseline"
+  },
+  "DEP-0228": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0229": {
+    "risk_score": 61.0,
+    "source": "baseline"
+  },
+  "DEP-0230": {
+    "risk_score": 60.5,
+    "source": "baseline"
+  },
+  "DEP-0231": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0232": {
+    "risk_score": 61.7,
+    "source": "baseline"
+  },
+  "DEP-0233": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0234": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0235": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0236": {
+    "risk_score": 53.9,
+    "source": "baseline"
+  },
+  "DEP-0237": {
+    "risk_score": 67.2,
+    "source": "baseline"
+  },
+  "DEP-0238": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0239": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0240": {
+    "risk_score": 61.4,
+    "source": "baseline"
+  },
+  "DEP-0241": {
+    "risk_score": 64.3,
+    "source": "baseline"
+  },
+  "DEP-0242": {
+    "risk_score": 54.1,
+    "source": "baseline"
+  },
+  "DEP-0243": {
+    "risk_score": 55.3,
+    "source": "baseline"
+  },
+  "DEP-0244": {
+    "risk_score": 59.0,
+    "source": "baseline"
+  },
+  "DEP-0245": {
+    "risk_score": 72.1,
+    "source": "baseline"
+  },
+  "DEP-0246": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0247": {
+    "risk_score": 72.9,
+    "source": "baseline"
+  },
+  "DEP-0248": {
+    "risk_score": 63.7,
+    "source": "baseline"
+  },
+  "DEP-0249": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0250": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0251": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0252": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0253": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0254": {
+    "risk_score": 69.0,
+    "source": "baseline"
+  },
+  "DEP-0255": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0256": {
+    "risk_score": 62.9,
+    "source": "baseline"
+  },
+  "DEP-0257": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0258": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0259": {
+    "risk_score": 59.4,
+    "source": "baseline"
+  },
+  "DEP-0260": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0261": {
+    "risk_score": 49.8,
+    "source": "baseline"
+  },
+  "DEP-0262": {
+    "risk_score": 58.1,
+    "source": "baseline"
+  },
+  "DEP-0263": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0264": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0265": {
+    "risk_score": 52.0,
+    "source": "baseline"
+  },
+  "DEP-0266": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0267": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0268": {
+    "risk_score": 59.7,
+    "source": "baseline"
+  },
+  "DEP-0269": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0270": {
+    "risk_score": 56.9,
+    "source": "baseline"
+  },
+  "DEP-0271": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0272": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0273": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0274": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0275": {
+    "risk_score": 65.5,
+    "source": "baseline"
+  },
+  "DEP-0276": {
+    "risk_score": 65.6,
+    "source": "baseline"
+  },
+  "DEP-0277": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0278": {
+    "risk_score": 63.4,
+    "source": "baseline"
+  },
+  "DEP-0279": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0280": {
+    "risk_score": 56.0,
+    "source": "baseline"
+  },
+  "DEP-0281": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0282": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0283": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0284": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0285": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0286": {
+    "risk_score": 70.5,
+    "source": "baseline"
+  },
+  "DEP-0287": {
+    "risk_score": 65.5,
+    "source": "baseline"
+  },
+  "DEP-0288": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0289": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0290": {
+    "risk_score": 67.6,
+    "source": "baseline"
+  },
+  "DEP-0291": {
+    "risk_score": 59.7,
+    "source": "baseline"
+  },
+  "DEP-0292": {
+    "risk_score": 58.1,
+    "source": "baseline"
+  },
+  "DEP-0293": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0294": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0295": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0296": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0297": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0298": {
+    "risk_score": 64.0,
+    "source": "baseline"
+  },
+  "DEP-0299": {
+    "risk_score": 63.0,
+    "source": "baseline"
+  },
+  "DEP-0300": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0301": {
+    "risk_score": 58.2,
+    "source": "baseline"
+  },
+  "DEP-0302": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0303": {
+    "risk_score": 57.3,
+    "source": "baseline"
+  },
+  "DEP-0304": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0305": {
+    "risk_score": 60.1,
+    "source": "baseline"
+  },
+  "DEP-0306": {
+    "risk_score": 55.1,
+    "source": "baseline"
+  },
+  "DEP-0307": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0308": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0309": {
+    "risk_score": 60.4,
+    "source": "baseline"
+  },
+  "DEP-0310": {
+    "risk_score": 55.6,
+    "source": "baseline"
+  },
+  "DEP-0311": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0312": {
+    "risk_score": 61.4,
+    "source": "baseline"
+  },
+  "DEP-0313": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0314": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0315": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0316": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0317": {
+    "risk_score": 60.5,
+    "source": "baseline"
+  },
+  "DEP-0318": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0319": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0320": {
+    "risk_score": 59.0,
+    "source": "baseline"
+  },
+  "DEP-0321": {
+    "risk_score": 57.0,
+    "source": "baseline"
+  },
+  "DEP-0322": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0323": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0324": {
+    "risk_score": 65.8,
+    "source": "baseline"
+  },
+  "DEP-0325": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0326": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0327": {
+    "risk_score": 62.4,
+    "source": "baseline"
+  },
+  "DEP-0328": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0329": {
+    "risk_score": 60.9,
+    "source": "baseline"
+  },
+  "DEP-0330": {
+    "risk_score": 60.6,
+    "source": "baseline"
+  },
+  "DEP-0331": {
+    "risk_score": 57.0,
+    "source": "baseline"
+  },
+  "DEP-0332": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0333": {
+    "risk_score": 53.1,
+    "source": "baseline"
+  },
+  "DEP-0334": {
+    "risk_score": 57.5,
+    "source": "baseline"
+  },
+  "DEP-0335": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0336": {
+    "risk_score": 64.9,
+    "source": "baseline"
+  },
+  "DEP-0337": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0338": {
+    "risk_score": 64.1,
+    "source": "baseline"
+  },
+  "DEP-0339": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0340": {
+    "risk_score": 60.1,
+    "source": "baseline"
+  },
+  "DEP-0341": {
+    "risk_score": 67.6,
+    "source": "baseline"
+  },
+  "DEP-0342": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0343": {
+    "risk_score": 70.5,
+    "source": "baseline"
+  },
+  "DEP-0344": {
+    "risk_score": 60.8,
+    "source": "baseline"
+  },
+  "DEP-0345": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0346": {
+    "risk_score": 69.0,
+    "source": "baseline"
+  },
+  "DEP-0347": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0348": {
+    "risk_score": 62.0,
+    "source": "baseline"
+  },
+  "DEP-0349": {
+    "risk_score": 57.1,
+    "source": "baseline"
+  },
+  "DEP-0350": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0351": {
+    "risk_score": 54.1,
+    "source": "baseline"
+  },
+  "DEP-0352": {
+    "risk_score": 61.1,
+    "source": "baseline"
+  },
+  "DEP-0353": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0354": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0355": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0356": {
+    "risk_score": 0.0,
+    "source": "baseline"
+  },
+  "DEP-0357": {
+    "risk_score": 54.7,
+    "source": "baseline"
+  },
+  "DEP-0358": {
+    "risk_score": 48.9,
+    "source": "baseline"
+  },
+  "DEP-0359": {
+    "risk_score": 52.9,
+    "source": "baseline"
+  },
+  "DEP-0360": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0361": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0362": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0363": {
+    "risk_score": 57.3,
+    "source": "baseline"
+  },
+  "DEP-0364": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0365": {
+    "risk_score": 49.5,
+    "source": "baseline"
+  },
+  "DEP-0366": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0367": {
+    "risk_score": 67.5,
+    "source": "baseline"
+  },
+  "DEP-0368": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0369": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0370": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0371": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0372": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0373": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0374": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0375": {
+    "risk_score": 60.9,
+    "source": "baseline"
+  },
+  "DEP-0376": {
+    "risk_score": 49.1,
+    "source": "baseline"
+  },
+  "DEP-0377": {
+    "risk_score": 63.4,
+    "source": "baseline"
+  },
+  "DEP-0378": {
+    "risk_score": 62.2,
+    "source": "baseline"
+  },
+  "DEP-0379": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0380": {
+    "risk_score": 57.6,
+    "source": "baseline"
+  },
+  "DEP-0381": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0382": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0383": {
+    "risk_score": 67.6,
+    "source": "baseline"
+  },
+  "DEP-0384": {
+    "risk_score": 65.0,
+    "source": "baseline"
+  },
+  "DEP-0385": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0386": {
+    "risk_score": 64.3,
+    "source": "baseline"
+  },
+  "DEP-0387": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0388": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0389": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0390": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0391": {
+    "risk_score": 65.3,
+    "source": "baseline"
+  },
+  "DEP-0392": {
+    "risk_score": 59.1,
+    "source": "baseline"
+  },
+  "DEP-0393": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0394": {
+    "risk_score": 58.2,
+    "source": "baseline"
+  },
+  "DEP-0395": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0396": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0397": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0398": {
+    "risk_score": 67.6,
+    "source": "baseline"
+  },
+  "DEP-0399": {
+    "risk_score": 69.1,
+    "source": "baseline"
+  },
+  "DEP-0400": {
+    "risk_score": 68.2,
+    "source": "baseline"
+  },
+  "DEP-0401": {
+    "risk_score": 60.5,
+    "source": "baseline"
+  },
+  "DEP-0402": {
+    "risk_score": 59.7,
+    "source": "baseline"
+  },
+  "DEP-0403": {
+    "risk_score": 61.7,
+    "source": "baseline"
+  },
+  "DEP-0404": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0405": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0406": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0407": {
+    "risk_score": 62.5,
+    "source": "baseline"
+  },
+  "DEP-0408": {
+    "risk_score": 59.0,
+    "source": "baseline"
+  },
+  "DEP-0409": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0410": {
+    "risk_score": 53.4,
+    "source": "baseline"
+  },
+  "DEP-0411": {
+    "risk_score": 62.7,
+    "source": "baseline"
+  },
+  "DEP-0412": {
+    "risk_score": 49.8,
+    "source": "baseline"
+  },
+  "DEP-0413": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0414": {
+    "risk_score": 58.0,
+    "source": "baseline"
+  },
+  "DEP-0415": {
+    "risk_score": 49.5,
+    "source": "baseline"
+  },
+  "DEP-0416": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0417": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0418": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0419": {
+    "risk_score": 48.9,
+    "source": "baseline"
+  },
+  "DEP-0420": {
+    "risk_score": 59.3,
+    "source": "baseline"
+  },
+  "DEP-0421": {
+    "risk_score": 67.1,
+    "source": "baseline"
+  },
+  "DEP-0422": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0423": {
+    "risk_score": 62.0,
+    "source": "baseline"
+  },
+  "DEP-0424": {
+    "risk_score": 49.1,
+    "source": "baseline"
+  },
+  "DEP-0425": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0426": {
+    "risk_score": 59.9,
+    "source": "baseline"
+  },
+  "DEP-0427": {
+    "risk_score": 55.8,
+    "source": "baseline"
+  },
+  "DEP-0428": {
+    "risk_score": 59.6,
+    "source": "baseline"
+  },
+  "DEP-0429": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0430": {
+    "risk_score": 70.0,
+    "source": "baseline"
+  },
+  "DEP-0431": {
+    "risk_score": 58.7,
+    "source": "baseline"
+  },
+  "DEP-0432": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0433": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0434": {
+    "risk_score": 62.1,
+    "source": "baseline"
+  },
+  "DEP-0435": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0436": {
+    "risk_score": 66.2,
+    "source": "baseline"
+  },
+  "DEP-0437": {
+    "risk_score": 78.0,
+    "source": "baseline"
+  },
+  "DEP-0438": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0439": {
+    "risk_score": 58.6,
+    "source": "baseline"
+  },
+  "DEP-0440": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0441": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0442": {
+    "risk_score": 5.0,
+    "source": "baseline"
+  },
+  "DEP-0443": {
+    "risk_score": 66.4,
+    "source": "baseline"
+  },
+  "DEP-0444": {
+    "risk_score": 63.6,
+    "source": "baseline"
+  },
+  "DEP-0445": {
+    "risk_score": 68.7,
+    "source": "baseline"
+  },
+  "DEP-0446": {
+    "risk_score": 57.3,
+    "source": "baseline"
+  },
+  "DEP-0447": {
+    "risk_score": 0.0,
+    "source": "baseline"
+  },
+  "DEP-0448": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0449": {
+    "risk_score": 67.1,
+    "source": "baseline"
+  },
+  "DEP-0450": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0451": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0452": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0453": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0454": {
+    "risk_score": 73.0,
+    "source": "baseline"
+  },
+  "DEP-0455": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0456": {
+    "risk_score": 53.0,
+    "source": "baseline"
+  },
+  "DEP-0457": {
+    "risk_score": 63.0,
+    "source": "baseline"
+  },
+  "DEP-0458": {
+    "risk_score": 61.1,
+    "source": "baseline"
+  },
+  "DEP-0459": {
+    "risk_score": 57.5,
+    "source": "baseline"
+  },
+  "DEP-0460": {
+    "risk_score": 49.1,
+    "source": "baseline"
+  },
+  "DEP-0461": {
+    "risk_score": 54.3,
+    "source": "baseline"
+  },
+  "DEP-0462": {
+    "risk_score": 65.0,
+    "source": "baseline"
+  },
+  "DEP-0463": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0464": {
+    "risk_score": 52.0,
+    "source": "baseline"
+  },
+  "DEP-0465": {
+    "risk_score": 61.8,
+    "source": "baseline"
+  },
+  "DEP-0466": {
+    "risk_score": 59.1,
+    "source": "baseline"
+  },
+  "DEP-0467": {
+    "risk_score": 61.9,
+    "source": "baseline"
+  },
+  "DEP-0468": {
+    "risk_score": 56.2,
+    "source": "baseline"
+  },
+  "DEP-0469": {
+    "risk_score": 61.4,
+    "source": "baseline"
+  },
+  "DEP-0470": {
+    "risk_score": 65.6,
+    "source": "baseline"
+  },
+  "DEP-0471": {
+    "risk_score": 54.4,
+    "source": "baseline"
+  },
+  "DEP-0472": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0473": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0474": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0475": {
+    "risk_score": 62.3,
+    "source": "baseline"
+  },
+  "DEP-0476": {
+    "risk_score": 59.7,
+    "source": "baseline"
+  },
+  "DEP-0477": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0478": {
+    "risk_score": 63.4,
+    "source": "baseline"
+  },
+  "DEP-0479": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0480": {
+    "risk_score": 62.4,
+    "source": "baseline"
+  },
+  "DEP-0481": {
+    "risk_score": 57.8,
+    "source": "baseline"
+  },
+  "DEP-0482": {
+    "risk_score": 54.8,
+    "source": "baseline"
+  },
+  "DEP-0483": {
+    "risk_score": 58.1,
+    "source": "baseline"
+  },
+  "DEP-0484": {
+    "risk_score": 64.4,
+    "source": "baseline"
+  },
+  "DEP-0485": {
+    "risk_score": 56.0,
+    "source": "baseline"
+  },
+  "DEP-0486": {
+    "risk_score": 54.8,
+    "source": "baseline"
+  },
+  "DEP-0487": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0488": {
+    "risk_score": 62.6,
+    "source": "baseline"
+  },
+  "DEP-0489": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0490": {
+    "risk_score": 65.9,
+    "source": "baseline"
+  },
+  "DEP-0491": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0492": {
+    "risk_score": 3.0,
+    "source": "baseline"
+  },
+  "DEP-0493": {
+    "risk_score": 55.1,
+    "source": "baseline"
+  },
+  "DEP-0494": {
+    "risk_score": 67.1,
+    "source": "baseline"
+  },
+  "DEP-0495": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0496": {
+    "risk_score": 8.0,
+    "source": "baseline"
+  },
+  "DEP-0497": {
+    "risk_score": 64.4,
+    "source": "baseline"
+  },
+  "DEP-0498": {
+    "risk_score": 67.4,
+    "source": "baseline"
+  },
+  "DEP-0499": {
+    "risk_score": 67.0,
+    "source": "baseline"
+  },
+  "DEP-0500": {
+    "risk_score": 63.7,
+    "source": "baseline"
+  }
+}

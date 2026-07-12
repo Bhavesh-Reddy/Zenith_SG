@@ -1,27 +1,31 @@
 {
   "F-0352": {
-    "narrative": "moment@4.10.3 carries the AGPL-3.0 license inside APP-009, reachable via APP-009 -> yaml-go -> moment, which conflicts with proprietary distribution. It is reachable via 3 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: replace it with a permissively-licensed alternative or obtain legal clearance before the next release.",
-    "source": "template-fallback",
+    "narrative": "The moment library introduces a high-risk license conflict into the application because it is licensed under a restrictive copyleft agreement that could legally obligate the organization to open-source its proprietary codebase. This is a critical concern for this application because the library is pulled in as an indirect dependency through multiple active paths, exposing the entire project to intellectual property risks. To resolve this issue, developers should immediately audit the dependency tree to replace the offending library with a permissively licensed alternative or upgrade the parent packages to versions that do not rely on this copyleft dependency.",
+    "source": "gemini",
     "library": "moment",
-    "app_id": "APP-009"
+    "app_id": "APP-009",
+    "model": "gemini-flash-latest"
   },
   "F-0199": {
-    "narrative": "APP-005 is exposed to CVE-2025-1043 (CVSS 9.9) through testify@2.9.8 via APP-005 -> cheerio -> testify. It is reachable via 7 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: upgrade to 2.11.0 and re-scan to confirm the chain is closed.",
-    "source": "template-fallback",
+    "narrative": "The testify library contains a critical transitive vulnerability introduced through multiple top-level dependencies, posing a severe security risk to the application. This flaw could compromise the integrity of the application's runtime environment due to its high severity and wide footprint across key packages. To mitigate this risk, developers should immediately update the library to the patched version.",
+    "source": "gemini",
     "library": "testify",
-    "app_id": "APP-005"
+    "app_id": "APP-005",
+    "model": "gemini-flash-latest"
   },
   "F-0035": {
-    "narrative": "APP-001 is exposed to CVE-2022-1021 (CVSS 6.5) through jackson-core@4.9.1 via APP-001 -> lombok -> jackson-core. It is reachable via 2 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: no patched version is published yet, so isolate or replace the library and re-scan to confirm the chain is closed.",
-    "source": "template-fallback",
+    "narrative": "The jackson-core library contains a high-severity transitive vulnerability introduced through Lombok and SnakeYAML, which poses a significant security risk to APP-001 by potentially exposing the application to denial of service or remote code execution. Because this flaw compromises the underlying data-parsing mechanisms used by the application's dependencies, it is critical to address even though a direct patch is not yet available. To mitigate this risk, developers should immediately investigate overriding the transitive dependency version in the build configuration to a secure release or seek alternative, patched versions of the parent libraries.",
+    "source": "gemini",
     "library": "jackson-core",
-    "app_id": "APP-001"
+    "app_id": "APP-001",
+    "model": "gemini-flash-latest"
   },
   "F-0036": {
-    "narrative": "jackson-core@4.9.1 carries the AGPL-3.0 license inside APP-001, reachable via APP-001 -> lombok -> jackson-core, which conflicts with proprietary distribution. It is reachable via 2 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: replace it with a permissively-licensed alternative or obtain legal clearance before the next release.",
-    "source": "template-fallback",
+    "narrative": "The jackson-core library introduces a severe licensing conflict because it is governed by a restrictive copyleft license that is incompatible with proprietary software. This poses a significant legal risk to APP-001, as distributing the application under these terms could legally obligate the organization to release its proprietary source code to the public. To resolve this issue, developers must immediately replace this dependency with a version licensed under a permissive alternative, or configure the build tools to exclude this specific transitive dependency.",
+    "source": "gemini",
     "library": "jackson-core",
-    "app_id": "APP-001"
+    "app_id": "APP-001",
+    "model": "gemini-flash-latest"
   },
   "F-0119": {
     "narrative": "APP-003 is exposed to CVE-2024-1128 (CVSS 8.4) through go-redis@4.11.2 via APP-003 -> junit-jupiter -> go-redis. It is reachable via 4 distinct dependency paths, compounding the exposure and remediation surface. Recommended action: no patched version is published yet, so isolate or replace the library and re-scan to confirm the chain is closed.",

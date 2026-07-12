@@ -3,335 +3,560 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SBOM Supply Chain Risk — PB-10</title>
+<title>Zenith · SBOM Supply Chain Risk — Societe Generale</title>
 <style>
   :root {
-    --page: #f9f9f7; --surface: #fcfcfb;
-    --ink: #0b0b0b; --ink-2: #52514e; --ink-muted: #898781;
-    --grid: #e1e0d9; --border: rgba(11,11,11,0.10);
-    --seq: #2a78d6; --seq-deep: #256abf;
-    --critical: #d03b3b; --serious: #ec835a; --warning: #fab219; --good: #0ca30c;
+    --bg: #08090c; --bg-elev: #0e1116; --panel: #12161d;
+    --glass: rgba(255,255,255,0.045); --glass-2: rgba(255,255,255,0.025);
+    --brd: rgba(255,255,255,0.09); --brd-2: rgba(255,255,255,0.06);
+    --ink: #eef1f6; --ink-2: #a7b0be; --ink-3: #717a89;
+    --sg: #E60028; --sg-2: #ff2d4d; --sg-glow: rgba(230,0,40,0.5);
+    --crit: #ff3b4e; --high: #ff8f3d; --med: #ffc531; --low: #35d07f; --none: #59616f;
+    --accent: #56a3ff; --accent-deep: #2f6fd0;
+    --mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+    --shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 12px 32px rgba(0,0,0,0.45);
   }
   * { box-sizing: border-box; margin: 0; }
-  body { background: var(--page); color: var(--ink);
-         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
-         padding: 24px; }
-  h1 { font-size: 20px; } h2 { font-size: 15px; margin: 26px 0 10px; }
-  .sub { color: var(--ink-2); margin-top: 4px; font-size: 13px; }
-  .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-           gap: 12px; margin-top: 18px; }
-  .tile { background: var(--surface); border: 1px solid var(--border);
-          border-radius: 8px; padding: 12px 14px; }
-  .tile .v { font-size: 26px; font-weight: 650; }
-  .tile .l { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-           gap: 12px; }
-  .card { background: var(--surface); border: 1px solid var(--border);
-          border-radius: 8px; padding: 12px 14px; display: block;
-          color: inherit; text-decoration: none; }
-  .card:hover { outline: 2px solid var(--seq); outline-offset: -1px; }
-  .card.active { outline: 2px solid var(--seq-deep); outline-offset: -1px; }
-  .card .name { font-weight: 650; }
-  .card .meta { color: var(--ink-muted); font-size: 12px; margin: 2px 0 8px; }
-  .scorebar { height: 8px; background: var(--grid); border-radius: 4px; }
-  .scorebar > i { display: block; height: 8px; border-radius: 4px;
-                  background: var(--seq); min-width: 2px; }
-  .score-n { font-variant-numeric: tabular-nums; font-weight: 650; }
-  .filters { margin: 18px 0 8px; }
-  select { font: inherit; padding: 5px 8px; border: 1px solid var(--grid);
-           border-radius: 6px; background: var(--surface); color: inherit; }
-  a.btn, button.btn { font: inherit; padding: 6px 10px; border-radius: 6px;
-        border: 1px solid var(--grid); background: var(--surface);
-        color: inherit; text-decoration: none; cursor: pointer; }
-  table { width: 100%; border-collapse: collapse; background: var(--surface);
-          border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-  th { text-align: left; font-size: 12px; color: var(--ink-2);
-       border-bottom: 1px solid var(--grid); padding: 8px 10px; }
-  td { padding: 8px 10px; border-bottom: 1px solid var(--grid);
-       vertical-align: top; font-variant-numeric: tabular-nums; }
-  tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #f4f6fa; }
-  .badge { display: inline-flex; align-items: center; gap: 5px;
-           font-size: 12px; font-weight: 600; }
-  .dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
-  .b-CRITICAL .dot { background: var(--critical); } .b-CRITICAL { color: var(--critical); }
-  .b-HIGH .dot { background: var(--serious); } .b-HIGH { color: #b4552f; }
-  .b-MEDIUM .dot { background: var(--warning); } .b-MEDIUM { color: #8a6206; }
-  .b-LOW .dot { background: var(--good); } .b-LOW { color: #006300; }
-  .b-NONE .dot { background: var(--grid); } .b-NONE { color: var(--ink-muted); }
-  .path { color: var(--ink-2); font-size: 12px; }
-  .path b { color: var(--ink); }
+  html { scroll-behavior: smooth; }
+  body {
+    background:
+      radial-gradient(1100px 520px at 82% -8%, rgba(230,0,40,0.14), transparent 60%),
+      radial-gradient(900px 480px at 8% 4%, rgba(46,111,208,0.10), transparent 55%),
+      var(--bg);
+    color: var(--ink); font-variant-numeric: tabular-nums;
+    font: 14px/1.5 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased; min-height: 100vh;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 0 22px 64px; }
+
+  /* ---- top bar ---- */
+  .topline { height: 3px; background: linear-gradient(90deg, var(--sg) 0%, var(--sg-2) 45%, transparent 100%); }
+  header.nav {
+    position: sticky; top: 0; z-index: 30;
+    backdrop-filter: blur(14px) saturate(140%);
+    background: linear-gradient(180deg, rgba(8,9,12,0.92), rgba(8,9,12,0.72));
+    border-bottom: 1px solid var(--brd-2);
+  }
+  .nav-in { max-width: 1320px; margin: 0 auto; padding: 12px 22px;
+            display: flex; align-items: center; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .brand img.sg { height: 30px; width: auto; display: block; }
+  .brand .divider { width: 1px; height: 30px; background: var(--brd); }
+  .brand .title { font-size: 15px; font-weight: 650; letter-spacing: 0.1px; white-space: nowrap; }
+  .brand .title small { display: block; font-weight: 500; color: var(--ink-3);
+                        font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .nav-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+  .team { display: flex; align-items: center; gap: 9px; padding: 5px 11px 5px 6px;
+          border: 1px solid var(--brd); border-radius: 999px; background: var(--glass-2); }
+  .team img { height: 24px; width: 24px; border-radius: 6px; object-fit: contain; }
+  .team span { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+  .team span b { color: var(--ink); font-weight: 650; }
+  .btn { font: inherit; font-size: 12.5px; padding: 7px 13px; border-radius: 8px;
+         border: 1px solid var(--brd); background: var(--glass);
+         color: var(--ink); text-decoration: none; cursor: pointer; transition: .15s; white-space: nowrap; }
+  .btn:hover { border-color: var(--sg); box-shadow: 0 0 0 3px rgba(230,0,40,0.12); }
+  .btn.primary { background: linear-gradient(180deg, var(--sg-2), var(--sg)); border-color: transparent; font-weight: 600; }
+  .btn.primary:hover { box-shadow: 0 6px 18px var(--sg-glow); }
+
+  /* ---- hero ---- */
+  .hero { padding: 30px 0 10px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px;
+             letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
+  .eyebrow .live { width: 7px; height: 7px; border-radius: 50%; background: var(--low);
+                   box-shadow: 0 0 0 0 rgba(53,208,127,0.6); animation: ping 2.4s infinite; }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(53,208,127,0.5);} 70%{box-shadow:0 0 0 7px rgba(53,208,127,0);} 100%{box-shadow:0 0 0 0 rgba(53,208,127,0);} }
+  h1.big { font-size: 27px; font-weight: 720; letter-spacing: -0.4px; margin: 10px 0 6px; }
+  .hero .meta { color: var(--ink-2); font-size: 13px; }
+  .hero .meta b { color: var(--ink); font-weight: 600; }
+  .hero .meta .mono { font-family: var(--mono); font-size: 12px; }
+
+  /* ---- KPI tiles ---- */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 14px; margin-top: 22px; }
+  .tile { position: relative; overflow: hidden; padding: 16px 18px; border-radius: 14px;
+          background: linear-gradient(180deg, var(--glass), var(--glass-2));
+          border: 1px solid var(--brd); box-shadow: var(--shadow);
+          animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
+  .tile:nth-child(2){animation-delay:.05s} .tile:nth-child(3){animation-delay:.1s} .tile:nth-child(4){animation-delay:.15s}
+  @keyframes rise { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: none; } }
+  .tile .k { font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
+  .tile .v { font-size: 34px; font-weight: 730; letter-spacing: -1px; margin-top: 4px; line-height: 1; }
+  .tile .s { font-size: 12px; color: var(--ink-2); margin-top: 6px; }
+  .tile .spark { position: absolute; right: -6px; bottom: -6px; opacity: .5; }
+  .tile.alert { border-color: rgba(230,0,40,0.4); }
+  .tile.alert::before { content: ""; position: absolute; inset: 0; border-radius: 14px;
+       box-shadow: 0 0 0 1px rgba(230,0,40,0.35) inset; animation: glow 2.6s ease-in-out infinite; pointer-events: none; }
+  @keyframes glow { 0%,100%{ box-shadow: 0 0 0 1px rgba(230,0,40,0.25) inset;} 50%{ box-shadow: 0 0 26px rgba(230,0,40,0.28) inset;} }
+  .tile.alert .v { color: var(--sg-2); }
+
+  /* ---- section headings ---- */
+  h2.sec { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2);
+           margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
+  h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--brd-2); }
+  h2.sec .hint { text-transform: none; letter-spacing: 0; font-size: 12px; color: var(--ink-3); }
+
+  /* ---- charts ---- */
+  .charts { display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 14px; }
+  .card { background: linear-gradient(180deg, var(--glass), var(--glass-2));
+          border: 1px solid var(--brd); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 18px; }
+  .card > .ct { font-size: 12.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 600; }
+  .donut-wrap { display: flex; align-items: center; gap: 18px; }
+  .donut-legend { display: grid; gap: 7px; font-size: 12.5px; }
+  .donut-legend div { display: flex; align-items: center; gap: 8px; color: var(--ink-2); }
+  .donut-legend .sw { width: 11px; height: 11px; border-radius: 3px; }
+  .donut-legend b { color: var(--ink); font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 14px; }
+  .bars { display: grid; gap: 9px; }
+  .bar-row { display: grid; grid-template-columns: 168px 1fr 44px; align-items: center; gap: 10px; font-size: 12.5px; }
+  .bar-row .nm { color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-row .nm i { color: var(--ink-3); font-style: normal; font-size: 11px; }
+  .bar-track { height: 9px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; }
+  .bar-fill { height: 100%; width: 0; border-radius: 6px;
+              background: linear-gradient(90deg, var(--accent-deep), var(--sg)); transition: width 1s cubic-bezier(.2,.7,.2,1); }
+  .bar-row .sc { text-align: right; font-weight: 650; }
+
+  /* ---- app scorecards ---- */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 12px; }
+  .appcard { display: block; text-decoration: none; padding: 14px 15px; border-radius: 13px;
+             background: linear-gradient(180deg, var(--glass), var(--glass-2));
+             border: 1px solid var(--brd); box-shadow: var(--shadow); transition: .16s; }
+  .appcard:hover { transform: translateY(-2px); border-color: rgba(230,0,40,0.4); }
+  .appcard.active { border-color: var(--sg); box-shadow: 0 0 0 3px rgba(230,0,40,0.14), var(--shadow); }
+  .appcard .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .appcard .nm { font-weight: 650; font-size: 14.5px; }
+  .appcard .sc { font-size: 22px; font-weight: 730; letter-spacing: -0.5px; }
+  .appcard .mid { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
+  .chip { font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px;
+          border-radius: 999px; border: 1px solid var(--brd); color: var(--ink-2); background: var(--glass-2); }
+  .chip.crit { color: #ffb9c1; border-color: rgba(230,0,40,0.5); }
+  .appcard .track { height: 7px; background: rgba(255,255,255,0.07); border-radius: 5px; overflow: hidden; }
+  .appcard .track > i { display: block; height: 100%; width: 0; border-radius: 5px;
+        background: linear-gradient(90deg, var(--accent-deep), var(--sg)); transition: width .9s cubic-bezier(.2,.7,.2,1); }
+  .appcard .cnts { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; }
+  .appcard .cnts b { color: var(--ink-2); }
+
+  /* ---- filters ---- */
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0 4px; }
+  .filters label { font-size: 12px; color: var(--ink-3); display: flex; align-items: center; gap: 7px; }
+  select { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px;
+           border: 1px solid var(--brd); background: var(--panel); color: var(--ink); }
+  select:focus { outline: none; border-color: var(--sg); }
+
+  /* ---- findings table ---- */
+  .tbl-wrap { border: 1px solid var(--brd); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
+              background: linear-gradient(180deg, var(--glass), var(--glass-2)); }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { position: sticky; top: 58px; z-index: 5; text-align: left; font-size: 11px; letter-spacing: 0.06em;
+             text-transform: uppercase; color: var(--ink-3); padding: 11px 12px; background: rgba(12,15,20,0.96);
+             backdrop-filter: blur(6px); border-bottom: 1px solid var(--brd); }
+  tbody td { padding: 11px 12px; border-bottom: 1px solid var(--brd-2); vertical-align: top; font-size: 13px; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(255,255,255,0.025); }
+  .rank { color: var(--ink-3); font-family: var(--mono); font-size: 12px; }
+  .score-cell { font-weight: 700; font-size: 15px; }
+  .minibar { display: block; width: 62px; height: 5px; background: rgba(255,255,255,0.08); border-radius: 3px; margin-top: 4px; }
+  .minibar > i { display: block; height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--accent-deep), var(--sg)); }
+  .uplift { font-size: 10.5px; color: var(--sg-2); margin-top: 3px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 650;
+           padding: 3px 9px 3px 8px; border-radius: 999px; border: 1px solid var(--brd-2); white-space: nowrap; }
+  .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .b-CRITICAL { color: #ffc2ca; border-color: rgba(255,59,78,0.45); background: rgba(255,59,78,0.08); }
+  .b-CRITICAL .dot { background: var(--crit); box-shadow: 0 0 0 0 rgba(255,59,78,0.7); animation: ping2 2s infinite; }
+  @keyframes ping2 { 0%{box-shadow:0 0 0 0 rgba(255,59,78,0.6);} 70%{box-shadow:0 0 0 6px rgba(255,59,78,0);} 100%{box-shadow:0 0 0 0 rgba(255,59,78,0);} }
+  .b-HIGH { color: #ffcfa8; border-color: rgba(255,143,61,0.4); background: rgba(255,143,61,0.07); } .b-HIGH .dot { background: var(--high); }
+  .b-MEDIUM { color: #ffe6a1; border-color: rgba(255,197,49,0.35); background: rgba(255,197,49,0.06); } .b-MEDIUM .dot { background: var(--med); }
+  .b-LOW { color: #9fe9bd; border-color: rgba(53,208,127,0.35); background: rgba(53,208,127,0.06); } .b-LOW .dot { background: var(--low); }
+  .b-NONE { color: var(--ink-3); } .b-NONE .dot { background: var(--none); }
   .lib { font-weight: 650; }
-  .type { font-size: 12px; color: var(--ink-2); }
-  .diamond { color: var(--seq-deep); font-weight: 650; font-size: 12px; }
-  .ev { font-size: 12px; color: var(--ink-2); max-width: 340px; }
-  .narr { font-size: 12px; color: var(--ink); background: #f2f7ff;
-          border-left: 3px solid var(--seq); padding: 6px 8px; margin-top: 6px;
-          border-radius: 0 4px 4px 0; }
-  .minibar { display: inline-block; width: 64px; height: 6px; background: var(--grid);
-             border-radius: 3px; vertical-align: 2px; margin-left: 6px; }
-  .minibar > i { display: block; height: 6px; border-radius: 3px; background: var(--seq); }
-  .chain-btn { font: inherit; font-size: 11px; color: var(--seq-deep);
-               background: none; border: 1px solid var(--grid); border-radius: 5px;
-               padding: 1px 6px; cursor: pointer; margin-top: 4px; }
-  .chain-btn:hover { background: #eef4fd; border-color: var(--seq); }
-  /* Phase 6 graph viewer (self-contained SVG, no external assets) */
-  #gv-overlay { position: fixed; inset: 0; background: rgba(11,11,11,0.45);
-                display: none; align-items: center; justify-content: center;
-                z-index: 50; }
-  #gv-overlay.open { display: flex; }
-  #gv-panel { background: var(--surface); border: 1px solid var(--border);
-              border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.25);
-              max-width: 92vw; max-height: 88vh; overflow: auto; padding: 16px 18px; }
-  #gv-panel h3 { font-size: 15px; margin-bottom: 2px; }
-  #gv-panel .gv-sub { color: var(--ink-2); font-size: 12px; margin-bottom: 10px; }
-  #gv-close { float: right; font: inherit; cursor: pointer; border: 1px solid var(--grid);
-              background: var(--surface); border-radius: 6px; padding: 3px 9px; }
-  #gv-svg text { font: 12px system-ui, "Segoe UI", sans-serif; }
-  .gv-legend { display: flex; gap: 16px; font-size: 12px; color: var(--ink-2);
-               margin-top: 10px; flex-wrap: wrap; }
+  .ver { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+  .type { font-size: 11px; color: var(--ink-3); font-family: var(--mono); }
+  .diamond { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--accent);
+             margin-top: 4px; font-weight: 600; }
+  .chain-btn { font: inherit; font-size: 11px; color: var(--accent); background: transparent;
+               border: 1px solid var(--brd); border-radius: 7px; padding: 2px 8px; cursor: pointer; margin-top: 6px; transition: .14s; }
+  .chain-btn:hover { border-color: var(--accent); background: rgba(86,163,255,0.1); }
+  .path { color: var(--ink-2); font-family: var(--mono); font-size: 11.5px; line-height: 1.7; }
+  .path .arrow { color: var(--ink-3); }
+  .path b { color: var(--sg-2); }
+  .ev { font-size: 12px; color: var(--ink-2); max-width: 360px; }
+  .ev .cve { font-family: var(--mono); color: var(--ink); }
+  .ev .tag { font-size: 10px; color: var(--ink-3); }
+  .narr { font-size: 12px; color: var(--ink); background: linear-gradient(180deg, rgba(86,163,255,0.09), rgba(86,163,255,0.03));
+          border-left: 2px solid var(--accent); padding: 7px 9px; margin-top: 8px; border-radius: 0 8px 8px 0; }
+  .narr .src { display: block; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase;
+               color: var(--ink-3); margin-bottom: 3px; }
+
+  .note { color: var(--ink-3); font-size: 12px; margin-top: 16px; line-height: 1.7; }
+  footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--brd-2);
+           display: flex; align-items: center; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 12px; }
+  footer img.z { height: 26px; }
+  footer .grow { flex: 1; }
+
+  /* ---- graph modal ---- */
+  #gv-overlay { position: fixed; inset: 0; z-index: 60; display: none; align-items: center; justify-content: center;
+                background: rgba(4,5,8,0.72); backdrop-filter: blur(4px); }
+  #gv-overlay.open { display: flex; animation: fade .18s ease; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  #gv-panel { width: min(92vw, 900px); max-height: 86vh; overflow: auto; padding: 20px 22px; border-radius: 16px;
+              background: linear-gradient(180deg, #141922, #0e1218); border: 1px solid var(--brd);
+              box-shadow: 0 30px 80px rgba(0,0,0,0.6); animation: rise .22s ease; }
+  #gv-panel h3 { font-size: 16px; font-weight: 680; }
+  #gv-panel h3 .mono { font-family: var(--mono); color: var(--sg-2); }
+  #gv-close { float: right; font: inherit; font-size: 12.5px; cursor: pointer; color: var(--ink-2);
+              border: 1px solid var(--brd); background: var(--glass); border-radius: 8px; padding: 5px 11px; }
+  #gv-sub { color: var(--ink-3); font-size: 12.5px; margin: 3px 0 14px; }
+  #gv-svg text { font: 12px var(--mono); }
+  .gv-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--ink-3); margin-top: 12px; }
   .gv-legend span { display: inline-flex; align-items: center; gap: 6px; }
-  .gv-sw { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  .gv-legend i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+
+  @media (max-width: 820px) { .charts { grid-template-columns: 1fr; } thead th { position: static; } }
+
+  /* ---- print / PDF: legible light layout ---- */
   @media print {
-    body { padding: 0; background: #fff; }
-    .filters, .noprint, .chain-btn { display: none !important; }
-    #gv-overlay { display: none !important; }
-    tr:hover td { background: transparent; }
+    body { background: #fff; color: #111; }
+    .nav-right .btn, .filters, .chain-btn, #gv-overlay, .tile .spark { display: none !important; }
+    header.nav { position: static; backdrop-filter: none; background: #fff; border-color: #ddd; }
+    .tile, .card, .appcard, .tbl-wrap { background: #fff; border-color: #ddd; box-shadow: none; animation: none; }
+    .tile .v, .appcard .sc, .score-cell { color: #111; }
+    thead th { position: static; background: #f4f4f4; color: #444; }
+    .narr { background: #f3f7ff; color: #111; }
+    .path b { color: #b00020; }
+    * { animation: none !important; }
   }
 </style>
 </head>
 <body>
-
-<div class="row" style="justify-content: space-between;">
-  <div>
-    <h1>Software Supply Chain Risk — SBOM Analyzer</h1>
-    <div class="sub">PB-10 · generated {{ report.generated_at }} ·
-      scorer: {{ report.score_source }} · reference date {{ report.reference_date }}</div>
-  </div>
-  {% if not export %}
-  <div class="row noprint">
-    <a class="btn" href="/export/html">Export HTML</a>
-    <button class="btn" onclick="window.print()">Print / PDF</button>
-  </div>
-  {% endif %}
-</div>
-
-<div class="tiles">
-  <div class="tile"><div class="v">{{ report.totals.applications }}</div><div class="l">Applications</div></div>
-  <div class="tile"><div class="v">{{ report.totals.dependencies }}</div><div class="l">Dependencies scanned</div></div>
-  <div class="tile"><div class="v">{{ report.totals.findings }}</div><div class="l">Findings (evidence-backed)</div></div>
-  <div class="tile"><div class="v">{{ report.totals.compound_exposure_findings }}</div><div class="l">Compound / multi-path exposures</div></div>
-</div>
-
-<h2>Application risk scorecards <span class="sub" style="display:inline">— ranked, click to drill down</span></h2>
-<div class="cards">
-  {% for a in report.applications %}
-  <a class="card {{ 'active' if app_filter == a.app_id }}"
-     href="{{ '/' if app_filter == a.app_id else '/?app=' + a.app_id }}{{ ('&type=' + type_filter) if type_filter }}">
-    <div class="row" style="justify-content: space-between;">
-      <span class="name">{{ a.name }}</span>
-      <span class="score-n">{{ a.app_risk_score }}</span>
+<div class="topline"></div>
+<header class="nav">
+  <div class="nav-in">
+    <div class="brand">
+      {% if sg_logo %}<img class="sg" src="{{ sg_logo }}" alt="Societe Generale">{% endif %}
+      <div class="divider"></div>
+      <div class="title">Software Supply Chain Risk
+        <small>SBOM Analyzer · PB-10</small>
+      </div>
     </div>
-    <div class="meta">{{ a.app_id }} · {{ a.criticality }} · {{ a.license_model }}
-      · {{ a.num_findings }} findings{% if a.num_compound %} · {{ a.num_compound }} compound{% endif %}</div>
-    <div class="scorebar"><i style="width: {{ a.app_risk_score }}%"></i></div>
-  </a>
-  {% endfor %}
+    <div class="nav-right">
+      <div class="team">
+        {% if zenith_logo %}<img src="{{ zenith_logo }}" alt="Zenith">{% endif %}
+        <span>Team <b>Zenith</b></span>
+      </div>
+      {% if not export %}
+      <a class="btn" href="/export/html">Export HTML</a>
+      <button class="btn primary" onclick="window.print()">Print / PDF</button>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow"><span class="live"></span> Live risk posture · deterministic core</span>
+    <h1 class="big">Supply-chain risk across {{ report.totals.applications }} applications</h1>
+    <div class="meta">Generated <b>{{ report.generated_at }}</b> ·
+      scorer <b>{{ report.score_source }}</b> ·
+      reference date <span class="mono">{{ report.reference_date }}</span></div>
+  </section>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="k">Applications</div>
+      <div class="v" data-count="{{ report.totals.applications }}">0</div>
+      <div class="s">in scope, all path-resolved</div>
+    </div>
+    <div class="tile">
+      <div class="k">Dependencies scanned</div>
+      <div class="v" data-count="{{ report.totals.dependencies }}">0</div>
+      <div class="s">direct + transitive</div>
+    </div>
+    <div class="tile{{ ' alert' if severity_counts.CRITICAL }}">
+      <div class="k">Critical findings</div>
+      <div class="v" data-count="{{ severity_counts.CRITICAL }}">0</div>
+      <div class="s">{{ severity_counts.HIGH }} high · {{ severity_counts.MEDIUM }} medium</div>
+    </div>
+    <div class="tile">
+      <div class="k">Compound exposures</div>
+      <div class="v" data-count="{{ report.totals.compound_exposure_findings }}">0</div>
+      <div class="s">multi-path / diamond — never deduplicated</div>
+    </div>
+  </div>
+
+  <h2 class="sec">Risk overview <span class="hint">severity mix &amp; top applications</span></h2>
+  <div class="charts">
+    <div class="card">
+      <div class="ct">Findings by severity</div>
+      <div class="donut-wrap">
+        <svg id="donut" width="150" height="150" viewBox="0 0 150 150"></svg>
+        <div class="donut-legend" id="donut-legend"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ct">Top applications by risk score</div>
+      <div class="bars" id="app-bars"></div>
+    </div>
+  </div>
+
+  <h2 class="sec">Application scorecards <span class="hint">— ranked; click to drill down</span></h2>
+  <div class="cards-grid">
+    {% for a in report.applications %}
+    <a class="appcard {{ 'active' if app_filter == a.app_id }}"
+       href="{{ '/' if app_filter == a.app_id else '/?app=' + a.app_id }}{{ ('&type=' + type_filter) if type_filter }}">
+      <div class="top"><span class="nm">{{ a.name }}</span><span class="sc">{{ a.app_risk_score }}</span></div>
+      <div class="mid">
+        <span class="chip {{ 'crit' if a.criticality in ['CRITICAL','HIGH'] }}">{{ a.criticality }}</span>
+        <span class="chip">{{ a.license_model }}</span>
+      </div>
+      <div class="track"><i data-w="{{ a.app_risk_score }}"></i></div>
+      <div class="cnts"><b>{{ a.num_findings }}</b> findings{% if a.num_compound %} · <b>{{ a.num_compound }}</b> compound{% endif %}
+        · <span class="mono">{{ a.app_id }}</span></div>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if not export %}
+  <form class="filters" method="get" action="/">
+    <label>Application
+      <select name="app" onchange="this.form.submit()">
+        <option value="">All applications</option>
+        {% for a in report.applications %}
+        <option value="{{ a.app_id }}" {{ 'selected' if app_filter == a.app_id }}>{{ a.app_id }} — {{ a.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Finding type
+      <select name="type" onchange="this.form.submit()">
+        <option value="">All types</option>
+        {% for t in all_types %}
+        <option value="{{ t }}" {{ 'selected' if type_filter == t }}>{{ t }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    {% if app_filter or type_filter %}<a class="btn" href="/">Clear filters</a>{% endif %}
+  </form>
+  {% endif %}
+
+  <h2 class="sec">Ranked findings <span class="hint">— {{ findings|length }} shown, evidence-backed</span></h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th>#</th><th>Score</th><th>Severity</th><th>App</th><th>Type</th>
+        <th>Library</th><th>Dependency path (full chain)</th><th>Evidence &amp; remediation</th>
+      </tr></thead>
+      <tbody>
+      {% for f in findings %}
+        <tr>
+          <td class="rank">{{ "%02d"|format(loop.index) }}</td>
+          <td>
+            <span class="score-cell">{{ f.risk_score if f.risk_score is not none else '—' }}</span>
+            {% if f.risk_score is not none %}<span class="minibar"><i style="width: {{ f.risk_score }}%"></i></span>{% endif %}
+            {% if f.compound_uplift_pct %}<div class="uplift">+{{ f.compound_uplift_pct }}% compound</div>{% endif %}
+          </td>
+          <td><span class="badge b-{{ f.severity }}"><span class="dot"></span>{{ f.severity }}</span></td>
+          <td><span class="mono">{{ f.app_id }}</span></td>
+          <td class="type">{{ f.type }}{% if f.advisory_only %}<br>· advisory{% endif %}</td>
+          <td>
+            <span class="lib">{{ f.library }}</span> <span class="ver">@{{ f.version }}</span>
+            {% if f.num_paths > 1 %}<div class="diamond">◆ {{ f.num_paths }} paths — compound</div>{% endif %}
+            {% if not export and f.num_paths > 0 %}<button class="chain-btn" type="button" onclick="showChain('{{ f.finding_id }}')">⬦ view chain</button>{% endif %}
+          </td>
+          <td class="path">
+            {% for p in f.paths %}<div>{% for n in p %}{% if not loop.first %}<span class="arrow"> → </span>{% endif %}{% if loop.last %}<b>{{ n }}</b>{% else %}{{ n }}{% endif %}{% endfor %}</div>{% endfor %}
+          </td>
+          <td class="ev">
+            {% if f.evidence.cves %}
+              {% for c in f.evidence.cves %}
+                <div><span class="cve">{{ c.cve_id }}</span> · CVSS {{ c.cvss_score }} ({{ c.severity }})
+                  {{ '· patch ' + c.fixed_version if c.patch_available and c.fixed_version else '· no patch' }}
+                  <span class="tag">· {{ 'version-in-range' if c.version_in_range else 'name-match' }}</span></div>
+              {% endfor %}
+            {% elif f.evidence.license %}
+              <div><b>{{ f.evidence.license }}</b> — {{ f.evidence.note }}</div>
+            {% elif f.evidence.last_updated %}
+              <div>last updated <b>{{ f.evidence.last_updated }}</b> (cutoff {{ f.evidence.cutoff }})</div>
+            {% endif %}
+            {% set nar = narratives.get(f.finding_id) %}
+            {% if nar %}
+              {% set ntext = nar.narrative if nar.narrative is defined else nar %}
+              {% set nsrc = nar.source if nar.source is defined else '' %}
+              <div class="narr"><span class="src">AI remediation{% if nsrc %} · {{ nsrc }}{% endif %}</span>{{ ntext }}</div>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">
+    Diamond / multi-path exposures are reported per path and never deduplicated (compound-risk policy).
+    License findings in internal-only applications appear as advisories (distribution scope).
+    A CVE “name-match” tag reflects a documented inconsistency between the vulnerability DB's version
+    ranges and the ground-truth labels — surfaced as a confidence tier, not silently dropped.
+  </p>
+
+  <footer>
+    {% if zenith_logo %}<img class="z" src="{{ zenith_logo }}" alt="Zenith">{% endif %}
+    <span>Built by <b style="color:var(--ink-2)">Team Zenith</b> · Societe Generale iHackMyPlace · PB-10 SBOM Risk Scorer</span>
+    <span class="grow"></span>
+    <span>Deterministic core · ML scorer ({{ report.score_source }}) · AI narratives — the core stands alone.</span>
+  </footer>
 </div>
-
-{% if not export %}
-<form class="filters row noprint" method="get" action="/">
-  <label>Application
-    <select name="app" onchange="this.form.submit()">
-      <option value="">All</option>
-      {% for a in report.applications %}
-      <option value="{{ a.app_id }}" {{ 'selected' if app_filter == a.app_id }}>{{ a.app_id }} — {{ a.name }}</option>
-      {% endfor %}
-    </select>
-  </label>
-  <label>Finding type
-    <select name="type" onchange="this.form.submit()">
-      <option value="">All</option>
-      {% for t in all_types %}
-      <option value="{{ t }}" {{ 'selected' if type_filter == t }}>{{ t }}</option>
-      {% endfor %}
-    </select>
-  </label>
-  {% if app_filter or type_filter %}<a class="btn" href="/">Clear</a>{% endif %}
-</form>
-{% endif %}
-
-<h2>Ranked findings ({{ findings|length }})</h2>
-<table>
-  <thead><tr>
-    <th>#</th><th>Risk score</th><th>Severity</th><th>App</th><th>Type</th>
-    <th>Library</th><th>Dependency path (full chain)</th><th>Evidence</th>
-  </tr></thead>
-  <tbody>
-  {% for f in findings %}
-    <tr>
-      <td>{{ loop.index }}</td>
-      <td><span class="score-n">{{ f.risk_score if f.risk_score is not none else '—' }}</span>
-          {% if f.risk_score is not none %}<span class="minibar"><i style="width: {{ f.risk_score }}%"></i></span>{% endif %}
-          {% if f.compound_uplift_pct %}<div class="type">+{{ f.compound_uplift_pct }}% compound</div>{% endif %}</td>
-      <td><span class="badge b-{{ f.severity }}"><span class="dot"></span>{{ f.severity }}</span></td>
-      <td>{{ f.app_id }}</td>
-      <td class="type">{{ f.type }}{% if f.advisory_only %}<br>(advisory){% endif %}</td>
-      <td><span class="lib">{{ f.library }}</span><span class="type">@{{ f.version }}</span>
-          {% if f.num_paths > 1 %}<div class="diamond">◆ {{ f.num_paths }} paths — compound exposure</div>{% endif %}
-          {% if not export and f.num_paths > 0 %}<button class="chain-btn noprint" type="button"
-            onclick="showChain('{{ f.finding_id }}')">⬦ view chain</button>{% endif %}</td>
-      <td class="path">
-        {% for p in f.paths %}<div>{% for n in p %}{% if not loop.first %} → {% endif %}{% if loop.last %}<b>{{ n }}</b>{% else %}{{ n }}{% endif %}{% endfor %}</div>{% endfor %}
-      </td>
-      <td class="ev">
-        {% if f.evidence.cves %}
-          {% for c in f.evidence.cves %}
-            <div><b>{{ c.cve_id }}</b> CVSS {{ c.cvss_score }} ({{ c.severity }})
-              {{ '· patch: ' + c.fixed_version if c.patch_available and c.fixed_version else '· no patch' }}
-              {{ '· version-in-range' if c.version_in_range else '· name-match' }}</div>
-          {% endfor %}
-        {% elif f.evidence.license %}
-          <div><b>{{ f.evidence.license }}</b> — {{ f.evidence.note }}</div>
-        {% elif f.evidence.last_updated %}
-          <div>last updated <b>{{ f.evidence.last_updated }}</b> (cutoff {{ f.evidence.cutoff }})</div>
-        {% endif %}
-        {% if narratives.get(f.finding_id) %}
-          <div class="narr">{{ narratives[f.finding_id].narrative if narratives[f.finding_id].narrative is defined else narratives[f.finding_id] }}</div>
-        {% endif %}
-      </td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-
-<p class="sub" style="margin-top: 14px;">
-  Diamond / multi-path exposures are reported per path and never deduplicated (compound-risk policy).
-  License findings in internal-only apps appear as advisories (distribution scope).
-  CVE "name-match" tier reflects a documented inconsistency between the vulnerability DB's
-  version ranges and the ground-truth labels.
-</p>
 
 {% if not export %}
 <div id="gv-overlay" onclick="if(event.target===this)closeChain()">
   <div id="gv-panel">
     <button id="gv-close" onclick="closeChain()">Close ✕</button>
     <h3 id="gv-title">Dependency chain</h3>
-    <div class="gv-sub" id="gv-subtitle"></div>
+    <div id="gv-sub"></div>
     <svg id="gv-svg" width="100" height="100" xmlns="http://www.w3.org/2000/svg"></svg>
     <div class="gv-legend">
-      <span><i class="gv-sw" style="background:var(--seq)"></i> application</span>
-      <span><i class="gv-sw" style="background:#c9d4e3"></i> intermediate dependency</span>
-      <span><i class="gv-sw" style="background:var(--critical)"></i> flagged library (leaf)</span>
-      <span>Every distinct path is drawn — diamond/multi-path exposure is never collapsed.</span>
+      <span><i style="background:var(--accent)"></i> application</span>
+      <span><i style="background:#c9d4e3"></i> intermediate dependency</span>
+      <span><i style="background:var(--sg)"></i> flagged library (leaf)</span>
+      <span>Every distinct path is drawn — diamond exposure is never collapsed.</span>
     </div>
   </div>
 </div>
-<script>
-  var GRAPHDATA = {{ graph_data|tojson }};
+{% endif %}
 
+<script>
+  var SEVERITY = {{ severity_counts|tojson }};
+  var APPBARS = {{ app_bars|tojson }};
+  {% if not export %}var GRAPHDATA = {{ graph_data|tojson }};{% endif %}
+  var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---- animated count-ups ----
+  function countUp(el) {
+    var target = +el.getAttribute("data-count") || 0;
+    if (REDUCED || target === 0) { el.textContent = target; return; }
+    var t0 = null, dur = 900;
+    function step(ts) {
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(e * target);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // ---- severity donut ----
+  var SEV_META = [["CRITICAL","var(--crit)"],["HIGH","var(--high)"],["MEDIUM","var(--med)"],["LOW","var(--low)"],["NONE","var(--none)"]];
+  function drawDonut() {
+    var svg = document.getElementById("donut"), lg = document.getElementById("donut-legend");
+    if (!svg) return;
+    var total = SEV_META.reduce(function(s,m){return s+(SEVERITY[m[0]]||0);}, 0) || 1;
+    var cx = 75, cy = 75, r = 54, C = 2 * Math.PI * r, off = 0, ns = "http://www.w3.org/2000/svg";
+    svg.innerHTML = "";
+    var track = document.createElementNS(ns, "circle");
+    track.setAttribute("cx",cx); track.setAttribute("cy",cy); track.setAttribute("r",r);
+    track.setAttribute("fill","none"); track.setAttribute("stroke","rgba(255,255,255,0.06)"); track.setAttribute("stroke-width","16");
+    svg.appendChild(track);
+    SEV_META.forEach(function(m, i) {
+      var v = SEVERITY[m[0]] || 0; if (!v) { addLegend(lg, m, v, total, i===0); return; }
+      var frac = v / total, arc = document.createElementNS(ns, "circle");
+      arc.setAttribute("cx",cx); arc.setAttribute("cy",cy); arc.setAttribute("r",r);
+      arc.setAttribute("fill","none"); arc.setAttribute("stroke", m[1]); arc.setAttribute("stroke-width","16");
+      arc.setAttribute("stroke-dasharray", (frac*C) + " " + C);
+      arc.setAttribute("stroke-dashoffset", -off * C);
+      arc.setAttribute("transform","rotate(-90 "+cx+" "+cy+")");
+      arc.setAttribute("stroke-linecap","butt");
+      if (!REDUCED) { arc.style.transition = "stroke-dasharray 1s ease " + (i*0.08) + "s";
+        arc.setAttribute("stroke-dasharray","0 " + C);
+        requestAnimationFrame(function(){ arc.setAttribute("stroke-dasharray",(frac*C)+" "+C); }); }
+      svg.appendChild(arc);
+      addLegend(lg, m, v, total, i===0);
+      off += frac;
+    });
+    var t = document.createElementNS(ns, "text");
+    t.setAttribute("x",cx); t.setAttribute("y",cy-2); t.setAttribute("text-anchor","middle");
+    t.setAttribute("fill","var(--ink)"); t.setAttribute("font-size","24"); t.setAttribute("font-weight","730");
+    t.textContent = total; svg.appendChild(t);
+    var t2 = document.createElementNS(ns, "text");
+    t2.setAttribute("x",cx); t2.setAttribute("y",cy+15); t2.setAttribute("text-anchor","middle");
+    t2.setAttribute("fill","var(--ink-3)"); t2.setAttribute("font-size","9.5"); t2.textContent = "FINDINGS"; svg.appendChild(t2);
+  }
+  var _legendDone = false;
+  function addLegend(lg, m, v, total, first) {
+    if (first) { lg.innerHTML = ""; _legendDone = true; }
+    if (!_legendDone) return;
+    var d = document.createElement("div");
+    d.innerHTML = '<span class="sw" style="background:'+m[1]+'"></span>'+m[0].charAt(0)+m[0].slice(1).toLowerCase()+
+                  '<b>'+v+'</b>';
+    lg.appendChild(d);
+  }
+
+  // ---- app bars ----
+  function drawBars() {
+    var host = document.getElementById("app-bars"); if (!host) return;
+    var max = Math.max.apply(null, APPBARS.map(function(a){return a.score;}).concat([1]));
+    host.innerHTML = "";
+    APPBARS.forEach(function(a, i) {
+      var row = document.createElement("div"); row.className = "bar-row";
+      row.innerHTML = '<div class="nm">'+esc(a.name)+' <i>'+esc(a.app_id)+'</i></div>'+
+        '<div class="bar-track"><div class="bar-fill" data-w="'+(a.score/max*100)+'"></div></div>'+
+        '<div class="sc">'+a.score+'</div>';
+      host.appendChild(row);
+    });
+    animateWidths(host);
+  }
+
+  function animateWidths(scope) {
+    (scope || document).querySelectorAll("[data-w]").forEach(function(el, i) {
+      var w = el.getAttribute("data-w") + "%";
+      if (REDUCED) { el.style.width = w; return; }
+      setTimeout(function(){ el.style.width = w; }, 60 + i * 18);
+    });
+  }
+  function esc(s){ return String(s).replace(/[<>&]/g,function(c){return c==="<"?"&lt;":c===">"?"&gt;":"&amp;";}); }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".tile .v[data-count]").forEach(countUp);
+    drawDonut(); drawBars();
+    animateWidths(document.querySelector(".cards-grid"));
+  });
+
+  {% if not export %}
+  // ---- Phase 6 dependency-chain viewer (offline SVG) ----
   function showChain(fid) {
-    var d = GRAPHDATA[fid];
-    if (!d) return;
-    document.getElementById("gv-title").textContent =
-      d.library + "@" + d.version + "  ·  " + d.type;
-    document.getElementById("gv-subtitle").textContent =
-      d.app_id + "  ·  severity " + d.severity + "  ·  " +
+    var d = GRAPHDATA[fid]; if (!d) return;
+    document.getElementById("gv-title").innerHTML =
+      'Dependency chain — <span class="mono">' + esc(d.library) + "@" + esc(d.version) + "</span>";
+    document.getElementById("gv-sub").textContent =
+      d.app_id + "  ·  " + d.type + "  ·  severity " + d.severity + "  ·  " +
       d.num_paths + (d.num_paths > 1 ? " distinct paths (compound exposure)" : " path");
     drawGraph(d);
     document.getElementById("gv-overlay").classList.add("open");
   }
-  function closeChain() {
-    document.getElementById("gv-overlay").classList.remove("open");
-  }
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeChain();
-  });
+  function closeChain() { document.getElementById("gv-overlay").classList.remove("open"); }
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeChain(); });
 
-  // Layered left-to-right layout: column = depth in the chain, one box per
-  // (depth, node-name). Nodes shared across paths are drawn once (that is how
-  // a diamond's two branches visibly converge on the same leaf).
   function drawGraph(d) {
-    var COLW = 168, ROWH = 62, BW = 132, BH = 34, PADX = 24, PADY = 24;
+    var COLW = 172, ROWH = 62, BW = 136, BH = 34, PADX = 22, PADY = 22;
     var nodes = {}, order = [], edges = [], maxCol = 0;
-    function key(col, name) { return col + "" + name; }
-    function ensure(col, name) {
-      var k = key(col, name);
-      if (!(k in nodes)) {
-        nodes[k] = { col: col, name: name, row: 0 };
-        order.push(k);
-        if (col > maxCol) maxCol = col;
-      }
-      return k;
-    }
-    d.paths.forEach(function (path) {
-      for (var i = 0; i < path.length; i++) {
-        var k = ensure(i, path[i]);
-        if (i > 0) edges.push([key(i - 1, path[i - 1]), k]);
-      }
-    });
-    // assign row indices per column
+    function key(c,n){ return c + "" + n; }
+    function ensure(c,n){ var k=key(c,n); if(!(k in nodes)){ nodes[k]={col:c,name:n,row:0}; order.push(k); if(c>maxCol)maxCol=c; } return k; }
+    d.paths.forEach(function(path){ for (var i=0;i<path.length;i++){ var k=ensure(i,path[i]); if(i>0) edges.push([key(i-1,path[i-1]),k]); } });
     var perCol = {};
-    order.forEach(function (k) {
-      var c = nodes[k].col;
-      perCol[c] = perCol[c] || [];
-      nodes[k].row = perCol[c].length;
-      perCol[c].push(k);
-    });
-    var maxRows = 0;
-    Object.keys(perCol).forEach(function (c) {
-      if (perCol[c].length > maxRows) maxRows = perCol[c].length;
-    });
-    var W = PADX * 2 + maxCol * COLW + BW;
-    var H = PADY * 2 + Math.max(1, maxRows) * ROWH;
-    function cx(n) { return PADX + n.col * COLW; }
-    function cy(n) {
-      var count = perCol[n.col].length;
-      var offset = (maxRows - count) * ROWH / 2;  // vertically center each column
-      return PADY + offset + n.row * ROWH;
-    }
-    var uniqEdges = {}, eSvg = "";
-    edges.forEach(function (e) {
-      var id = e[0] + ">" + e[1];
-      if (uniqEdges[id]) return;
-      uniqEdges[id] = 1;
-      var a = nodes[e[0]], b = nodes[e[1]];
-      var x1 = cx(a) + BW, y1 = cy(a) + BH / 2;
-      var x2 = cx(b), y2 = cy(b) + BH / 2;
-      var mx = (x1 + x2) / 2;
-      eSvg += '<path d="M' + x1 + ' ' + y1 + ' C' + mx + ' ' + y1 + ' ' +
-        mx + ' ' + y2 + ' ' + x2 + ' ' + y2 +
-        '" fill="none" stroke="#b9c3cf" stroke-width="1.6"/>';
-    });
+    order.forEach(function(k){ var c=nodes[k].col; (perCol[c]=perCol[c]||[]); nodes[k].row=perCol[c].length; perCol[c].push(k); });
+    var maxRows = 0; Object.keys(perCol).forEach(function(c){ if(perCol[c].length>maxRows) maxRows=perCol[c].length; });
+    var W = PADX*2 + maxCol*COLW + BW, H = PADY*2 + Math.max(1,maxRows)*ROWH;
+    function cx(n){ return PADX + n.col*COLW; }
+    function cy(n){ var cnt=perCol[n.col].length, offs=(maxRows-cnt)*ROWH/2; return PADY+offs+n.row*ROWH; }
+    var seen = {}, eSvg = "";
+    edges.forEach(function(e){ var id=e[0]+">"+e[1]; if(seen[id])return; seen[id]=1;
+      var a=nodes[e[0]], b=nodes[e[1]], x1=cx(a)+BW, y1=cy(a)+BH/2, x2=cx(b), y2=cy(b)+BH/2, mx=(x1+x2)/2;
+      eSvg += '<path d="M'+x1+' '+y1+' C'+mx+' '+y1+' '+mx+' '+y2+' '+x2+' '+y2+'" fill="none" stroke="#3a4658" stroke-width="1.6"/>'; });
     var nSvg = "";
-    order.forEach(function (k) {
-      var n = nodes[k], x = cx(n), y = cy(n);
-      var isApp = n.col === 0, isLeaf = n.col === maxCol;
-      var fill = isApp ? "#2a78d6" : isLeaf ? "#d03b3b" : "#e8edf3";
-      var stroke = isApp ? "#256abf" : isLeaf ? "#b02f2f" : "#c9d4e3";
-      var tcol = (isApp || isLeaf) ? "#ffffff" : "#0b0b0b";
-      var label = n.name.length > 18 ? n.name.slice(0, 17) + "…" : n.name;
-      nSvg += '<g>' +
-        '<rect x="' + x + '" y="' + y + '" width="' + BW + '" height="' + BH +
-        '" rx="7" fill="' + fill + '" stroke="' + stroke + '" stroke-width="1.4"/>' +
-        '<text x="' + (x + BW / 2) + '" y="' + (y + BH / 2 + 4) +
-        '" text-anchor="middle" fill="' + tcol + '">' +
-        escapeXml(label) + '</text>' +
-        '<title>' + escapeXml(n.name) + '</title></g>';
-    });
-    var svg = document.getElementById("gv-svg");
-    svg.setAttribute("width", W);
-    svg.setAttribute("height", H);
-    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-    svg.innerHTML = eSvg + nSvg;
+    order.forEach(function(k){ var n=nodes[k], x=cx(n), y=cy(n), isApp=n.col===0, isLeaf=n.col===maxCol;
+      var fill=isApp?"#2f6fd0":isLeaf?"#E60028":"#1c222c", stroke=isApp?"#56a3ff":isLeaf?"#ff2d4d":"#3a4658", tcol=isApp||isLeaf?"#fff":"#c9d4e3";
+      var label=n.name.length>18?n.name.slice(0,17)+"…":n.name;
+      nSvg += '<g><rect x="'+x+'" y="'+y+'" width="'+BW+'" height="'+BH+'" rx="8" fill="'+fill+'" stroke="'+stroke+'" stroke-width="1.4"/>'+
+        '<text x="'+(x+BW/2)+'" y="'+(y+BH/2+4)+'" text-anchor="middle" fill="'+tcol+'">'+esc(label)+'</text>'+
+        '<title>'+esc(n.name)+'</title></g>'; });
+    var svg=document.getElementById("gv-svg"); svg.setAttribute("width",W); svg.setAttribute("height",H);
+    svg.setAttribute("viewBox","0 0 "+W+" "+H); svg.innerHTML=eSvg+nSvg;
   }
-  function escapeXml(s) {
-    return String(s).replace(/[<>&]/g, function (c) {
-      return c === "<" ? "&lt;" : c === ">" ? "&gt;" : "&amp;";
-    });
-  }
+  {% endif %}
 </script>
-{% endif %}
 </body>
 </html>

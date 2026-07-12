@@ -1,0 +1,38 @@
+# Environment & secrets — never commit API keys
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code / AI tool state
+.claude/
+
+# Archives — original hackathon zip (not project source)
+*.zip
+
+# MCP config (may contain local paths)
+.mcp.json
+
+# Original hackathon materials (not project source)
+GRC-Hackathon-main_7th Jul/
+GRC-Hackathon-main_7th Jul.zip
+EXECUTION_PLAN_FOR_FABLE.md

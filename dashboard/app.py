@@ -15,14 +15,43 @@ are shown for matching finding_ids; absence is handled silently.
 Run:  python -m dashboard.app   (http://127.0.0.1:5000)
 """
 
+import base64
 import json
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 
 from src.config import REPO_ROOT
 
 REPORTS = REPO_ROOT / "reports"
+TEMPLATES = REPO_ROOT / "dashboard" / "templates"
 app = Flask(__name__)
+
+# Restrict CORS to Lovable and local development (frontend) origins.
+CORS(app, origins=[
+    r"https://.*\.lovableproject\.com",
+    r"https://.*\.lovable\.app",
+    r"http://localhost:\d+",
+    r"http://127\.0\.0\.1:\d+"
+])
+
+# Severity ordering for charts / sorting (SOC convention: worst first).
+SEV_ORDER = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"]
+
+
+def _logo_data_uri(filename):
+    """Embed a logo as a base64 data URI so the page is fully self-contained
+    and offline-safe (the export snapshot carries the images inline too)."""
+    path = TEMPLATES / filename
+    if not path.is_file():
+        return ""
+    b64 = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"data:image/png;base64,{b64}"
+
+
+# Loaded once at import — presentation assets only, never touched by the core.
+SG_LOGO = _logo_data_uri("logo-societe-generale.png")
+ZENITH_LOGO = _logo_data_uri("logo-zenith.png")
 
 
 def _load_report():
@@ -72,11 +101,31 @@ def _view(export=False):
             "paths": f["paths"],
         } for f in findings
     }
+
+    # Chart aggregates over the FULL report (presentation only — read straight
+    # off the already-scored findings; no recomputation of any risk logic).
+    all_findings = [f for a in report["applications"] for f in a["findings"]]
+    severity_counts = {s: 0 for s in SEV_ORDER}
+    for f in all_findings:
+        severity_counts[f.get("severity", "NONE")] = \
+            severity_counts.get(f.get("severity", "NONE"), 0) + 1
+    top_apps = sorted(report["applications"],
+                      key=lambda a: -a["app_risk_score"])[:10]
+    app_bars = [{"app_id": a["app_id"], "name": a["name"],
+                 "score": a["app_risk_score"], "criticality": a["criticality"]}
+                for a in top_apps]
+
     return render_template(
         "dashboard.html", report=report, findings=findings,
         narratives=_load_narratives(), app_filter=app_filter,
         type_filter=type_filter, all_types=all_types, export=export,
-        graph_data=graph_data)
+        graph_data=graph_data, sg_logo=SG_LOGO, zenith_logo=ZENITH_LOGO,
+        severity_counts=severity_counts, app_bars=app_bars)
+
+
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok", "service": "sbom-risk-scorer"}), 200
 
 
 @app.route("/")
@@ -95,4 +144,6 @@ def export_html():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)

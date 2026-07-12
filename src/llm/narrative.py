@@ -8,34 +8,84 @@ Rules (from the project skill):
     finding_id AS IT IS PRODUCED, so a crash mid-run loses nothing.
   * Cache-first: a finding with a cached narrative is never regenerated.
   * No code depends on a specific model identity responding — only on
-    receiving a well-formed 2-3 sentence string (cybersecurity prompts may
-    be safety-rerouted to a different model; that is fine).
+    receiving a well-formed 2-3 sentence string.
+
+Provider is config-driven (`.env`): `LLM_PROVIDER` selects the active
+backend.  Ollama (open-source, local) is the default and only live backend.
 
 Generation backends, tried in order per finding:
-  1. Anthropic Python SDK (if installed and credentials resolve)
-  2. `claude -p` CLI (Claude Code, present on the dev machines)
-  3. Deterministic template (tagged "template-fallback") — guarantees the
+  1. Ollama REST API (active when LLM_PROVIDER=ollama; uses any local model)
+  2. Deterministic template (tagged "template-fallback") — guarantees the
      demo never depends on a network call succeeding.
+
+The deterministic core never imports this module, so wiring an LLM provider
+here introduces no dependency of the core on any network or key.
 
 Run:  python -m src.llm.narrative [N]
 """
 
 import json
-import shutil
-import subprocess
+import os
 import sys
+import urllib.error
+import urllib.request
 
 from src.config import REPO_ROOT
 
-REPORTS = REPO_ROOT / "reports"
+REPORTS = REPORTS_DIR = REPO_ROOT / "reports"
 CACHE_PATH = REPORTS / "narratives_cache.json"
 
-PROMPT = (
-    "You are a supply-chain security analyst. Based ONLY on this structured "
-    "finding, write a 2-3 sentence plain-English remediation narrative for an "
-    "engineering team: what the risk is, why it matters for this application, "
-    "and the concrete next step. No preamble, no markdown.\n\nFINDING:\n{data}"
+
+def _load_dotenv():
+    """Minimal .env loader (no external dep): populate os.environ with any
+    KEY=VALUE lines not already set in the environment. The deterministic
+    core does not use this — it is scoped to the optional narrative layer."""
+    path = REPO_ROOT / ".env"
+    if not path.is_file():
+        return
+    for line in path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        key, val = key.strip(), val.strip().strip('"').strip("'")
+        os.environ.setdefault(key, val)
+
+
+_load_dotenv()
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "ollama").strip().lower()
+
+# Ollama config — open-source, no rate limits.
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434").strip().rstrip("/")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.2").strip()
+OLLAMA_API_KEY = os.environ.get("OLLAMA_API_KEY", "").strip()
+
+SYS_INSTRUCTION = (
+    "You are a supply-chain security analyst. Reply with ONLY a 2-3 sentence "
+    "plain-English remediation narrative in prose: what the risk is, why it "
+    "matters for this application, and the concrete next step. Never repeat, "
+    "quote, or list the input field names, keys, values, JSON, backticks, or "
+    "markdown. Start with the application or library name."
 )
+
+PROMPT = (
+    "Write the remediation narrative for this finding. Prose only, no field "
+    "names or JSON.\n\nFINDING:\n{data}"
+)
+
+
+def _acceptable(text):
+    """Guard against the model echoing the structured input instead of writing
+    prose. Reject anything that isn't a clean sentence so it falls through to
+    the deterministic template."""
+    t = text.strip()
+    if len(t) < 60 or not t[0].isalpha():
+        return False
+    if t.count("`") >= 1 or '":' in t[:120] or t.lstrip().startswith("*"):
+        return False
+    if t[-1] not in ".!?":            # truncated mid-sentence -> reject
+        return False
+    return True
 
 
 def _load_cache():
@@ -70,34 +120,33 @@ def _structured(f):
     return out
 
 
-def _try_sdk(prompt):
+def _try_ollama(prompt):
+    """Ollama via its native REST API.
+    Active when LLM_PROVIDER=ollama. Open-source, no rate limits."""
+    if LLM_PROVIDER != "ollama":
+        return None
+    url = f"{OLLAMA_BASE_URL}/api/generate"
+    body = json.dumps({
+        "model": OLLAMA_MODEL,
+        "system": SYS_INSTRUCTION,
+        "prompt": prompt,
+        "stream": False,
+        "options": {"temperature": 0.3, "num_predict": 512},
+    }).encode("utf-8")
+    headers = {"Content-Type": "application/json"}
+    if OLLAMA_API_KEY:
+        headers["Authorization"] = f"Bearer {OLLAMA_API_KEY}"
     try:
-        import anthropic
-    except ImportError:
-        return None
-    try:
-        client = anthropic.Anthropic()
-        resp = client.messages.create(
-            model="claude-opus-4-8", max_tokens=300,
-            messages=[{"role": "user", "content": prompt}])
-        if resp.stop_reason == "refusal":
-            return None
-        text = " ".join(b.text for b in resp.content if b.type == "text").strip()
-        return text or None
-    except Exception:
-        return None
-
-
-def _try_cli(prompt):
-    if not shutil.which("claude"):
-        return None
-    try:
-        r = subprocess.run(["claude", "-p", prompt], capture_output=True,
-                           text=True, timeout=120, encoding="utf-8")
-        text = (r.stdout or "").strip()
-        return text if r.returncode == 0 and len(text) > 40 else None
-    except (OSError, subprocess.TimeoutExpired):
-        return None
+        req = urllib.request.Request(url, data=body, headers=headers)
+        with urllib.request.urlopen(req, timeout=120) as r:
+            resp = json.loads(r.read().decode("utf-8"))
+        text = resp.get("response", "").strip()
+        if text and _acceptable(text):
+            return text
+    except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError,
+            json.JSONDecodeError) as e:
+        print(f"  [ollama] error: {e}")
+    return None
 
 
 def _template(f):
@@ -135,7 +184,7 @@ def generate(top_n=10):
         key=lambda f: -(f.get("risk_score") or 0))[:top_n]
 
     cache = _load_cache()
-    stats = {"cached": 0, "sdk": 0, "cli": 0, "template-fallback": 0}
+    stats = {"cached": 0, "ollama": 0, "template-fallback": 0}
     for f in findings:
         fid = f["finding_id"]
         if fid in cache and cache[fid].get("narrative"):
@@ -143,18 +192,21 @@ def generate(top_n=10):
             continue
         prompt = PROMPT.format(data=json.dumps(_structured(f), indent=1))
         text, source = None, None
-        for fn, name in ((_try_sdk, "sdk"), (_try_cli, "cli")):
-            text = fn(prompt)
-            if text:
-                source = name
-                break
-        if not text:
+        # Try Ollama first, then fall back to deterministic template.
+        text = _try_ollama(prompt)
+        if text:
+            source = "ollama"
+        else:
             text, source = _template(f), "template-fallback"
-        cache[fid] = {"narrative": text, "source": source,
-                      "library": f["library"], "app_id": f["app_id"]}
+        entry = {"narrative": text, "source": source,
+                 "library": f["library"], "app_id": f["app_id"]}
+        if source == "ollama":
+            entry["model"] = OLLAMA_MODEL
+        cache[fid] = entry
         _save_cache(cache)          # incremental — persist per finding
         stats[source] += 1
-        print(f"  {fid} [{source}] {text[:90]}...")
+        tag = f"{source}:{OLLAMA_MODEL}" if source == "ollama" else source
+        print(f"  {fid} [{tag}] {text[:90]}...")
 
     _save_cache(cache)
     print(f"narratives cached -> {CACHE_PATH}")

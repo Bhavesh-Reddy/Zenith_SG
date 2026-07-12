@@ -74,8 +74,8 @@ Top-N ranked findings only. The prompt contains **structured finding data only**
 (app, library, CVE + CVSS + patch info, full paths, license flag). Every
 narrative is cached to `narratives_cache.json` **as produced**; the dashboard is
 cache-first and never makes a network call, so a live demo cannot be broken by
-the network. Three interchangeable backends (Anthropic SDK → `claude` CLI →
-deterministic template); **no logic depends on a specific model identity
+the network. Two backends: Ollama (open-source, local, no rate limits) →
+deterministic template fallback; **no logic depends on a specific model identity
 answering** — only on receiving a well-formed string.
 
 ---

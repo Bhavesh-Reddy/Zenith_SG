@@ -30,19 +30,21 @@ app = Flask(__name__)
 SEV_ORDER = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"]
 
 
-def _logo_data_uri(filename):
-    """Embed a logo as a base64 data URI so the page is fully self-contained
-    and offline-safe (the export snapshot carries the images inline too)."""
+def _img_data_uri(filename, mime="image/png"):
+    """Embed an image as a base64 data URI so the page is fully self-contained."""
     path = TEMPLATES / filename
     if not path.is_file():
         return ""
     b64 = base64.b64encode(path.read_bytes()).decode("ascii")
-    return f"data:image/png;base64,{b64}"
+    return f"data:{mime};base64,{b64}"
 
 
 # Loaded once at import — presentation assets only, never touched by the core.
-SG_LOGO = _logo_data_uri("logo-societe-generale.png")
-ZENITH_LOGO = _logo_data_uri("logo-zenith.png")
+SG_LOGO = _img_data_uri("logo-societe-generale.png", "image/png")
+ZENITH_LOGO = _img_data_uri("logo-zenith.png", "image/png")
+BG_IMG = _img_data_uri("bg.jpg", "image/jpeg")
+BG2_IMG = _img_data_uri("bg2.jpg", "image/jpeg")
+HQ_IMG = _img_data_uri("hq.jpg", "image/jpeg")
 
 
 def _load_report():
@@ -111,6 +113,7 @@ def _view(export=False):
         narratives=_load_narratives(), app_filter=app_filter,
         type_filter=type_filter, all_types=all_types, export=export,
         graph_data=graph_data, sg_logo=SG_LOGO, zenith_logo=ZENITH_LOGO,
+        bg_img=BG_IMG, bg2_img=BG2_IMG, hq_img=HQ_IMG,
         severity_counts=severity_counts, app_bars=app_bars)
 
 

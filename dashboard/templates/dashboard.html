@@ -1,525 +1,418 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zenith · SBOM Supply Chain Risk — Societe Generale</title>
-<style>
-  :root {
-    --bg: #f7f9fc; --bg-elev: #ffffff; --panel: #ffffff;
-    --glass: rgba(0,0,0,0.035); --glass-2: rgba(0,0,0,0.015);
-    --brd: rgba(0,0,0,0.1); --brd-2: rgba(0,0,0,0.06);
-    --ink: #111827; --ink-2: #4b5563; --ink-3: #6b7280;
-    --sg: #E60028; --sg-2: #ff2d4d; --sg-glow: rgba(230,0,40,0.25);
-    --crit: #ef4444; --high: #f97316; --med: #f59e0b; --low: #10b981; --none: #9ca3af;
-    --accent: #3b82f6; --accent-deep: #2563eb;
-    --mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
-    --shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 8px 30px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
-  }
-  * { box-sizing: border-box; margin: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    background:
-      radial-gradient(1100px 520px at 82% -8%, rgba(230,0,40,0.07), transparent 60%),
-      radial-gradient(900px 480px at 8% 4%, rgba(59,130,246,0.07), transparent 55%),
-      var(--bg);
-    color: var(--ink); font-variant-numeric: tabular-nums;
-    font: 14px/1.5 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased; min-height: 100vh;
-  }
-  a { color: inherit; }
-  .wrap { max-width: 1320px; margin: 0 auto; padding: 0 22px 64px; }
-
-  /* ---- top bar ---- */
-  .topline { height: 3px; background: linear-gradient(90deg, var(--sg) 0%, var(--sg-2) 45%, transparent 100%); }
-  header.nav {
-    position: sticky; top: 0; z-index: 30;
-    backdrop-filter: blur(14px) saturate(140%);
-    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
-    border-bottom: 1px solid var(--brd-2);
-  }
-  .nav-in { max-width: 1320px; margin: 0 auto; padding: 12px 22px;
-            display: flex; align-items: center; gap: 16px; }
-  .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
-  .brand img.sg { height: 30px; width: auto; display: block; }
-  .brand .divider { width: 1px; height: 30px; background: var(--brd); }
-  .brand .title { font-size: 15px; font-weight: 650; letter-spacing: 0.1px; white-space: nowrap; }
-  .brand .title small { display: block; font-weight: 500; color: var(--ink-3);
-                        font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; }
-  .nav-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
-  .team { display: flex; align-items: center; gap: 9px; padding: 5px 11px 5px 6px;
-          border: 1px solid var(--brd); border-radius: 999px; background: var(--glass-2); }
-  .team img { height: 24px; width: 24px; border-radius: 6px; object-fit: contain; filter: brightness(0); opacity: 0.8; }
-  .team span { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
-  .team span b { color: var(--ink); font-weight: 650; }
-  .btn { font: inherit; font-size: 12.5px; padding: 7px 13px; border-radius: 8px;
-         border: 1px solid var(--brd); background: var(--glass);
-         color: var(--ink); text-decoration: none; cursor: pointer; transition: .15s; white-space: nowrap; }
-  .narr-wrap { padding: 18px 22px; border-bottom: 1px solid var(--brd-2); background: rgba(0,0,0,0.015); display: flex; gap: 16px; align-items: flex-start; }
-  .narr-icon { flex: none; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: rgba(59,130,246,0.12); color: var(--accent-deep); border: 1px solid rgba(59,130,246,0.2); }
-  .btn:hover { border-color: var(--sg); box-shadow: 0 0 0 3px rgba(230,0,40,0.12); }
-  .btn.primary { background: linear-gradient(180deg, var(--sg-2), var(--sg)); border-color: transparent; font-weight: 600; color: #ffffff; }
-  .btn.primary:hover { box-shadow: 0 6px 18px var(--sg-glow); }
-
-  /* ---- hero ---- */
-  .hero { padding: 30px 0 10px; }
-  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px;
-             letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
-  .eyebrow .live { width: 7px; height: 7px; border-radius: 50%; background: var(--low);
-                   box-shadow: 0 0 0 0 rgba(53,208,127,0.6); animation: ping 2.4s infinite; }
-  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(53,208,127,0.5);} 70%{box-shadow:0 0 0 7px rgba(53,208,127,0);} 100%{box-shadow:0 0 0 0 rgba(53,208,127,0);} }
-  h1.big { font-size: 27px; font-weight: 720; letter-spacing: -0.4px; margin: 10px 0 6px; }
-  .hero .meta { color: var(--ink-2); font-size: 13px; }
-  .hero .meta b { color: var(--ink); font-weight: 600; }
-  .hero .meta .mono { font-family: var(--mono); font-size: 12px; }
-
-  /* ---- KPI tiles ---- */
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 14px; margin-top: 22px; }
-  .tile { position: relative; overflow: hidden; padding: 16px 18px; border-radius: 14px;
-          background: linear-gradient(180deg, var(--glass), var(--glass-2));
-          border: 1px solid var(--brd); box-shadow: var(--shadow);
-          animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
-  .tile:nth-child(2){animation-delay:.05s} .tile:nth-child(3){animation-delay:.1s} .tile:nth-child(4){animation-delay:.15s}
-  @keyframes rise { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: none; } }
-  .tile .k { font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
-  .tile .v { font-size: 34px; font-weight: 730; letter-spacing: -1px; margin-top: 4px; line-height: 1; }
-  .tile .s { font-size: 12px; color: var(--ink-2); margin-top: 6px; }
-  .tile .spark { position: absolute; right: -6px; bottom: -6px; opacity: .5; }
-  .tile.alert { border-color: rgba(230,0,40,0.4); }
-  .tile.alert::before { content: ""; position: absolute; inset: 0; border-radius: 14px;
-       box-shadow: 0 0 0 1px rgba(230,0,40,0.35) inset; animation: glow 2.6s ease-in-out infinite; pointer-events: none; }
-  @keyframes glow { 0%,100%{ box-shadow: 0 0 0 1px rgba(230,0,40,0.25) inset;} 50%{ box-shadow: 0 0 26px rgba(230,0,40,0.28) inset;} }
-  .tile.alert .v { color: var(--sg-2); }
-
-  /* ---- section headings ---- */
-  h2.sec { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2);
-           margin: 34px 0 14px; display: flex; align-items: center; gap: 10px; }
-  h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--brd-2); }
-  h2.sec .hint { text-transform: none; letter-spacing: 0; font-size: 12px; color: var(--ink-3); }
-
-  /* ---- charts ---- */
-  .charts { display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 14px; }
-  .card { background: linear-gradient(180deg, var(--glass), var(--glass-2));
-          border: 1px solid var(--brd); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 18px; }
-  .card > .ct { font-size: 12.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 600; }
-  .donut-wrap { display: flex; align-items: center; gap: 18px; }
-  .donut-legend { display: grid; gap: 7px; font-size: 12.5px; }
-  .donut-legend div { display: flex; align-items: center; gap: 8px; color: var(--ink-2); }
-  .donut-legend .sw { width: 11px; height: 11px; border-radius: 3px; }
-  .donut-legend b { color: var(--ink); font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 14px; }
-  .bars { display: grid; gap: 9px; }
-  .bar-row { display: grid; grid-template-columns: 168px 1fr 44px; align-items: center; gap: 10px; font-size: 12.5px; }
-  .bar-row .nm { color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .bar-row .nm i { color: var(--ink-3); font-style: normal; font-size: 11px; }
-  .bar-track { height: 9px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; }
-  .bar-fill { height: 100%; width: 0; border-radius: 6px;
-              background: linear-gradient(90deg, var(--accent-deep), var(--sg)); transition: width 1s cubic-bezier(.2,.7,.2,1); }
-  .bar-row .sc { text-align: right; font-weight: 650; }
-
-  /* ---- app scorecards ---- */
-  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 12px; }
-  .appcard { display: block; text-decoration: none; padding: 14px 15px; border-radius: 13px;
-             background: linear-gradient(180deg, var(--glass), var(--glass-2));
-             border: 1px solid var(--brd); box-shadow: var(--shadow); transition: .16s; }
-  .appcard:hover { transform: translateY(-2px); border-color: rgba(230,0,40,0.4); }
-  .appcard.active { border-color: var(--sg); box-shadow: 0 0 0 3px rgba(230,0,40,0.14), var(--shadow); }
-  .appcard .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-  .appcard .nm { font-weight: 650; font-size: 14.5px; }
-  .appcard .sc { font-size: 22px; font-weight: 730; letter-spacing: -0.5px; }
-  .appcard .mid { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
-  .chip { font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px;
-          border-radius: 999px; border: 1px solid var(--brd); color: var(--ink-2); background: var(--glass-2); }
-  .chip.crit { color: #ffb9c1; border-color: rgba(230,0,40,0.5); }
-  .appcard .track { height: 7px; background: rgba(255,255,255,0.07); border-radius: 5px; overflow: hidden; }
-  .appcard .track > i { display: block; height: 100%; width: 0; border-radius: 5px;
-        background: linear-gradient(90deg, var(--accent-deep), var(--sg)); transition: width .9s cubic-bezier(.2,.7,.2,1); }
-  .appcard .cnts { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; }
-  .appcard .cnts b { color: var(--ink-2); }
-
-  /* ---- filters ---- */
-  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0 4px; }
-  .filters label { font-size: 12px; color: var(--ink-3); display: flex; align-items: center; gap: 7px; }
-  select { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px;
-           border: 1px solid var(--brd); background: var(--panel); color: var(--ink); }
-  select:focus { outline: none; border-color: var(--sg); }
-
-  /* ---- findings table ---- */
-  .tbl-wrap { border: 1px solid var(--brd); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
-              background: #ffffff; }
-  table { width: 100%; border-collapse: collapse; }
-  thead th { position: sticky; top: 58px; z-index: 5; text-align: left; font-size: 11px; letter-spacing: 0.06em;
-             text-transform: uppercase; color: var(--ink-3); padding: 11px 12px; background: #f9fafb;
-             border-bottom: 1px solid var(--brd); }
-  tbody td { padding: 11px 12px; border-bottom: 1px solid var(--brd-2); vertical-align: top; font-size: 13px; }
-  tbody tr:last-child td { border-bottom: none; }
-  tbody tr:hover td { background: #fdfdfd; }
-  .rank { color: var(--ink-3); font-family: var(--mono); font-size: 12px; }
-  .score-cell { font-weight: 700; font-size: 15px; }
-  .minibar { display: block; width: 62px; height: 5px; background: var(--brd); border-radius: 3px; margin-top: 4px; }
-  .minibar > i { display: block; height: 5px; border-radius: 3px; background: var(--sg); }
-  .uplift { font-size: 10.5px; color: var(--sg); margin-top: 3px; }
-  .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 650;
-           padding: 3px 9px 3px 8px; border-radius: 999px; border: 1px solid var(--brd-2); white-space: nowrap; }
-  .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
-  .b-CRITICAL { color: #ffc2ca; border-color: rgba(255,59,78,0.45); background: rgba(255,59,78,0.08); }
-  .b-CRITICAL .dot { background: var(--crit); box-shadow: 0 0 0 0 rgba(255,59,78,0.7); animation: ping2 2s infinite; }
-  @keyframes ping2 { 0%{box-shadow:0 0 0 0 rgba(255,59,78,0.6);} 70%{box-shadow:0 0 0 6px rgba(255,59,78,0);} 100%{box-shadow:0 0 0 0 rgba(255,59,78,0);} }
-  .b-HIGH { color: #ffcfa8; border-color: rgba(255,143,61,0.4); background: rgba(255,143,61,0.07); } .b-HIGH .dot { background: var(--high); }
-  .b-MEDIUM { color: #ffe6a1; border-color: rgba(255,197,49,0.35); background: rgba(255,197,49,0.06); } .b-MEDIUM .dot { background: var(--med); }
-  .b-LOW { color: #9fe9bd; border-color: rgba(53,208,127,0.35); background: rgba(53,208,127,0.06); } .b-LOW .dot { background: var(--low); }
-  .b-NONE { color: var(--ink-3); } .b-NONE .dot { background: var(--none); }
-  .lib { font-weight: 650; }
-  .ver { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
-  .type { font-size: 11px; color: var(--ink-3); font-family: var(--mono); }
-  .diamond { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--accent);
-             margin-top: 4px; font-weight: 600; }
-  .chain-btn { font: inherit; font-size: 11px; color: var(--accent); background: transparent;
-               border: 1px solid var(--brd); border-radius: 7px; padding: 2px 8px; cursor: pointer; margin-top: 6px; transition: .14s; }
-  .chain-btn:hover { border-color: var(--accent); background: rgba(86,163,255,0.1); }
-  .path { color: var(--ink-2); font-family: var(--mono); font-size: 11.5px; line-height: 1.7; }
-  .path .arrow { color: var(--ink-3); }
-  .path b { color: var(--sg-2); }
-  .ev { font-size: 12px; color: var(--ink-2); max-width: 360px; }
-  .ev .cve { font-family: var(--mono); color: var(--ink); }
-  .ev .tag { font-size: 10px; color: var(--ink-3); }
-  .narr { font-size: 12px; color: var(--ink); background: linear-gradient(180deg, rgba(86,163,255,0.09), rgba(86,163,255,0.03));
-          border-left: 2px solid var(--accent); padding: 7px 9px; margin-top: 8px; border-radius: 0 8px 8px 0; }
-  .narr .src { display: block; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase;
-               color: var(--ink-3); margin-bottom: 3px; }
-
-  .note { color: var(--ink-3); font-size: 12px; margin-top: 16px; line-height: 1.7; }
-  footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--brd-2);
-           display: flex; align-items: center; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 12px; }
-  footer img.z { height: 26px; filter: brightness(0); opacity: 0.8; }
-  footer .grow { flex: 1; }
-
-  /* ---- graph modal ---- */
-  #gv-overlay { position: fixed; inset: 0; z-index: 60; display: none; align-items: center; justify-content: center;
-                background: rgba(4,5,8,0.72); backdrop-filter: blur(4px); }
-  #gv-overlay.open { display: flex; animation: fade .18s ease; }
-  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-  #gv-panel { width: min(92vw, 900px); max-height: 86vh; overflow: auto; padding: 20px 22px; border-radius: 16px;
-              background: linear-gradient(180deg, #141922, #0e1218); border: 1px solid var(--brd);
-              box-shadow: 0 30px 80px rgba(0,0,0,0.6); animation: rise .22s ease; }
-  #gv-panel h3 { font-size: 16px; font-weight: 680; }
-  #gv-panel h3 .mono { font-family: var(--mono); color: var(--sg-2); }
-  #gv-close { float: right; font: inherit; font-size: 12.5px; cursor: pointer; color: var(--ink-2);
-              border: 1px solid var(--brd); background: var(--glass); border-radius: 8px; padding: 5px 11px; }
-  #gv-sub { color: var(--ink-3); font-size: 12.5px; margin: 3px 0 14px; }
-  #gv-svg text { font: 12px var(--mono); }
-  .gv-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--ink-3); margin-top: 12px; }
-  .gv-legend span { display: inline-flex; align-items: center; gap: 6px; }
-  .gv-legend i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
-
-  @media (max-width: 820px) { .charts { grid-template-columns: 1fr; } thead th { position: static; } }
-
-  /* ---- print / PDF: legible light layout ---- */
-  @media print {
-    body { background: #fff; color: #111; }
-    .nav-right .btn, .filters, .chain-btn, #gv-overlay, .tile .spark { display: none !important; }
-    header.nav { position: static; backdrop-filter: none; background: #fff; border-color: #ddd; }
-    .tile, .card, .appcard, .tbl-wrap { background: #fff; border-color: #ddd; box-shadow: none; animation: none; }
-    .tile .v, .appcard .sc, .score-cell { color: #111; }
-    thead th { position: static; background: #f4f4f4; color: #444; }
-    .narr { background: #f3f7ff; color: #111; }
-    .path b { color: #b00020; }
-    * { animation: none !important; }
-  }
-</style>
+  <meta charset="utf-8">
+  <title>Zenith · SBOM Supply Chain Risk — Societe Generale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <style>
+    :root {
+      --bg: #f4f6f8; --bg-elev: #ffffff;
+      --ink: #111827; --ink-2: #4b5563; --ink-3: #6b7280;
+      --brd: #e5e7eb; --sg: #E60028;
+      --crit: #ef4444; --high: #f97316; --med: #f59e0b; --low: #10b981; --none: #9ca3af;
+      --accent: #2563eb; --font: 'Inter', sans-serif;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    
+    body {
+      margin: 0; padding: 0; font-family: var(--font); color: var(--ink);
+      background-color: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Header */
+    header {
+      background: var(--bg-elev);
+      border-bottom: 1px solid var(--brd);
+      position: sticky; top: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center; 
+      padding: 16px 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand img { height: 32px; }
+    .brand-title { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+    .brand-sub { font-size: 12px; color: var(--ink-3); letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600; }
+    
+    /* Layout */
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 40px 32px; }
+    .grid { display: grid; gap: 24px; }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    
+    /* Solid Cards */
+    .card {
+      background: var(--bg-elev);
+      border-radius: 12px; padding: 24px; border: 1px solid var(--brd);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    /* Static Hero */
+    .hero {
+      position: relative; border-radius: 16px; overflow: hidden; margin-bottom: 32px;
+      background-image: url('{{ hq_img }}'); background-size: cover; background-position: center;
+      box-shadow: var(--shadow-md);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; background: linear-gradient(to right, rgba(17,24,39,0.9), rgba(17,24,39,0.4)); z-index: 1;
+    }
+    .hero-content { position: relative; z-index: 2; padding: 64px 48px; color: white; max-width: 800px; }
+    .hero-content h1 { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 16px 0; }
+    .hero-content p { font-size: 16px; font-weight: 400; opacity: 0.9; margin: 0 0 24px 0; line-height: 1.5; }
+    .hero-meta { display: inline-block; background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); padding: 8px 16px; border-radius: 8px; font-family: monospace; font-size: 13px; }
+    
+    /* Typography & Stats */
+    .stat-title { font-size: 13px; color: var(--ink-2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .stat-value { font-size: 40px; font-weight: 800; color: var(--ink); margin: 0; line-height: 1; }
+    .stat-sub { font-size: 13px; color: var(--ink-3); margin-top: 12px; font-weight: 500; }
+    .stat-crit { color: var(--crit); }
+    
+    .chart-container { height: 350px; width: 100%; }
+    .chart-header { font-size: 16px; font-weight: 700; margin-bottom: 20px; color: var(--ink); }
+    
+    /* Scrollable App Cards Grid */
+    .app-cards-container { max-height: 500px; overflow-y: auto; padding-right: 8px; margin-bottom: 40px; border-radius: 12px; }
+    .app-cards-container::-webkit-scrollbar { width: 8px; }
+    .app-cards-container::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+    .app-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    
+    .appcard {
+      background: var(--bg-elev); border: 1px solid var(--brd); border-radius: 12px; padding: 20px;
+      text-decoration: none; color: inherit; display: block; box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+    .appcard:hover, .appcard.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(37,99,235,0.2); }
+    .appcard .top { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; margin-bottom: 12px; }
+    .appcard .sc { color: var(--crit); font-weight: 800; }
+    .appcard .chip { font-size: 11px; padding: 4px 8px; border-radius: 6px; background: var(--bg); color: var(--ink-2); margin-right: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .appcard .track { height: 6px; background: var(--bg); border-radius: 3px; margin: 16px 0; overflow: hidden; }
+    .appcard .track i { display: block; height: 100%; background: var(--crit); border-radius: 3px; }
+    
+    /* Filters */
+    .filters { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-end; background: var(--bg-elev); padding: 20px; border-radius: 12px; border: 1px solid var(--brd); box-shadow: var(--shadow-sm); }
+    .filters label { display: block; font-size: 12px; font-weight: 700; color: var(--ink-2); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .filters select { padding: 10px 16px; border-radius: 6px; border: 1px solid var(--brd); font-family: inherit; font-size: 14px; min-width: 220px; outline: none; transition: 0.2s; background: white; font-weight: 500; color: var(--ink); }
+    .filters select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(37,99,235,0.2); }
+    
+    .btn { padding: 10px 20px; border-radius: 6px; border: 1px solid var(--brd); background: #fff; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 600; transition: all 0.2s; text-decoration: none; color: var(--ink); display: inline-block; }
+    .btn:hover { background: #f9fafb; border-color: #d1d5db; }
+    
+    /* Scrollable Table */
+    .tbl-card { background: var(--bg-elev); border-radius: 12px; border: 1px solid var(--brd); box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; }
+    .tbl-scroll { overflow-y: auto; max-height: 700px; }
+    .tbl-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+    .tbl-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+    
+    table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; }
+    th { padding: 16px; font-size: 12px; font-weight: 700; color: var(--ink-2); background: #f9fafb; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--brd); box-shadow: 0 1px 0 var(--brd); }
+    th:hover { background: #f3f4f6; color: var(--ink); }
+    td { padding: 20px 16px; border-bottom: 1px solid var(--brd); font-size: 13.5px; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f9fafb; }
+    
+    .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.02em; }
+    .b-CRITICAL { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+    .b-HIGH { background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; }
+    .b-MEDIUM { background: #fefce8; color: #a16207; border: 1px solid #fef08a; }
+    .b-LOW { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+    .b-NONE { background: #f3f4f6; color: #4b5563; border: 1px solid #e5e7eb; }
+    
+    .mono { font-family: ui-monospace, monospace; font-size: 12.5px; }
+    .path-arrow { color: var(--ink-3); margin: 0 4px; font-size: 10px; }
+    .path-leaf { font-weight: 700; color: var(--sg); }
+    
+    .btn-sm { padding: 6px 12px; font-size: 12px; color: var(--ink-2); border: 1px solid var(--brd); border-radius: 6px; background: #fff; cursor: pointer; transition: 0.2s; margin-top: 12px; font-weight: 600; }
+    .btn-sm:hover { background: #f9fafb; border-color: #d1d5db; color: var(--ink); }
+    
+    .narr { background: rgba(37,99,235,0.05); border-left: 3px solid var(--accent); padding: 16px; margin-top: 16px; border-radius: 0 8px 8px 0; color: var(--ink-2); line-height: 1.6; }
+    .narr-src { font-size: 11px; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin-bottom: 6px; display: block; letter-spacing: 0.05em; }
+    
+    /* Modal */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(17,24,39,0.7); z-index: 1000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; }
+    .modal-overlay.open { display: flex; opacity: 1; }
+    .modal-content { background: var(--bg-elev); width: 90vw; max-width: 1200px; border-radius: 12px; box-shadow: var(--shadow-md); overflow: hidden; display: flex; flex-direction: column; transform: translateY(10px); transition: transform 0.2s; }
+    .modal-overlay.open .modal-content { transform: translateY(0); }
+    .modal-header { padding: 20px 24px; border-bottom: 1px solid var(--brd); display: flex; justify-content: space-between; align-items: center; background: #f9fafb; }
+    .modal-header h3 { margin: 0; font-size: 18px; font-weight: 700; color: var(--ink); }
+    .modal-body { padding: 0; height: 70vh; min-height: 500px; background: #fff; }
+    
+    /* Footer */
+    footer { margin-top: 64px; border-top: 1px solid var(--brd); padding: 32px 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--ink-3); font-weight: 600; background: var(--bg-elev); }
+    footer img { height: 32px; filter: brightness(0); opacity: 0.6; }
+    
+    @media (max-width: 1024px) {
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<div class="topline"></div>
-<header class="nav">
-  <div class="nav-in">
-    <div class="brand">
-      {% if sg_logo %}<img class="sg" src="{{ sg_logo }}" alt="Societe Generale">{% endif %}
-      <div class="divider"></div>
-      <div class="title">Software Supply Chain Risk
-        <small>SBOM Analyzer · PB-10</small>
-      </div>
+
+<!-- Neat Solid Header -->
+<header>
+  <div class="brand">
+    {% if sg_logo %}<img src="{{ sg_logo }}" alt="Societe Generale">{% endif %}
+    <span style="color: var(--brd); font-size: 24px; font-weight: 200;">|</span>
+    {% if zenith_logo %}
+    <div style="height: 32px; display: flex; align-items: center; justify-content: center; margin: 0 16px;">
+      <img src="{{ zenith_logo }}" alt="Zenith" style="height: 120px; max-width: none; filter: brightness(0); opacity: 0.85;">
     </div>
-    <div class="nav-right">
-      <div class="team">
-        {% if zenith_logo %}<img src="{{ zenith_logo }}" alt="Zenith">{% endif %}
-        <span>Team <b>Zenith</b></span>
-      </div>
-      {% if not export %}
-      <a class="btn" href="/export/html">Export HTML</a>
-      <button class="btn primary" onclick="window.print()">Print / PDF</button>
-      {% endif %}
+    {% endif %}
+    <div style="margin-left: 12px;">
+      <div class="brand-title">Software Supply Chain Risk</div>
+      <div class="brand-sub">SBOM Analyzer · PB-10</div>
     </div>
+  </div>
+  <div style="display:flex; gap:24px; align-items:center;">
+    {% if not export %}
+    <a href="/export/html" class="btn">Export Snapshot</a>
+    {% endif %}
   </div>
 </header>
 
 <div class="wrap">
+  <!-- Static Clean Hero -->
   <section class="hero">
-    <span class="eyebrow"><span class="live"></span> Live risk posture · deterministic core</span>
-    <h1 class="big">Supply-chain risk across {{ report.totals.applications }} applications</h1>
-    <div class="meta">Generated <b>{{ report.generated_at }}</b> ·
-      scorer <b>{{ report.score_source }}</b> ·
-      reference date <span class="mono">{{ report.reference_date }}</span></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Supply-chain risk posture across {{ report.totals.applications }} applications</h1>
+      <p>Deterministic analysis pipeline with AI-driven remediation playbooks. Engineered for enterprise scale and maximum clarity.</p>
+      <div class="hero-meta">Generated: {{ report.generated_at }} &nbsp;|&nbsp; Engine: {{ report.score_source }}</div>
+    </div>
   </section>
 
-  <div class="tiles">
-    <div class="tile">
-      <div class="k">Applications</div>
-      <div class="v" data-count="{{ report.totals.applications }}">0</div>
-      <div class="s">in scope, all path-resolved</div>
-    </div>
-    <div class="tile">
-      <div class="k">Dependencies scanned</div>
-      <div class="v" data-count="{{ report.totals.dependencies }}">0</div>
-      <div class="s">direct + transitive</div>
-    </div>
-    <div class="tile{{ ' alert' if severity_counts.CRITICAL }}">
-      <div class="k">Critical findings</div>
-      <div class="v" data-count="{{ severity_counts.CRITICAL }}">0</div>
-      <div class="s">{{ severity_counts.HIGH }} high · {{ severity_counts.MEDIUM }} medium</div>
-    </div>
-    <div class="tile">
-      <div class="k">Compound exposures</div>
-      <div class="v" data-count="{{ report.totals.compound_exposure_findings }}">0</div>
-      <div class="s">multi-path / diamond — never deduplicated</div>
-    </div>
-  </div>
-
-  <h2 class="sec">Risk overview <span class="hint">severity mix &amp; top applications</span></h2>
-  <div class="charts">
+  <!-- KPI Tiles -->
+  <div class="grid grid-4" style="margin-bottom: 24px;">
     <div class="card">
-      <div class="ct">Findings by severity</div>
-      <div class="donut-wrap">
-        <svg id="donut" width="150" height="150" viewBox="0 0 150 150"></svg>
-        <div class="donut-legend" id="donut-legend"></div>
-      </div>
+      <div class="stat-title">Applications</div>
+      <div class="stat-value">{{ report.totals.applications }}</div>
+      <div class="stat-sub">in scope, fully path-resolved</div>
     </div>
     <div class="card">
-      <div class="ct">Top applications by risk score</div>
-      <div class="bars" id="app-bars"></div>
+      <div class="stat-title">Dependencies</div>
+      <div class="stat-value">{{ report.totals.dependencies }}</div>
+      <div class="stat-sub">scanned directly and transitively</div>
+    </div>
+    <div class="card">
+      <div class="stat-title stat-crit">Critical Findings</div>
+      <div class="stat-value stat-crit">{{ severity_counts.CRITICAL }}</div>
+      <div class="stat-sub">{{ severity_counts.HIGH }} high · {{ severity_counts.MEDIUM }} medium</div>
+    </div>
+    <div class="card">
+      <div class="stat-title">Compound Exposures</div>
+      <div class="stat-value">{{ report.totals.compound_exposure_findings }}</div>
+      <div class="stat-sub">multi-path / diamond dependencies</div>
     </div>
   </div>
 
-  <h2 class="sec">Application scorecards <span class="hint">— ranked; click to drill down</span></h2>
-  <div class="cards-grid">
-    {% for a in report.applications %}
-    <a class="appcard {{ 'active' if app_filter == a.app_id }}"
-       href="{{ '/' if app_filter == a.app_id else '/?app=' + a.app_id }}{{ ('&type=' + type_filter) if type_filter }}">
-      <div class="top"><span class="nm">{{ a.name }}</span><span class="sc">{{ a.app_risk_score }}</span></div>
-      <div class="mid">
-        <span class="chip {{ 'crit' if a.criticality in ['CRITICAL','HIGH'] }}">{{ a.criticality }}</span>
-        <span class="chip">{{ a.license_model }}</span>
-      </div>
-      <div class="track"><i data-w="{{ a.app_risk_score }}"></i></div>
-      <div class="cnts"><b>{{ a.num_findings }}</b> findings{% if a.num_compound %} · <b>{{ a.num_compound }}</b> compound{% endif %}
-        · <span class="mono">{{ a.app_id }}</span></div>
-    </a>
-    {% endfor %}
+  <!-- Charts -->
+  <div class="grid grid-2" style="margin-bottom: 40px;">
+    <div class="card">
+      <div class="chart-header">Findings by Severity</div>
+      <div id="chart-severity" class="chart-container"></div>
+    </div>
+    <div class="card">
+      <div class="chart-header">Top Applications by Risk</div>
+      <div id="chart-apps" class="chart-container"></div>
+    </div>
   </div>
 
+  <!-- Scrollable App Cards -->
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 16px;">
+    <h2 style="font-size:20px; font-weight:700; margin:0; color:var(--ink);">Application Scorecards</h2>
+  </div>
+  
+  <div class="app-cards-container">
+    <div class="app-cards">
+      {% for a in report.applications %}
+      <a class="appcard {{ 'active' if app_filter == a.app_id }}"
+         href="{{ '/' if app_filter == a.app_id else '/?app=' + a.app_id }}{{ ('&type=' + type_filter) if type_filter }}">
+        <div class="top"><span>{{ a.name }}</span><span class="sc">{{ a.app_risk_score }}</span></div>
+        <div style="margin-bottom: 16px;">
+          <span class="chip">{{ a.criticality }}</span>
+          <span class="chip">{{ a.license_model }}</span>
+        </div>
+        <div class="track"><i style="width: {{ a.app_risk_score }}%"></i></div>
+        <div style="font-size:12px; color:var(--ink-2); font-weight:500;">
+          <b style="color:var(--ink);">{{ a.num_findings }}</b> findings {% if a.num_compound %}· <b style="color:var(--ink);">{{ a.num_compound }}</b> compound{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 16px;">
+    <h2 style="font-size:20px; font-weight:700; margin:0; color:var(--ink);">Detailed Findings</h2>
+  </div>
+  
   {% if not export %}
   <form class="filters" method="get" action="/">
-    <label>Application
+    <div>
+      <label>Filter by Application</label>
       <select name="app" onchange="this.form.submit()">
         <option value="">All applications</option>
         {% for a in report.applications %}
         <option value="{{ a.app_id }}" {{ 'selected' if app_filter == a.app_id }}>{{ a.app_id }} — {{ a.name }}</option>
         {% endfor %}
       </select>
-    </label>
-    <label>Finding type
+    </div>
+    <div>
+      <label>Filter by Type</label>
       <select name="type" onchange="this.form.submit()">
         <option value="">All types</option>
         {% for t in all_types %}
         <option value="{{ t }}" {{ 'selected' if type_filter == t }}>{{ t }}</option>
         {% endfor %}
       </select>
-    </label>
+    </div>
     {% if app_filter or type_filter %}<a class="btn" href="/">Clear filters</a>{% endif %}
   </form>
   {% endif %}
 
-  <h2 class="sec">Ranked findings <span class="hint">— {{ findings|length }} shown, evidence-backed</span></h2>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr>
-        <th>#</th><th>Score</th><th>Severity</th><th>App</th><th>Type</th>
-        <th>Library</th><th>Dependency path (full chain)</th><th>Evidence &amp; remediation</th>
-      </tr></thead>
-      <tbody>
-      {% for f in findings %}
-        <tr>
-          <td class="rank">{{ "%02d"|format(loop.index) }}</td>
-          <td>
-            <span class="score-cell">{{ f.risk_score if f.risk_score is not none else '—' }}</span>
-            {% if f.risk_score is not none %}<span class="minibar"><i style="width: {{ f.risk_score }}%"></i></span>{% endif %}
-            {% if f.compound_uplift_pct %}<div class="uplift">+{{ f.compound_uplift_pct }}% compound</div>{% endif %}
-          </td>
-          <td><span class="badge b-{{ f.severity }}"><span class="dot"></span>{{ f.severity }}</span></td>
-          <td><span class="mono">{{ f.app_id }}</span></td>
-          <td class="type">{{ f.type }}{% if f.advisory_only %}<br>· advisory{% endif %}</td>
-          <td>
-            <span class="lib">{{ f.library }}</span> <span class="ver">@{{ f.version }}</span>
-            {% if f.num_paths > 1 %}<div class="diamond">◆ {{ f.num_paths }} paths — compound</div>{% endif %}
-            {% if not export and f.num_paths > 0 %}<button class="chain-btn" type="button" onclick="showChain('{{ f.finding_id }}')">⬦ view chain</button>{% endif %}
-          </td>
-          <td class="path">
-            {% for p in f.paths %}<div>{% for n in p %}{% if not loop.first %}<span class="arrow"> → </span>{% endif %}{% if loop.last %}<b>{{ n }}</b>{% else %}{{ n }}{% endif %}{% endfor %}</div>{% endfor %}
-          </td>
-          <td class="ev">
-            {% if f.evidence.cves %}
-              {% for c in f.evidence.cves %}
-                <div><span class="cve">{{ c.cve_id }}</span> · CVSS {{ c.cvss_score }} ({{ c.severity }})
-                  {{ '· patch ' + c.fixed_version if c.patch_available and c.fixed_version else '· no patch' }}
-                  <span class="tag">· {{ 'version-in-range' if c.version_in_range else 'name-match' }}</span></div>
+  <!-- Constrained Table -->
+  <div class="tbl-card">
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Score</th><th>Severity</th><th>App</th><th>Type</th>
+            <th>Library</th><th>Dependency Chain</th><th>Evidence & Playbook</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for f in findings %}
+          <tr>
+            <td>
+              <div style="font-weight:800; font-size:15px; color:var(--ink);">{{ f.risk_score if f.risk_score is not none else '—' }}</div>
+              {% if f.compound_uplift_pct %}<div style="color:var(--sg); font-size:11px; margin-top:6px; font-weight:700;">+{{ f.compound_uplift_pct }}% (compound)</div>{% endif %}
+            </td>
+            <td><span class="badge b-{{ f.severity }}">{{ f.severity }}</span></td>
+            <td class="mono">{{ f.app_id }}</td>
+            <td>
+              <div class="mono" style="margin-bottom:6px; font-weight:600;">{{ f.type }}</div>
+              {% if f.advisory_only %}<span class="badge" style="background:#f3f4f6; border:1px solid #e5e7eb; color:#6b7280;">Advisory</span>{% endif %}
+            </td>
+            <td>
+              <div style="font-weight:700; color:var(--ink); font-size:14px;">{{ f.library }}</div>
+              <div class="mono" style="color:var(--ink-3); margin-bottom:8px;">@{{ f.version }}</div>
+              {% if not export and f.num_paths > 0 %}
+              <button class="btn-sm" type="button" onclick="openNetworkGraph('{{ f.finding_id }}')">⬦ View Network</button>
+              {% endif %}
+            </td>
+            <td>
+              {% for p in f.paths %}
+                <div class="mono" style="margin-bottom:8px; line-height:1.6; background: #f9fafb; padding: 6px 10px; border-radius: 6px; border: 1px solid #e5e7eb;">
+                  {% for n in p %}
+                    {% if not loop.first %}<span class="path-arrow">→</span>{% endif %}
+                    {% if loop.last %}<span class="path-leaf">{{ n }}</span>{% else %}<span style="font-weight:500;">{{ n }}</span>{% endif %}
+                  {% endfor %}
+                </div>
               {% endfor %}
-            {% elif f.evidence.license %}
-              <div><b>{{ f.evidence.license }}</b> — {{ f.evidence.note }}</div>
-            {% elif f.evidence.last_updated %}
-              <div>last updated <b>{{ f.evidence.last_updated }}</b> (cutoff {{ f.evidence.cutoff }})</div>
-            {% endif %}
-            {% set nar = narratives.get(f.finding_id) %}
-            {% if nar %}
-              {% set ntext = nar.narrative if nar.narrative is defined else nar %}
-              {% set nsrc = nar.source if nar.source is defined else '' %}
-              <div class="narr"><span class="src">AI remediation{% if nsrc %} · {{ nsrc }}{% endif %}</span>{{ ntext }}</div>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-  </div>
-
-  <p class="note">
-    Diamond / multi-path exposures are reported per path and never deduplicated (compound-risk policy).
-    License findings in internal-only applications appear as advisories (distribution scope).
-    A CVE “name-match” tag reflects a documented inconsistency between the vulnerability DB's version
-    ranges and the ground-truth labels — surfaced as a confidence tier, not silently dropped.
-  </p>
-
-  <footer>
-    {% if zenith_logo %}<img class="z" src="{{ zenith_logo }}" alt="Zenith">{% endif %}
-    <span>Built by <b style="color:var(--ink-2)">Team Zenith</b> · Societe Generale iHackMyPlace · PB-10 SBOM Risk Scorer</span>
-    <span class="grow"></span>
-    <span>Deterministic core · ML scorer ({{ report.score_source }}) · AI narratives — the core stands alone.</span>
-  </footer>
-</div>
-
-{% if not export %}
-<div id="gv-overlay" onclick="if(event.target===this)closeChain()">
-  <div id="gv-panel">
-    <button id="gv-close" onclick="closeChain()">Close ✕</button>
-    <h3 id="gv-title">Dependency chain</h3>
-    <div id="gv-sub"></div>
-    <svg id="gv-svg" width="100" height="100" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div class="gv-legend">
-      <span><i style="background:var(--accent)"></i> application</span>
-      <span><i style="background:#c9d4e3"></i> intermediate dependency</span>
-      <span><i style="background:var(--sg)"></i> flagged library (leaf)</span>
-      <span>Every distinct path is drawn — diamond exposure is never collapsed.</span>
+            </td>
+            <td>
+              {% if f.evidence.cves %}
+                {% for c in f.evidence.cves %}
+                  <div style="margin-bottom:8px; background: #fff; border: 1px solid var(--brd); padding: 8px 12px; border-radius: 8px;">
+                    <b class="mono" style="color:var(--crit); font-size:13px;">{{ c.cve_id }}</b> <span style="font-weight:600; margin: 0 6px;">·</span> CVSS <b style="color:var(--ink);">{{ c.cvss_score }}</b> 
+                    <div style="color:var(--ink-3); font-size:11px; margin-top: 4px; font-weight:500;">{{ 'Patch available: ' + c.fixed_version if c.patch_available and c.fixed_version else 'No patch currently available' }}</div>
+                  </div>
+                {% endfor %}
+              {% elif f.evidence.license %}
+                <div style="color:var(--ink); font-size: 13.5px;"><b>{{ f.evidence.license }}</b> — {{ f.evidence.note }}</div>
+              {% endif %}
+              
+              {% set nar = narratives.get(f.finding_id) %}
+              {% if nar %}
+                {% set ntext = nar.narrative if nar.narrative is defined else nar %}
+                <div class="narr">
+                  <span class="narr-src">✦ AI Remediation Playbook</span>
+                  {{ ntext }}
+                </div>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
-{% endif %}
+
+<!-- Neat Solid Footer -->
+<footer>
+  <div>PB-10 SBOM Risk Scorer · Deterministic core engine</div>
+  {% if zenith_logo %}
+  <div style="height: 24px; display: flex; align-items: center; justify-content: flex-end;">
+    <img src="{{ zenith_logo }}" alt="Zenith" style="height: 120px; max-width: none; filter: brightness(0); opacity: 0.6; margin-right: 16px;">
+  </div>
+  {% endif %}
+</footer>
+
+<!-- ECharts Modal -->
+<div class="modal-overlay" id="network-modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="modal-title">Dependency Network</h3>
+      <button class="btn" onclick="closeModal()">Close ✕</button>
+    </div>
+    <div class="modal-body" id="network-chart"></div>
+  </div>
+</div>
 
 <script>
-  var SEVERITY = {{ severity_counts|tojson }};
-  var APPBARS = {{ app_bars|tojson }};
-  {% if not export %}var GRAPHDATA = {{ graph_data|tojson }};{% endif %}
-  var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // ---- animated count-ups ----
-  function countUp(el) {
-    var target = +el.getAttribute("data-count") || 0;
-    if (REDUCED || target === 0) { el.textContent = target; return; }
-    var t0 = null, dur = 900;
-    function step(ts) {
-      if (!t0) t0 = ts;
-      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(e * target);
-      if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-
-  // ---- severity donut ----
-  var SEV_META = [["CRITICAL","var(--crit)"],["HIGH","var(--high)"],["MEDIUM","var(--med)"],["LOW","var(--low)"],["NONE","var(--none)"]];
-  function drawDonut() {
-    var svg = document.getElementById("donut"), lg = document.getElementById("donut-legend");
-    if (!svg) return;
-    var total = SEV_META.reduce(function(s,m){return s+(SEVERITY[m[0]]||0);}, 0) || 1;
-    var cx = 75, cy = 75, r = 54, C = 2 * Math.PI * r, off = 0, ns = "http://www.w3.org/2000/svg";
-    svg.innerHTML = "";
-    var track = document.createElementNS(ns, "circle");
-    track.setAttribute("cx",cx); track.setAttribute("cy",cy); track.setAttribute("r",r);
-    track.setAttribute("fill","none"); track.setAttribute("stroke","rgba(255,255,255,0.06)"); track.setAttribute("stroke-width","16");
-    svg.appendChild(track);
-    SEV_META.forEach(function(m, i) {
-      var v = SEVERITY[m[0]] || 0; if (!v) { addLegend(lg, m, v, total, i===0); return; }
-      var frac = v / total, arc = document.createElementNS(ns, "circle");
-      arc.setAttribute("cx",cx); arc.setAttribute("cy",cy); arc.setAttribute("r",r);
-      arc.setAttribute("fill","none"); arc.setAttribute("stroke", m[1]); arc.setAttribute("stroke-width","16");
-      arc.setAttribute("stroke-dasharray", (frac*C) + " " + C);
-      arc.setAttribute("stroke-dashoffset", -off * C);
-      arc.setAttribute("transform","rotate(-90 "+cx+" "+cy+")");
-      arc.setAttribute("stroke-linecap","butt");
-      if (!REDUCED) { arc.style.transition = "stroke-dasharray 1s ease " + (i*0.08) + "s";
-        arc.setAttribute("stroke-dasharray","0 " + C);
-        requestAnimationFrame(function(){ arc.setAttribute("stroke-dasharray",(frac*C)+" "+C); }); }
-      svg.appendChild(arc);
-      addLegend(lg, m, v, total, i===0);
-      off += frac;
-    });
-    var t = document.createElementNS(ns, "text");
-    t.setAttribute("x",cx); t.setAttribute("y",cy-2); t.setAttribute("text-anchor","middle");
-    t.setAttribute("fill","var(--ink)"); t.setAttribute("font-size","24"); t.setAttribute("font-weight","730");
-    t.textContent = total; svg.appendChild(t);
-    var t2 = document.createElementNS(ns, "text");
-    t2.setAttribute("x",cx); t2.setAttribute("y",cy+15); t2.setAttribute("text-anchor","middle");
-    t2.setAttribute("fill","var(--ink-3)"); t2.setAttribute("font-size","9.5"); t2.textContent = "FINDINGS"; svg.appendChild(t2);
-  }
-  var _legendDone = false;
-  function addLegend(lg, m, v, total, first) {
-    if (first) { lg.innerHTML = ""; _legendDone = true; }
-    if (!_legendDone) return;
-    var d = document.createElement("div");
-    d.innerHTML = '<span class="sw" style="background:'+m[1]+'"></span>'+m[0].charAt(0)+m[0].slice(1).toLowerCase()+
-                  '<b>'+v+'</b>';
-    lg.appendChild(d);
-  }
-
-  // ---- app bars ----
-  function drawBars() {
-    var host = document.getElementById("app-bars"); if (!host) return;
-    var max = Math.max.apply(null, APPBARS.map(function(a){return a.score;}).concat([1]));
-    host.innerHTML = "";
-    APPBARS.forEach(function(a, i) {
-      var row = document.createElement("div"); row.className = "bar-row";
-      row.innerHTML = '<div class="nm">'+esc(a.name)+' <i>'+esc(a.app_id)+'</i></div>'+
-        '<div class="bar-track"><div class="bar-fill" data-w="'+(a.score/max*100)+'"></div></div>'+
-        '<div class="sc">'+a.score+'</div>';
-      host.appendChild(row);
-    });
-    animateWidths(host);
-  }
-
-  function animateWidths(scope) {
-    (scope || document).querySelectorAll("[data-w]").forEach(function(el, i) {
-      var w = el.getAttribute("data-w") + "%";
-      if (REDUCED) { el.style.width = w; return; }
-      setTimeout(function(){ el.style.width = w; }, 60 + i * 18);
-    });
-  }
-  function esc(s){ return String(s).replace(/[<>&]/g,function(c){return c==="<"?"&lt;":c===">"?"&gt;":"&amp;";}); }
+  const SEVERITY = {{ severity_counts|tojson }};
+  const APPBARS = {{ app_bars|tojson }};
+  {% if not export %}const GRAPHDATA = {{ graph_data|tojson }};{% endif %}
 
   document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".tile .v[data-count]").forEach(countUp);
-    drawDonut(); drawBars();
-    animateWidths(document.querySelector(".cards-grid"));
+    // Severity Donut Chart
+    const severityChart = echarts.init(document.getElementById('chart-severity'));
+    severityChart.setOption({
+      tooltip: { trigger: 'item', backgroundColor: '#fff', borderColor: '#e5e7eb', textStyle: { color: '#111827', fontFamily: 'Inter', fontWeight: 600 }, padding: [10, 16] },
+      color: ['#ef4444', '#f97316', '#f59e0b', '#10b981', '#9ca3af'],
+      legend: { bottom: '0%', left: 'center', icon: 'circle', itemGap: 20, textStyle: { fontFamily: 'Inter', color: '#4b5563', fontWeight: 600 } },
+      series: [{
+        name: 'Findings',
+        type: 'pie', radius: ['45%', '70%'], center: ['50%', '42%'],
+        avoidLabelOverlap: false,
+        itemStyle: { borderRadius: 4, borderColor: '#fff', borderWidth: 2 },
+        label: { show: false },
+        data: [
+          { value: SEVERITY.CRITICAL || 0, name: 'CRITICAL' },
+          { value: SEVERITY.HIGH || 0, name: 'HIGH' },
+          { value: SEVERITY.MEDIUM || 0, name: 'MEDIUM' },
+          { value: SEVERITY.LOW || 0, name: 'LOW' },
+          { value: SEVERITY.NONE || 0, name: 'NONE' }
+        ]
+      }]
+    });
+
+    // Top Apps Bar Chart
+    const appsChart = echarts.init(document.getElementById('chart-apps'));
+    const sortedApps = APPBARS.slice().sort((a,b) => a.score - b.score);
+    appsChart.setOption({
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, backgroundColor: '#fff', borderColor: '#e5e7eb', textStyle: { fontFamily: 'Inter', fontWeight: 600 }, padding: [10, 16] },
+      grid: { left: '3%', right: '8%', bottom: '5%', top: '5%', containLabel: true },
+      xAxis: { type: 'value', splitLine: { lineStyle: { color: '#f3f4f6', type: 'dashed' } }, axisLabel: { fontFamily: 'Inter', color: '#6b7280', fontWeight: 500 } },
+      yAxis: { type: 'category', data: sortedApps.map(a => a.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { fontFamily: 'Inter', color: '#111827', fontWeight: 600 } },
+      series: [{
+        name: 'Risk Score',
+        type: 'bar',
+        data: sortedApps.map(a => a.score),
+        itemStyle: { color: '#2563eb', borderRadius: [0, 4, 4, 0] },
+        barWidth: '40%'
+      }]
+    });
     
-    // Add interactive table sorting
+    window.addEventListener('resize', () => { severityChart.resize(); appsChart.resize(); });
+
+    // Table Sorting
     document.querySelectorAll("th").forEach(function(th, i) {
-      th.style.cursor = "pointer";
-      th.title = "Click to sort";
       th.addEventListener("click", function() {
         var table = th.closest("table");
         var tbody = table.querySelector("tbody");
@@ -542,46 +435,70 @@
   });
 
   {% if not export %}
-  // ---- Phase 6 dependency-chain viewer (offline SVG) ----
-  function showChain(fid) {
-    var d = GRAPHDATA[fid]; if (!d) return;
-    document.getElementById("gv-title").innerHTML =
-      'Dependency chain — <span class="mono">' + esc(d.library) + "@" + esc(d.version) + "</span>";
-    document.getElementById("gv-sub").textContent =
-      d.app_id + "  ·  " + d.type + "  ·  severity " + d.severity + "  ·  " +
-      d.num_paths + (d.num_paths > 1 ? " distinct paths (compound exposure)" : " path");
-    drawGraph(d);
-    document.getElementById("gv-overlay").classList.add("open");
+  let networkChartInstance = null;
+  function openNetworkGraph(fid) {
+    const data = GRAPHDATA[fid];
+    if (!data) return;
+    
+    document.getElementById('modal-title').innerHTML = `Network Graph: <span class="mono" style="color:var(--sg);">${data.library}@${data.version}</span>`;
+    document.getElementById('network-modal').classList.add('open');
+    
+    setTimeout(() => {
+      if (!networkChartInstance) {
+        networkChartInstance = echarts.init(document.getElementById('network-chart'));
+      }
+      
+      const nodesMap = new Map();
+      const links = [];
+      
+      data.paths.forEach(path => {
+        for (let i = 0; i < path.length; i++) {
+          const name = path[i];
+          const isApp = i === 0;
+          const isLeaf = i === path.length - 1;
+          
+          if (!nodesMap.has(name)) {
+            nodesMap.set(name, {
+              name: name,
+              symbolSize: isApp || isLeaf ? 40 : 25,
+              itemStyle: { color: isApp ? '#2563eb' : isLeaf ? '#ef4444' : '#6b7280', borderColor: '#fff', borderWidth: 2 },
+              label: { show: true, position: 'right', color: '#111827', fontFamily: 'monospace', fontWeight: 600, backgroundColor: '#f9fafb', padding: [4,8], borderRadius: 4, border: '1px solid #e5e7eb' },
+              category: isApp ? 'App' : isLeaf ? 'Vulnerable Lib' : 'Transitive'
+            });
+          }
+          
+          if (i > 0) {
+            links.push({ source: path[i-1], target: path[i], lineStyle: { color: '#9ca3af', width: 2, curveness: 0.1 } });
+          }
+        }
+      });
+      
+      const nodes = Array.from(nodesMap.values());
+      
+      networkChartInstance.setOption({
+        tooltip: { formatter: '{b}', backgroundColor: '#fff', textStyle: { color: '#111827', fontWeight: 500 } },
+        legend: { data: ['App', 'Transitive', 'Vulnerable Lib'], textStyle: { fontFamily: 'Inter', fontWeight: 600 }, bottom: 10 },
+        series: [{
+          type: 'graph',
+          layout: 'force',
+          animation: false,
+          roam: true,
+          draggable: true,
+          data: nodes,
+          edges: links,
+          categories: [{name:'App'}, {name:'Transitive'}, {name:'Vulnerable Lib'}],
+          force: { repulsion: 400, edgeLength: 100, gravity: 0.1 },
+          lineStyle: { color: 'source', curveness: 0.1 }
+        }]
+      });
+      networkChartInstance.resize();
+    }, 50);
   }
-  function closeChain() { document.getElementById("gv-overlay").classList.remove("open"); }
-  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeChain(); });
 
-  function drawGraph(d) {
-    var COLW = 172, ROWH = 62, BW = 136, BH = 34, PADX = 22, PADY = 22;
-    var nodes = {}, order = [], edges = [], maxCol = 0;
-    function key(c,n){ return c + "" + n; }
-    function ensure(c,n){ var k=key(c,n); if(!(k in nodes)){ nodes[k]={col:c,name:n,row:0}; order.push(k); if(c>maxCol)maxCol=c; } return k; }
-    d.paths.forEach(function(path){ for (var i=0;i<path.length;i++){ var k=ensure(i,path[i]); if(i>0) edges.push([key(i-1,path[i-1]),k]); } });
-    var perCol = {};
-    order.forEach(function(k){ var c=nodes[k].col; (perCol[c]=perCol[c]||[]); nodes[k].row=perCol[c].length; perCol[c].push(k); });
-    var maxRows = 0; Object.keys(perCol).forEach(function(c){ if(perCol[c].length>maxRows) maxRows=perCol[c].length; });
-    var W = PADX*2 + maxCol*COLW + BW, H = PADY*2 + Math.max(1,maxRows)*ROWH;
-    function cx(n){ return PADX + n.col*COLW; }
-    function cy(n){ var cnt=perCol[n.col].length, offs=(maxRows-cnt)*ROWH/2; return PADY+offs+n.row*ROWH; }
-    var seen = {}, eSvg = "";
-    edges.forEach(function(e){ var id=e[0]+">"+e[1]; if(seen[id])return; seen[id]=1;
-      var a=nodes[e[0]], b=nodes[e[1]], x1=cx(a)+BW, y1=cy(a)+BH/2, x2=cx(b), y2=cy(b)+BH/2, mx=(x1+x2)/2;
-      eSvg += '<path d="M'+x1+' '+y1+' C'+mx+' '+y1+' '+mx+' '+y2+' '+x2+' '+y2+'" fill="none" stroke="#3a4658" stroke-width="1.6"/>'; });
-    var nSvg = "";
-    order.forEach(function(k){ var n=nodes[k], x=cx(n), y=cy(n), isApp=n.col===0, isLeaf=n.col===maxCol;
-      var fill=isApp?"#2f6fd0":isLeaf?"#E60028":"#1c222c", stroke=isApp?"#56a3ff":isLeaf?"#ff2d4d":"#3a4658", tcol=isApp||isLeaf?"#fff":"#c9d4e3";
-      var label=n.name.length>18?n.name.slice(0,17)+"…":n.name;
-      nSvg += '<g><rect x="'+x+'" y="'+y+'" width="'+BW+'" height="'+BH+'" rx="8" fill="'+fill+'" stroke="'+stroke+'" stroke-width="1.4"/>'+
-        '<text x="'+(x+BW/2)+'" y="'+(y+BH/2+4)+'" text-anchor="middle" fill="'+tcol+'">'+esc(label)+'</text>'+
-        '<title>'+esc(n.name)+'</title></g>'; });
-    var svg=document.getElementById("gv-svg"); svg.setAttribute("width",W); svg.setAttribute("height",H);
-    svg.setAttribute("viewBox","0 0 "+W+" "+H); svg.innerHTML=eSvg+nSvg;
+  function closeModal() {
+    document.getElementById('network-modal').classList.remove('open');
   }
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
   {% endif %}
 </script>
 </body>

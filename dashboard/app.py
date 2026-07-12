@@ -18,22 +18,13 @@ Run:  python -m dashboard.app   (http://127.0.0.1:5000)
 import base64
 import json
 
-from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS
+from flask import Flask, render_template, request
 
 from src.config import REPO_ROOT
 
 REPORTS = REPO_ROOT / "reports"
 TEMPLATES = REPO_ROOT / "dashboard" / "templates"
 app = Flask(__name__)
-
-# Restrict CORS to Lovable and local development (frontend) origins.
-CORS(app, origins=[
-    r"https://.*\.lovableproject\.com",
-    r"https://.*\.lovable\.app",
-    r"http://localhost:\d+",
-    r"http://127\.0\.0\.1:\d+"
-])
 
 # Severity ordering for charts / sorting (SOC convention: worst first).
 SEV_ORDER = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"]
@@ -123,11 +114,6 @@ def _view(export=False):
         severity_counts=severity_counts, app_bars=app_bars)
 
 
-@app.route("/health")
-def health():
-    return jsonify({"status": "ok", "service": "sbom-risk-scorer"}), 200
-
-
 @app.route("/")
 def index():
     return _view()
@@ -144,6 +130,4 @@ def export_html():
 
 
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=False)
+    app.run(debug=False)

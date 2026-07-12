@@ -6,22 +6,22 @@
 <title>Zenith · SBOM Supply Chain Risk — Societe Generale</title>
 <style>
   :root {
-    --bg: #08090c; --bg-elev: #0e1116; --panel: #12161d;
-    --glass: rgba(255,255,255,0.045); --glass-2: rgba(255,255,255,0.025);
-    --brd: rgba(255,255,255,0.09); --brd-2: rgba(255,255,255,0.06);
-    --ink: #eef1f6; --ink-2: #a7b0be; --ink-3: #717a89;
-    --sg: #E60028; --sg-2: #ff2d4d; --sg-glow: rgba(230,0,40,0.5);
-    --crit: #ff3b4e; --high: #ff8f3d; --med: #ffc531; --low: #35d07f; --none: #59616f;
-    --accent: #56a3ff; --accent-deep: #2f6fd0;
+    --bg: #f7f9fc; --bg-elev: #ffffff; --panel: #ffffff;
+    --glass: rgba(0,0,0,0.035); --glass-2: rgba(0,0,0,0.015);
+    --brd: rgba(0,0,0,0.1); --brd-2: rgba(0,0,0,0.06);
+    --ink: #111827; --ink-2: #4b5563; --ink-3: #6b7280;
+    --sg: #E60028; --sg-2: #ff2d4d; --sg-glow: rgba(230,0,40,0.25);
+    --crit: #ef4444; --high: #f97316; --med: #f59e0b; --low: #10b981; --none: #9ca3af;
+    --accent: #3b82f6; --accent-deep: #2563eb;
     --mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
-    --shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 12px 32px rgba(0,0,0,0.45);
+    --shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 8px 30px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
   }
   * { box-sizing: border-box; margin: 0; }
   html { scroll-behavior: smooth; }
   body {
     background:
-      radial-gradient(1100px 520px at 82% -8%, rgba(230,0,40,0.14), transparent 60%),
-      radial-gradient(900px 480px at 8% 4%, rgba(46,111,208,0.10), transparent 55%),
+      radial-gradient(1100px 520px at 82% -8%, rgba(230,0,40,0.07), transparent 60%),
+      radial-gradient(900px 480px at 8% 4%, rgba(59,130,246,0.07), transparent 55%),
       var(--bg);
     color: var(--ink); font-variant-numeric: tabular-nums;
     font: 14px/1.5 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -35,7 +35,7 @@
   header.nav {
     position: sticky; top: 0; z-index: 30;
     backdrop-filter: blur(14px) saturate(140%);
-    background: linear-gradient(180deg, rgba(8,9,12,0.92), rgba(8,9,12,0.72));
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
     border-bottom: 1px solid var(--brd-2);
   }
   .nav-in { max-width: 1320px; margin: 0 auto; padding: 12px 22px;
@@ -49,14 +49,16 @@
   .nav-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
   .team { display: flex; align-items: center; gap: 9px; padding: 5px 11px 5px 6px;
           border: 1px solid var(--brd); border-radius: 999px; background: var(--glass-2); }
-  .team img { height: 24px; width: 24px; border-radius: 6px; object-fit: contain; }
+  .team img { height: 24px; width: 24px; border-radius: 6px; object-fit: contain; filter: brightness(0); opacity: 0.8; }
   .team span { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
   .team span b { color: var(--ink); font-weight: 650; }
   .btn { font: inherit; font-size: 12.5px; padding: 7px 13px; border-radius: 8px;
          border: 1px solid var(--brd); background: var(--glass);
          color: var(--ink); text-decoration: none; cursor: pointer; transition: .15s; white-space: nowrap; }
+  .narr-wrap { padding: 18px 22px; border-bottom: 1px solid var(--brd-2); background: rgba(0,0,0,0.015); display: flex; gap: 16px; align-items: flex-start; }
+  .narr-icon { flex: none; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: rgba(59,130,246,0.12); color: var(--accent-deep); border: 1px solid rgba(59,130,246,0.2); }
   .btn:hover { border-color: var(--sg); box-shadow: 0 0 0 3px rgba(230,0,40,0.12); }
-  .btn.primary { background: linear-gradient(180deg, var(--sg-2), var(--sg)); border-color: transparent; font-weight: 600; }
+  .btn.primary { background: linear-gradient(180deg, var(--sg-2), var(--sg)); border-color: transparent; font-weight: 600; color: #ffffff; }
   .btn.primary:hover { box-shadow: 0 6px 18px var(--sg-glow); }
 
   /* ---- hero ---- */
@@ -143,19 +145,19 @@
 
   /* ---- findings table ---- */
   .tbl-wrap { border: 1px solid var(--brd); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
-              background: linear-gradient(180deg, var(--glass), var(--glass-2)); }
+              background: #ffffff; }
   table { width: 100%; border-collapse: collapse; }
   thead th { position: sticky; top: 58px; z-index: 5; text-align: left; font-size: 11px; letter-spacing: 0.06em;
-             text-transform: uppercase; color: var(--ink-3); padding: 11px 12px; background: rgba(12,15,20,0.96);
-             backdrop-filter: blur(6px); border-bottom: 1px solid var(--brd); }
+             text-transform: uppercase; color: var(--ink-3); padding: 11px 12px; background: #f9fafb;
+             border-bottom: 1px solid var(--brd); }
   tbody td { padding: 11px 12px; border-bottom: 1px solid var(--brd-2); vertical-align: top; font-size: 13px; }
   tbody tr:last-child td { border-bottom: none; }
-  tbody tr:hover td { background: rgba(255,255,255,0.025); }
+  tbody tr:hover td { background: #fdfdfd; }
   .rank { color: var(--ink-3); font-family: var(--mono); font-size: 12px; }
   .score-cell { font-weight: 700; font-size: 15px; }
-  .minibar { display: block; width: 62px; height: 5px; background: rgba(255,255,255,0.08); border-radius: 3px; margin-top: 4px; }
-  .minibar > i { display: block; height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--accent-deep), var(--sg)); }
-  .uplift { font-size: 10.5px; color: var(--sg-2); margin-top: 3px; }
+  .minibar { display: block; width: 62px; height: 5px; background: var(--brd); border-radius: 3px; margin-top: 4px; }
+  .minibar > i { display: block; height: 5px; border-radius: 3px; background: var(--sg); }
+  .uplift { font-size: 10.5px; color: var(--sg); margin-top: 3px; }
   .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 650;
            padding: 3px 9px 3px 8px; border-radius: 999px; border: 1px solid var(--brd-2); white-space: nowrap; }
   .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -188,7 +190,7 @@
   .note { color: var(--ink-3); font-size: 12px; margin-top: 16px; line-height: 1.7; }
   footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--brd-2);
            display: flex; align-items: center; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 12px; }
-  footer img.z { height: 26px; }
+  footer img.z { height: 26px; filter: brightness(0); opacity: 0.8; }
   footer .grow { flex: 1; }
 
   /* ---- graph modal ---- */
@@ -513,6 +515,30 @@
     document.querySelectorAll(".tile .v[data-count]").forEach(countUp);
     drawDonut(); drawBars();
     animateWidths(document.querySelector(".cards-grid"));
+    
+    // Add interactive table sorting
+    document.querySelectorAll("th").forEach(function(th, i) {
+      th.style.cursor = "pointer";
+      th.title = "Click to sort";
+      th.addEventListener("click", function() {
+        var table = th.closest("table");
+        var tbody = table.querySelector("tbody");
+        var rows = Array.from(tbody.querySelectorAll("tr"));
+        var asc = th.dataset.asc = (th.dataset.asc !== "true");
+        rows.sort(function(a, b) {
+          var aVal = a.children[i].textContent.trim();
+          var bVal = b.children[i].textContent.trim();
+          var aNum = parseFloat(aVal) || 0;
+          var bNum = parseFloat(bVal) || 0;
+          if (aNum !== 0 || bNum !== 0 || aVal === "0" || bVal === "0") {
+             return asc ? aNum - bNum : bNum - aNum;
+          }
+          return asc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+        });
+        tbody.innerHTML = "";
+        rows.forEach(function(row) { tbody.appendChild(row); });
+      });
+    });
   });
 
   {% if not export %}
